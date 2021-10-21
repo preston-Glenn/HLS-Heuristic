@@ -1,0 +1,14 @@
+1. create function that calls synthesiser
+2. exhaustive search function that call synthesis function
+3. meta heuristic
+4. visualise data in platform
+5. Powerpoint
+
+
+
+
+
+BONUS
+1. implement signal handlers
+   - hard kill
+   - exit after run finishes

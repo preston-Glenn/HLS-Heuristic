@@ -1,0 +1,47 @@
+"ave16/ave16.c", line 21: error: identifier "in" is undefined
+  in ter(0:8)  in0;
+  ^
+
+"ave16/ave16.c", line 21: error: expected a ")"
+  in ter(0:8)  in0;
+          ^
+
+"ave16/ave16.c", line 21: error: expected a ";"
+  in ter(0:8)  in0;
+               ^
+
+"ave16/ave16.c", line 22: error: identifier "out" is undefined
+  out ter(0:8)  out0;
+  ^
+
+"ave16/ave16.c", line 22: error: variable "ter" has already been defined
+  out ter(0:8)  out0;
+      ^
+
+"ave16/ave16.c", line 22: error: expected a ")"
+  out ter(0:8)  out0;
+           ^
+
+"ave16/ave16.c", line 22: error: expected a ";"
+  out ter(0:8)  out0;
+                ^
+
+"ave16/ave16.c", line 26: error: identifier "process" is undefined
+  process ave16(){
+  ^
+
+"ave16/ave16.c", line 36: error: identifier "fifo" is undefined
+      fifo[0] = in0;
+      ^
+
+"ave16/ave16.c", line 36: error: identifier "in0" is undefined
+      fifo[0] = in0;
+                ^
+
+"ave16/ave16.c", line 44: error: identifier "out0" is undefined
+          out0 = out0_v;	
+          ^
+
+11 errors detected in the compilation of "ave16/ave16.c".
+
+cpars aborted due to errors. See the generated error file cpars.cperr.

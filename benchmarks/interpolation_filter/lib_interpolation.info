@@ -1,0 +1,49 @@
+#attribute library for interplation filter
+#
+# convestion :
+#
+# <attribute label> <attribute name> <attribute value>
+#
+# Note: hyphen indicates range
+#
+
+#attr1 folding 1
+#attr1 folding 2
+#attr1 folding 3
+attr1 unroll_times 0
+attr1 unroll_times all
+attr1 unroll_times 2
+attr1 unroll_times 4
+
+#attr2 folding 1
+#attr2 folding 2
+#attr2 folding 3
+attr2 unroll_times 0
+attr2 unroll_times all
+attr2 unroll_times 2
+attr3 unroll_times 4
+
+#attr3 folding 1
+#attr3 folding 2
+#attr3 folding 3
+attr3 unroll_times 0
+attr3 unroll_times all
+attr3 unroll_times 2
+attr3 unroll_times 4
+
+#attr4 folding 1
+#attr4 folding 2
+#attr4 folding 3
+attr4 unroll_times 0
+attr4 unroll_times all
+attr4 unroll_times 2
+attr4 unroll_times 4
+
+#attr5 folding 1
+#attr5 folding 2
+#attr5 folding 3
+attr5 unroll_times 0
+attr5 unroll_times all
+attr5 unroll_times 2
+attr5 unroll_times 4
+

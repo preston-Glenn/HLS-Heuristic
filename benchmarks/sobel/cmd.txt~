@@ -1,0 +1,4 @@
+
+
+bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+bdlpars sobel.c

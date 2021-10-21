@@ -1,0 +1,33 @@
+#attribute library for sobel.c
+#
+# convestion :
+#
+# <attribute label> <attribute name> <attribute value>
+#
+# Note: hyphen indicates range
+#
+
+ATTR1 array RAM
+ATTR1 array REG
+ATTR1 array EXPAND
+
+
+ATTR2 array REG
+ATTR2 array EXPAND
+ATTR2 array ROM
+ATTR2 array LOGIC
+
+ATTR3 array REG
+ATTR3 array EXPAND
+ATTR3 array ROM
+ATTR3 array LOGIC
+
+ATTR4 unroll_times 0
+ATTR4 unroll_times all
+
+ATTR5 unroll_times 0
+ATTR5 unroll_times all
+
+ATTR6 unroll_times 0
+ATTR6 unroll_times all
+

@@ -1,0 +1,79 @@
+#attribute library for decimation filter
+#
+# convestion :
+#
+# <attribute label> <attribute name> <attribute value>
+#
+# Note: hyphen indicates range
+#
+
+attr1 folding 1
+attr1 folding 2
+attr1 unroll_times 0
+attr1 unroll_times all
+attr1 unroll_times 2
+attr1 unroll_times 4
+
+attr2 folding 1
+attr2 folding 2
+attr2 unroll_times 0
+attr2 unroll_times all
+attr2 unroll_times 2
+
+attr3 folding 1
+attr3 folding 2
+attr3 unroll_times 0
+attr3 unroll_times all
+attr3 unroll_times 2
+attr3 unroll_times 4
+
+attr4 folding 1
+attr4 folding 2
+attr4 unroll_times 0
+attr4 unroll_times all
+attr4 unroll_times 2
+attr4 unroll_times 4
+
+attr5 folding 1
+attr5 folding 2
+attr5 unroll_times 0
+attr5 unroll_times all
+attr5 unroll_times 2
+attr5 unroll_times 4
+
+attr6 folding 1
+attr6 folding 2
+attr6 unroll_times 0
+attr6 unroll_times all
+attr6 unroll_times 2
+attr6 unroll_times 4
+
+attr7 folding 1
+attr7 folding 2
+attr7 unroll_times 0
+attr7 unroll_times all
+attr7 unroll_times 2
+attr7 unroll_times 4
+
+attr8 folding 1
+attr8 folding 2
+attr8 unroll_times 0
+attr8 unroll_times all
+attr8 unroll_times 4
+attr8 unroll_times 8
+attr8 unroll_times 12
+
+
+attr9 folding 1
+attr9 folding 2
+attr9 unroll_times 0
+attr9 unroll_times all
+attr9 unroll_times 4
+attr9 unroll_times 8
+
+attr10 folding 1
+attr10 folding 2
+attr10 unroll_times 0
+attr10 unroll_times all
+attr10 unroll_times 2
+attr10 unroll_times 4

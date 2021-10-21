@@ -1,0 +1,113 @@
+"sobel.c", line 9: error: expected an identifier
+  #define "attrs.h"
+          ^
+
+"sobel.c", line 49: warning: nested comment is not allowed
+     unsigned char input_row[3] /* ATTR1 */;
+                                ^
+
+"sobel.c", line 42: error: Invalid Cyber attribute. '=' / ',' / ';' expected.
+  /* Cyber func=process
+  ^
+
+"sobel.c", line 42: warning: Cyber attribute "func" may not be used here
+  /* Cyber func=process
+  ^
+
+"sobel.c", line 57: error: expected a ";"
+    char Gy[3][3] * ATTR3 */={{1, 2, 1},
+                  ^
+
+"sobel.c", line 63: error: this declaration has no storage class or type specifier
+  * ATTR4 */
+  ^
+
+"sobel.c", line 63: error: expected a ";"
+  * ATTR4 */
+          ^
+
+"sobel.c", line 71: warning: parsing restarts here after previous syntax error
+         line_buffer[0][2] = input_row_a00;
+                                          ^
+
+"sobel.c", line 72: error: this declaration has no storage class or type specifier
+          ine_buffer[1][2] = input_row_a01;
+          ^
+
+"sobel.c", line 72: error: identifier "input_row_a01" is undefined
+          ine_buffer[1][2] = input_row_a01;
+                             ^
+
+"sobel.c", line 73: error: this declaration has no storage class or type specifier
+          line_buffer[2][2] = input_row_a02;
+          ^
+
+"sobel.c", line 73: error: variable "line_buffer" has already been defined
+          line_buffer[2][2] = input_row_a02;
+          ^
+
+"sobel.c", line 73: error: identifier "input_row_a02" is undefined
+          line_buffer[2][2] = input_row_a02;
+                              ^
+
+"sobel.c", line 75: error: this declaration has no storage class or type specifier
+    sumX = 0;
+    ^
+
+"sobel.c", line 76: error: this declaration has no storage class or type specifier
+    sumY = 0;
+    ^
+
+"sobel.c", line 81: error: this declaration has no storage class or type specifier
+  * ATTR5 */
+  ^
+
+"sobel.c", line 81: error: expected a ";"
+  * ATTR5 */
+          ^
+
+"sobel.c", line 92: warning: parsing restarts here after previous syntax error
+        if(sumX < 0)      sumX = -sumX;
+                                      ^
+
+"sobel.c", line 93: error: expected a declaration
+        if(sumX > 255)    sumX = 255;
+        ^
+
+"sobel.c", line 95: error: expected a declaration
+            if(sumY < 0)      sumY = -sumY;
+            ^
+
+"sobel.c", line 96: error: expected a declaration
+        if(sumY > 255)    sumY = 255;
+        ^
+
+"sobel.c", line 98: error: this declaration has no storage class or type specifier
+        SUM = sumX + sumY;
+        ^
+
+"sobel.c", line 100: error: expected a declaration
+        if(SUM > 255)    SUM = 255;
+        ^
+
+"sobel.c", line 103: error: this declaration has no storage class or type specifier
+        output_row =  (unsigned char)(255  - (unsigned char)(SUM));
+        ^
+
+"sobel.c", line 103: error: variable "output_row" has already been defined
+        output_row =  (unsigned char)(255  - (unsigned char)(SUM));
+        ^
+
+"sobel.c", line 104: error: expected a declaration
+        return(output_row);
+        ^
+
+"sobel.c", line 106: error: expected a declaration
+  }
+  ^
+
+At end of source: warning: parsing restarts here after previous syntax error
+
+23 errors detected in the compilation of "sobel.c".
+
+cpars aborted due to errors. See the generated error file cpars.cperr.
