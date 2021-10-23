@@ -10,6 +10,7 @@
 #include <map>
 #include <vector>
 
+#include "loggingHandler.h"
 #include "functions.h"
 
 using namespace TCLAP;
@@ -17,16 +18,21 @@ using namespace std;
 
 string toString(int &i);
 void parseFile(string t);
+bool synthesize(vector<string> l);
 
-map <string,vector<string> > propertyLists;
-map <string,string> propertyClass;
-map <string,bool> attributeMap;
+map <string,vector<string> > propertyLists;     // 2d list of all options
+map <string,string> propertyClass;              // list of each attrX type
+map <string,bool> attributeMap;                 // If its been called before
 int class_count = 0;
-
+Logger logger;
+string DIRECTORY = "";
 
 int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
+  logger.setFileName("default.txt");
+
+
 	try {
 		// Define the command line object.
 		CmdLine cmd("Command description message", ' ', "0.9");
@@ -46,6 +52,19 @@ int main(int argc, char** argv) {
 		// Do what you intend too...
 		parseFile(name);
 		
+		vector<string> l;
+		for(int i = 1; i <= class_count; i++){
+		  cout << i << endl;
+		  string str = "attr"+toString(i);
+		  cout << propertyLists[str].size();
+		  string temp = propertyLists[str].at(0);
+		  cout << temp<<endl;
+		  l.push_back(temp);
+
+		}
+
+
+		synthesize(l);
 	}
 	catch (ArgException& e)  // catch any exceptions
 	{
@@ -146,7 +165,6 @@ void bruteForce (string list,int length,int count = 0) {
           
           }
 
-
 	}
 
 
@@ -164,8 +182,21 @@ string toString(int  &i) {
 }
 
 
-bool synthesize(/*vector<string> list*/){
+bool synthesize(vector<string> list){
+  
+  ofstream file;
+  file.open("attrs.h",ios::trunc);
+  if(file.is_open()){
+      for(int i = 1; i <= class_count; i++){
+	string attr_index = "attr" + toString(i);
+	string str = "#define ATTR"+toString(i) +"Cyber "+propertyClass[attr_index] +"="+list[i-1];
+	file << str << endl;
+      }
+  } else{
+    // file didn't open
 
-  string st = commandLine("mkdir .versions");                           
-
+    
+  }
+  cout <<  commandLine("bdlpars benchmarks/sobel/sobel.c") << endl;                           
+  logger.log("SUCCESS\n");
 }
