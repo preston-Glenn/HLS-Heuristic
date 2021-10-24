@@ -29,6 +29,7 @@ map <string,bool> attributeMap;                 // If its been called before
 int class_count = 0;
 Logger logger;
 string DIRECTORY = "";
+int NUMBER_OF_RUNS = 0;
 
 int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
@@ -90,7 +91,7 @@ int main(int argc, char** argv) {
 void bruteForce (vector<string> list, int count = 1) {
 
 	string str = "attr"+toString(count);
-	cout << "first size" <<  propertyLists[str].size() << endl;
+	// cout << "first size" <<  propertyLists[str].size() << endl;
 
 	//logger.log("\tStarted: BF--"+toString(count));
 
@@ -101,25 +102,27 @@ void bruteForce (vector<string> list, int count = 1) {
 			extendedList.push_back(list.at(k));
 		}	
 		
-		cout <<"I: "<<i<< " SIZE: " << extendedList.size() << " COUNT: " << count << endl;
+		// cout <<"I: "<<i<< " SIZE: " << extendedList.size() << " COUNT: " << count << endl;
 		extendedList.push_back(propertyLists[str].at(i-1));
-		cout << extendedList.size() << endl;
 
-		for(int k = 0; k < extendedList.size(); k++){
-			cout << extendedList.at(k) << endl;
-		}	
+
+		// for(int k = 0; k < extendedList.size(); k++){
+		// 	cout << extendedList.at(k) << endl;
+		// }	
+
 		if (count == class_count) {
 
 			logger.log("Trying to call synthesis");
 			try{
 				string success = synthesize(extendedList);
 				if(true){
-					logger.log("Success: ");
+					logger.log("Success: "+toString(++NUMBER_OF_RUNS));
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList.at(j));
 					}
 					string attributeSring = listToString(extendedList);
 					attributeMap[attributeSring] = true;
+					logger.log("Added attribute string to map");
 				} else {
 					logger.log("FAILED: ");
 					for(int j = 0; j < class_count; j++){
@@ -223,16 +226,12 @@ string toString(int  &i) {
 
 
 string synthesize(vector<string> list){
-	cout << "COUNT" << class_count << endl;
-
 
 	ofstream file;
 	file.open("attrs.h",ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);
-			cout << 1 << propertyClass[attr_index] << endl;
-			cout << 2 << list[i-1] << endl;
 			string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
 			file << str << endl;
 		}
@@ -259,6 +258,7 @@ string synthesize(vector<string> list){
 	} 
 
 	logger.log(synthesisResults);
+	logger.log("Finished BDL_TRAN");
 
 	return results;
 }
