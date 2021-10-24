@@ -133,7 +133,7 @@ void bruteForce (vector<string> list, int count = 1) {
 			}
 		}
 		else {
-		  bruteForce(list, count + 1);
+		  bruteForce(extendedList, count + 1);
 		}
 	}
 
