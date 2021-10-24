@@ -54,8 +54,9 @@ int main(int argc, char** argv) {
 	        
 
 		// Do what you intend too...
+		logger.log("Started: Parsing");
 		parseFile(name);
-		
+		logger.log("Finished: Parsing");
 		// vector<string> l;
 		// for(int i = 1; i <= class_count; i++){
 		//   string str = "attr"+toString(i);
@@ -68,7 +69,9 @@ int main(int argc, char** argv) {
 		vector<string> blank_list;
 
 		//		synthesize(l);
+		logger.log("Started: Brute Force");
 		bruteForce(blank_list,1);
+		logger.log("Finished: Brute Force");
 
 
 	}
@@ -89,16 +92,19 @@ void bruteForce (vector<string> list = {},int count = 1) {
 
 	string str = "attr"+toString(count);
 
+	logger.log("\tStarted: BF--"+toString(count));
+
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
 		vector <string> extendedList = list;	
 		
 		
 		extendedList.push_back(propertyLists[str][i-1]);
 		if (count == class_count) {
-			//append last element @[i]
+
+
+			logger.log("Trying to call synthesis");
 			try{
-				 string success = synthesize(extendedList);
-				 cout << success << endl;
+				string success = synthesize(extendedList);
 				if(true){
 					logger.log("Success: ");
 					for(int j = 0; j < class_count; j++){
@@ -117,8 +123,6 @@ void bruteForce (vector<string> list = {},int count = 1) {
 			} catch (ArgException& e)	{
 		cerr << "error: " << e.error() << " for arg " << e.argId() << endl;
 	}
-
-
 
 		}
 		else {
@@ -230,15 +234,22 @@ string synthesize(vector<string> list){
 	  exit(1);
 	}
 	
-	string results = commandLine("bdlpars benchmarks/sobel/sobel.c");                         
+
+	logger.log("Started: BDL_Pars");
+	string results = commandLine("bdlpars ../benchmarks/sobel/sobel.c");                         
 	string synthesisResults = "";
-	cout << results << endl;
+
+	logger.log(results);
+	logger.log("\n\n\n\n");
+
 
 	if(results.find("success") != std::string::npos){
+		logger.log("Started: BDL_TRAN");
 		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB");
+
+	
 	} 
-	logger.log(results);
-	  logger.log("\n\n\n\n");
+
 	logger.log(synthesisResults);
 
 	return results;
