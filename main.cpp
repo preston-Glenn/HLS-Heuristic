@@ -87,7 +87,7 @@ int main(int argc, char** argv) {
 
 
 
-void bruteForce (vector<string> list = {},int count = 1) {
+void bruteForce (vector<string> list, int count = 1) {
 
 
 	string str = "attr"+toString(count);
@@ -95,7 +95,11 @@ void bruteForce (vector<string> list = {},int count = 1) {
 	//logger.log("\tStarted: BF--"+toString(count));
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
-		vector <string> extendedList = list;	
+		vector <string> extendedList;
+
+		for(int k = 0; k < list.size(); k++){
+			extendedList.push_back(list[k]);
+		}	
 		
 		
 		extendedList.push_back(propertyLists[str][i-1]);
