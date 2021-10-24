@@ -230,7 +230,7 @@ string toString(int  &i) {
 string synthesize(vector<string> list){
 
 	ofstream file;
-	file.open("../benchamarks/sobel/attrs.h",ios::trunc);
+	file.open("../benchmarks/sobel/attrs.h",ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);
@@ -254,7 +254,7 @@ string synthesize(vector<string> list){
 
 	if(results.find("success") != std::string::npos){
 		logger.log("Started: BDL_TRAN");
-		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB");
+		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output");
 
 	
 	} 

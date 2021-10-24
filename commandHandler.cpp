@@ -47,6 +47,7 @@ string commandLine(string instr){
       response += buffer;
 
   }
+  logger.log("EOF reached.")
   pclose(pipe);
   return response; // output is the response form the command line
 
