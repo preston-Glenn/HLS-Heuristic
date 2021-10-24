@@ -95,14 +95,18 @@ void bruteForce (vector<string> list, int count = 1) {
 	//logger.log("\tStarted: BF--"+toString(count));
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
-		vector <string> extendedList;
+		vector<string> extendedList;
 
 		for(int k = 0; k < list.size(); k++){
-			extendedList.push_back(list[k]);
+			extendedList.push_back(list.at(k));
 		}	
 		
-		
-		extendedList.push_back(propertyLists[str][i-1]);
+		cout << "SIZE" << extendedList.size();
+		extendedList.push_back(propertyLists[str].at(i-1));
+		cout << extendedList.size();
+		for(int k = 0; k < extendedList.size(); k++){
+			cout << extendedList.at(k);
+		}	
 		if (count == class_count) {
 		  cout <<"ExList" << count << " " << class_count << endl << extendedList.size() << endl;
 
@@ -112,14 +116,14 @@ void bruteForce (vector<string> list, int count = 1) {
 				if(true){
 					logger.log("Success: ");
 					for(int j = 0; j < class_count; j++){
-						logger.log("\t"+extendedList[j]);
+						logger.log("\t"+extendedList.at(j));
 					}
 					string attributeSring = listToString(extendedList);
 					attributeMap[attributeSring] = true;
 				} else {
 					logger.log("FAILED: ");
 					for(int j = 0; j < class_count; j++){
-						logger.log("\t"+extendedList[j]);
+						logger.log("\t"+extendedList.at(j));
 					}
 				}
 
@@ -264,6 +268,6 @@ string synthesize(vector<string> list){
 string listToString(vector<string> list){
 	string str = "";
 	for(int i = 0; i < list.size();i++){
-	  str.append(list[i]);
+	  str.append(list.at(i));
 	}
 }
