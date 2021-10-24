@@ -120,7 +120,9 @@ void bruteForce (vector<string> list, int count = 1) {
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList.at(j));
 					}
+					logger.log("Getting string");
 					string attributeSring = listToString(extendedList);
+					logger.log("Adding to attr. map");
 					attributeMap[attributeSring] = true;
 					logger.log("Added attribute string to map");
 				} else {
