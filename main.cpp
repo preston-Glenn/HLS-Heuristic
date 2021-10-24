@@ -33,7 +33,8 @@ string DIRECTORY = "";
 int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
-  logger.setFileName("default.txt");
+  logger.setFileName("log.txt");
+  logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::")
 
 
 	try {
@@ -55,15 +56,15 @@ int main(int argc, char** argv) {
 		// Do what you intend too...
 		parseFile(name);
 		
-		vector<string> l;
-		for(int i = 1; i <= class_count; i++){
-		  string str = "attr"+toString(i);
-		  cout << i<<propertyLists[str].size()<<endl;
-		  string temp = propertyLists[str].at(0);
-		  cout << temp<<endl;
-		  l.push_back(temp);
+		// vector<string> l;
+		// for(int i = 1; i <= class_count; i++){
+		//   string str = "attr"+toString(i);
+		//   cout << i<<propertyLists[str].size()<<endl;
+		//   string temp = propertyLists[str].at(0);
+		//   cout << temp<<endl;
+		//   l.push_back(temp);
 
-		}
+		// }
 		vector<string> blank_list;
 
 		//		synthesize(l);
@@ -149,9 +150,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 			s1 = s2;
 			s2 = s3;
 			s3 = del;
-	      }
-	    	logger.log(s1+" "+s2+" "+s3);
-	      
+	      }	      
 	      propertyLists[s1].push_back(s3);
 	      
 	      if(previousString == s1){
@@ -165,7 +164,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 	    }
 	    file.close(); //close the file object.
 
-	    logger.log("CLASS_COUNT: "+class_count);
+	    logger.log("CLASS_COUNT: "+ toString(class_count));
 
 	  } else {
 	    cerr << "Attribute File did not open correctly\n";
@@ -183,17 +182,17 @@ void bruteForce (vector<string> list = {},int count = 1) {
 	  }
 	  */
 
+// Loging output of parser
+	// 	logger.log("\n\n\n");
 
-		logger.log("\n\n\n");
+	//   for(int i = 1; i <= class_count; i++){
+	//     string str = "attr" + toString(i);
+	//     //	    cout << propertyClass[str] << endl;
 
-	  for(int i = 1; i <= class_count; i++){
-	    string str = "attr" + toString(i);
-	    //	    cout << propertyClass[str] << endl;
-
-	    for(int j = 0; j < propertyLists[str].size();j++){
-	    //   cout << "\t" << propertyLists[str].at(j) << endl;
-	      logger.log("\t"+propertyLists[str].at(j)+"\t");
-	    }
+	//     for(int j = 0; j < propertyLists[str].size();j++){
+	//     //   cout << "\t" << propertyLists[str].at(j) << endl;
+	//       logger.log("\t"+propertyLists[str].at(j)+"\t");
+	//     }
 
           
           }
@@ -238,7 +237,10 @@ string synthesize(vector<string> list){
 	if(results.find("success") != std::string::npos){
 		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB");
 	} 
-	logger.log(results);
+	logger.log(results)
+	logger.log("\n\n\n\n")
+	logger.log(synthesisResults);
+
 	return results;
 }
 
