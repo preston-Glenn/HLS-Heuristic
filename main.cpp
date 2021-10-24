@@ -25,7 +25,7 @@ void bruteForce (vector<string> list ,int count) ;
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
 map <string,string> propertyClass;              // list of each attrX type
-map <string,bool> attributeMap;                 // If its been called before
+map <string,int> attributeMap;                 // If its been called before
 int class_count = 0;
 Logger logger;
 string DIRECTORY = "";
@@ -121,9 +121,10 @@ void bruteForce (vector<string> list, int count = 1) {
 						logger.log("\t"+extendedList.at(j));
 					}
 					logger.log("Getting string");
-					string attributeSring = listToString(extendedList);
+					string attributeString = listToString(extendedList);
+					cout << attributeString << endl;
 					logger.log("Adding to attr. map");
-					attributeMap[attributeSring] = true;
+					attributeMap[attributeString] = 1;
 					logger.log("Added attribute string to map");
 				} else {
 					logger.log("FAILED: ");
