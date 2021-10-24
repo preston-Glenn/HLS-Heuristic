@@ -122,7 +122,6 @@ void bruteForce (vector<string> list, int count = 1) {
 					}
 					logger.log("Getting string");
 					string attributeString = listToString(extendedList);
-					cout << attributeString << endl;
 					logger.log("Adding to attr. map");
 					attributeMap[attributeString] = 1;
 					logger.log("Added attribute string to map");
