@@ -1,0 +1,118 @@
+// HLS_Heuristic.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+
+
+
+
+#include <string>
+#include <fstream>
+#include <tclap\CmdLine.h>
+#include <string>
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <vector>
+
+using namespace TCLAP;
+using namespace std;
+
+map <string,vector<string>> propertyLists;
+
+
+
+int main(int argc, char** argv) {
+	// Wrap everything in a try block.  Do this every time,
+	// because exceptions will be thrown for problems.
+	try {
+		// Define the command line object.
+		CmdLine cmd("Command description message", ' ', "0.9");
+
+		// Define a value argument and add it to the command line.
+		ValueArg<string> nameArg("f", "file name", ", "homer",
+			"string");
+		cmd.add(nameArg);
+
+		// Define a switch and add it to the command line.
+		SwitchArg reverseSwitch("r", "reverse", "Print name backwards", false);
+		cmd.add(reverseSwitch);
+
+		// Parse the args.
+		cmd.parse(argc, argv);
+
+		// Get the value parsed by each arg.
+		string name = nameArg.getValue();
+		bool reverseName = reverseSwitch.getValue();
+
+		// Do what you intend too...
+		if (reverseName) {
+			reverse(name.begin(), name.end());
+			cout << "My name (spelled backwards) is: " << name << endl;
+		}
+
+
+	}
+	catch (ArgException& e)  // catch any exceptions
+	{
+		cerr << "error: " << e.error() << " for arg " << e.argId() << endl;
+	}
+
+
+
+}
+
+
+
+
+void bruteForce(string list,int length,int count = 0) {
+
+	for (int i = 0; i < length; i++) {
+
+		
+		if (count == length) {
+			//append last element @[i]
+			//synthesis
+		  list += "1";
+		}
+		else {
+		  bruteForce(list,length, newList.append(lists[count][i].count + 1)
+		}
+	}
+
+
+}
+
+
+	void parseFile(string file_name){
+	  // open file
+	  fstream file;
+	  file.open(file_name,ios::in);
+
+	  if(file.is_open()){
+	    string tp;
+	    while(getline(file, tp)){ //read data from file object and put it into string.
+	      cout << tp << "\n"; //print the data of the string
+	    }
+	    file.close(); //close the file object.
+
+
+
+	  } else {
+	    cerr << "Attribute File did not open correctly\n";
+	  }
+
+
+	  // while not EOF
+	     // read line from file as string, then split string by three parts 
+
+
+
+
+
+	}
+
+
+	//map<char, int>::iterator it;
+	//for(it=first.begin(); it!=first.end(); ++it){
+	//	  cout << it->first << " => " << it->second << '\n';
+	//}

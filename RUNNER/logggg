@@ -10,15 +10,3 @@ Finished: Parsing
 Started: Brute Force
 Trying to call synthesis
 Failed to open attrs.h file. Exiting now.
-
-
-
-
-
-NEW EXECUTION:::::::::::
-Started: Parsing
-CLASS_COUNT: 6
-Finished: Parsing
-Started: Brute Force
-Trying to call synthesis
-Failed to open attrs.h file. Exiting now.

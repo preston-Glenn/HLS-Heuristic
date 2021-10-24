@@ -230,7 +230,7 @@ string toString(int  &i) {
 string synthesize(vector<string> list){
 
 	ofstream file;
-	file.open("../benchamrks/sobel/attrs.h",ios::trunc);
+	file.open("../benchamarks/sobel/attrs.h",ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);

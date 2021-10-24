@@ -40,7 +40,7 @@ string commandLine(string instr){
     if(logger.getVerbose()) cout << endl << "Pipe failed to open. Terminating program." << endl;
     cerr << "TERMINATING PROGRAM" << endl;
 
-    exit(1);
+    //    exit(1);
   }
   while(!feof(pipe)){
     if(fgets(buffer,1000,pipe)!= NULL)
