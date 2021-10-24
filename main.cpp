@@ -92,7 +92,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 
 	string str = "attr"+toString(count);
 
-	logger.log("\tStarted: BF--"+toString(count));
+	//logger.log("\tStarted: BF--"+toString(count));
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
 		vector <string> extendedList = list;	
@@ -100,7 +100,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 		
 		extendedList.push_back(propertyLists[str][i-1]);
 		if (count == class_count) {
-
+			cout <<"ExList" count << " " << class_count << endl << extendedList.size() << endl;
 
 			logger.log("Trying to call synthesis");
 			try{
