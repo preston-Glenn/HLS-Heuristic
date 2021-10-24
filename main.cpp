@@ -101,11 +101,11 @@ void bruteForce (vector<string> list, int count = 1) {
 			extendedList.push_back(list.at(k));
 		}	
 		
-		cout << "SIZE" << extendedList.size();
+		cout << "SIZE" << extendedList.size() << endl;
 		extendedList.push_back(propertyLists[str].at(i-1));
-		cout << extendedList.size();
+		cout << extendedList.size() << endl;
 		for(int k = 0; k < extendedList.size(); k++){
-			cout << extendedList.at(k);
+			cout << extendedList.at(k) << endl;
 		}	
 		if (count == class_count) {
 		  cout <<"ExList" << count << " " << class_count << endl << extendedList.size() << endl;
