@@ -156,7 +156,6 @@ void bruteForce (vector<string> list = {},int count = 1) {
 			s3 = del;
 	      }	      
 	      propertyLists[s1].push_back(s3);
-	      cout << s1 << s2 << s3 << endl;
 
 	      if(previousString != s1){                                 // new attr
 			propertyClass[s1] = s2;
@@ -217,14 +216,18 @@ string toString(int  &i) {
 
 
 string synthesize(vector<string> list){
-  
+	cout << "COUNT" << class_count << endl;
+
+
 	ofstream file;
 	file.open("attrs.h",ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
-	string attr_index = "attr" + toString(i);
-	string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
-	file << str << endl;
+			string attr_index = "attr" + toString(i);
+			cout << 1 << propertyClass[attr_index] << endl;
+			cout << 2 << list[i-1] << endl;
+			string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
+			file << str << endl;
 		}
 		logger.log("Successfully created attrs.h file.");
 	} else{
