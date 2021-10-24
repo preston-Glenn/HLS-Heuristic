@@ -89,7 +89,7 @@ int main(int argc, char** argv) {
 
 void bruteForce (vector<string> list, int count = 1) {
 
-
+	cout << "NEW" << count << endl;
 	string str = "attr"+toString(count);
 
 	//logger.log("\tStarted: BF--"+toString(count));
@@ -101,7 +101,7 @@ void bruteForce (vector<string> list, int count = 1) {
 			extendedList.push_back(list.at(k));
 		}	
 		
-		cout << "SIZE" << extendedList.size() << endl;
+		cout <<"I:"<<i<< " SIZE" << extendedList.size() << endl;
 		extendedList.push_back(propertyLists[str].at(i-1));
 		cout << extendedList.size() << endl;
 		for(int k = 0; k < extendedList.size(); k++){
@@ -129,9 +129,8 @@ void bruteForce (vector<string> list, int count = 1) {
 
 
 			} catch (ArgException& e)	{
-		cerr << "error: " << e.error() << " for arg " << e.argId() << endl;
-	}
-
+				cerr << "error: " << e.error() << " for arg " << e.argId() << endl;
+			}
 		}
 		else {
 		  bruteForce(list, count + 1);
