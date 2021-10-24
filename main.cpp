@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
   logger.setFileName("log.txt");
-  logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::")
+  logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
 
 	try {
@@ -197,7 +197,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
           
           }
 
-	}
+	
 
 
 	//map<char, int>::iterator it;
@@ -237,8 +237,8 @@ string synthesize(vector<string> list){
 	if(results.find("success") != std::string::npos){
 		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB");
 	} 
-	logger.log(results)
-	logger.log("\n\n\n\n")
+	logger.log(results);
+	  logger.log("\n\n\n\n");
 	logger.log(synthesisResults);
 
 	return results;
