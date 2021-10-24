@@ -89,8 +89,8 @@ int main(int argc, char** argv) {
 
 void bruteForce (vector<string> list, int count = 1) {
 
-	cout << "NEW" << count << endl;
 	string str = "attr"+toString(count);
+	cout << "first size" <<  propertyLists[str].size() << endl;
 
 	//logger.log("\tStarted: BF--"+toString(count));
 
@@ -101,14 +101,14 @@ void bruteForce (vector<string> list, int count = 1) {
 			extendedList.push_back(list.at(k));
 		}	
 		
-		cout <<"I:"<<i<< " SIZE" << extendedList.size() << endl;
+		cout <<"I: "<<i<< " SIZE: " << extendedList.size() << " COUNT: " << count << endl;
 		extendedList.push_back(propertyLists[str].at(i-1));
 		cout << extendedList.size() << endl;
+
 		for(int k = 0; k < extendedList.size(); k++){
 			cout << extendedList.at(k) << endl;
 		}	
 		if (count == class_count) {
-		  cout <<"ExList" << count << " " << class_count << endl << extendedList.size() << endl;
 
 			logger.log("Trying to call synthesis");
 			try{
