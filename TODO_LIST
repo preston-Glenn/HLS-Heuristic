@@ -1,5 +1,11 @@
 1. create function that calls synthesiser
 2. exhaustive search function that call synthesis function
+
+2.a function that either parses info from string or fetches correct info from previous synthesis.
+2.b save data
+ - first look at program that Dr. Schaefer created to display data points
+
+
 3. meta heuristic
 4. visualise data in platform
 5. Powerpoint

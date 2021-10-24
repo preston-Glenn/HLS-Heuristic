@@ -28,7 +28,7 @@ bool Logger::log(string message){
     cerr << "Logging file  failed to open.\nProgram will continue to run without logfile. " << endl;
     return false;
   }
-  file << message;
+  file << message << endl;
   file.close();
   return true;  
 }
