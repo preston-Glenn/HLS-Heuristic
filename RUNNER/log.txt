@@ -5,3 +5,20 @@
 
 NEW EXECUTION:::::::::::
 CLASS_COUNT: 6
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started: Brute Force
+	Started: BF--1
+	Started: BF--2
+	Started: BF--3
+	Started: BF--4
+	Started: BF--5
+	Started: BF--6
+Trying to call synthesis

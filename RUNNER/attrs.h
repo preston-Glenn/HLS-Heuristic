@@ -1,2 +1,2 @@
-#define ATTR1Cyber array=0
-#define ATTR2Cyber array=
+#define ATTR1 Cyber array=0
+#define ATTR2 Cyber array=: BF-
