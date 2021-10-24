@@ -20,6 +20,8 @@ string toString(int &i);
 void parseFile(string t);
 string synthesize(vector<string> l);
 string listToString(vector<string> l);
+void bruteForce (vector<string> list ,int count) ;
+
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
 map <string,string> propertyClass;              // list of each attrX type
@@ -55,17 +57,19 @@ int main(int argc, char** argv) {
 		
 		vector<string> l;
 		for(int i = 1; i <= class_count; i++){
-		  cout << i << endl;
 		  string str = "attr"+toString(i);
-		  cout << propertyLists[str].size();
+		  cout << i<<propertyLists[str].size()<<endl;
 		  string temp = propertyLists[str].at(0);
 		  cout << temp<<endl;
 		  l.push_back(temp);
 
 		}
+		vector<string> blank_list;
+
+		//		synthesize(l);
+		bruteForce(blank_list,1);
 
 
-		synthesize(l);
 	}
 	catch (ArgException& e)  // catch any exceptions
 	{
@@ -88,13 +92,13 @@ void bruteForce (vector<string> list = {},int count = 1) {
 		vector <string> extendedList = list;	
 		
 		
-		extendedList.push_back(propertyLists[str][i-1])
-		if (count == length) {
+		extendedList.push_back(propertyLists[str][i-1]);
+		if (count == class_count) {
 			//append last element @[i]
 			try{
-				bool succcess = synthesize(extendedList);
-
-				if(succcess){
+				 string success = synthesize(extendedList);
+				 cout << success << endl;
+				if(true){
 					logger.log("Success: ");
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList[j]);
@@ -109,7 +113,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 				}
 
 
-			} catch	{
+			} catch (ArgException& e)	{
 		cerr << "error: " << e.error() << " for arg " << e.argId() << endl;
 	}
 
@@ -161,7 +165,7 @@ void bruteForce (vector<string> list = {},int count = 1) {
 	    }
 	    file.close(); //close the file object.
 
-	    logger.log("CLASS_COUNT: "+class_count)
+	    logger.log("CLASS_COUNT: "+class_count);
 
 	  } else {
 	    cerr << "Attribute File did not open correctly\n";
@@ -184,11 +188,11 @@ void bruteForce (vector<string> list = {},int count = 1) {
 
 	  for(int i = 1; i <= class_count; i++){
 	    string str = "attr" + toString(i);
-	    cout << propertyClass[str] << endl;
+	    //	    cout << propertyClass[str] << endl;
 
 	    for(int j = 0; j < propertyLists[str].size();j++){
 	    //   cout << "\t" << propertyLists[str].at(j) << endl;
-		  logger.log("\t"+propertyLists[str].at(j)+"\t")
+	      logger.log("\t"+propertyLists[str].at(j)+"\t");
 	    }
 
           
@@ -223,13 +227,15 @@ string synthesize(vector<string> list){
 		}
 		logger.log("Successfully created attrs.h file.");
 	} else{
-	logger.log("Failed to open attrs.h file. Exiting now.");
-	exit(1);
+	  logger.log("Failed to open attrs.h file. Exiting now.");
+	  exit(1);
 	}
+	
 	string results = commandLine("bdlpars benchmarks/sobel/sobel.c");                         
 	string synthesisResults = "";
+	cout << results << endl;
 
-	if(resultss1.find("success") != std::string::npos){
+	if(results.find("success") != std::string::npos){
 		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB");
 	} 
 	logger.log(results);
@@ -240,6 +246,6 @@ string synthesize(vector<string> list){
 string listToString(vector<string> list){
 	string str = "";
 	for(int i = 0; i < list.size();i++){
-		str.append(list[i])
+	  str.append(list[i]);
 	}
 }

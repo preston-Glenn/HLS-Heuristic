@@ -1,2 +1,231 @@
-SUCCESS
-SUCCESS
+ATTR1 array RAM
+ATTR1 array REG
+ATTR1 array EXPAND
+ATTR2 array REG
+ATTR2 array EXPAND
+ATTR2 array ROM
+ATTR2 array LOGIC
+ATTR3 array REG
+ATTR3 array EXPAND
+ATTR3 array ROM
+ATTR3 array LOGIC
+ATTR4 unroll_times 0
+ATTR4 unroll_times all
+ATTR5 unroll_times 0
+ATTR5 unroll_times all
+ATTR6 unroll_times 0
+ATTR6 unroll_times all
+COUNT: 
+
+
+
+
+ATTR1 array RAM
+ATTR1 array REG
+ATTR1 array EXPAND
+ATTR2 array REG
+ATTR2 array EXPAND
+ATTR2 array ROM
+ATTR2 array LOGIC
+ATTR3 array REG
+ATTR3 array EXPAND
+ATTR3 array ROM
+ATTR3 array LOGIC
+ATTR4 unroll_times 0
+ATTR4 unroll_times all
+ATTR5 unroll_times 0
+ATTR5 unroll_times all
+ATTR6 unroll_times 0
+ATTR6 unroll_times all
+COUNT: 
+
+
+
+
+ATTR1 array RAM
+ATTR1 array REG
+ATTR1 array EXPAND
+ATTR2 array REG
+ATTR2 array EXPAND
+ATTR2 array ROM
+ATTR2 array LOGIC
+ATTR3 array REG
+ATTR3 array EXPAND
+ATTR3 array ROM
+ATTR3 array LOGIC
+ATTR4 unroll_times 0
+ATTR4 unroll_times all
+ATTR5 unroll_times 0
+ATTR5 unroll_times all
+ATTR6 unroll_times 0
+ATTR6 unroll_times all
+COUNT: 
+
+
+
+
+attr1 array RAM
+attr1 array REG
+attr1 array EXPAND
+attr2 array REG
+attr2 array EXPAND
+attr2 array ROM
+attr2 array LOGIC
+attr3 array REG
+attr3 array EXPAND
+attr3 array ROM
+attr3 array LOGIC
+attr4 unroll_times 0
+attr4 unroll_times all
+attr5 unroll_times 0
+attr5 unroll_times all
+attr6 unroll_times 0
+attr6 unroll_times all
+COUNT: 
+
+
+
+
+	RAM	
+	REG	
+	EXPAND	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	0	
+	all	
+	0	
+	all	
+	0	
+	all	
+Successfully created attrs.h file.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+attr1 array RAM
+attr1 array REG
+attr1 array EXPAND
+attr2 array REG
+attr2 array EXPAND
+attr2 array ROM
+attr2 array LOGIC
+attr3 array REG
+attr3 array EXPAND
+attr3 array ROM
+attr3 array LOGIC
+attr4 unroll_times 0
+attr4 unroll_times all
+attr5 unroll_times 0
+attr5 unroll_times all
+attr6 unroll_times 0
+attr6 unroll_times all
+COUNT: 
+
+
+
+
+	RAM	
+	REG	
+	EXPAND	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	0	
+	all	
+	0	
+	all	
+	0	
+	all	
+attr1 array RAM
+attr1 array REG
+attr1 array EXPAND
+attr2 array REG
+attr2 array EXPAND
+attr2 array ROM
+attr2 array LOGIC
+attr3 array REG
+attr3 array EXPAND
+attr3 array ROM
+attr3 array LOGIC
+attr4 unroll_times 0
+attr4 unroll_times all
+attr5 unroll_times 0
+attr5 unroll_times all
+attr6 unroll_times 0
+attr6 unroll_times all
+COUNT: 
+
+
+
+
+	RAM	
+	REG	
+	EXPAND	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	0	
+	all	
+	0	
+	all	
+	0	
+	all	
+attr1 array RAM
+attr1 array REG
+attr1 array EXPAND
+attr2 array REG
+attr2 array EXPAND
+attr2 array ROM
+attr2 array LOGIC
+attr3 array REG
+attr3 array EXPAND
+attr3 array ROM
+attr3 array LOGIC
+attr4 unroll_times 0
+attr4 unroll_times all
+attr5 unroll_times 0
+attr5 unroll_times all
+attr6 unroll_times 0
+attr6 unroll_times all
+COUNT: 
+
+
+
+
+	RAM	
+	REG	
+	EXPAND	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	REG	
+	EXPAND	
+	ROM	
+	LOGIC	
+	0	
+	all	
+	0	
+	all	
+	0	
+	all	

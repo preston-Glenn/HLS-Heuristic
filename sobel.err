@@ -1,0 +1,91 @@
+I_BT1173: LOG file is generated. (sobel.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in ASIC mode.
+I_BT6773: The BLIB and FLIB files are loaded.
+	/proj/cad/cwb-6.1/packages/asic_45.BLIB
+	/proj/cad/cwb-6.1/packages/asic_45.FLIB
+I_BT4169: All signals are synthesized as ascending bit-order because all declared signals are of ascending bit-order.
+W_BT1404: Incorrect attribute 'unroll_times' specified. 
+ [Action] Check the name/value/location of the attribute.
+	[Source Lines]
+	52(benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
+W_BT1404: Incorrect attribute 'unroll_times' specified. 
+ [Action] Check the name/value/location of the attribute.
+	[Source Lines]
+	57(benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
+W_BT1404: Incorrect attribute 'unroll_times' specified. 
+ [Action] Check the name/value/location of the attribute.
+	[Source Lines]
+	52(benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
+W_BT1404: Incorrect attribute 'unroll_times' specified. 
+ [Action] Check the name/value/location of the attribute.
+	[Source Lines]
+	57(benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	65(benchmarks/sobel/sobel.c):      for(X=0;X< 3;X++){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	64(benchmarks/sobel/sobel.c):    for(Y=2;Y>0;Y--){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	84(benchmarks/sobel/sobel.c):      for(colOffset = -1; colOffset <=1; colOffset++){
+I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
+	[Source Lines]
+	85(benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
+I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
+	[Source Lines]
+	86(benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	82(benchmarks/sobel/sobel.c):    for(rowOffset = -1; rowOffset <= 1; rowOffset++){
+I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
+	[Source Lines]
+	85(benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
+I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
+	[Source Lines]
+	86(benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+I_BT4442: Array signal Gy is expanded at dimension #2 from right.
+	[Source Lines]
+	57(benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
+I_BT4442: Array signal Gx is expanded at dimension #2 from right.
+	[Source Lines]
+	52(benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
+I_BT4442: Array signal line_buffer is expanded at dimension #2 from right.
+	[Source Lines]
+	30(benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
+I_BT4679: Array line_buffer_0_a was expanded.
+I_BT4679: Array line_buffer_1_a was expanded.
+I_BT4679: Array line_buffer_2_a was expanded.
+I_BT8371: Height of operation tree has been reduced.
+	[Source Lines]
+	86(benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+I_BT8371: Height of operation tree has been reduced.
+	[Source Lines]
+	85(benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
+I_BT4393: No memory required. Empty memory library file (sobel-auto.MLIB) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4394: No memory required. Empty memory constraint file (sobel-auto.MCNT) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4383: Generate memory library file / memory constraint file.
+	sobel-auto.MLIB
+	sobel-auto.MCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT4398: The empty FLIB file generated since additional functional units are not required.
+I_BT4319: Empty FLIB file (sobel-amacro-auto.FLIB) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4318: Empty FCNT file (sobel-amacro-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4382: Generate functional unit library files / functional unit constraint files.
+	sobel-auto.FLIB
+	sobel-auto.FCNT
+	sobel-amacro-auto.FLIB
+	sobel-amacro-auto.FCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	 4 warning      exist
+	30 information  exist
+	 1 tips         exist
+	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS
