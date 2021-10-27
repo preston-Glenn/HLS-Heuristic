@@ -22,11 +22,11 @@
 CXX = g++
 CC = g++
 # C pre-processor flags
-CPPFLAGS = -I /home/012/p/pt/ptg170030/include 
+CPPFLAGS = -I /home/012/p/pt/ptg170030/include
 
 
 # compiler flags
-CXXFLAGS = -Wall 
+qCXXFLAGS = -Wall
 
 # linker and library flags
 # LDFLAGS = -L /home/012/p/pt/ptg170030/lib

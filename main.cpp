@@ -9,12 +9,14 @@
 #include <algorithm>
 #include <map>
 #include <vector>
+#include <filesystem>
 
 #include "loggingHandler.h"
 #include "functions.h"
 
 using namespace TCLAP;
 using namespace std;
+using namespace filesystem;
 
 string toString(int &i);
 void parseFile(string t);
@@ -29,7 +31,10 @@ map <string,int> attributeMap;                 // If its been called before
 int class_count = 0;
 Logger logger;
 string DIRECTORY = "";
+string FILE_NAME = "";
 int NUMBER_OF_RUNS = 0;
+
+
 
 int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
@@ -43,17 +48,19 @@ int main(int argc, char** argv) {
 		CmdLine cmd("Command description message", ' ', "0.9");
 
 		SwitchArg heuristic("m","meta-heuristic","Run program as meta-heuristic",cmd,false);
-		UnlabeledValueArg<string> configArg("Config-File-Name","The config file name", false,"cs3377dirmond.conf","config file name", false);
-		cmd.add(configArg);
+		UnlabeledValueArg<string> file_name_arg("File Location","The config file name", false,"cs3377dirmond.conf","config file name", false);
+		cmd.add(file_name_arg);
 
 		// Parse the args.
 		cmd.parse(argc, argv);
 
 		// Get the value parsed by each arg.
-		string name = configArg.getValue();
+		string file_dir = file_name_arg.getValue();
+		FILE_NAME = path(file_dir).stem();
+		DIRECTORY = path(file_dir).parent_path();
 		bool heuristic_value = heuristic.getValue();
 	        
-
+		string name = file_dir; 
 		// Do what you intend too...
 		logger.log("Started: Parsing");
 		parseFile(name);

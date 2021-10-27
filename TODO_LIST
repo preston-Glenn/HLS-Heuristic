@@ -1,15 +1,20 @@
-1. create function that calls synthesiser
-2. exhaustive search function that call synthesis function
+XXXXXXXXX1. create function that calls synthesiser
+XXXXXXXXX2. exhaustive search function that call synthesis function
 
-2.a function that either parses info from string or fetches correct info from previous synthesis.
+XXXXXXXXX2.a function that either parses info from string or fetches correct info from previous synthesis.
+
+
+
 2.b save data
- - first look at program that Dr. Schaefer created to display data points
+ -- read data from 'FILENAME'.CSV
+ -- append csv row as string to results.csv
+ -- get latency and area from string
+ -- show data in DARC Lab program
 
 read in file repository in cmdline
 
 
 3. meta heuristic
-4. visualise data in platform
 5. Powerpoint
 
 
@@ -20,3 +25,6 @@ BONUS
 1. implement signal handlers
    - hard kill
    - exit after run finishes
+
+
+2. implement random search to compare against heuristics
