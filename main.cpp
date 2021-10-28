@@ -15,7 +15,6 @@
 
 using namespace TCLAP;
 using namespace std;
-using namespace filesystem;
 
 string toString(int &i);
 void parseFile(string t);
@@ -57,12 +56,19 @@ int main(int argc, char** argv) {
 
 		// Get the value parsed by each arg.
 		
-                bool heuristic_value = heuristic.getValue();
+        bool heuristic_value = heuristic.getValue();
 		string file_dir = file_name_arg.getValue();
 
-		FILE_NAME = "";
-		FILE_NAME_WITH_EXT = "";
+		FILE_NAME = removeExtension(file_dir);
+		FILE_NAME_WITH_EXT = basename(file_dir);
+
+		int string_size = FILE_NAME_WITH_EXT.size();
+
 		DIRECTORY = "";
+		for(int i = 0; i < file_dir.size() - string_size; i++){
+			DIRECTORY.append(file_dir[i]);	
+		}
+		
 		string parse_file = "";
  
 		// Do what you intend too...
