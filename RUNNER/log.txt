@@ -4,6 +4,507 @@
 
 
 NEW EXECUTION:::::::::::
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 1
+	RAM
+	REG
+	REG
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 2
+	RAM
+	REG
+	REG
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 3
+	RAM
+	REG
+	REG
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 4
+	RAM
+	REG
+	REG
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 5
+	RAM
+	REG
+	REG
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 6
+	RAM
+	REG
+	REG
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 7
+	RAM
+	REG
+	REG
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 8
+	RAM
+	REG
+	REG
+	all
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 9
+	RAM
+	REG
+	EXPAND
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 10
+	RAM
+	REG
+	EXPAND
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 11
+	RAM
+	REG
+	EXPAND
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 12
+	RAM
+	REG
+	EXPAND
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 13
+	RAM
+	REG
+	EXPAND
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 14
+	RAM
+	REG
+	EXPAND
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 15
+	RAM
+	REG
+	EXPAND
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdlpars version : 6.76 (Linux 64-bit) Tue Nov  7 13:19:52 JST 2017
+         (BIF version : 3.41m)
+         (LICflex version : 1.53 cylmd)
+         (PARSE COMMON version : 2.89)
+Create: sobel.IFF
+bdlpars finished successfully.
+
+
+
+
+
+
+Started: BDL_TRAN
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
 Started: Parsing
 CLASS_COUNT: 6
 Finished: Parsing

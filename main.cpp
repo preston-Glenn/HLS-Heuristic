@@ -31,6 +31,8 @@ Logger logger;
 string DIRECTORY = "";
 string FILE_NAME = "";
 string FILE_NAME_WITH_EXT = "";
+string RESULTS_DIRECTORY = "";
+
 int NUMBER_OF_RUNS = 0;
 
 
@@ -47,7 +49,7 @@ int main(int argc, char** argv) {
 		CmdLine cmd("Command description message", ' ', "0.9");
 
 		SwitchArg heuristic("m","meta-heuristic","Run program as meta-heuristic",cmd,false);
-		UnlabeledValueArg<string> file_name_arg("File Location","The config file name", false,"cs3377dirmond.conf","config file name", false);
+		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 		cmd.add(file_name_arg);
 
 		// Parse the args.
@@ -59,8 +61,19 @@ int main(int argc, char** argv) {
         bool heuristic_value = heuristic.getValue();
 		string file_dir = file_name_arg.getValue();
 
-		FILE_NAME = removeExtension(file_dir);
+
+
+
+
 		FILE_NAME_WITH_EXT = basename(file_dir);
+
+
+		for(int k = 0; k < FILE_NAME_WITH_EXT.size();k++){
+		  char c = FILE_NAME_WITH_EXT[k];
+		  if(c == '.') break;
+		  FILE_NAME += c;
+
+		}
 
 		int string_size = FILE_NAME_WITH_EXT.size();
 
@@ -71,7 +84,13 @@ int main(int argc, char** argv) {
 		}
 		
 		string parse_file = "";
- 
+		parse_file = DIRECTORY + "lib_" + FILE_NAME + ".info";
+
+		logger.log("Directory: "+DIRECTORY);
+		logger.log("FILE_W/O E: "+FILE_NAME);
+		logger.log("FILE_NameE: "+FILE_NAME_WITH_EXT);
+		logger.log("PARSE_FILE: "+parse_file);
+
 		// Do what you intend too...
 		logger.log("Started: Parsing");
 		parseFile(parse_file);
@@ -250,7 +269,7 @@ string toString(int  &i) {
 string synthesize(vector<string> list){
 
 	ofstream file;
-	file.open("../benchmarks/sobel/attrs.h",ios::trunc);
+	file.open(DIRECTORY + "attrs.h",ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);

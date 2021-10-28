@@ -28,3 +28,5 @@ BONUS
 
 
 2. implement random search to compare against heuristics
+
+3. implement argument for directory of where to store csv file.
