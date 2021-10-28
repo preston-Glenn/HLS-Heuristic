@@ -361,7 +361,9 @@ bool addFileResults(string results){
   ofstream file;
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
-    file << results << endl;
+
+    string modified_results = "Exhaustive Search," + int_to_string(NUMBER_OF_RUNS) + "," + int_to_string(NUMBER_OF_RUNS) + "," + results;
+    file << modified_results << endl;
     file.close();
 
     logger.log("Added :" + results + " to results directory file");

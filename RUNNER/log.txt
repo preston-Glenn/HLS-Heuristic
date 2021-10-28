@@ -414,3 +414,835 @@ Added attribute string to map
 RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
 Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
 Finished: Brute Force
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Added CSV header
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 1
+	RAM
+	REG
+	REG
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 2
+	RAM
+	REG
+	REG
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 3
+	RAM
+	REG
+	REG
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 4
+	RAM
+	REG
+	REG
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 5
+	RAM
+	REG
+	REG
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 6
+	RAM
+	REG
+	REG
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 7
+	RAM
+	REG
+	REG
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 8
+	RAM
+	REG
+	REG
+	all
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 9
+	REG
+	REG
+	REG
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 10
+	REG
+	REG
+	REG
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 11
+	REG
+	REG
+	REG
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 12
+	REG
+	REG
+	REG
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 13
+	REG
+	REG
+	REG
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 14
+	REG
+	REG
+	REG
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 15
+	REG
+	REG
+	REG
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 16
+	REG
+	REG
+	REG
+	all
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+Finished: Brute Force
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Added CSV header
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 1
+	RAM
+	REG
+	REG
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 2
+	RAM
+	REG
+	REG
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 3
+	RAM
+	REG
+	REG
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 4
+	RAM
+	REG
+	REG
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 5
+	RAM
+	REG
+	REG
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 6
+	RAM
+	REG
+	REG
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 7
+	RAM
+	REG
+	REG
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 8
+	RAM
+	REG
+	REG
+	all
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 9
+	REG
+	REG
+	REG
+	0
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 10
+	REG
+	REG
+	REG
+	0
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 11
+	REG
+	REG
+	REG
+	0
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 12
+	REG
+	REG
+	REG
+	0
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 13
+	REG
+	REG
+	REG
+	all
+	0
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 14
+	REG
+	REG
+	REG
+	all
+	0
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 15
+	REG
+	REG
+	REG
+	all
+	all
+	0
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+Trying to call synthesis
+Successfully created attrs.h file.
+Started: BDL_Pars
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+EOF reached.
+
+Finished BDL_TRAN
+Success: 16
+	REG
+	REG
+	REG
+	all
+	all
+	all
+Getting string
+Adding to attr. map
+Added attribute string to map
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+Finished: Brute Force
