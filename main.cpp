@@ -299,14 +299,13 @@ string synthesize(vector<string> list){
   cout << "NUMBER of Runs: " <<  NUMBER_OF_RUNS << endl;
 
   
-  // Check if .csv file exits if so delete it.
-  //  string csv_file = FILE_NAME + ".CSV";
-  //if(file_exists(csv_file)){
-    //    string delete_result = commandLine("rm -f "+csv_file);
-    //    cout<< "Deleted: " << delete_result << endl;
-    // cout << csv_file << endl;
-    
-    //  }
+	// Check if .csv file exits if so delete it.
+	// string csv_file = FILE_NAME + ".CSV";
+	// if(file_exists(csv_file)){
+	// 	string delete_result = commandLine("rm -f "+csv_file);
+	// 	cout << "Deleted: " << delete_result << endl;
+	// 	cout << csv_file << endl;
+	// }
 
 	ofstream file;
 	string fileName = DIRECTORY + "attrs.h";
@@ -421,7 +420,6 @@ string int_to_string(int x){
 bool file_exists(string str){
   ifstream file(str.c_str());
   if(!file.is_open()){
-    file.close();
     return false;
   }
   file.close();
