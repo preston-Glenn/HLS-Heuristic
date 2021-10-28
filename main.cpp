@@ -32,6 +32,7 @@ string DIRECTORY = "";
 string FILE_NAME = "";
 string FILE_NAME_WITH_EXT = "";
 string RESULTS_DIRECTORY = "RESULTS";
+string CSV_HEADER = "AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
 
 int NUMBER_OF_RUNS = 0;
 
@@ -42,12 +43,17 @@ int main(int argc, char** argv) {
 	// because exceptions will be thrown for problems.
 	int results_count = 0;
 	while(true){
-		RESULTS_DIRECTORY = "RESULTS_0"+results_count+".csv";
-		ifstream file(RESULTS_DIRECTORY);
+	  RESULTS_DIRECTORY =  "RESULTS_0";
+	  RESULTS_DIRECTORY += results_count;
+	  RESULTS_DIRECTORY += ".csv";
+	  ifstream file(RESULTS_DIRECTORY.c_str());
 		if(!file.is_open()){
 		  file.close();
 			break;
+
 		}
+		cout << RESULTS_DIRECTORY << endl;
+
 	}
 	cout << RESULTS_DIRECTORY << endl;
 	logger.setFileName("log.txt");
@@ -280,7 +286,7 @@ string synthesize(vector<string> list){
 
 	ofstream file;
 	string fileName = DIRECTORY + "attrs.h";
-	file.open(fileName,ios::trunc);
+	file.open(fileName.c_str(),ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);
