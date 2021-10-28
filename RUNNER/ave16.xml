@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<sourceInfo version="1.00">
+    <hierInfo>
+        <processes>
+            <process name="ave16" type="process" file="ave16.IFF">
+            </process>
+        </processes>
+    </hierInfo>
+    <fileInfo>
+        <sourcefiles>
+            <sourcefile name="../benchmarks/ave16/ave16.c" timestamp="20211028195512"/>
+            <sourcefile name="/proj/cad/cwb-6.1/linux_x86_64/include/bdlstd.h" timestamp="20180322070926"/>
+            <sourcefile name="../benchmarks/ave16/attrs.h" timestamp="20211028200158"/>
+        </sourcefiles>
+    </fileInfo>
+</sourceInfo>

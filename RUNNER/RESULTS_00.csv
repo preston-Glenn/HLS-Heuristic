@@ -1,17 +1,57 @@
 Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP
-3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
-4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
-3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
-1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
-2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
-3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
-2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
-974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
-3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
-4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
-3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
-1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
-2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
-3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
-2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
-974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Exhaustive Search,1,RAMEXPAND,array_index=const0,Failed
+Exhaustive Search,2,RAMEXPAND,array_index=constall,Failed
+Exhaustive Search,3,RAMEXPAND,array_index=const2,Failed
+Exhaustive Search,4,RAMEXPAND,array_index=const4,Failed
+Exhaustive Search,5,RAMEXPAND,array_index=const8,Failed
+Exhaustive Search,6,RAM00,Failed
+Exhaustive Search,7,RAM0all,Failed
+Exhaustive Search,8,RAM02,Failed
+Exhaustive Search,9,RAM04,Failed
+Exhaustive Search,10,RAM08,Failed
+Exhaustive Search,11,RAMall0,Failed
+Exhaustive Search,12,RAMallall,Failed
+Exhaustive Search,13,RAMall2,Failed
+Exhaustive Search,14,RAMall4,Failed
+Exhaustive Search,15,RAMall8,Failed
+Exhaustive Search,16,RAM20,Failed
+Exhaustive Search,17,RAM2all,Failed
+Exhaustive Search,18,RAM22,Failed
+Exhaustive Search,19,RAM24,Failed
+Exhaustive Search,20,RAM28,Failed
+Exhaustive Search,21,RAM40,Failed
+Exhaustive Search,22,RAM4all,Failed
+Exhaustive Search,23,RAM42,Failed
+Exhaustive Search,24,RAM44,Failed
+Exhaustive Search,25,RAM48,Failed
+Exhaustive Search,26,RAM80,Failed
+Exhaustive Search,27,RAM8all,Failed
+Exhaustive Search,28,RAM82,Failed
+Exhaustive Search,29,RAM84,Failed
+Exhaustive Search,30,RAM88,Failed
+Exhaustive Search,31,REGEXPAND,array_index=const0,Failed
+Exhaustive Search,32,REGEXPAND,array_index=constall,Failed
+Exhaustive Search,33,REGEXPAND,array_index=const2,Failed
+Exhaustive Search,34,REGEXPAND,array_index=const4,Failed
+Exhaustive Search,35,REGEXPAND,array_index=const8,Failed
+Exhaustive Search,36,REG00,Failed
+Exhaustive Search,37,REG0all,Failed
+Exhaustive Search,38,REG02,Failed
+Exhaustive Search,39,REG04,Failed
+Exhaustive Search,40,REG08,Failed
+Exhaustive Search,41,REGall0,Failed
+Exhaustive Search,42,REGallall,Failed
+Exhaustive Search,43,REGall2,Failed
+Exhaustive Search,44,REGall4,Failed
+Exhaustive Search,45,REGall8,Failed
+Exhaustive Search,46,REG20,Failed
+Exhaustive Search,47,REG2all,Failed
+Exhaustive Search,48,REG22,Failed
+Exhaustive Search,49,REG24,Failed
+Exhaustive Search,50,REG28,Failed
+Exhaustive Search,51,REG40,Failed
+Exhaustive Search,52,REG4all,Failed
+Exhaustive Search,53,REG42,Failed
+Exhaustive Search,54,REG44,Failed
+Exhaustive Search,55,REG48,Failed
+Exhaustive Search,56,REG80,Failed

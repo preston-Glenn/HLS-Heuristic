@@ -328,7 +328,11 @@ string synthesize(vector<string> list){
 	logger.log("Started: BDL_Pars");
 	string command = "bdlpars " +  FILE_WITH_DIR;
 	logger.log("Called bdlpars with: "+ command);
+	
 	string results = commandLine(command);                         
+	cerr << results << endl;
+
+
 	string synthesisResults = "";
 
 	logger.log("\n\n\n\n");
@@ -336,7 +340,7 @@ string synthesize(vector<string> list){
 
 	if(results.find("success") != std::string::npos){
 		logger.log("Started: BDL_TRAN");
-		command = "bdltran -c1000 -s" + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output";
+		command = "bdltran -c1000 -s " + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output";
 		logger.log("Called bdltran with: "+ command);
 		synthesisResults = commandLine(command);
 	

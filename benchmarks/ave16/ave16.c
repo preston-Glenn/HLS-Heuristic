@@ -33,8 +33,7 @@ process ave16(){
             data[i] = data[i- 1];
         }
 	
-    fifo[0] = in0;
-    sum= data[0]; 	
+     sum= data[0]; 	
         
       /* ATTR3 */
       for (i= 1; i< SIZE; i++) { 	
