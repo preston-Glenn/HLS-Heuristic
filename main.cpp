@@ -1,4 +1,4 @@
-// HLS_Heuristic.cpp : This file contains the 'main' function. Program execution begins and ends there.
+>// HLS_Heuristic.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <string>
 #include <fstream>
@@ -21,7 +21,11 @@ void parseFile(string t);
 string synthesize(vector<string> l);
 string listToString(vector<string> l);
 void bruteForce (vector<string> list ,int count) ;
-
+bool setHeadersCSV();
+string getResultsFromCSV();
+bool addFileResults(string r);
+string int_to_string(int x);
+bool file_exists(string str);
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
 map <string,string> propertyClass;              // list of each attrX type
@@ -32,8 +36,8 @@ string DIRECTORY = "";
 string FILE_NAME = "";
 string FILE_NAME_WITH_EXT = "";
 string RESULTS_DIRECTORY = "RESULTS";
-string CSV_HEADER = "AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
-
+string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
+bool heuristic_value;
 int NUMBER_OF_RUNS = 0;
 
 
@@ -44,16 +48,15 @@ int main(int argc, char** argv) {
 	int results_count = 0;
 	while(true){
 	  RESULTS_DIRECTORY =  "RESULTS_0";
-	  RESULTS_DIRECTORY += results_count;
+	  string temp = int_to_string(results_count);
+	  RESULTS_DIRECTORY += temp;
 	  RESULTS_DIRECTORY += ".csv";
 	  ifstream file(RESULTS_DIRECTORY.c_str());
-		if(!file.is_open()){
-		  file.close();
-			break;
-
-		}
-		cout << RESULTS_DIRECTORY << endl;
-
+	  if(!file.is_open()){
+	    file.close();
+	    break;
+	  }
+	   results_count++;
 	}
 	cout << RESULTS_DIRECTORY << endl;
 	logger.setFileName("log.txt");
@@ -74,10 +77,8 @@ int main(int argc, char** argv) {
 
 		// Get the value parsed by each arg.
 		
-        bool heuristic_value = heuristic.getValue();
+		heuristic_value = heuristic.getValue();
 		string file_dir = file_name_arg.getValue();
-
-
 
 
 
@@ -101,6 +102,9 @@ int main(int argc, char** argv) {
 		
 		string parse_file = "";
 		parse_file = DIRECTORY + "lib_" + FILE_NAME + ".info";
+
+
+		bool headerSuccess = setHeadersCSV();
 
 		logger.log("Directory: "+DIRECTORY);
 		logger.log("FILE_W/O E: "+FILE_NAME);
@@ -180,6 +184,11 @@ void bruteForce (vector<string> list, int count = 1) {
 					logger.log("Adding to attr. map");
 					attributeMap[attributeString] = 1;
 					logger.log("Added attribute string to map");
+
+					string results = getResultsFromCSV();
+					
+					bool addResults = addFileResults(results);
+
 				} else {
 					logger.log("FAILED: ");
 					for(int j = 0; j < class_count; j++){
@@ -284,6 +293,21 @@ string toString(int  &i) {
 
 string synthesize(vector<string> list){
 
+
+
+
+  cout << "NUMBER of Runs: " <<  NUMBER_OF_RUNS << endl;
+
+  
+  // Check if .csv file exits if so delete it.
+  //  string csv_file = FILE_NAME + ".CSV";
+  //if(file_exists(csv_file)){
+    //    string delete_result = commandLine("rm -f "+csv_file);
+    //    cout<< "Deleted: " << delete_result << endl;
+    // cout << csv_file << endl;
+    
+    //  }
+
 	ofstream file;
 	string fileName = DIRECTORY + "attrs.h";
 	file.open(fileName.c_str(),ios::trunc);
@@ -305,7 +329,6 @@ string synthesize(vector<string> list){
 	string results = commandLine("bdlpars ../benchmarks/sobel/sobel.c");                         
 	string synthesisResults = "";
 
-	logger.log(results);
 	logger.log("\n\n\n\n");
 
 
@@ -319,6 +342,7 @@ string synthesize(vector<string> list){
 	logger.log(synthesisResults);
 	logger.log("Finished BDL_TRAN");
 
+
 	return results;
 }
 
@@ -329,4 +353,77 @@ string listToString(vector<string> list){
 	  str.append(list.at(i));
 	}
 	return str;
+}
+
+
+bool addFileResults(string results){
+  bool file_opened = false;
+
+  ofstream file;
+  file.open(RESULTS_DIRECTORY.c_str(),ios::app);
+  if(file.is_open()){
+    file << results << endl;
+    file.close();
+
+    logger.log("Added :" + results + " to results directory file");
+    return true;
+  }
+  logger.log("Failed to open results file");
+  return false;
+}
+
+
+
+string getResultsFromCSV(){
+  fstream file;
+  file.open((DIRECTORY+FILE_NAME+".CSV").c_str(),ios::in);
+  if(file.is_open()){
+    string results = "";
+    getline(file,results);
+    getline(file,results);
+    cout << "Results: " << results << endl;
+    logger.log("RESULTS: "+results);
+    return results;
+
+  }
+  logger.log("Failed to fetch results from CSV");
+  return "Failed";
+
+
+
+}
+
+
+bool setHeadersCSV(){
+
+  ofstream file;
+  file.open(RESULTS_DIRECTORY.c_str(),ios::trunc);
+  if(file.is_open()){
+    file << CSV_HEADER << endl;
+    file.close();
+    logger.log("Added CSV header");
+    return true;
+  }
+
+
+  return false;
+}
+
+
+string int_to_string(int x){
+  stringstream ss;
+  ss << x;
+  string str = ss.str();
+  return str;
+}
+
+
+bool file_exists(string str){
+  ifstream file(str.c_str());
+  if(!file.is_open()){
+    file.close();
+    return false;
+  }
+  file.close();
+  return true;
 }
