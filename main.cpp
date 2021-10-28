@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 		RESULTS_DIRECTORY = "RESULTS_0"+results_count+".csv";
 		ifstream file(RESULTS_DIRECTORY);
 		if(!file.is_open()){
-			file.close()
+		  file.close();
 			break;
 		}
 	}
@@ -279,14 +279,15 @@ string toString(int  &i) {
 string synthesize(vector<string> list){
 
 	ofstream file;
-	file.open(DIRECTORY + "attrs.h",ios::trunc);
+	string fileName = DIRECTORY + "attrs.h";
+	file.open(fileName,ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
 			string attr_index = "attr" + toString(i);
 			string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
 			file << str << endl;
 		}
-		file.close()
+		file.close();
 		logger.log("Successfully created attrs.h file.");
 	} else{
 	  logger.log("Failed to open attrs.h file. Exiting now.");
