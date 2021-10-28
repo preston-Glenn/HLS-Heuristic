@@ -31,7 +31,7 @@ Logger logger;
 string DIRECTORY = "";
 string FILE_NAME = "";
 string FILE_NAME_WITH_EXT = "";
-string RESULTS_DIRECTORY = "";
+string RESULTS_DIRECTORY = "RESULTS";
 
 int NUMBER_OF_RUNS = 0;
 
@@ -40,8 +40,18 @@ int NUMBER_OF_RUNS = 0;
 int main(int argc, char** argv) {
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
-  logger.setFileName("log.txt");
-  logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
+	int results_count = 0;
+	while(true){
+		RESULTS_DIRECTORY = "RESULTS_0"+results_count+".csv";
+		ifstream file(RESULTS_DIRECTORY);
+		if(!file.is_open()){
+			
+			break;
+		}
+	}
+	cout << RESULTS_DIRECTORY << endl;
+	logger.setFileName("log.txt");
+	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
 
 	try {
