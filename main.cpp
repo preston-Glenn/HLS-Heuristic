@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
 
 
 
-		FILE_NAME_WITH_EXT = basename(file_dir);
+		FILE_NAME_WITH_EXT = basename(FILE_WITH_DIR);
 
 
 		for(int k = 0; k < FILE_NAME_WITH_EXT.size();k++){
