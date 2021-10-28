@@ -36,10 +36,9 @@ Success: 1
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -62,10 +61,9 @@ Success: 2
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -88,10 +86,9 @@ Success: 3
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -114,10 +111,9 @@ Success: 4
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -140,10 +136,9 @@ Success: 5
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -166,10 +161,9 @@ Success: 6
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -192,10 +186,9 @@ Success: 7
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -218,10 +211,9 @@ Success: 8
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -244,10 +236,9 @@ Success: 9
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -270,10 +261,9 @@ Success: 10
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -296,10 +286,9 @@ Success: 11
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -322,10 +311,9 @@ Success: 12
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -348,10 +336,9 @@ Success: 13
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -374,10 +361,9 @@ Success: 14
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -400,10 +386,9 @@ Success: 15
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
 Trying to call synthesis
-EOF reached.
 Successfully created attrs.h file.
 Started: BDL_Pars
 EOF reached.
@@ -426,6 +411,6 @@ Success: 16
 Getting string
 Adding to attr. map
 Added attribute string to map
-Failed to fetch results from CSV
-Added :Failed to results directory file
+RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
 Finished: Brute Force

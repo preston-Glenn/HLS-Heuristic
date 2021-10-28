@@ -375,7 +375,7 @@ bool addFileResults(string results){
 
 string getResultsFromCSV(){
   fstream file;
-  file.open((DIRECTORY+FILE_NAME+".CSV").c_str(),ios::in);
+  file.open((FILE_NAME+".CSV").c_str(),ios::in);
   if(file.is_open()){
     string results = "";
     getline(file,results);
