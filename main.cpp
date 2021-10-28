@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 		RESULTS_DIRECTORY = "RESULTS_0"+results_count+".csv";
 		ifstream file(RESULTS_DIRECTORY);
 		if(!file.is_open()){
-			
+			file.close()
 			break;
 		}
 	}
@@ -286,6 +286,7 @@ string synthesize(vector<string> list){
 			string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
 			file << str << endl;
 		}
+		file.close()
 		logger.log("Successfully created attrs.h file.");
 	} else{
 	  logger.log("Failed to open attrs.h file. Exiting now.");
