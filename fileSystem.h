@@ -15,7 +15,7 @@ std::string basename( std::string const& pathname )
 }
 
 std::string
-removeEnamxtension( std::string const& filename )
+removeExtension( std::string const& filename )
 {
     std::string::const_reverse_iterator
                         pivot
