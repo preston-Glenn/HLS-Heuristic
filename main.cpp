@@ -32,10 +32,11 @@ map <string,string> propertyClass;              // list of each attrX type
 map <string,int> attributeMap;                 // If its been called before
 int class_count = 0;
 Logger logger;
-string DIRECTORY = "";
-string FILE_NAME = "";
-string FILE_NAME_WITH_EXT = "";
-string RESULTS_DIRECTORY = "RESULTS";
+string DIRECTORY = "";						// Directory path of file
+string FILE_NAME = "";						// file name with out extension
+string FILE_WITH_DIR = "";					// passed in path of file.c
+string FILE_NAME_WITH_EXT = ""; 			// filename with extension
+string RESULTS_DIRECTORY = "RESULTS";		// file to store results (.csv)
 string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
 bool heuristic_value;
 int NUMBER_OF_RUNS = 0;
@@ -78,7 +79,7 @@ int main(int argc, char** argv) {
 		// Get the value parsed by each arg.
 		
 		heuristic_value = heuristic.getValue();
-		string file_dir = file_name_arg.getValue();
+		FILE_WITH_DIR = file_name_arg.getValue();
 
 
 
@@ -95,8 +96,8 @@ int main(int argc, char** argv) {
 		int string_size = FILE_NAME_WITH_EXT.size();
 
 		DIRECTORY = "";
-		for(int i = 0; i < file_dir.size() - string_size; i++){
-		  char ch = file_dir[i];
+		for(int i = 0; i < FILE_WITH_DIR.size() - string_size; i++){
+		  char ch = FILE_WITH_DIR[i];
 		  DIRECTORY+=ch;	
 		}
 		
@@ -325,7 +326,9 @@ string synthesize(vector<string> list){
 	
 
 	logger.log("Started: BDL_Pars");
-	string results = commandLine("bdlpars ../benchmarks/sobel/sobel.c");                         
+	string command = "bdlpars " +  FILE_WITH_DIR;
+	logger.log("Called bdlpars with: "+ command);
+	string results = commandLine(command);                         
 	string synthesisResults = "";
 
 	logger.log("\n\n\n\n");
@@ -333,8 +336,9 @@ string synthesize(vector<string> list){
 
 	if(results.find("success") != std::string::npos){
 		logger.log("Started: BDL_TRAN");
-		synthesisResults = commandLine("bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output");
-
+		command = "bdltran -c1000 -s" + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output"
+		logger.log("Called bdltran with: "+ command);
+		synthesisResults = commandLine(command);
 	
 	} 
 
