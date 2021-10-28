@@ -23,7 +23,7 @@ string listToString(vector<string> l);
 void bruteForce (vector<string> list ,int count) ;
 bool setHeadersCSV();
 string getResultsFromCSV();
-bool addFileResults(string r);
+bool addFileResults(string r,string a);
 string int_to_string(int x);
 bool file_exists(string str);
 
@@ -187,7 +187,7 @@ void bruteForce (vector<string> list, int count = 1) {
 
 					string results = getResultsFromCSV();
 					
-					bool addResults = addFileResults(results);
+					bool addResults = addFileResults(results, attributeString);
 
 				} else {
 					logger.log("FAILED: ");
@@ -355,14 +355,14 @@ string listToString(vector<string> list){
 }
 
 
-bool addFileResults(string results){
+bool addFileResults(string results, string attributeString){
   bool file_opened = false;
 
   ofstream file;
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
 
-    string modified_results = "Exhaustive Search," + int_to_string(NUMBER_OF_RUNS) + "," + int_to_string(NUMBER_OF_RUNS) + "," + results;
+    string modified_results = "Exhaustive Search," + int_to_string(NUMBER_OF_RUNS) + "," + attributeString  + "," + results;
     file << modified_results << endl;
     file.close();
 
