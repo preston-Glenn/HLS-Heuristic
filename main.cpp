@@ -9,7 +9,6 @@
 #include <algorithm>
 #include <map>
 #include <vector>
-#include <filesystem>
 
 #include "loggingHandler.h"
 #include "functions.h"
@@ -32,6 +31,7 @@ int class_count = 0;
 Logger logger;
 string DIRECTORY = "";
 string FILE_NAME = "";
+string FILE_NAME_WITH_EXT = "";
 int NUMBER_OF_RUNS = 0;
 
 
@@ -54,17 +54,23 @@ int main(int argc, char** argv) {
 		// Parse the args.
 		cmd.parse(argc, argv);
 
+
 		// Get the value parsed by each arg.
+		
+                bool heuristic_value = heuristic.getValue();
 		string file_dir = file_name_arg.getValue();
-		FILE_NAME = path(file_dir).stem();
-		DIRECTORY = path(file_dir).parent_path();
-		bool heuristic_value = heuristic.getValue();
-	        
-		string name = file_dir; 
+
+		FILE_NAME = "";
+		FILE_NAME_WITH_EXT = "";
+		DIRECTORY = "";
+		string parse_file = "";
+ 
 		// Do what you intend too...
 		logger.log("Started: Parsing");
-		parseFile(name);
+		parseFile(parse_file);
 		logger.log("Finished: Parsing");
+
+
 		// vector<string> l;
 		// for(int i = 1; i <= class_count; i++){
 		//   string str = "attr"+toString(i);
