@@ -66,7 +66,8 @@ int main(int argc, char** argv) {
 
 		DIRECTORY = "";
 		for(int i = 0; i < file_dir.size() - string_size; i++){
-			DIRECTORY.append(file_dir[i]);	
+		  char ch = file_dir[i];
+		  DIRECTORY+=ch;	
 		}
 		
 		string parse_file = "";
