@@ -30,15 +30,20 @@ bool file_exists(string str);
 map <string,vector<string> > propertyLists;     // 2d list of all options
 map <string,string> propertyClass;              // list of each attrX type
 map <string,int> attributeMap;                 // If its been called before
+
 int class_count = 0;
+
 Logger logger;
-string DIRECTORY = "";						// Directory path of file
-string FILE_NAME = "";						// file name with out extension
-string FILE_WITH_DIR = "";					// passed in path of file.c
-string FILE_NAME_WITH_EXT = ""; 			// filename with extension
+
+string DIRECTORY = "";		                // Directory path of file
+string FILE_NAME = "";			      	// file name with out extension
+string FILE_WITH_DIR = "";			// passed in path of file.c
+string FILE_NAME_WITH_EXT = ""; 		// filename with extension
 string RESULTS_DIRECTORY = "RESULTS";		// file to store results (.csv)
 string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
+
 bool heuristic_value;
+bool exhaustive_value;
 int NUMBER_OF_RUNS = 0;
 
 
@@ -67,17 +72,18 @@ int main(int argc, char** argv) {
 	try {
 		// Define the command line object.
 		CmdLine cmd("Command description message", ' ', "0.9");
-
+		SwitchArg exhaustive("e","exhaustive","Run exhaustive search",cmd,false);
 		SwitchArg heuristic("m","meta-heuristic","Run program as meta-heuristic",cmd,false);
 		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 		cmd.add(file_name_arg);
+		
 
 		// Parse the args.
 		cmd.parse(argc, argv);
 
 
 		// Get the value parsed by each arg.
-		
+		exhaustive_value = exhaustive.getValue();
 		heuristic_value = heuristic.getValue();
 		FILE_WITH_DIR = file_name_arg.getValue();
 
@@ -118,23 +124,23 @@ int main(int argc, char** argv) {
 		logger.log("Finished: Parsing");
 
 
-		// vector<string> l;
-		// for(int i = 1; i <= class_count; i++){
-		//   string str = "attr"+toString(i);
-		//   cout << i<<propertyLists[str].size()<<endl;
-		//   string temp = propertyLists[str].at(0);
-		//   cout << temp<<endl;
-		//   l.push_back(temp);
 
-		// }
-		vector<string> blank_list;
+		if(exhaustive_value){
+		  vector<string> blank_list;
 
-		//		synthesize(l);
-		logger.log("Started: Brute Force");
-		bruteForce(blank_list,1);
-		logger.log("Finished: Brute Force");
+		  logger.log("Started: Brute Force");
+		  bruteForce(blank_list,1);
+
+		  logger.log("Finished: Brute Force");
+		}
+
+		if(heuristic_value){
+		  logger.log("Started Meta Heuristic");
+		  meta_heuristic(numberOfRuns);
+		  logger.log("Finished Meta Heuristic");
 
 
+		}
 	}
 	catch (ArgException& e)  // catch any exceptions
 	{
@@ -151,9 +157,6 @@ int main(int argc, char** argv) {
 void bruteForce (vector<string> list, int count = 1) {
 
 	string str = "attr"+toString(count);
-	// cout << "first size" <<  propertyLists[str].size() << endl;
-
-	//logger.log("\tStarted: BF--"+toString(count));
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
 		vector<string> extendedList;
@@ -165,10 +168,6 @@ void bruteForce (vector<string> list, int count = 1) {
 		// cout <<"I: "<<i<< " SIZE: " << extendedList.size() << " COUNT: " << count << endl;
 		extendedList.push_back(propertyLists[str].at(i-1));
 
-
-		// for(int k = 0; k < extendedList.size(); k++){
-		// 	cout << extendedList.at(k) << endl;
-		// }	
 
 		if (count == class_count) {
 
@@ -247,43 +246,10 @@ void bruteForce (vector<string> list, int count = 1) {
 	  } else {
 	    cerr << "Attribute File did not open correctly\n";
 	  }
-
-
-	  // while not EOF
-	     // read line from file as string, then split string by three parts 
-
-	  /*
-	  for(int i = 1; i <= class_count; i++){
-	    string str = "attr" + toString(i);
-	    cout << propertyClass[str] << endl;
-
-	  }
-	  */
-
-// Loging output of parser
-	// 	logger.log("\n\n\n");
-
-	//   for(int i = 1; i <= class_count; i++){
-	//     string str = "attr" + toString(i);
-	//     //	    cout << propertyClass[str] << endl;
-
-	//     for(int j = 0; j < propertyLists[str].size();j++){
-	//     //   cout << "\t" << propertyLists[str].at(j) << endl;
-	//       logger.log("\t"+propertyLists[str].at(j)+"\t");
-	//     }
-
           
-          }
+       }
 
 	
-
-
-	//map<char, int>::iterator it;
-	//for(it=first.begin(); it!=first.end(); ++it){
-	//	  cout << it->first << " => " << it->second << '\n';
-	//}
-
-
 string toString(int  &i) {
   std::stringstream ss;
   ss << i;
@@ -294,19 +260,7 @@ string toString(int  &i) {
 
 string synthesize(vector<string> list){
 
-
-
-
   cout << "NUMBER of Runs: " <<  NUMBER_OF_RUNS << endl;
-
-  
-	// Check if .csv file exits if so delete it.
-	// string csv_file = FILE_NAME + ".CSV";
-	// if(file_exists(csv_file)){
-	// 	string delete_result = commandLine("rm -f "+csv_file);
-	// 	cout << "Deleted: " << delete_result << endl;
-	// 	cout << csv_file << endl;
-	// }
 
 	ofstream file;
 	string fileName = DIRECTORY + "attrs.h";
@@ -398,8 +352,6 @@ string getResultsFromCSV(){
   logger.log("Failed to fetch results from CSV");
   return "Failed";
 
-
-
 }
 
 
@@ -434,4 +386,18 @@ bool file_exists(string str){
   }
   file.close();
   return true;
+}
+
+
+bool meta_heuristic(int numberOfRuns){
+
+
+
+}
+
+void get_results_from_CSV(){
+
+
+
+
 }
