@@ -12,20 +12,21 @@
 #include "fileSystem.h"
 #include "loggingHandler.h"
 #include "functions.h"
+#include "csv_function.h"
 
 using namespace TCLAP;
 using namespace std;
 
-string toString(int &i);
-void parseFile(string t);
-string synthesize(vector<string> l);
-string listToString(vector<string> l);
 void bruteForce (vector<string> list ,int count) ;
-bool setHeadersCSV();
-string getResultsFromCSV();
-bool addFileResults(string r,string a);
-string int_to_string(int x);
-bool file_exists(string str);
+void parseFile(string t);
+// bool setHeadersCSV();
+// bool addFileResults(string r,string a);
+// bool file_exists(string str);
+// string int_to_string(int x);
+// string getResultsFromCSV();
+string synthesize(vector<string> l);
+// string listToString(vector<string> l);
+
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
 map <string,string> propertyClass;              // list of each attrX type
@@ -44,7 +45,10 @@ string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,ne
 
 bool heuristic_value;
 bool exhaustive_value;
+
 int NUMBER_OF_RUNS = 0;
+int LATENCY;
+int AREA;
 
 
 
@@ -77,38 +81,33 @@ int main(int argc, char** argv) {
 		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 		cmd.add(file_name_arg);
 		
-
 		// Parse the args.
 		cmd.parse(argc, argv);
-
 
 		// Get the value parsed by each arg.
 		exhaustive_value = exhaustive.getValue();
 		heuristic_value = heuristic.getValue();
 		FILE_WITH_DIR = file_name_arg.getValue();
 
-
-
 		FILE_NAME_WITH_EXT = basename(FILE_WITH_DIR);
 
-
+		// GET FILE_NAME with out the extension or parent path
 		for(int k = 0; k < FILE_NAME_WITH_EXT.size();k++){
 		  char c = FILE_NAME_WITH_EXT[k];
 		  if(c == '.') break;
 		  FILE_NAME += c;
-
 		}
 
 		int string_size = FILE_NAME_WITH_EXT.size();
 
+		// Get the DIRECTORY with out the file name
 		DIRECTORY = "";
 		for(int i = 0; i < FILE_WITH_DIR.size() - string_size; i++){
 		  char ch = FILE_WITH_DIR[i];
 		  DIRECTORY+=ch;	
 		}
 		
-		string parse_file = "";
-		parse_file = DIRECTORY + "lib_" + FILE_NAME + ".info";
+		string parse_file = DIRECTORY + "lib_" + FILE_NAME + ".info";
 
 
 		bool headerSuccess = setHeadersCSV();
@@ -156,7 +155,7 @@ int main(int argc, char** argv) {
 
 void bruteForce (vector<string> list, int count = 1) {
 
-	string str = "attr"+toString(count);
+	string str = "attr"+ int_to_string(count);
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
 		vector<string> extendedList;
@@ -175,7 +174,7 @@ void bruteForce (vector<string> list, int count = 1) {
 			try{
 				string success = synthesize(extendedList);
 				if(true){
-					logger.log("Success: "+toString(++NUMBER_OF_RUNS));
+					logger.log("Success: "+ int_to_string(++NUMBER_OF_RUNS));
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList.at(j));
 					}
@@ -241,21 +240,13 @@ void bruteForce (vector<string> list, int count = 1) {
 	    }
 	    file.close(); //close the file object.
 
-	    logger.log("CLASS_COUNT: "+ toString(class_count));
+	    logger.log("CLASS_COUNT: "+ int_to_string(class_count));
 
 	  } else {
 	    cerr << "Attribute File did not open correctly\n";
 	  }
           
        }
-
-	
-string toString(int  &i) {
-  std::stringstream ss;
-  ss << i;
- 
-  return ss.str();
-}
 
 
 string synthesize(vector<string> list){
@@ -267,8 +258,8 @@ string synthesize(vector<string> list){
 	file.open(fileName.c_str(),ios::trunc);
 	if(file.is_open()){
 		for(int i = 1; i <= class_count; i++){
-			string attr_index = "attr" + toString(i);
-			string str = "#define ATTR"+toString(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
+			string attr_index = "attr" + int_to_string(i);
+			string str = "#define ATTR"+ int_to_string(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
 			file << str << endl;
 		}
 		file.close();
@@ -308,85 +299,7 @@ string synthesize(vector<string> list){
 }
 
 
-string listToString(vector<string> list){
-	string str = "";
-	for(int i = 0; i < list.size();i++){
-	  str.append(list.at(i));
-	}
-	return str;
-}
 
-
-bool addFileResults(string results, string attributeString){
-  bool file_opened = false;
-
-  ofstream file;
-  file.open(RESULTS_DIRECTORY.c_str(),ios::app);
-  if(file.is_open()){
-
-    string modified_results = "Exhaustive Search," + int_to_string(NUMBER_OF_RUNS) + "," + attributeString  + "," + results;
-    file << modified_results << endl;
-    file.close();
-
-    logger.log("Added :" + results + " to results directory file");
-    return true;
-  }
-  logger.log("Failed to open results file");
-  return false;
-}
-
-
-
-string getResultsFromCSV(){
-  fstream file;
-  file.open((FILE_NAME+".CSV").c_str(),ios::in);
-  if(file.is_open()){
-    string results = "";
-    getline(file,results);
-    getline(file,results);
-    cout << "Results: " << results << endl;
-    logger.log("RESULTS: "+results);
-    return results;
-
-  }
-  logger.log("Failed to fetch results from CSV");
-  return "Failed";
-
-}
-
-
-bool setHeadersCSV(){
-
-  ofstream file;
-  file.open(RESULTS_DIRECTORY.c_str(),ios::trunc);
-  if(file.is_open()){
-    file << CSV_HEADER << endl;
-    file.close();
-    logger.log("Added CSV header");
-    return true;
-  }
-
-
-  return false;
-}
-
-
-string int_to_string(int x){
-  stringstream ss;
-  ss << x;
-  string str = ss.str();
-  return str;
-}
-
-
-bool file_exists(string str){
-  ifstream file(str.c_str());
-  if(!file.is_open()){
-    return false;
-  }
-  file.close();
-  return true;
-}
 
 
 bool meta_heuristic(int numberOfRuns){
@@ -395,9 +308,3 @@ bool meta_heuristic(int numberOfRuns){
 
 }
 
-void get_results_from_CSV(){
-
-
-
-
-}
