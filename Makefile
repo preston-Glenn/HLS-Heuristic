@@ -26,7 +26,7 @@ CPPFLAGS = -I /home/012/p/pt/ptg170030/include
 
 
 # compiler flags
-CXXFLAGS = -Wall 
+CXXFLAGS = -Wall
 
 # linker and library flags
 # LDFLAGS = -L /home/012/p/pt/ptg170030/lib

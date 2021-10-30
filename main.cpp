@@ -8,15 +8,16 @@
 #include <algorithm>
 #include <map>
 #include <vector>
+#include <boost/tokenizer.hpp>
 
 #include "fileSystem.h"
 #include "loggingHandler.h"
 #include "functions.h"
-#include "csv_function.h"
 
 using namespace TCLAP;
 using namespace std;
 
+bool meta_heuristic(int numberOfRuns);
 void bruteForce (vector<string> list ,int count) ;
 void parseFile(string t);
 // bool setHeadersCSV();
@@ -50,6 +51,7 @@ int NUMBER_OF_RUNS = 0;
 int LATENCY;
 int AREA;
 
+#include "csv_function.h"
 
 
 int main(int argc, char** argv) {
@@ -135,7 +137,9 @@ int main(int argc, char** argv) {
 
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
+		  int numberOfRuns = 0;
 		  meta_heuristic(numberOfRuns);
+
 		  logger.log("Finished Meta Heuristic");
 
 

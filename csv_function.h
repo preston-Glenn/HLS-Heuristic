@@ -1,13 +1,19 @@
-vector<string> parseCSVLine(string line){
-   using namespace boost;
 
+
+
+
+
+using namespace std;
+using namespace boost;
+
+vector<string> parseCSVLine(string line){
    std::vector<std::string> vec;
 
    // Tokenizes the input string
    tokenizer<escaped_list_separator<char> > tk(line, escaped_list_separator<char>
    ('\\', ',', '\"'));
-   for (auto i = tk.begin();  i!=tk.end();  ++i)
-   vec.push_back(*i);
+   for (tokenizer<escaped_list_separator<char> >::iterator i = tk.begin();  i != tk.end();  ++i)
+     vec.push_back(*i);
 
    return vec;
 }
@@ -49,10 +55,10 @@ string getResultsFromCSV(){
     cout << "Results: " << results << endl;
     logger.log("RESULTS: "+results);
 
-	auto words = parseCSVLine(results);
+	vector<string> words = parseCSVLine(results);
 
-	LATENCY = stoi(words.at(18));
-	AREA    = stoi(words.at(0 ));
+	LATENCY = string_to_int(words.at(18));
+	AREA    = string_to_int(words.at(0 ));
 
 	cout << "LATENCY: " << LATENCY << " AREA: " << AREA << endl;		
 
