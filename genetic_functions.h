@@ -68,8 +68,8 @@ vector<string> mutate(vector<string> child){
 }
 
 bool genetic_heuristic(int numberOfRuns){
-  Logger score_tracker;
-  score_tracker.setFileName("score_tracker.csv");
+    Logger score_tracker;
+    score_tracker.setFileName("score_tracker.csv");
 
     int run_count = 0;
     // Generate two random parents that are string vectors of attributes
@@ -83,7 +83,7 @@ bool genetic_heuristic(int numberOfRuns){
     logger.log("Generated Parent_0:\n\t"+listToString(parent_0)+"\n\tScore: "+int_to_string(score_parent_0));
     logger.log("Generated Parent_1:\n\t"+listToString(parent_1)+"\n\tScore: "+int_to_string(score_parent_1));
 
-        // Create new child (vector) through cross over
+    // Create new child (vector) through cross over
     vector<string> child = parent_0;
 
     synthesize(parent_0);
@@ -96,14 +96,21 @@ bool genetic_heuristic(int numberOfRuns){
 
     while(run_count < numberOfRuns){
 
-      child.clear();
+        logger.log("Parent_0:\n\t"+listToString(parent_0)+"\n\tScore: "+int_to_string(score_parent_0));
+        logger.log("Parent_1:\n\t"+listToString(parent_1)+"\n\tScore: "+int_to_string(score_parent_1));
+
+
+        child.clear();
         child = crossOver(parent_0,parent_1);
         child = mutate(child);
 
+
         synthesize(child);
-	getResultsFromCSV();
-	child_score = cost_function();
-	score_tracker.log(int_to_string(child_score));
+        getResultsFromCSV();
+        child_score = cost_function();
+        logger.log("Generated Child:\n\t"+listToString(child)+"\n\tScore: "+int_to_string(child_score));
+
+        score_tracker.log(int_to_string(child_score));
 
         if(child_score < score_parent_0 && child_score < score_parent_1 ){
             if(score_parent_0 > score_parent_1){
@@ -123,12 +130,10 @@ bool genetic_heuristic(int numberOfRuns){
         run_count++;
     }
 
-        // Iterate through child vector and mutate ~10%
+    // Iterate through child vector and mutate ~10%
 
-        // calculate child cost
+    // calculate child cost
 
-        // replace parent with biggest cost with child
-
-
+    // replace parent with biggest cost with child
 
 }
