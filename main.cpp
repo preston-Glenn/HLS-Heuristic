@@ -53,17 +53,17 @@ bool exhaustive_value;
 int NUMBER_OF_RUNS = 0;
 int LATENCY;
 int AREA;
-float MUTATION_RATE = 0.1;
-
-
+float MUTATION_RATE = 0.1;   // ADD TO TCLAP
+float AREA_WEIGHT = 0.5;     // ADD TO TCLAP
+int SEED = 1;                // ADD TO TCLAP
 
 #include "csv_function.h"
 #include "genetic_functions.h"
 
 int main(int argc, char** argv) {
-  int time = time(NULL);
-  srand(time);
-  logger.log("Seed:" + int_to_string(time));
+  
+  srand(SEED);
+  logger.log("Seed:" + int_to_string(SEED));
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
 	int results_count = 0;
@@ -189,7 +189,7 @@ void bruteForce (vector<string> list, int count = 1) {
 			try{
 				string success = synthesize(extendedList);
 				if(true){
-					logger.log("Success: "+ int_to_string(++NUMBER_OF_RUNS));
+					logger.log("Success: "+ int_to_string(NUMBER_OF_RUNS));
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList.at(j));
 					}
@@ -266,7 +266,7 @@ void bruteForce (vector<string> list, int count = 1) {
 
 string synthesize(vector<string> list){
 
-  cout << "NUMBER of Runs: " <<  NUMBER_OF_RUNS << endl;
+  cout << "NUMBER f Runs: " <<  ++NUMBER_OF_RUNS << endl;
 
 	ofstream file;
 	string fileName = DIRECTORY + "attrs.h";

@@ -2,15 +2,15 @@
 * ave16_E.BDL
 # Design Name        ave16
 # FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
-# MEM  Limit File    ?????.MLMT
+# MEM  Limit File    %AUTO%.MLMT
 # Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
 # PORT Limit File    %AUTO%.PLMT
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  1 / 1 / 1.00
-# Data-path info.    REG: 0(area),0(FFs), MUX: 0(area),0(fanins)
-# CSV info.          0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
+# Performance index  max/min/ave  3 / 3 / 3.00
+# Data-path info.    REG: 30(area),5(FFs), MUX: 10(area),10(fanins)
+# CSV info.          42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
 # Bp-Option  ../benchmarks/ave16/ave16.c
 # Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
@@ -18,19 +18,71 @@
 
 in   unsigned ter(0:8)  in0 /* line# ../benchmarks/ave16/ave16.c:21 */;
 out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
+clock         CLOCK/* Cyber clock_edge = pos */;
+reset         RESET/* Cyber reset_mode = async, reset_active = high */;
     
+unsigned const ter(0:1)  ST1_01 = 0;
+unsigned const ter(0:1)  ST1_02 = 1;
 
 /* Cyber default_bit_order = up */
 process
 ave16()
 {
+    unsigned reg(0:1)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0:1)  ST1_02d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_01d/* Cyber FSM = dec */;
+    unsigned ter(0:4)  incr4u1i1/* Cyber other = DC */;
+    unsigned ter(0:5)  incr4u1ot;
+    unsigned reg(0:4)  RG_i/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
 
 ST1_01 :
-    out0(0:8) ::= 0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:43 */
+    incr4u1ot(0:5) ::= incr4u@1(incr4u1i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    incr4u1i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    RG_i(0:4) ::= nmux {
+        when (ST1_01d(0:1)) :  1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+        when (ST1_02d(0:1)) :  incr4u1ot(1:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    };
+    out0(0:8) ::= 0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
+    ST1_01d(0:1) ::= (unsigned ter(0:1))(~B01_streg(0:1));
+    ST1_02d(0:1) ::= B01_streg(0:1);
+    B01_streg(0:1) ::= nmux {
+        when (ST1_01d(0:1)) :  ST1_02(0:1);
+        when (ST1_02d(0:1)) : 
+            nmux { 	/* line# ../benchmarks/ave16/ave16.c:39 */
+                when (!incr4u1ot(0:1)) :  ST1_02(0:1);
+                default :  ST1_01(0:1);
+            };
+        default :  ST1_01(0:1);
+    };
     goto ST1_01;
 }
 
 /*
+#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
+#@LMT %AUTO%.LMT
+##@CLK  100000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  incr4u     1  (u)INCR           4,5    1300     10
+#@END
+
+#@MCNT %AUTO%.MCNT
+##@CNT { test }
+#@MCNT {
+#    NAME	data[]
+#    LIMIT	1
+#    KIND	R17,W1
+#    BITWIDTH	32
+#    DELAY	0
+#}
+##@END { test }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  data[]     1  R17,W1          32x16     0                 	
+#@END
+
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
 ##@VERSION{2.00}
 ##@LIB{CWBSTDBLIB}

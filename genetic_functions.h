@@ -1,7 +1,7 @@
 
 // Save cost
-double cost_function(int area, int latency, double weight_of_area){
-    return area * weight_of_area + latency * (1 - weight_of_area);
+double cost_function(){
+  return AREA * AREA_WEIGHT + LATENCY * ( 1 - AREA_WEIGHT);
 }
 
 
@@ -31,15 +31,15 @@ vector<string> random_organism(int count = 0){
 }
 
 
-vector<string> crossOver(vector<string> p1, vector<string> p2){
+vector<string> crossOver(vector<string> p0, vector<string> p1){
     // Try examples from DSEFrame
     vector<string> child;
     int cutOff = rand() % class_count;
 
-    for(i = 0; i < cutOff; i++){
+    for(int i = 0; i < cutOff; i++){
         child.push_back(p0.at(i));
     }
-    for(i = cutOff; i < class_count; i++){
+    for(int i = cutOff; i < class_count; i++){
         child.push_back(p1.at(i));
     }
     return child;
@@ -68,6 +68,9 @@ vector<string> mutate(vector<string> child){
 }
 
 bool genetic_heuristic(int numberOfRuns){
+  Logger score_tracker;
+  score_tracker.setFileName("score_tracker.csv");
+
     int run_count = 0;
     // Generate two random parents that are string vectors of attributes
     vector<string> parent_0 = random_organism();
@@ -82,16 +85,25 @@ bool genetic_heuristic(int numberOfRuns){
 
         // Create new child (vector) through cross over
     vector<string> child = parent_0;
-    score_parent_0 = synthesize(parent_0);
-    score_parent_1 = synthesize(parent_1);
 
-    while(count < numberOfRuns){
+    synthesize(parent_0);
+    getResultsFromCSV();
+    score_parent_0 = cost_function();
+
+    synthesize(parent_1);
+    getResultsFromCSV();
+    score_parent_1 = cost_function();
+
+    while(run_count < numberOfRuns){
 
       child.clear();
         child = crossOver(parent_0,parent_1);
         child = mutate(child);
 
-        child_score = synthesize(child);
+        synthesize(child);
+	getResultsFromCSV();
+	child_score = cost_function();
+	score_tracker.log(int_to_string(child_score));
 
         if(child_score < score_parent_0 && child_score < score_parent_1 ){
             if(score_parent_0 > score_parent_1){
@@ -108,7 +120,7 @@ bool genetic_heuristic(int numberOfRuns){
             parent_1 = child;
             score_parent_1 = child_score;
         }
-        count++;
+        run_count++;
     }
 
         // Iterate through child vector and mutate ~10%
