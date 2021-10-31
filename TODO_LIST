@@ -27,4 +27,6 @@ BONUS
    - exit after run finishes
 
 
-2. implement random search to compare against heuristics
+2. implement random search heuristic to compare against heuristics
+
+3. Ability to change mutation rate in cmdLine

@@ -55,6 +55,7 @@ int AREA;
 
 
 int main(int argc, char** argv) {
+	srand();
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
 	int results_count = 0;
@@ -134,6 +135,8 @@ int main(int argc, char** argv) {
 
 		  logger.log("Finished: Brute Force");
 		}
+
+		// TODO RESET attributeMap
 
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
@@ -308,7 +311,7 @@ string synthesize(vector<string> list){
 
 bool meta_heuristic(int numberOfRuns){
 
-
+	genetic_heuristic(numberOfRuns);
 
 }
 
