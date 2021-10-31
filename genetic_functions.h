@@ -11,7 +11,7 @@ vector<string> random_organism(int count = 0){
 
     for(int j = 1; j <= class_count; j++){
         string str = "attr"+ int_to_string(j);
-        string new_attribute = propertyLists[str][rand(0,propertyLists[str].size()-1)];
+        string new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
         organism.push_back(new_attribute);
     }
 
@@ -34,7 +34,7 @@ vector<string> random_organism(int count = 0){
 vector<string> crossOver(vector<string> p1, vector<string> p2){
     // Try examples from DSEFrame
     vector<string> child;
-    int cutOff = rand(0,class_count - 1);
+    int cutOff = rand() % class_count;
 
     for(i = 0; i < cutOff; i++){
         child.push_back(p0.at(i));
@@ -48,14 +48,14 @@ vector<string> crossOver(vector<string> p1, vector<string> p2){
 vector<string> mutate(vector<string> child){
 
     for(int i = 0; i < class_count; i++){
-        if(rand(0,100) < MUTATION_RATE * 100){
+        if(rand() % 100 < MUTATION_RATE * 100){
             
 	  string str = "attr"+ int_to_string(i+1);
 	  string prev_attr = child.at(i);
 	  string new_attribute = prev_attr;        
 
 	  while(prev_attr == new_attribute){
-	    new_attribute = propertyLists[str][rand(0,propertyLists[str].size()-1)];
+	    new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
             cout << "mutation was already present" << endl;
 	  }
 
