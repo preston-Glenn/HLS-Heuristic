@@ -50,12 +50,17 @@ bool exhaustive_value;
 int NUMBER_OF_RUNS = 0;
 int LATENCY;
 int AREA;
+float MUTATION_RATE = 0.1;
+
+
 
 #include "csv_function.h"
-
+#include "genetic_functions.h"
 
 int main(int argc, char** argv) {
-	srand();
+  int time = time(NULL);
+  srand(time);
+  logger.log("Seed:" + int_to_string(time));
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
 	int results_count = 0;
@@ -140,7 +145,7 @@ int main(int argc, char** argv) {
 
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
-		  int numberOfRuns = 0;
+		  int numberOfRuns = 10;
 		  meta_heuristic(numberOfRuns);
 
 		  logger.log("Finished Meta Heuristic");

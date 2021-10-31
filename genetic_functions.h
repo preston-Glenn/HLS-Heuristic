@@ -7,21 +7,20 @@ double cost_function(int area, int latency, double weight_of_area){
 
 vector<string> random_organism(int count = 0){
     vector<string>  organism;
-    int count
     
 
     for(int j = 1; j <= class_count; j++){
         string str = "attr"+ int_to_string(j);
         string new_attribute = propertyLists[str][rand(0,propertyLists[str].size()-1)];
-        organism.push_back(new_attribute)
+        organism.push_back(new_attribute);
     }
 
     // checking if organism has already been made
     string listsString = listToString( organism);
     if(attributeMap[listsString] == 1){      // list has already been made
         if(count > 20){
-            logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ")
-            exit(1)
+	  logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
+	      exit(1);
         } else {
             return random_organism(count++);
         }
@@ -46,25 +45,25 @@ vector<string> crossOver(vector<string> p1, vector<string> p2){
     return child;
 }
 
-float MUTATION_RATE = 0.1;
 vector<string> mutate(vector<string> child){
+
     for(int i = 0; i < class_count; i++){
         if(rand(0,100) < MUTATION_RATE * 100){
             
-        string str = "attr"+ int_to_string(i+1);
-        string prev_attr = child.at(i);
-        string new_attribute = prev_attr;        
+	  string str = "attr"+ int_to_string(i+1);
+	  string prev_attr = child.at(i);
+	  string new_attribute = prev_attr;        
 
-        while(prev_attr == new_attribute){
-            new_attribute = propertyLists[str][rand(0,propertyLists[str].size()-1)];
-            cout << "mutation was already present" << end;
-        }
+	  while(prev_attr == new_attribute){
+	    new_attribute = propertyLists[str][rand(0,propertyLists[str].size()-1)];
+            cout << "mutation was already present" << endl;
+	  }
 
-        child.at(i) = new_attribute;
+	  child.at(i) = new_attribute;
 
         }
     }
-    return child
+    return child;
 
 }
 
@@ -88,7 +87,7 @@ bool genetic_heuristic(int numberOfRuns){
 
     while(count < numberOfRuns){
 
-        child.clear()
+      child.clear();
         child = crossOver(parent_0,parent_1);
         child = mutate(child);
 
