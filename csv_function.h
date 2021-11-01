@@ -1,8 +1,3 @@
-
-
-
-
-
 using namespace std;
 using namespace boost;
 
@@ -39,8 +34,6 @@ bool setHeadersCSV(){
     logger.log("Added CSV header");
     return true;
   }
-
-
   return false;
 }
 
@@ -67,11 +60,12 @@ string getResultsFromCSV(){
   }
   logger.log("Failed to fetch results from CSV");
   return "Failed";
+  exit(1)
 
 }
 
 
-bool addFileResults(string results, string attributeString){
+void addFileResults(string results, string attributeString){
   bool file_opened = false;
 
   ofstream file;
@@ -82,11 +76,11 @@ bool addFileResults(string results, string attributeString){
     file << modified_results << endl;
     file.close();
 
-    logger.log("Added :" + results + " to results directory file");
-    return true;
+    logger.log("\tAdded :" + results + " to results directory file");
+    return;
   }
   logger.log("Failed to open results file");
-  return false;
+  return;
 }
 
 string listToString(vector<string> list){

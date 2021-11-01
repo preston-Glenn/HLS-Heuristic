@@ -18,11 +18,11 @@ vector<string> random_organism(int count = 0){
     // checking if organism has already been made
     string listsString = listToString( organism);
     if(attributeMap[listsString] == 1){      // list has already been made
-        if(count > 20){
-	  logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
+        if(count > 50){
+	        logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
 	      exit(1);
         } else {
-            return random_organism(count++);
+            return random_organism(count + 1);
         }
     } else{
         return organism;
@@ -35,6 +35,7 @@ vector<string> crossOver(vector<string> p0, vector<string> p1){
     // Try examples from DSEFrame
     vector<string> child;
     int cutOff = rand() % class_count;
+    logger.log("\tCrossover ocurred at: " + int_to_string(cutOff));
 
     for(int i = 0; i < cutOff; i++){
         child.push_back(p0.at(i));
@@ -45,25 +46,40 @@ vector<string> crossOver(vector<string> p0, vector<string> p1){
     return child;
 }
 
-vector<string> mutate(vector<string> child){
+vector<string> mutate(vector<string> child,int count = 0){
+    vector<string> mutated_child = child;
 
     for(int i = 0; i < class_count; i++){
         if(rand() % 100 < MUTATION_RATE * 100){
-            
-	  string str = "attr"+ int_to_string(i+1);
-	  string prev_attr = child.at(i);
-	  string new_attribute = prev_attr;        
+            string str = "attr"+ int_to_string(i+1);
+            string prev_attr = mutated_child.at(i);
+            string new_attribute = prev_attr;        
 
-	  while(prev_attr == new_attribute){
-	    new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
-            cout << "mutation was already present" << endl;
-	  }
+            while(prev_attr == new_attribute){
+                new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
+                cout << "mutation was already present" << endl;
+            }
+            logger.log("\tMutated @ index: "+int_to_string(i)+" from " + prev_attr + " to " + new_attribute);
+	        mutated_child.at(i) = new_attribute;
 
-	  child.at(i) = new_attribute;
-
+        } else {
+            logger.log("\tDidn't mutate @ index: " + int_to_string(i));
         }
     }
-    return child;
+    // // checking if organism has already been made
+    // string listsString = listToString(mutated_child);
+    // if(attributeMap[listsString] == 1){      // list has already been made
+    //     if(count > 20){
+    //         logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
+    //         exit(1);
+    //     } else {
+    //         return mutate(child,count+1);
+    //     }
+    // } else{
+    //     return mutated_child;
+    // }
+
+    return mutated_child;
 
 }
 
@@ -80,35 +96,31 @@ bool genetic_heuristic(int numberOfRuns){
     int score_parent_1 = 0;
     int child_score = 0;
 
-    logger.log("Generated Parent_0:\n\t"+listToString(parent_0)+"\n\tScore: "+int_to_string(score_parent_0));
-    logger.log("Generated Parent_1:\n\t"+listToString(parent_1)+"\n\tScore: "+int_to_string(score_parent_1));
+    logger.log("\tGenerated Parent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
+    logger.log("\tGenerated Parent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
     // Create new child (vector) through cross over
     vector<string> child = parent_0;
 
     synthesize(parent_0);
-    getResultsFromCSV();
     score_parent_0 = cost_function();
 
     synthesize(parent_1);
-    getResultsFromCSV();
     score_parent_1 = cost_function();
 
     while(run_count < numberOfRuns){
 
-        logger.log("Parent_0:\n\t"+listToString(parent_0)+"\n\tScore: "+int_to_string(score_parent_0));
-        logger.log("Parent_1:\n\t"+listToString(parent_1)+"\n\tScore: "+int_to_string(score_parent_1));
+        logger.log("\tParent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
+        logger.log("\tParent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
 
         child.clear();
         child = crossOver(parent_0,parent_1);
         child = mutate(child);
-
-
         synthesize(child);
-        getResultsFromCSV();
         child_score = cost_function();
-        logger.log("Generated Child:\n\t"+listToString(child)+"\n\tScore: "+int_to_string(child_score));
+
+        logger.log("\tGenerated Child:\n\t\t"+listToString(child)+"\n\t\tScore: "+int_to_string(child_score));
 
         score_tracker.log(int_to_string(child_score));
 
@@ -129,11 +141,5 @@ bool genetic_heuristic(int numberOfRuns){
         }
         run_count++;
     }
-
-    // Iterate through child vector and mutate ~10%
-
-    // calculate child cost
-
-    // replace parent with biggest cost with child
 
 }
