@@ -13,6 +13,8 @@ XXXXXXXXX2.a function that either parses info from string or fetches correct inf
 
 read in file repository in cmdline
 
+- add TCLAP functions
+- prep and check CSV file over multiple different AREA/LATENCY weights
 
 3. meta heuristic
 5. Powerpoint
