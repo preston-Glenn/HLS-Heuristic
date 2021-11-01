@@ -96,34 +96,52 @@ bool genetic_heuristic(int numberOfRuns){
     int score_parent_1 = 0;
     int child_score = 0;
 
-    logger.log("\tGenerated Parent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
-    logger.log("\tGenerated Parent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
-
-    // Create new child (vector) through cross over
-    vector<string> child = parent_0;
-
     synthesize(parent_0);
     score_parent_0 = cost_function();
 
-    synthesize(parent_1);
-    score_parent_1 = cost_function();
+    while(AREA == 0 && LATENCY == 1){
+        parent_0 = random_organism();
+        synthesize(parent_0);
+        score_parent_0 = cost_function();
+    }
+
+    synthesize(parent_1);   
+    score_parent_1 = cost_function();    
+    while(AREA == 0 && LATENCY == 1){
+        parent_1 = random_organism();
+        synthesize(parent_1);
+        score_parent_1 = cost_function();
+    }
+
+
+    // logger.log("\tGenerated Parent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
+    // logger.log("\tGenerated Parent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
+
+    // Create new child (vector) through cross over
+    vector<string> child = parent_0;
 
     while(NUMBER_OF_RUNS < numberOfRuns){
 
         logger.log("\tParent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
         logger.log("\tParent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
-
         child.clear();
         child = crossOver(parent_0,parent_1);
         child = mutate(child);
         synthesize(child);
-        child_score = cost_function();
 
+        while(AREA == 0 && LATENCY == 1){
+            child = crossOver(parent_0,parent_1);
+            child = mutate(child);
+            synthesize(child);
+        }
+
+        child_score = cost_function();
         logger.log("\tGenerated Child:\n\t\t"+listToString(child)+"\n\t\tScore: "+int_to_string(child_score));
 
         score_tracker.log(int_to_string(child_score));
 
+        // Comparing score of child and parents and swiching out if necessary
         if(child_score < score_parent_0 && child_score < score_parent_1 ){
             if(score_parent_0 > score_parent_1){
                 parent_0 = child;
