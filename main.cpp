@@ -155,7 +155,7 @@ int main(int argc, char** argv) {
 
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
-		  int numberOfRuns = 10;
+		  int numberOfRuns = 40;
 		  meta_heuristic(numberOfRuns);
 
 		  logger.log("Finished Meta Heuristic");
@@ -252,16 +252,15 @@ void parseFile(string file_name){
 
 void synthesize(vector<string> list){
 	logger.log("\n\n");
-  	cout << "NUMBER of Synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
-
 
 	string attributeString = listToString(list);
     if(attributeMap[attributeString]){
-
+      logger.log("Alreaady synthesised");
 		AREA    = attributeMap_AREA[attributeString];
         LATENCY = attributeMap_LATENCY[attributeString];
 
 	} else {
+      cout << "NUMBER of Synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
 
 		ofstream file;
 		string fileName = DIRECTORY + "attrs.h";

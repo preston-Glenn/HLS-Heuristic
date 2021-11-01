@@ -1,1 +1,5 @@
 Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP
+Exhaustive Search,1,REG42,31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
+Exhaustive Search,2,REG80,42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Exhaustive Search,4,REG40,42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Exhaustive Search,9,RAM40,704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-

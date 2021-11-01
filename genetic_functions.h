@@ -108,7 +108,7 @@ bool genetic_heuristic(int numberOfRuns){
     synthesize(parent_1);
     score_parent_1 = cost_function();
 
-    while(run_count < numberOfRuns){
+    while(run_count < NUMBER_OF_RUNS){
 
         logger.log("\tParent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
         logger.log("\tParent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));

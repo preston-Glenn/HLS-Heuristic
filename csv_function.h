@@ -60,7 +60,7 @@ string getResultsFromCSV(){
   }
   logger.log("Failed to fetch results from CSV");
   return "Failed";
-  exit(1)
+  exit(1);
 
 }
 
