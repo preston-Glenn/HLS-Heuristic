@@ -26,6 +26,7 @@ bool Logger::log(string message){
   file.open(fileName.c_str(),ios::app);
   if(!file.is_open()){
     cerr << "Logging file  failed to open.\nProgram will continue to run without logfile. " << endl;
+    cerr << message << endl;
     return false;
   }
   file << message << endl;

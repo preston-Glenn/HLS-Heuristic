@@ -62,8 +62,6 @@ int SEED = 1;                // ADD TO TCLAP
 
 int main(int argc, char** argv) {
   
-  srand(SEED);
-  logger.log("Seed:" + int_to_string(SEED));
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
 	int results_count = 0;
@@ -82,6 +80,9 @@ int main(int argc, char** argv) {
 	cout << RESULTS_DIRECTORY << endl;
 	logger.setFileName("log.txt");
 	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
+
+	srand(SEED);
+	logger.log("Seed:" + int_to_string(SEED));
 
 
 	try {

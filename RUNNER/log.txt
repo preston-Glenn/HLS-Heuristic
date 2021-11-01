@@ -200,3 +200,498 @@ EOF reached.
 Finished BDL_TRAN
 RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
 Finished Meta Heuristic
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Added CSV header
+Directory: ../benchmarks/ave16/
+FILE_W/O E: ave16
+FILE_NameE: ave16.c
+PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
+Started: Parsing
+CLASS_COUNT: 3
+Finished: Parsing
+Started Meta Heuristic
+Generated Parent_0:
+	REG42
+	Score: 0
+Generated Parent_1:
+	REG80
+	Score: 0
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Finished Meta Heuristic
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/ave16/
+FILE_W/O E: ave16
+FILE_NameE: ave16.c
+PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
+Started: Parsing
+CLASS_COUNT: 3
+Finished: Parsing
+Started Meta Heuristic
+Generated Parent_0:
+	REG42
+	Score: 0
+Generated Parent_1:
+	REG80
+	Score: 0
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG80
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG40
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG40
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG80
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG80
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG40
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
+Generated Child:
+	RAM40
+	Score: 375
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG80
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG80
+	Score: 29
+Parent_0:
+	REG42
+	Score: 19
+Parent_1:
+	REG80
+	Score: 29
+Successfully created attrs.h file.
+Started: BDL_Pars
+Called bdlpars with: bdlpars ../benchmarks/ave16/ave16.c
+EOF reached.
+
+
+
+
+
+Started: BDL_TRAN
+Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output
+EOF reached.
+
+Finished BDL_TRAN
+RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
+Generated Child:
+	REG40
+	Score: 29
+Finished Meta Heuristic
