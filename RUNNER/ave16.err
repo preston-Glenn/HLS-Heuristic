@@ -16,11 +16,25 @@ W_BT1404: Incorrect attribute 'array' specified.
 I_BT4607: for loop is unrolled
 	[Source Lines]
 	32(../benchmarks/ave16/ave16.c):         for (i = SIZE-1; i > 0; i--) { 	
+I_BT4874: for loop is unrolled at every 8 iterations
+	[Source Lines]
+	39(../benchmarks/ave16/ave16.c):       for (i= 1; i< SIZE; i++) { 	
+W_BT1320: Unused input variable 'in0'.
+ [Action] Access to input variable or delete it.
+I_BT4679: Array data_0 was expanded.
+I_BT4679: Array data_1 was expanded.
+I_BT4679: Array data_2 was expanded.
+I_BT4679: Array data_3 was expanded.
+I_BT4679: Array data_4 was expanded.
+I_BT4679: Array data_5 was expanded.
+I_BT4679: Array data_6 was expanded.
+I_BT4679: Array data_7 was expanded.
 W_BT1320: Unused input variable 'in0'.
  [Action] Access to input variable or delete it.
 W_BT1320: Unused input variable 'in0'.
  [Action] Access to input variable or delete it.
-I_BT5514: 18 address decoders (R17,W1) to access to array signal 'data'.
+W_BT8766: Removed unreferenced assignment to variable 'data_7_a01'.
+ [Action] Remove the assignment.
 	[Source Lines]
 	23(../benchmarks/ave16/ave16.c): int data[SIZE] /* ATTR1 */= {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 I_BT4393: No memory required. Empty memory library file (ave16-auto.MLIB) generated.
@@ -34,6 +48,8 @@ I_BT4383: Generate memory library file / memory constraint file.
 	ave16-auto.MCNT
 I_BT4392: No arithmetic macro functional unit required.
 I_BT4398: The empty FLIB file generated since additional functional units are not required.
+I_BT4318: Empty FCNT file (ave16-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
 I_BT4319: Empty FLIB file (ave16-amacro-auto.FLIB) generated. No functional units required.
  [Action] If required, confirm the description.
 I_BT4318: Empty FCNT file (ave16-amacro-auto.FCNT) generated. No functional units required.
@@ -44,8 +60,10 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	ave16-amacro-auto.FLIB
 	ave16-amacro-auto.FCNT
 I_BT4392: No arithmetic macro functional unit required.
+I_BT5721: Clock not generated because the description is synthesized as a combinational circuit.
+I_BT5706: Reset not generated because the description is synthesized as a combinational circuit.
 I_BT5712: Port in0 is not used, but do not delete it.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	 4 warning      exist
-	17 information  exist
+	 6 warning      exist
+	28 information  exist
 	---> SEE ave16.err FILE for DETAILS

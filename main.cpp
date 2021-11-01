@@ -59,14 +59,14 @@ bool VERBOSE = false;
 int NUMBER_OF_RUNS = 0;
 int LATENCY;
 int AREA;
-float MUTATION_RATE = 0.1;   // ADD TO TCLAP
+float MUTATION_RATE = 0.25;   // ADD TO TCLAP
 float AREA_WEIGHT = 0.5;     // ADD TO TCLAP
 int SEED = 1;                // ADD TO TCLAP
 
 #include "csv_function.h"
 #include "genetic_functions.h"
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv){
   
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
@@ -297,6 +297,7 @@ void synthesize(vector<string> list){
 		logger.log("\tFinished BDL_TRAN");
 
 		results = getResultsFromCSV();
+		if(AREA == 0 && LATENCY == 1) return;
 		addFileResults(results, attributeString);
 
 		attributeMap[attributeString] = 1;

@@ -142,3 +142,4 @@ bool genetic_heuristic(int numberOfRuns){
         run_count++;
     }
     cout << "Finished Meta Heuristic" << endl;
+}
