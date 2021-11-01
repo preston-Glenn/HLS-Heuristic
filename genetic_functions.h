@@ -121,6 +121,7 @@ bool genetic_heuristic(int numberOfRuns){
     vector<string> child = parent_0;
 
     while(NUMBER_OF_RUNS < numberOfRuns){
+      logger.log("NEXT ITERATION##########################################################################################");
 
         logger.log("\tParent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
         logger.log("\tParent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));

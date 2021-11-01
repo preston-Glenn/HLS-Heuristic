@@ -16,24 +16,20 @@ W_BT1404: Incorrect attribute 'array' specified.
 I_BT4607: for loop is unrolled
 	[Source Lines]
 	32(../benchmarks/ave16/ave16.c):         for (i = SIZE-1; i > 0; i--) { 	
-I_BT4874: for loop is unrolled at every 8 iterations
+I_BT4607: for loop is unrolled
 	[Source Lines]
 	39(../benchmarks/ave16/ave16.c):       for (i= 1; i< SIZE; i++) { 	
+I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
+	[Source Lines]
+	40(../benchmarks/ave16/ave16.c):             sum += data[i]; 	
 W_BT1320: Unused input variable 'in0'.
  [Action] Access to input variable or delete it.
-I_BT4679: Array data_0 was expanded.
-I_BT4679: Array data_1 was expanded.
-I_BT4679: Array data_2 was expanded.
-I_BT4679: Array data_3 was expanded.
-I_BT4679: Array data_4 was expanded.
-I_BT4679: Array data_5 was expanded.
-I_BT4679: Array data_6 was expanded.
-I_BT4679: Array data_7 was expanded.
+I_BT4679: Array data was expanded.
 W_BT1320: Unused input variable 'in0'.
  [Action] Access to input variable or delete it.
 W_BT1320: Unused input variable 'in0'.
  [Action] Access to input variable or delete it.
-W_BT8766: Removed unreferenced assignment to variable 'data_7_a01'.
+W_BT8766: Removed unreferenced assignment to variable 'data_a15'.
  [Action] Remove the assignment.
 	[Source Lines]
 	23(../benchmarks/ave16/ave16.c): int data[SIZE] /* ATTR1 */= {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -65,5 +61,5 @@ I_BT5706: Reset not generated because the description is synthesized as a combin
 I_BT5712: Port in0 is not used, but do not delete it.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
 	 6 warning      exist
-	28 information  exist
+	22 information  exist
 	---> SEE ave16.err FILE for DETAILS

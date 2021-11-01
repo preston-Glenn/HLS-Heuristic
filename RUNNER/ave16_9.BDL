@@ -22,6 +22,12 @@ ave16(
     out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */
     )
 {
+    signed   var(0:32)  M_16;
+    signed   var(0:32)  M_15;
+    signed   var(0:32)  M_14;
+    signed   var(0:32)  M_13;
+    signed   var(0:32)  M_12;
+    signed   var(0:32)  M_11;
     signed   var(0:32)  M_10;
     signed   var(0:32)  M_09;
     signed   var(0:32)  M_08;
@@ -32,22 +38,22 @@ ave16(
     signed   var(0:32)  M_03;
     signed   var(0:32)  M_02;
     signed   var(0:32)  M_01;
-    signed   var(0:32)  data_0_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_0_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_1_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_1_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_2_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_2_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_3_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_3_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_4_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_4_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_5_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_5_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_6_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_6_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_7_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   var(0:32)  data_7_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a04/* Cyber ary_idx = 4 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a05/* Cyber ary_idx = 5 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a06/* Cyber ary_idx = 6 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a07/* Cyber ary_idx = 7 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a08/* Cyber ary_idx = 8 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a09/* Cyber ary_idx = 9 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a10/* Cyber ary_idx = 10 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a11/* Cyber ary_idx = 11 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a12/* Cyber ary_idx = 12 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a13/* Cyber ary_idx = 13 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a14/* Cyber ary_idx = 14 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_a15/* Cyber ary_idx = 15 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
     unsigned var(0:8)  out0_1 /* line# ../benchmarks/ave16/ave16.c:22 */;
 
 ST1_01 :
