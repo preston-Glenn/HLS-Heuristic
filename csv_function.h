@@ -72,7 +72,7 @@ void addFileResults(string results, string attributeString){
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
 
-    string modified_results = "Exhaustive Search," + int_to_string(NUMBER_OF_RUNS) + "," + attributeString  + "," + results;
+    string modified_results = "Exhaustive Search,1," + attributeString  + "," + results;
     file << modified_results << endl;
     file.close();
 
