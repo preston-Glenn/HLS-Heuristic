@@ -312,7 +312,7 @@ void synthesize(vector<string> list){
 
 		}
 
-		addFileResults(results, attributeString, index_list);
+		addFileResults(results, index_list);
 
 		attributeMap[attributeString] = 1;
         attributeMap_AREA[attributeString] = AREA;
