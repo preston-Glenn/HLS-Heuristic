@@ -16,6 +16,7 @@ read in file repository in cmdline
 - add TCLAP functions
 - prep and check CSV file over multiple different AREA/LATENCY weights
 - TCLAP choose results file_name else iterate on results
+- TCLAP to choose csv_class_name
 3. meta heuristic
 5. Powerpoint
 
