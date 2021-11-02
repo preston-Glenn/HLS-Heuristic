@@ -65,16 +65,20 @@ string getResultsFromCSV(){
 }
 
 
-void addFileResults(string results, string attributeString){
+void addFileResults(string results, vector<int> index_list){
   bool file_opened = false;
+  string indexes = "";
+  for(int i = 0; i < class_count; i++){
+    indexes+=int_to_string(index_list.at(i));
+    indexes+="-";
+  }
 
   ofstream file;
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
-    string new_attribute_string = attributeString;
-    replace(new_attribute_string.begin(), new_attribute_string.end(), ',', ';');
 
-    string modified_results = "Exhaustive Search,1," + attributeString  + "," + results;
+
+    string modified_results = "Exhaustive Search,1," + indexes  + "," + results;
     file << modified_results << endl;
     file.close();
 

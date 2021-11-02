@@ -298,7 +298,21 @@ void synthesize(vector<string> list){
 
 		results = getResultsFromCSV();
 		if(AREA == 0 && LATENCY == 1) return;
-		addFileResults(results, attributeString);
+
+		vector<int> index_list;
+
+		for(int i =1; i <= class_count;i++){
+			string str = "attr"+ int_to_string(i);
+			for (int j = 0; j < propertyLists[str].size(); j++) {
+				if(propertyLists[str].at(j)==list.at(i-1)){
+					index_list.push_back(i-1);
+					break;
+				}
+			}
+
+		}
+
+		addFileResults(results, attributeString, index_list);
 
 		attributeMap[attributeString] = 1;
         attributeMap_AREA[attributeString] = AREA;
