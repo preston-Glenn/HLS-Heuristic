@@ -45,6 +45,7 @@ int class_count = 0;
 
 Logger logger;
 
+string EXTENSION = "";
 string DIRECTORY = "";		                // Directory path of file
 string FILE_NAME = "";			      	// file name with out extension
 string FILE_WITH_DIR = "";			// passed in path of file.c
@@ -52,6 +53,7 @@ string FILE_NAME_WITH_EXT = ""; 		// filename with extension
 string RESULTS_DIRECTORY = "RESULTS";		// file to store results (.csv)
 string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
 
+bool CUSTOMISED_AREA_WEIGHT = false;
 bool heuristic_value;
 bool exhaustive_value;
 bool VERBOSE = false;
@@ -87,7 +89,7 @@ int main(int argc, char** argv){
 	logger.setFileName("log.txt");
 	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
-	srand(SEED);
+	
 	logger.log("Seed:" + int_to_string(SEED));
 
 
@@ -96,24 +98,49 @@ int main(int argc, char** argv){
 		CmdLine cmd("Command description message", ' ', "0.9");
 		SwitchArg exhaustive("e","exhaustive","Run exhaustive search",cmd,false);
 		SwitchArg heuristic("m","meta-heuristic","Run program as meta-heuristic",cmd,false);
+		SwitchArg verbose("v","verbose","The program will be more verbose",cmd,false);
 		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
+
+		ValueArg<float> mutationRateArg("r","rate","The rate at which the allels mutate.",false,0.1,"mutation rate");
+		ValueArg<float> weightArg("w","weight","The name of the output file.",false,0,"output filename");
+		ValueArg<int>   seedArg("s","seed","The randomness seed for the program.",false,1,"Program seed");
+
+
+		// Add arguments
+		cmd.add(mutationRateArg);
+		cmd.add(weightArg);
+		cmd.add(seedArg);
 		cmd.add(file_name_arg);
 		
 		// Parse the args.
 		cmd.parse(argc, argv);
+
+		// Store values
+		SEED = seedArg.getValue();
+		srand(SEED);
+		AREA_WEIGHT = weightArg.getValue();
+		if(AREA_WEIGHT != 0){
+			CUSTOMISED_AREA_WEIGHT = true;
+		}
+
+		VERBOSE = verbose.getValue();
+		MUTATION_RATE = mutationRateArg.getValue();
 
 		// Get the value parsed by each arg.
 		exhaustive_value = exhaustive.getValue();
 		heuristic_value = heuristic.getValue();
 		FILE_WITH_DIR = file_name_arg.getValue();
 
+		// Parse filename
+		bool dot_found = false;
 		FILE_NAME_WITH_EXT = basename(FILE_WITH_DIR);
 
 		// GET FILE_NAME with out the extension or parent path
 		for(int k = 0; k < FILE_NAME_WITH_EXT.size();k++){
 		  char c = FILE_NAME_WITH_EXT[k];
-		  if(c == '.') break;
-		  FILE_NAME += c;
+		  if(c == '.') dot_found = true;
+		  if(dot_found) EXTENSION += c;
+		  else FILE_NAME += c;
 		}
 
 		int string_size = FILE_NAME_WITH_EXT.size();
@@ -140,26 +167,20 @@ int main(int argc, char** argv){
 		parseFile(parse_file);
 		logger.log("Finished: Parsing");
 
-
-
+		// MAIN FUNCTIONALITY
 		if(exhaustive_value){
 		  vector<string> blank_list;
-
 		  logger.log("Started: Brute Force");
 		  bruteForce(blank_list,1);
-
 		  logger.log("Finished: Brute Force");
 		}
 
 		// TODO RESET attributeMap
-
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
 		  int numberOfRuns = 40;
 		  meta_heuristic(numberOfRuns);
-
 		  logger.log("Finished Meta Heuristic");
-
 
 		}
 	}
@@ -277,21 +298,29 @@ void synthesize(vector<string> list){
 			logger.log("Failed to open attrs.h file. Exiting now.");
 			exit(1);
 		}
-		
 
-		logger.log("\tStarted: BDL_Pars");
-		string command = "bdlpars " +  FILE_WITH_DIR;
-		if(VERBOSE) logger.log("\tCalled bdlpars with: "+ command);
+		string results = "";
+		if(EXTENSION == ".bdl"){
+			logger.log("\tStarted: BDL_Pars");
+			string command = "bdlpars " +  FILE_WITH_DIR;
+			results = commandLine(command);
+			if(VERBOSE) logger.log("\tCalled bdlpars with: "+ command);
+		} else if(EXTENSION == ".c"){
+			logger.log("\tStarted: C_Pars");
+			string command = "cpars " +  FILE_WITH_DIR;
+			results = commandLine(command);
+			if(VERBOSE) logger.log("\tCalled cpars with: "+ command);
+		}
 		
-		string results = commandLine(command);
+		
 		string synthesisResults = "";
 
-		if(results.find("success") != std::string::npos){
-			logger.log("\tStarted: BDL_TRAN");
-			command = "bdltran -c1000 -s " + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output";
-			if(VERBOSE) logger.log("\tCalled bdltran with: "+ command);
-			synthesisResults = commandLine(command);
-		} 
+
+		logger.log("\tStarted: BDL_TRAN");
+		command = "bdltran -c1000 -s " + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output";
+		if(VERBOSE) logger.log("\tCalled bdltran with: "+ command);
+		synthesisResults = commandLine(command);
+		
 
 		if(VERBOSE) logger.log(synthesisResults);
 		logger.log("\tFinished BDL_TRAN");

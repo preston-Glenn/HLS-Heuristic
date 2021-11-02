@@ -1,22 +1,25 @@
-XXXXXXXXX1. create function that calls synthesiser
-XXXXXXXXX2. exhaustive search function that call synthesis function
+Done:
+1. create function that calls synthesiser
+2. exhaustive search function that call synthesis function
 
-XXXXXXXXX2.a function that either parses info from string or fetches correct info from previous synthesis.
+2.a function that either parses info from string or fetches correct info from previous synthesis.
 
-
-
-2.b save data
+ 2.b save data
  -- read data from 'FILENAME'.CSV
  -- append csv row as string to results.csv
  -- get latency and area from string
  -- show data in DARC Lab program
 
-read in file repository in cmdline
 
-- add TCLAP functions
+ read in file repository in cmdline
+
+- add TCLAP functions 
+
+Todo:
 - prep and check CSV file over multiple different AREA/LATENCY weights
 - TCLAP choose results file_name else iterate on results
 - TCLAP to choose csv_class_name
+- validate Heuristic --create prgoram to randomly simulate exploration
 3. meta heuristic
 5. Powerpoint
 
