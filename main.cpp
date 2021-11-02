@@ -305,7 +305,7 @@ void synthesize(vector<string> list){
 			string str = "attr"+ int_to_string(i);
 			for (int j = 0; j < propertyLists[str].size(); j++) {
 				if(propertyLists[str].at(j)==list.at(i-1)){
-					index_list.push_back(i-1);
+					index_list.push_back(j);
 					break;
 				}
 			}
