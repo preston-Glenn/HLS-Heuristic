@@ -5,5 +5,25 @@
 #@SYN_TOOL{DC}
 #@CLK 100000
 #@UNIT 1/10ps
-#@HASH{b1de3e6f1eadcc6cdd67ad7cd2635dc4}
+@FLIB{
+	NAME	Gx_a_0
+	KIND	@Gx_a_0
+	BITWIDTH	(2),2
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	Gx_a_2
+	KIND	@Gx_a_2
+	BITWIDTH	(2),2
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+#@HASH{fe6458960e497a0a6a40ddf256d4e585}
 #@END{sobel}

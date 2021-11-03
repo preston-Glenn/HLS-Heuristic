@@ -2,19 +2,28 @@
 * sobel_E.BDL
 # Design Name        sobel
 # FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
-# MEM  Limit File    ?????.MLMT
+# MEM  Limit File    %AUTO%.MLMT
 # Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
 # PORT Limit File    %AUTO%.PLMT
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  1 / 1 / 1.00
-# Data-path info.    REG: 192(area),32(FFs), MUX: 88(area),88(fanins)
-# CSV info.          974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+# Performance index  max/min/ave  3 / 3 / 3.00
+# Data-path info.    REG: 846(area),141(FFs), MUX: 596(area),612(fanins)
+# CSV info.          3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
 # Bp-Option  ../benchmarks/sobel/sobel.c -process=sobel
 # Option  -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
 */
+defmod MEMB8W3 {
+    in    unsigned ter(0:2)  RA1/* Cyber mem_id = MEMB8W3@3, other = DC */;
+    out   signed   ter(0:8)  RD1/* Cyber mem_id = MEMB8W3@3 */;
+    in    unsigned ter(0:1)  RE1/* Cyber mem_id = MEMB8W3@3 */;
+    in    unsigned ter(0:1)  RCLK1/* Cyber clock_edge = pos, mem_id = MEMB8W3@3 */ /* line# ../benchmarks/sobel/sobel.c:57 */;
+} Gy_a_2 	/* line# ../benchmarks/sobel/sobel.c:57 */,
+  Gy_a_1 	/* line# ../benchmarks/sobel/sobel.c:57 */,
+  Gy_a_0 	/* line# ../benchmarks/sobel/sobel.c:57 */;
+
 
 in   unsigned ter(0:8)  input_row_a00 /* line# ../benchmarks/sobel/sobel.c:43 */;
 in   unsigned ter(0:8)  input_row_a01 /* line# ../benchmarks/sobel/sobel.c:43 */;
@@ -23,151 +32,250 @@ out  unsigned ter(0:8)  sobel_ret/* Cyber sche = reg */ /* line# ../benchmarks/s
 clock         CLOCK/* Cyber clock_edge = pos */;
 reset         RESET/* Cyber reset_mode = async, reset_active = high */;
     
+unsigned const ter(0:2)  ST1_01 = 0;
+unsigned const ter(0:2)  ST1_02 = 1;
+unsigned const ter(0:2)  ST1_03 = 2;
 
 /* Cyber default_bit_order = up, func = process */
 process
 sobel()
 {
+    unsigned ter(0:8)  TR_03;
+    unsigned ter(0:8)  TR_01/* Cyber other = DC */;
+    unsigned reg(0:2)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0:1)  C_03;
     unsigned ter(0:1)  C_02;
     unsigned ter(0:1)  C_01;
-    unsigned ter(0:2)  addsub12s_11_102_f/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_11_102i2/* Cyber other = DC */;
-    signed   ter(0:2)  addsub12s_11_102i1/* Cyber other = DC */;
-    signed   ter(0:10)  addsub12s_11_102ot;
-    unsigned ter(0:2)  addsub12s_11_101_f/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_11_101i2/* Cyber other = DC */;
-    signed   ter(0:2)  addsub12s_11_101i1/* Cyber other = DC */;
-    signed   ter(0:10)  addsub12s_11_101ot;
-    unsigned ter(0:2)  addsub12s_11_11_11_f/* Cyber other = DC */;
-    signed   ter(0:10)  addsub12s_11_11_11i2/* Cyber other = DC */;
-    signed   ter(0:9)  addsub12s_11_11_11i1/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_11_11_11ot;
-    unsigned ter(0:2)  addsub12s_11_111_f/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_11_111i2/* Cyber other = DC */;
-    signed   ter(0:9)  addsub12s_11_111i1/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_11_111ot;
-    unsigned ter(0:2)  addsub12u_11_10_11_f/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub12u_11_10_11i2/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub12u_11_10_11i1/* Cyber other = DC */;
-    unsigned ter(0:10)  addsub12u_11_10_11ot;
-    unsigned ter(0:2)  addsub12u_11_102_f/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub12u_11_102i2/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub12u_11_102i1/* Cyber other = DC */;
-    unsigned ter(0:10)  addsub12u_11_102ot;
-    unsigned ter(0:2)  addsub12u_11_101_f/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub12u_11_101i2/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub12u_11_101i1/* Cyber other = DC */;
-    unsigned ter(0:10)  addsub12u_11_101ot;
-    unsigned ter(0:2)  addsub8u_91_f/* Cyber other = DC */;
-    unsigned ter(0:7)  addsub8u_91i2/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u_91i1/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub8u_91ot;
-    unsigned ter(0:2)  addsub12s_111_f/* Cyber other = DC */;
-    signed   ter(0:10)  addsub12s_111i2/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_111i1/* Cyber other = DC */;
-    signed   ter(0:11)  addsub12s_111ot;
-    unsigned ter(0:2)  addsub12u_111_f/* Cyber other = DC */;
-    unsigned ter(0:10)  addsub12u_111i2/* Cyber other = DC */;
-    unsigned ter(0:10)  addsub12u_111i1/* Cyber other = DC */;
-    unsigned ter(0:11)  addsub12u_111ot;
-    unsigned ter(0:2)  addsub8u3_f/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u3i2/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u3i1/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub8u3ot;
-    unsigned ter(0:2)  addsub8u2_f/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u2i2/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u2i1/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub8u2ot;
-    unsigned ter(0:2)  addsub8u1_f/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u1i2/* Cyber other = DC */;
-    unsigned ter(0:8)  addsub8u1i1/* Cyber other = DC */;
-    unsigned ter(0:9)  addsub8u1ot;
-    unsigned ter(0:8)  SUM2_t/* Cyber other = DC */;
-    unsigned ter(0:10)  sumY1_t1/* Cyber other = DC */;
-    unsigned ter(0:10)  sumX1_t1/* Cyber other = DC */;
-    unsigned reg(0:8)  RG_line_buffer /* line# ../benchmarks/sobel/sobel.c:30 */;
-    unsigned reg(0:8)  RG_line_buffer_1 /* line# ../benchmarks/sobel/sobel.c:30 */;
-    unsigned reg(0:8)  RG_line_buffer_2 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned ter(0:1)  U_06;
+    unsigned ter(0:1)  U_02;
+    unsigned ter(0:1)  ST1_03d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_02d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_01d/* Cyber FSM = dec */;
+    unsigned ter(0:8)  line_buffer_a_2_rd00/* Cyber other = DC */ /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_2_rg02 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_2_rg01 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_2_rg00 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_0_rg02 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_0_rg01 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned reg(0:8)  line_buffer_a_0_rg00 /* line# ../benchmarks/sobel/sobel.c:30 */;
+    unsigned ter(0:2)  addsub32s_32_22_f/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_22i2/* Cyber other = DC */;
+    signed   ter(0:2)  addsub32s_32_22i1/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_22ot;
+    unsigned ter(0:2)  addsub32s_32_21_f/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_21i2/* Cyber other = DC */;
+    signed   ter(0:2)  addsub32s_32_21i1/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_21ot;
+    unsigned ter(0:2)  addsub32s_32_11_f/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_11i2/* Cyber other = DC */;
+    signed   ter(0:16)  addsub32s_32_11i1/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_32_11ot;
+    unsigned ter(0:2)  addsub32s_321_f/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_321i2/* Cyber other = DC */;
+    signed   ter(0:17)  addsub32s_321i1/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s_321ot;
+    signed   ter(0:2)  Gx_a_21i1/* Cyber other = DC */;
+    signed   ter(0:2)  Gx_a_21ot;
+    signed   ter(0:2)  Gx_a_01i1/* Cyber other = DC */;
+    signed   ter(0:2)  Gx_a_01ot;
+    unsigned ter(0:2)  addsub32s1_f/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s1i2/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s1i1/* Cyber other = DC */;
+    signed   ter(0:32)  addsub32s1ot;
+    signed   ter(0:2)  incr2s2i1/* Cyber other = DC */;
+    signed   ter(0:2)  incr2s2ot;
+    signed   ter(0:2)  incr2s1i1/* Cyber other = DC */;
+    signed   ter(0:2)  incr2s1ot;
+    signed   ter(0:8)  mul12s3i2/* Cyber other = DC */;
+    signed   ter(0:9)  mul12s3i1/* Cyber other = DC */;
+    signed   ter(0:16)  mul12s3ot;
+    signed   ter(0:8)  mul12s2i2/* Cyber other = DC */;
+    signed   ter(0:9)  mul12s2i1/* Cyber other = DC */;
+    signed   ter(0:16)  mul12s2ot;
+    signed   ter(0:8)  mul12s1i2/* Cyber other = DC */;
+    signed   ter(0:9)  mul12s1i1/* Cyber other = DC */;
+    signed   ter(0:16)  mul12s1ot;
+    unsigned ter(0:2)  mul8u1i2/* Cyber other = DC */;
+    unsigned ter(0:8)  mul8u1i1/* Cyber other = DC */;
+    unsigned ter(0:9)  mul8u1ot;
+    signed   ter(0:16)  add16s1i2/* Cyber other = DC */;
+    signed   ter(0:16)  add16s1i1/* Cyber other = DC */;
+    signed   ter(0:17)  add16s1ot;
+    signed   ter(0:10)  add12s_101i2/* Cyber other = DC */;
+    signed   ter(0:10)  add12s_101i1/* Cyber other = DC */;
+    signed   ter(0:10)  add12s_101ot;
+    signed   ter(0:8)  SUM3_t/* Cyber other = DC */;
+    signed   ter(0:32)  sumY_t2/* Cyber other = DC */;
+    signed   reg(0:32)  RG_sumX/* Cyber reset_sig = void */ /* line# ../benchmarks/sobel/sobel.c:47 */;
+    signed   reg(0:32)  RG_sumY/* Cyber reset_sig = void */ /* line# ../benchmarks/sobel/sobel.c:47 */;
+    signed   reg(0:2)  RG_rowOffset/* Cyber reset_sig = void */ /* line# ../benchmarks/sobel/sobel.c:48 */;
+    unsigned reg(0:8)  RG_03/* Cyber reset_sig = void, other = DC */;
+    unsigned reg(0:8)  RG_05/* Cyber reset_sig = void, other = DC */;
+    unsigned reg(0:1)  RG_06/* Cyber reset_sig = void, other = DC */;
     unsigned reg(0:8)  sobel_ret_r /* line# ../benchmarks/sobel/sobel.c:43 */;
 
+
 ST1_01 :
-    addsub12s_11_101ot(0:10) ::= addsub12s_11_10@1(addsub12s_11_101i1(0:2), addsub12s_11_101i2(0:11), addsub12s_11_101_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:92 */
-    addsub12s_11_102ot(0:10) ::= addsub12s_11_10@2(addsub12s_11_102i1(0:2), addsub12s_11_102i2(0:11), addsub12s_11_102_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:95 */
-    addsub12s_11_11_11ot(0:11) ::= addsub12s_11_11_1@1(addsub12s_11_11_11i1(0:9), addsub12s_11_11_11i2(0:10), addsub12s_11_11_11_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12s_11_111ot(0:11) ::= addsub12s_11_11@1(addsub12s_11_111i1(0:9), addsub12s_11_111i2(0:11), addsub12s_11_111_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub12u_11_10_11ot(0:10) ::= addsub12u_11_10_1@1(addsub12u_11_10_11i1(0:8), addsub12u_11_10_11i2(0:9), addsub12u_11_10_11_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12u_11_101ot(0:10) ::= addsub12u_11_10@1(addsub12u_11_101i1(0:9), addsub12u_11_101i2(0:8), addsub12u_11_101_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub12u_11_102ot(0:10) ::= addsub12u_11_10@2(addsub12u_11_102i1(0:9), addsub12u_11_102i2(0:8), addsub12u_11_102_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub8u_91ot(0:9) ::= addsub8u_9@1(addsub8u_91i1(0:8), addsub8u_91i2(0:7), addsub8u_91_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub12s_111ot(0:11) ::= addsub12s_11@1(addsub12s_111i1(0:11), addsub12s_111i2(0:10), addsub12s_111_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12u_111ot(0:11) ::= addsub12u_11@1(addsub12u_111i1(0:10), addsub12u_111i2(0:10), addsub12u_111_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub8u1ot(0:9) ::= addsub8u@1(addsub8u1i1(0:8), addsub8u1i2(0:8), addsub8u1_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:98 */
-    addsub8u2ot(0:9) ::= addsub8u@2(addsub8u2i1(0:8), addsub8u2i2(0:8), addsub8u2_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub8u3ot(0:9) ::= addsub8u@3(addsub8u3i1(0:8), addsub8u3i2(0:8), addsub8u3_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85 */
+    addsub32s_32_21ot(0:32) ::= addsub32s_32_2@1(addsub32s_32_21i1(0:2), addsub32s_32_21i2(0:32), addsub32s_32_21_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:95 */
+    addsub32s_32_22ot(0:32) ::= addsub32s_32_2@2(addsub32s_32_22i1(0:2), addsub32s_32_22i2(0:32), addsub32s_32_22_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:92 */
+    addsub32s_32_11ot(0:32) ::= addsub32s_32_1@1(addsub32s_32_11i1(0:16), addsub32s_32_11i2(0:32), addsub32s_32_11_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    addsub32s_321ot(0:32) ::= addsub32s_32@1(addsub32s_321i1(0:17), addsub32s_321i2(0:32), addsub32s_321_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    Gx_a_21ot(0:2) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when ((unsigned ter(0:1))(Gx_a_21i1(0:2) == 0(0:2)) | (unsigned ter(0:1))(Gx_a_21i1(0:2) == 2(0:2))) :  3(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52 */
+        when ((unsigned ter(0:1))(Gx_a_21i1(0:2) == 1(0:2))) :  2(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52 */
+        default :  0(0:2);
+    };
+    Gx_a_01ot(0:2) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when ((unsigned ter(0:1))(Gx_a_01i1(0:2) == 0(0:2)) | (unsigned ter(0:1))(Gx_a_01i1(0:2) == 2(0:2))) :  1(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52 */
+        when ((unsigned ter(0:1))(Gx_a_01i1(0:2) == 1(0:2))) :  2(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52 */
+        default :  0(0:2);
+    };
+    addsub32s1ot(0:32) ::= addsub32s@1(addsub32s1i1(0:32), addsub32s1i2(0:32), addsub32s1_f(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:52,85,98 */
+    incr2s1ot(0:2) ::= incr2s@1(incr2s1i1(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+    incr2s2ot(0:2) ::= incr2s@2(incr2s2i1(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    mul12s1ot(0:16) ::= mul12s@1(mul12s1i1(0:9), mul12s1i2(0:8)); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+    mul12s2ot(0:16) ::= mul12s@2(mul12s2i1(0:9), mul12s2i2(0:8)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul12s3ot(0:16) ::= mul12s@3(mul12s3i1(0:9), mul12s3i2(0:8)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul8u1ot(0:9) ::= mul8u@1(mul8u1i1(0:8), mul8u1i2(0:2)); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+    add16s1ot(0:17) ::= add16s@1(add16s1i1(0:16), add16s1i2(0:16)); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    add12s_101ot(0:10) ::= add12s_10@1(add12s_101i1(0:10), add12s_101i2(0:10)); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
     sobel_ret(0:8) ::= sobel_ret_r(0:8); 	/* line# ../benchmarks/sobel/sobel.c:43 */
-    addsub12s_11_101i1(0:2) ::= 0(0:2); 	/* line# ../benchmarks/sobel/sobel.c:92 */
-    addsub12s_11_101i2(0:11) ::= addsub12s_111ot(0:11); 	/* line# ../benchmarks/sobel/sobel.c:85,92 */
-    addsub12s_11_101_f(0:2) ::= 2(0:2);
-    addsub12s_11_102i1(0:2) ::= 0(0:2); 	/* line# ../benchmarks/sobel/sobel.c:95 */
-    addsub12s_11_102i2(0:11) ::= addsub12s_11_111ot(0:11); 	/* line# ../benchmarks/sobel/sobel.c:86,95 */
-    addsub12s_11_102_f(0:2) ::= 2(0:2);
-    C_01(0:1) ::= |>sumY1_t1(0:2); 	/* line# ../benchmarks/sobel/sobel.c:96 */
-    C_02(0:1) ::= |>sumX1_t1(0:2); 	/* line# ../benchmarks/sobel/sobel.c:93 */
-    sumX1_t1(0:10) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:85,92 */
-        when (addsub12s_111ot(0:1)) :  addsub12s_11_101ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:92 */
-        when (~addsub12s_111ot(0:1)) :  addsub12s_111ot(1:10); 	/* line# ../benchmarks/sobel/sobel.c:85 */
+    Gy_a_2.RCLK1(0:1) ::= CLOCK;
+    Gy_a_1.RCLK1(0:1) ::= CLOCK;
+    Gy_a_0.RCLK1(0:1) ::= CLOCK;
+    TR_03(0:8) ::= dmux ((unsigned ter(0:2))(incr2s2ot(0:2))) { 	/* line# ../benchmarks/sobel/sobel.c:30,85,86 */
+        case 0 :  line_buffer_a_0_rg00(0:8);
+        case 1 :  line_buffer_a_0_rg01(0:8);
+        case 2 :  line_buffer_a_0_rg02(0:8);
     };
-    sumY1_t1(0:10) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:86,95 */
-        when (addsub12s_11_111ot(0:1)) :  addsub12s_11_102ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:95 */
-        when (~addsub12s_11_111ot(0:1)) :  addsub12s_11_111ot(1:10); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    line_buffer_a_2_rd00(0:8) ::= dmux ((unsigned ter(0:2))(incr2s2ot(0:2))) { 	/* line# ../benchmarks/sobel/sobel.c:30,85,86 */
+        case 0 :  line_buffer_a_2_rg00(0:8);
+        case 1 :  line_buffer_a_2_rg01(0:8);
+        case 2 :  line_buffer_a_2_rg02(0:8);
     };
-    addsub8u1i1(0:8) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:93,98 */
-        when (C_02(0:1)) :  255(0:8); 	/* line# ../benchmarks/sobel/sobel.c:93 */
-        when (~C_02(0:1)) :  sumX1_t1(2:8);
+    RG_03(0:8) ::= TR_03(0:8); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    RG_05(0:8) ::= line_buffer_a_2_rd00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    RG_06(0:1) ::= (unsigned ter(0:1))(~incr2s1ot(0:1)); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+    add12s_101i1(0:10) ::= 0(0:1) :: mul8u1ot(0:9); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+    add12s_101i2(0:10) ::= mul12s1ot(6:10); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+    add16s1i1(0:16) ::= mul12s1ot(0:16); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    add16s1i2(0:16) ::= mul12s2ot(0:16); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul8u1i1(0:8) ::= line_buffer_a_2_rd00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+    mul8u1i2(0:2) ::= Gx_a_01ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+    mul12s2i1(0:9) ::= 0(0:1) :: RG_03(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul12s2i2(0:8) ::= Gy_a_1.RD1(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul12s3i1(0:9) ::= 0(0:1) :: RG_03(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    mul12s3i2(0:8) ::= Gy_a_2.RD1(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    incr2s1i1(0:2) ::= RG_rowOffset(0:2); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+    incr2s2i1(0:2) ::= RG_rowOffset(0:2); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    Gx_a_01i1(0:2) ::= incr2s2ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+    Gx_a_21i1(0:2) ::= incr2s2ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+    addsub32s_321i1(0:17) ::= add16s1ot(0:17); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    addsub32s_321i2(0:32) ::= addsub32s_32_11ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    addsub32s_321_f(0:2) ::= 1(0:2);
+    addsub32s_32_11i1(0:16) ::= mul12s3ot(0:16); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    addsub32s_32_11i2(0:32) ::= RG_sumY(0:32); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    addsub32s_32_11_f(0:2) ::= 1(0:2);
+    addsub32s_32_21i1(0:2) ::= 0(0:2); 	/* line# ../benchmarks/sobel/sobel.c:95 */
+    addsub32s_32_21i2(0:32) ::= addsub32s_321ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:86,95 */
+    addsub32s_32_21_f(0:2) ::= 2(0:2);
+    addsub32s_32_22i1(0:2) ::= 0(0:2); 	/* line# ../benchmarks/sobel/sobel.c:92 */
+    addsub32s_32_22i2(0:32) ::= addsub32s1ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:52,85,92 */
+    addsub32s_32_22_f(0:2) ::= 2(0:2);
+    Gy_a_2.RA1(0:2) ::= incr2s2ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    Gy_a_1.RA1(0:2) ::= incr2s2ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    Gy_a_0.RA1(0:2) ::= incr2s2ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:85,86 */
+    U_02(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & incr2s1ot(0:1)); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+    U_06(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~RG_06(0:1)); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+    C_01(0:1) ::= ~RG_sumX(0:1) & |>RG_sumX(1:23); 	/* line# ../benchmarks/sobel/sobel.c:93 */
+    C_02(0:1) ::= ~sumY_t2(0:1) & |>sumY_t2(1:23); 	/* line# ../benchmarks/sobel/sobel.c:96 */
+    C_03(0:1) ::= ~addsub32s1ot(0:1) & |>addsub32s1ot(1:23); 	/* line# ../benchmarks/sobel/sobel.c:98,100 */
+    RG_sumX(0:32) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:52,82,85,92 */
+        when (ST1_01d(0:1)) :  0(0:32); 	/* line# ../benchmarks/sobel/sobel.c:75 */
+        when ((unsigned ter(0:1))(ST1_02d(0:1) & (unsigned ter(0:1))(~incr2s1ot(0:1))) | (unsigned ter(0:1))(U_02(0:1) & ~addsub32s1ot(0:1))) :  addsub32s1ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when ((unsigned ter(0:1))(U_02(0:1) & addsub32s1ot(0:1))) :  addsub32s_32_22ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:92 */
+        default :  RG_sumX(0:32);
     };
-    addsub8u1i2(0:8) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:96,98 */
-        when (C_01(0:1)) :  255(0:8); 	/* line# ../benchmarks/sobel/sobel.c:96 */
-        when (~C_01(0:1)) :  sumY1_t1(2:8);
+    RG_sumY(0:32) ::= nmux {
+        when (ST1_01d(0:1)) :  0(0:32); 	/* line# ../benchmarks/sobel/sobel.c:76 */
+        when (ST1_03d(0:1)) :  addsub32s_321ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+        default :  RG_sumY(0:32);
     };
-    SUM2_t(0:8) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:98,100 */
-        when (addsub8u1ot(0:1)) :  255(0:8); 	/* line# ../benchmarks/sobel/sobel.c:100 */
-        when (~addsub8u1ot(0:1)) :  addsub8u1ot(1:8); 	/* line# ../benchmarks/sobel/sobel.c:98 */
+    RG_rowOffset(0:2) ::= nmux {
+        when (ST1_01d(0:1)) :  -1(0:2); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+        when (ST1_02d(0:1)) :  incr2s1ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:82 */
+        default :  RG_rowOffset(0:2);
     };
-    sobel_ret_r(0:8) ::= ~SUM2_t(0:8); 	/* line# ../benchmarks/sobel/sobel.c:103,104 */
-    RG_line_buffer_2(0:8) ::= input_row_a02(0:8); 	/* line# ../benchmarks/sobel/sobel.c:73 */
-    RG_line_buffer_1(0:8) ::= input_row_a01(0:8); 	/* line# ../benchmarks/sobel/sobel.c:72 */
-    RG_line_buffer(0:8) ::= input_row_a00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:71 */
-    addsub12s_111i1(0:11) ::= addsub12s_11_11_11ot(0:11); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12s_111i2(0:10) ::= addsub12u_11_10_11ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12s_111_f(0:2) ::= 1(0:2);
-    addsub8u_91i1(0:8) ::= RG_line_buffer(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub8u_91i2(0:7) ::= input_row_a00(0:7); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub8u_91_f(0:2) ::= 1(0:2);
-    addsub12s_11_111i1(0:9) ::= addsub8u2ot(0:9); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub12s_11_111i2(0:11) ::= addsub12u_111ot(0:11); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub12s_11_111_f(0:2) ::= 1(0:2);
-    addsub8u1_f(0:2) ::= 1(0:2);
-    addsub8u2i1(0:8) ::= RG_line_buffer(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub8u2i2(0:8) ::= input_row_a02(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub8u2_f(0:2) ::= 2(0:2);
-    addsub12u_11_101i1(0:9) ::= RG_line_buffer_2(0:8) :: 0(0:1); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub12u_11_101i2(0:8) ::= RG_line_buffer_2(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub12u_11_101_f(0:2) ::= 1(0:2);
-    addsub12u_111i1(0:10) ::= addsub8u_91ot(0:9) :: input_row_a00(7:1); 	/* line# ../benchmarks/sobel/sobel.c:66,86 */
-    addsub12u_111i2(0:10) ::= addsub12u_11_101ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:86 */
-    addsub12u_111_f(0:2) ::= 2(0:2);
-    addsub8u3i1(0:8) ::= input_row_a02(0:8); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub8u3i2(0:8) ::= RG_line_buffer(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66,85 */
-    addsub8u3_f(0:2) ::= 2(0:2);
-    addsub12u_11_102i1(0:9) ::= input_row_a01(0:8) :: 0(0:1); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12u_11_102i2(0:8) ::= RG_line_buffer_2(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66,85 */
-    addsub12u_11_102_f(0:2) ::= 2(0:2);
-    addsub12s_11_11_11i1(0:9) ::= addsub8u3ot(0:9); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12s_11_11_11i2(0:10) ::= addsub12u_11_102ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12s_11_11_11_f(0:2) ::= 1(0:2);
-    addsub12u_11_10_11i1(0:8) ::= input_row_a00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:85 */
-    addsub12u_11_10_11i2(0:9) ::= RG_line_buffer_1(0:8) :: 0(0:1); 	/* line# ../benchmarks/sobel/sobel.c:66,85 */
-    addsub12u_11_10_11_f(0:2) ::= 2(0:2);
+    sumY_t2(0:32) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:86,95 */
+        when (addsub32s_321ot(0:1)) :  addsub32s_32_21ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:95 */
+        when (~addsub32s_321ot(0:1)) :  addsub32s_321ot(0:32); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    };
+    SUM3_t(0:8) ::= nmux { 	/* line# ../benchmarks/sobel/sobel.c:100 */
+        when (~C_03(0:1)) :  addsub32s1ot(24:8); 	/* line# ../benchmarks/sobel/sobel.c:98 */
+        when (C_03(0:1)) :  255(0:8); 	/* line# ../benchmarks/sobel/sobel.c:100 */
+    };
+    sobel_ret_r(0:8) ::= nmux {
+        when (U_06(0:1)) :  ~SUM3_t(0:8); 	/* line# ../benchmarks/sobel/sobel.c:103,104 */
+        default :  sobel_ret_r(0:8);
+    };
+    TR_01(0:8) ::= nmux {
+        when (ST1_02d(0:1)) :  TR_03(0:8); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+        when (ST1_03d(0:1)) :  RG_05(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    };
+    mul12s1i1(0:9) ::= (unsigned ter(0:9))(0(0:1) :: TR_01(0:8)); 	/* line# ../benchmarks/sobel/sobel.c:52,85,86 */
+    mul12s1i2(0:8) ::= nmux {
+        when (ST1_02d(0:1)) :  Gx_a_21ot(0:1) :: Gx_a_21ot(0:1) :: Gx_a_21ot(0:1) :: Gx_a_21ot(0:1) :: Gx_a_21ot(0:1) :: Gx_a_21ot(0:1) :: Gx_a_21ot(0:2); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when (ST1_03d(0:1)) :  Gy_a_0.RD1(0:8); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    };
+    addsub32s1i1(0:32) ::= nmux {
+        when ((unsigned ter(0:1))(ST1_02d(0:1) | (unsigned ter(0:1))(U_06(0:1) & (unsigned ter(0:1))((U_06(0:1) & ~C_01(0:1)))))) :  RG_sumX(0:32); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when ((unsigned ter(0:1))(U_06(0:1) & (unsigned ter(0:1))((U_06(0:1) & C_01(0:1))))) :  255(0:32); 	/* line# ../benchmarks/sobel/sobel.c:93 */
+    };
+    addsub32s1i2(0:32) ::= nmux {
+        when (ST1_02d(0:1)) :  add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:1) :: add12s_101ot(0:10); 	/* line# ../benchmarks/sobel/sobel.c:52,85 */
+        when ((unsigned ter(0:1))(U_06(0:1) & (unsigned ter(0:1))((U_06(0:1) & C_02(0:1))))) :  255(0:32); 	/* line# ../benchmarks/sobel/sobel.c:96 */
+        when ((unsigned ter(0:1))(U_06(0:1) & (unsigned ter(0:1))((U_06(0:1) & ~C_02(0:1))))) :  sumY_t2(0:32);
+    };
+    addsub32s1_f(0:2) ::= 1(0:2);
+    Gy_a_2.RE1(0:1) ::= ST1_02d(0:1); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    Gy_a_1.RE1(0:1) ::= ST1_02d(0:1); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    Gy_a_0.RE1(0:1) ::= ST1_02d(0:1); 	/* line# ../benchmarks/sobel/sobel.c:86 */
+    line_buffer_a_0_rg00(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  line_buffer_a_2_rg00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66 */
+        default :  line_buffer_a_0_rg00(0:8);
+    };
+    line_buffer_a_0_rg01(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  line_buffer_a_2_rg01(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66 */
+        default :  line_buffer_a_0_rg01(0:8);
+    };
+    line_buffer_a_0_rg02(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  line_buffer_a_2_rg02(0:8); 	/* line# ../benchmarks/sobel/sobel.c:66 */
+        default :  line_buffer_a_0_rg02(0:8);
+    };
+    line_buffer_a_2_rg00(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  input_row_a00(0:8); 	/* line# ../benchmarks/sobel/sobel.c:71 */
+        default :  line_buffer_a_2_rg00(0:8);
+    };
+    line_buffer_a_2_rg01(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  input_row_a01(0:8); 	/* line# ../benchmarks/sobel/sobel.c:72 */
+        default :  line_buffer_a_2_rg01(0:8);
+    };
+    line_buffer_a_2_rg02(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  input_row_a02(0:8); 	/* line# ../benchmarks/sobel/sobel.c:73 */
+        default :  line_buffer_a_2_rg02(0:8);
+    };
+    ST1_01d(0:1) ::= (unsigned ter(0:1))(~|>B01_streg(0:2));
+    ST1_02d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:2) ^ ST1_02(0:2)));
+    ST1_03d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:2) ^ ST1_03(0:2)));
+    B01_streg(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  ST1_03(0:2);
+        when (ST1_03d(0:1)) : 
+            nmux { 	/* line# ../benchmarks/sobel/sobel.c:82 */
+                when (!(~RG_06(0:1))) :  ST1_02(0:2);
+                default :  ST1_01(0:2);
+            };
+        default :  (unsigned ter(0:2))(0(0:1) :: ST1_01d(0:1));
+    };
     goto ST1_01;
 }
 
@@ -177,15 +285,79 @@ ST1_01 :
 ##@CLK  100000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  addsub8u    3  (u)+,-            8,9    5800     66
-#  2  addsub12u_11    1  (u)+,-            10,11  7400     98
-#  3  addsub12s_11    1  (s)+,-            11,11  7800     97
-#  4  addsub8u_9    1  (u)+,-            8,9    5800     66
-#  5  addsub12u_11_10    2  (u)+,-            9,10   7400     98
-#  6  addsub12u_11_10_1    1  (u)+,-            9,10   7400     98
-#  7  addsub12s_11_11    1  (s)+,-            11,11  7800     97
-#  8  addsub12s_11_11_1    1  (s)+,-            10,11  7800     97
-#  9  addsub12s_11_10    2  (s)+,-            11,10  7800     97
+#  1  add12s_10    1  (s)+              10,10  4400     75
+#  2  add16s     1  (s)+              16,17  5800    100
+#  3  mul8u      1  (u)*              8,9    12800   337
+#  4  mul12s     3  (s)*              9,16   19600   652
+#  5  incr2s     2  (s)INCR           2,2    1000      2
+#  6  addsub32s    1  (s)+,-            32,32  15300   263
+#  7  Gx_a_0     1  @Gx_a_0           (2),2  400       4
+#  8  Gx_a_2     1  @Gx_a_2           (2),2  400       4
+#  9  delay_funit_1    1  @delay_funit_1    (8),8  1         0
+# 10  delay_funit_2    1  @delay_funit_2    (8),8  1         0
+# 11  delay_funit_3    1  @delay_funit_3    (8),8  1         0
+# 12  addsub32s_32    1  (s)+,-            32,32  15300   263
+# 13  addsub32s_32_1    1  (s)+,-            32,32  15300   263
+# 14  addsub32s_32_2    2  (s)+,-            32,32  15300   263
+#@END
+
+#@MLIB %AUTO%.MLIB
+##@VERSION { 3.00 }
+##@LIB { sobel }
+##@UNIT  1/10ps 
+#@MLIB {
+#    NAME	MEMB8W3
+#    KIND	R1
+#    BITWIDTH	8
+#    DELAY	x2
+#    WORD	3
+#    WRITE_SYNC	YES
+#    DEFMOD {
+#        in             ter (0:2)      RA1              /* ra:1 */;
+#        out            ter (0:8)      RD1              /* rd:1 */;
+#        in             ter (0:1)      RE1              /* re:1 */;
+#        in             ter (0:1)      RCLK1            /* rclk:1 */;
+#    }
+#}
+##@END { sobel }
+
+#@MCNT %AUTO%.MCNT
+##@VERSION { 3.00 }
+##@CNT { sobel }
+#@MCNT {
+#    NAME	MEMB8W3
+#    LIMIT	3
+#}
+#@MCNT {
+#    NAME	line_buffer[][0]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	8
+#    DELAY	0
+#}
+#@MCNT {
+#    NAME	line_buffer[][1]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	8
+#    DELAY	0
+#}
+#@MCNT {
+#    NAME	line_buffer[][2]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	8
+#    DELAY	0
+#}
+##@END { sobel }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  MEMB8W3    3  R1                8x3   1x2                 	
+#  2  line_buffer[][0]    1  R1                8x3     0                 	
+#  3  line_buffer[][1]    1  R1                8x3     0                 	
+#  4  line_buffer[][2]    1  R1                8x3     0                 	
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB

@@ -1,4 +1,8 @@
 
 #@VERSION { 3.00 }
 #@CNT { sobel }
+@MCNT {
+     NAME	MEMB8W3
+     LIMIT	3
+}
 #@END { sobel }

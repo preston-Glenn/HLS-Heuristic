@@ -1,16 +1,12 @@
-Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
-bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
-         (BIF version : 3.41F)
-         (LICflex version : 1.53 cylmd)
-         make at Thu Mar 22 14:30:59 JST 2018
- Option  -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
-
-bdlpars  ../benchmarks/sobel/sobel.c -process=sobel
-
+option -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+I_BT1173: LOG file is generated. (sobel.LOG.gz)
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
 [Datapath delay]   90,000 (1/10ps)
 [Clock uncertainty] 10,000 (1/10ps)
+I_BT6773: The BLIB and FLIB files are loaded.
+	/proj/cad/cwb-6.1/packages/asic_45.BLIB
+	/proj/cad/cwb-6.1/packages/asic_45.FLIB
 
 ******* Initial # of operations in the input behavior description *******
  === Operators ===
@@ -27,6 +23,12 @@ bdlpars  ../benchmarks/sobel/sobel.c -process=sobel
  === array / memory ===
   read  :  5
   write :  4
+I_BT4441: Memory array 'Gy' is expanded at 1-th dimension from right.
+	[Source Lines]
+	57(../benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
+I_BT4383: Generate memory library file / memory constraint file.
+	sobel-auto.MLIB
+	sobel-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
@@ -45,6 +47,11 @@ bdlpars  ../benchmarks/sobel/sobel.c -process=sobel
  === array / memory ===
   read  :  9
   write :  9
+I_BT4382: Generate functional unit library files / functional unit constraint files.
+	sobel-auto.FLIB
+	sobel-auto.FCNT
+	sobel-amacro-auto.FLIB
+	sobel-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
 [Performance index max/min/ave] 3 / 3 / 3.00
@@ -70,5 +77,11 @@ bdlpars  ../benchmarks/sobel/sobel.c -process=sobel
     Out               :          8
 
 TOTAL AREA 3,591 (FU: 2,386 + REG: 846 + MUX: 316 + DEC: 0 + MISC: 43) + pin pair 6,252(net 2,945) + 1FSM of 3state
+
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	 1 warning      exist
+	28 information  exist
+	 1 tips         exist
+	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS
 ##### CyberII Normal finish (automatic scheduling mode) [sobel] #####
 
