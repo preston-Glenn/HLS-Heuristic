@@ -178,7 +178,7 @@ int main(int argc, char** argv){
 		// TODO RESET attributeMap
 		if(heuristic_value){
 		  logger.log("Started Meta Heuristic");
-		  int numberOfRuns = 40;
+		  int numberOfRuns = 1000;
 		  meta_heuristic(numberOfRuns);
 		  logger.log("Finished Meta Heuristic");
 
@@ -283,7 +283,7 @@ void synthesize(vector<int> indexes){
 		AREA    = attributeMap_AREA[attributeHash];
 		LATENCY = attributeMap_LATENCY[attributeHash];
 	} else {
-      cout << "NUMBER of Synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
+      cout << "NUMBER of attempted synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
 
 		ofstream file;
 		string fileName = DIRECTORY + "attrs.h";
