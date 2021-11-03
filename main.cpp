@@ -298,16 +298,16 @@ void synthesize(vector<string> list){
 			logger.log("Failed to open attrs.h file. Exiting now.");
 			exit(1);
 		}
-
+		string command;
 		string results = "";
 		if(EXTENSION == ".bdl"){
 			logger.log("\tStarted: BDL_Pars");
-			string command = "bdlpars " +  FILE_WITH_DIR;
+			command = "bdlpars " +  FILE_WITH_DIR;
 			results = commandLine(command);
 			if(VERBOSE) logger.log("\tCalled bdlpars with: "+ command);
 		} else if(EXTENSION == ".c"){
 			logger.log("\tStarted: C_Pars");
-			string command = "cpars " +  FILE_WITH_DIR;
+			command = "bdlpars " +  FILE_WITH_DIR;
 			results = commandLine(command);
 			if(VERBOSE) logger.log("\tCalled cpars with: "+ command);
 		}

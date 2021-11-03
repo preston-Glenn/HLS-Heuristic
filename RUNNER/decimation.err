@@ -1,0 +1,15 @@
+I_BT1173: LOG file is generated. (decimation.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in ASIC mode.
+I_BT6773: The BLIB and FLIB files are loaded.
+	/proj/cad/cwb-6.1/packages/asic_45.BLIB
+	/proj/cad/cwb-6.1/packages/asic_45.FLIB
+I_BT4146: All signals are synthesized as descending bit-order because all declared signals are of descending bit-order.
+F_BT4626: Attribute (folding=all) is incorrect.
+ [Action] Specify the correct format.
+	[Source Lines]
+	309(../benchmarks/decimation_filter/decimation.c):   for (x = 0; x < TAPS_STAGE5; x++) {
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	 1 fatal error  exist
+	 5 information  exist
+	---> SEE decimation.err FILE for DETAILS
