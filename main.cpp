@@ -21,16 +21,16 @@ using namespace TCLAP;
 using namespace std;
 
 bool meta_heuristic(int numberOfRuns);
-void bruteForce (vector<string> list ,int count) ;
+void bruteForce (vector<int> list ,int count) ;
 void parseFile(string t);
-void synthesize(vector<string> l);
+void synthesize(vector<int> l);
 
 // bool setHeadersCSV();
 // bool addFileResults(string r,string a);
 // bool file_exists(string str);
 // string int_to_string(int x);
 // string getResultsFromCSV();
-// string listToString(vector<string> l);
+// string listToString(vector<int> l);
 
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
@@ -169,7 +169,7 @@ int main(int argc, char** argv){
 
 		// MAIN FUNCTIONALITY
 		if(exhaustive_value){
-		  vector<string> blank_list;
+		  vector<int> blank_list;
 		  logger.log("Started: Brute Force");
 		  bruteForce(blank_list,1);
 		  logger.log("Finished: Brute Force");
@@ -190,12 +190,12 @@ int main(int argc, char** argv){
 	}
 }
 
-void bruteForce (vector<string> list, int count = 1) {
+void bruteForce (vector<int> list, int count = 1) {
 
 	string str = "attr"+ int_to_string(count);
 
 	for (int i = 1; i <= propertyLists[str].size(); i++) {
-		vector<string> extendedList;
+		vector<int> extendedList;
 
 		for(int k = 0; k < list.size(); k++){
 			extendedList.push_back(list.at(k));
