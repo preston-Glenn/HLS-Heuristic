@@ -38,22 +38,33 @@ bool setHeadersCSV(){
 }
 
 
-string getResultsFromCSV(){
+string getResultsFromCSV(vector<int> list){
   fstream file;
   file.open((FILE_NAME+".CSV").c_str(),ios::in);
   if(file.is_open()){
     string results = "";
     getline(file,results);
+    cout << results << endl;
     getline(file,results);
-    cout << "Results: " << results << endl;
+    cout << "Results: " << results << "space" << endl;
     logger.log("RESULTS: "+results);
 
-	vector<string> words = parseCSVLine(results);
+    try{
+      vector<string> words = parseCSVLine(results);
+      LATENCY = string_to_int(words.at(18));
+      AREA    = string_to_int(words.at(0 ));
+    } catch (const char* message){
+		  cout << "Exception occurred!" << message << endl;
+      logger.log("Synthesis Failed at: ");
+      logger.log("\t"+int_to_string(NUMBER_OF_RUNS));
+      logger.log("\t"+indexToString(list));
+      AREA = 10000000;
+			LATENCY = 10000000;
+      return "";
+    }
+    
 
-	LATENCY = string_to_int(words.at(18));
-	AREA    = string_to_int(words.at(0 ));
-
-	cout << "LATENCY: " << LATENCY << " AREA: " << AREA << endl;		
+    cout << "LATENCY: " << LATENCY << " AREA: " << AREA << endl;		
 
     return results;
 
@@ -72,6 +83,7 @@ void addFileResults(string results, vector<int> index_list){
     indexes+=int_to_string(index_list.at(i));
     indexes+="-";
   }
+  if(results == "") return;
 
   ofstream file;
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);

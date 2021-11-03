@@ -289,12 +289,9 @@ void synthesize(vector<int> indexes){
 		string fileName = DIRECTORY + "attrs.h";
 		file.open(fileName.c_str(),ios::trunc);
 		if(file.is_open()){
-		  cout << "Class_cout" << class_count << "list size: " << indexes.size() << endl;
-		  cout << "HASH: " << attributeHash << endl;
 		  for(int i = 1; i <= class_count; i++){
 				string attr_index = "attr" + int_to_string(i);
 				string str = "#define ATTR"+ int_to_string(i) +" Cyber "+propertyClass[attr_index].at(indexes.at(i-1)) +"="+propertyLists[attr_index].at(indexes.at(i-1));
-				cout << i << endl;
 			file << str << endl;
 			}
 
@@ -333,12 +330,15 @@ void synthesize(vector<int> indexes){
 		if(VERBOSE) logger.log(synthesisResults);
 		logger.log("\tFinished BDL_TRAN");
 
-		results = getResultsFromCSV();
-		if(AREA == 0 && LATENCY == 1) return;
+		results = getResultsFromCSV(indexes);
+		if(AREA == 0 && LATENCY == 1){  // dont add results to file
+			AREA = 10000000;
+			LATENCY = 10000000;
+		} else {
+			addFileResults(results, indexes);			
+		}
 
 
-
-		addFileResults(results, indexes);
 
 		attributeMap[attributeHash] = 1;
         attributeMap_AREA[attributeHash] = AREA;
