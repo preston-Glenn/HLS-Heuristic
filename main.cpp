@@ -254,9 +254,9 @@ void parseFile(string file_name){
 			s3 = del;
 		}	      
 		propertyLists[s1].push_back(s3);
+		propertyClass[s1].push_back(s2);
 
 		if(previousString != s1){                                 // new attr
-			propertyClass[s1].push_back(s2);
 			class_count++;
 			previousString = s1;
 		}
