@@ -1,6 +1,27 @@
 using namespace std;
 using namespace boost;
 
+string indexToString(vector<int> indexes){
+	string str = "";
+
+	for(int i = 0; i < indexes.size();i++){
+    string attr_index = "attr" + int_to_string(i+1);
+	  str.append(propertyClass[attr_index].at(indexes.at(i)));
+    str.append(propertyLists[attr_index].at(indexes.at(i)));
+	}
+	return str;
+}
+
+int listToHash(vector<int> indexes){
+  string str = "";
+  for(int i = 0; i < indexes.size();i++){
+    str.append(int_to_string(indexes.at(i)));
+  }
+  return string_to_int(str);
+}
+
+
+
 vector<string> parseCSVLine(string line){
    std::vector<std::string> vec;
 
@@ -101,21 +122,3 @@ void addFileResults(string results, vector<int> index_list){
   return;
 }
 
-string indexToString(vector<int> indexes){
-	string str = "";
-
-	for(int i = 0; i < indexes.size();i++){
-    string attr_index = "attr" + int_to_string(i+1);
-	  str.append(propertyClass[attr_index].at(indexes.at(i)));
-    str.append(propertyLists[attr_index].at(indexes.at(i)));
-	}
-	return str;
-}
-
-int listToHash(vector<int> indexes){
-  string str = "";
-  for(int i = 0; i < indexes.size();i++){
-    str.append(int_to_string(indexes.at(i)));
-  }
-  return string_to_int(str);
-}
