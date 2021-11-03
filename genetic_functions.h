@@ -5,8 +5,8 @@ double cost_function(){
 }
 
 
-vector<string> random_organism(int count = 0){
-    vector<string>  organism;
+vector<int> random_organism(int count = 0){
+    vector<int>  organism;
 
     for(int j = 1; j <= class_count; j++){
         string str = "attr"+ int_to_string(j);
@@ -31,9 +31,9 @@ vector<string> random_organism(int count = 0){
 }
 
 
-vector<string> crossOver(vector<string> p0, vector<string> p1){
+vector<int> crossOver(vector<int> p0, vector<int> p1){
     // Try examples from DSEFrame
-    vector<string> child;
+    vector<int> child;
     int cutOff = rand() % class_count;
     logger.log("\tCrossover ocurred at: " + int_to_string(cutOff));
 
@@ -46,8 +46,8 @@ vector<string> crossOver(vector<string> p0, vector<string> p1){
     return child;
 }
 
-vector<string> mutate(vector<string> child,int count = 0){
-    vector<string> mutated_child = child;
+vector<int> mutate(vector<int> child,int count = 0){
+    vector<int> mutated_child = child;
 
     for(int i = 0; i < class_count; i++){
         if(rand() % 100 < MUTATION_RATE * 100){
@@ -89,8 +89,8 @@ bool genetic_heuristic(int numberOfRuns){
 
     int run_count = 0;
     // Generate two random parents that are string vectors of attributes
-    vector<string> parent_0 = random_organism();
-    vector<string> parent_1 = random_organism();
+    vector<int> parent_0 = random_organism();
+    vector<int> parent_1 = random_organism();
 
     int score_parent_0 = 0;
     int score_parent_1 = 0;
@@ -118,7 +118,7 @@ bool genetic_heuristic(int numberOfRuns){
     // logger.log("\tGenerated Parent_1:\n\t\t"+indexToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
     // Create new child (vector) through cross over
-    vector<string> child = parent_0;
+    vector<int> child = parent_0;
 
     while(NUMBER_OF_RUNS < numberOfRuns){
       logger.log("NEXT ITERATION##########################################################################################");
