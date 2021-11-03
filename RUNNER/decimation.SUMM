@@ -30,37 +30,18 @@ bdlpars  ../benchmarks/decimation_filter/decimation.c
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  |> :  1  (3bit:1)
-  DECR:  2  (3bit:2)
-  Data transfer : 14
+  |> :  2  (3bit:1, 5bit:1)
+  ~|>:  1  (1bit:1)
+  INCR:  1  (1bit:1)
+  DECR:  4  (3bit:2, 5bit:2)
+  Data transfer : 29
 
  === array / memory ===
-  read  :  7
-  write :  7
+  read  :  3
+  write :  4
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 2 / 2 / 2.00
+[Performance index max/min/ave] 5 / 5 / 5.00
 
-  Module Name         : decimation
-  Basic Library Name  : CWBSTDBLIB
-
-  Total Area          :        303
-    Sequential        :        168
-    Combinational     :        135
-
-  Latency Index       :          6
-  Total States        :          2
-
-  Clock Period        :       10ns
-  Critical Path Delay :     0.47ns
-
-  Net                 :        231
-  Pin Pair            :        530
-
-  Port                :        551
-    In                :        532
-    Out               :         19
-
-TOTAL AREA 303 (FU: 12 + REG: 168 + MUX: 62 + DEC: 36 + MISC: 25) + pin pair 530(net 231) + 1FSM of 2state
-##### CyberII Normal finish (automatic scheduling mode) [decimation] #####
+!!!!!!!!  CyberII ABNORMAL finish [decimation] (pos=661)  !!!!!!!!
 

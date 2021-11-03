@@ -9,16 +9,16 @@
 #	LIMIT
 #	BITWIDTH
 #	DELAY
-	AREA	303
-	AREA_REG	168
-	AREA_COMB	135
-	AREA_FU	12
+	AREA	333
+	AREA_REG	186
+	AREA_COMB	147
+	AREA_FU	17
 	AREA_MUX	62
-	AREA_DEC	36
-	AREA_MISC	25
+	AREA_DEC	34
+	AREA_MISC	34
 	AREA_MEM	0
-	NET	231
-	PIN_PAIR	530
+	NET	304
+	PIN_PAIR	595
 #	SPECULATION
 #	COMMENT
 	DEFMOD {
@@ -59,5 +59,5 @@
 		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
 	}
 }
-#@HASH{684ae7e87dc6c89466cccef3ce59d88e}
+#@HASH{646ebdceb4d0cd7bf1f7814666c27a34}
 #@END{decimation}
