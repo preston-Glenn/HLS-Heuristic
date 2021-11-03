@@ -34,11 +34,10 @@ void synthesize(vector<string> l);
 
 
 map <string,vector<string> > propertyLists;     // 2d list of all options
-map <string,string> propertyClass;              // list of each attrX type
-map <string,int> attributeMap;                 // If its been called before
-map <string,int> attributeMap_AREA;                 // If its been called before
-map <string,int> attributeMap_LATENCY;                 // If its been called before
-
+map <string,vector<string> > propertyClass;              // list of each attrX type
+map <int,int> attributeMap;                 // If its been called before
+map <int,int> attributeMap_AREA;                 // If its been called before
+map <int,int> attributeMap_LATENCY;                 // If its been called before
 
 
 int class_count = 0;
@@ -58,6 +57,7 @@ bool heuristic_value;
 bool exhaustive_value;
 bool VERBOSE = false;
 
+int ATTEMPT_FOR_RANDOM_ORGANISM = 50;
 int NUMBER_OF_RUNS = 0;
 int LATENCY;
 int AREA;
@@ -201,7 +201,7 @@ void bruteForce (vector<string> list, int count = 1) {
 			extendedList.push_back(list.at(k));
 		}	
 		
-		extendedList.push_back(propertyLists[str].at(i-1));
+		extendedList.push_back(i-1);
 
 		if (count == class_count) {
 
@@ -256,7 +256,7 @@ void parseFile(string file_name){
 		propertyLists[s1].push_back(s3);
 
 		if(previousString != s1){                                 // new attr
-			propertyClass[s1] = s2;
+			propertyClass[s1].push_back(s2);
 			class_count++;
 			previousString = s1;
 		}
@@ -270,16 +270,18 @@ void parseFile(string file_name){
 	}     
 }
 
+// Convert list to indexes
+// mutate and checking map
 
-void synthesize(vector<string> list){
+// Indexes is a list of the sub indexes of each choosen property for a given attribute
+void synthesize(vector<int> indexes){
 	logger.log("\n\n");
 
-	string attributeString = listToString(list);
-    if(attributeMap[attributeString]){
-      logger.log("Alreaady synthesised");
-		AREA    = attributeMap_AREA[attributeString];
-        LATENCY = attributeMap_LATENCY[attributeString];
-
+	int attributeHash = listToHash(indexes);
+    if(attributeMap[attributeHash]){
+		logger.log("Already synthesised");
+		AREA    = attributeMap_AREA[attributeHash];
+		LATENCY = attributeMap_LATENCY[attributeHash];
 	} else {
       cout << "NUMBER of Synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
 
@@ -289,7 +291,7 @@ void synthesize(vector<string> list){
 		if(file.is_open()){
 			for(int i = 1; i <= class_count; i++){
 				string attr_index = "attr" + int_to_string(i);
-				string str = "#define ATTR"+ int_to_string(i) +" Cyber "+propertyClass[attr_index] +"="+list[i-1];
+				string str = "#define ATTR"+ int_to_string(i) +" Cyber "+propertyClass[attr_index].at(indexes.at(i-1)) +"="+propertyLists[attr_index].at(indexes.at(i-1));
 				file << str << endl;
 			}
 			file.close();
@@ -298,7 +300,9 @@ void synthesize(vector<string> list){
 			logger.log("Failed to open attrs.h file. Exiting now.");
 			exit(1);
 		}
+
 		string command;
+
 		string results = "";
 		if(EXTENSION == ".bdl"){
 			logger.log("\tStarted: BDL_Pars");
@@ -328,24 +332,13 @@ void synthesize(vector<string> list){
 		results = getResultsFromCSV();
 		if(AREA == 0 && LATENCY == 1) return;
 
-		vector<int> index_list;
 
-		for(int i =1; i <= class_count;i++){
-			string str = "attr"+ int_to_string(i);
-			for (int j = 0; j < propertyLists[str].size(); j++) {
-				if(propertyLists[str].at(j)==list.at(i-1)){
-					index_list.push_back(j);
-					break;
-				}
-			}
 
-		}
+		addFileResults(results, indexes);
 
-		addFileResults(results, index_list);
-
-		attributeMap[attributeString] = 1;
-        attributeMap_AREA[attributeString] = AREA;
-        attributeMap_LATENCY[attributeString] = LATENCY;
+		attributeMap[attributeHash] = 1;
+        attributeMap_AREA[attributeHash] = AREA;
+        attributeMap_LATENCY[attributeHash] = LATENCY;
         logger.log("\tAdded attribute string to attr, AREA, and Latency map.");
 
 	}
