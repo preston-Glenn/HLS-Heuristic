@@ -24,1250 +24,24 @@ EOF reached.
 	Started: BDL_TRAN
 EOF reached.
 	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Success: 1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 Trying to call synthesis
 
 
 
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 2
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 3
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 4
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 4
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 5
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 6
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 7
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 8
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 9
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 9
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 10
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 11
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 12
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 13
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 14
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 14
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 15
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 16
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 17
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 18
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 19
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 19
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 20
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	all
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 21
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 22
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 23
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 24
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 24
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 25
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	4
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 26
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 27
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 28
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 29
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 29
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 30
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	8
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 31
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 32
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 33
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 34
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 34
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 35
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	1
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 36
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 37
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 38
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 39
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 39
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 40
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	2
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 41
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 42
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 43
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	0
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 44
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	all
-Trying to call synthesis
-
-
-
-Alreaady synthesised
-Success: 44
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	2
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 45
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	0
-	4
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
-EOF reached.
-	Started: BDL_TRAN
-EOF reached.
-	Finished BDL_TRAN
-Failed to fetch results from CSV
-	Added :Failed to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Success: 46
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
-	all
-	1
-Trying to call synthesis
-
-
-
-	Successfully created attrs.h file.
-	Started: C_Pars
 
 
 
@@ -1298,16 +72,36 @@ RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
 	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Success: 1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
 Trying to call synthesis
 
 
@@ -1321,17 +115,37 @@ EOF reached.
 RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
 	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
-Success: 2
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	2
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
 Trying to call synthesis
 
 
@@ -1345,17 +159,37 @@ EOF reached.
 RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
 	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
-Success: 3
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	1
-	0
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
 Trying to call synthesis
 
 
@@ -1366,4 +200,65 @@ EOF reached.
 	Started: BDL_TRAN
 EOF reached.
 	Finished BDL_TRAN
-RESULTS: 
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+

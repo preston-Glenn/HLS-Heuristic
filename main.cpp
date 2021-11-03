@@ -200,7 +200,8 @@ void bruteForce (vector<int> list, int count = 1) {
 		for(int k = 0; k < list.size(); k++){
 			extendedList.push_back(list.at(k));
 		}	
-		
+		cout << "Entered: " << count << endl;
+
 		extendedList.push_back(i-1);
 
 		if (count == class_count) {
@@ -213,7 +214,6 @@ void bruteForce (vector<int> list, int count = 1) {
 					for(int j = 0; j < class_count; j++){
 						logger.log("\t"+extendedList.at(j));
 					}
-
 				} else {
 					logger.log("FAILED: ");
 					for(int j = 0; j < class_count; j++){
@@ -289,11 +289,15 @@ void synthesize(vector<int> indexes){
 		string fileName = DIRECTORY + "attrs.h";
 		file.open(fileName.c_str(),ios::trunc);
 		if(file.is_open()){
-			for(int i = 1; i <= class_count; i++){
+		  cout << "Class_cout" << class_count << "list size: " << indexes.size() << endl;
+		  cout << "HASH: " << attributeHash << endl;
+		  for(int i = 1; i <= class_count; i++){
 				string attr_index = "attr" + int_to_string(i);
 				string str = "#define ATTR"+ int_to_string(i) +" Cyber "+propertyClass[attr_index].at(indexes.at(i-1)) +"="+propertyLists[attr_index].at(indexes.at(i-1));
-				file << str << endl;
+				cout << i << endl;
+			file << str << endl;
 			}
+
 			file.close();
 			logger.log("\tSuccessfully created attrs.h file.");
 		} else{

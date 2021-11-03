@@ -12,5 +12,58 @@ bdlpars  ../benchmarks/decimation_filter/decimation.c
 [Datapath delay]   90,000 (1/10ps)
 [Clock uncertainty] 10,000 (1/10ps)
 
-!!!!!!!!  CyberII ABNORMAL finish [decimation] (pos=102)  !!!!!!!!
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  -  : 10  (32bit:10)
+  <  : 10  (32bit:10)
+  ++ : 15  (32bit:15)
+  >  :  5  (32bit:5)
+  -- :  5  (32bit:5)
+  == : 10  (1bit:1, 32bit:9)
+  +  : 10  (19bit:5, 37bit:5)
+  *  :  5  (20bit:5)
+  Data transfer : 227
+
+ === array / memory ===
+  read  : 25
+  write : 15
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  == :  1  (2bit:1)
+  |> :  4  (3bit:2, 4bit:1, 5bit:1)
+  ~|>:  1  (1bit:1)
+  INCR:  1  (2bit:1)
+  DECR:  8  (3bit:4, 4bit:2, 5bit:2)
+  Data transfer : 47
+
+ === array / memory ===
+  read  :  5
+  write :  6
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 10 / 10 / 10.00
+
+  Module Name         : decimation
+  Basic Library Name  : CWBSTDBLIB
+
+  Total Area          :        795
+    Sequential        :        396
+    Combinational     :        399
+
+  Latency Index       :         54
+  Total States        :         10
+
+  Clock Period        :       10ns
+  Critical Path Delay :   0.6225ns
+
+  Net                 :        722
+  Pin Pair            :      1,520
+
+  Port                :        551
+    In                :        532
+    Out               :         19
+
+TOTAL AREA 795 (FU: 57 + REG: 396 + MUX: 179 + DEC: 84 + MISC: 79) + pin pair 1,520(net 722) + 1FSM of 10state
+##### CyberII Normal finish (automatic scheduling mode) [decimation] #####
 

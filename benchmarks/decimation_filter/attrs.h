@@ -7,4 +7,3 @@
 #define ATTR7 Cyber folding=1
 #define ATTR8 Cyber folding=1
 #define ATTR9 Cyber folding=1
-#define ATTR10 Cyber folding=all

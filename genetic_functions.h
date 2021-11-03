@@ -10,7 +10,7 @@ vector<int> random_organism(int count = 0){
 
     for(int j = 1; j <= class_count; j++){
         string str = "attr"+ int_to_string(j);
-        string new_attribute = rand() % propertyLists[str].size();
+        int new_attribute = rand() % propertyLists[str].size();
         organism.push_back(new_attribute);
     }
 
@@ -59,7 +59,7 @@ vector<int> mutate(vector<int> child,int count = 0){
                 new_attribute = rand() % propertyLists[str].size();
             }
 
-            logger.log("\tMutated @ index: "+int_to_string(i)+" from " + prev_attr + " to " + new_attribute);
+            logger.log("\tMutated @ index: "+int_to_string(i)+" from " + int_to_string(prev_attr) + " to " + int_to_string(new_attribute));
 	        mutated_child.at(i) = new_attribute;
 
         } else {
