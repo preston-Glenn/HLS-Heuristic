@@ -8,18 +8,18 @@ Cyber Synthesis Report
   Module Name         : decimation
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :        468
-    Sequential        :        240
-    Combinational     :        228
+  Total Area          :        303
+    Sequential        :        168
+    Combinational     :        135
 
-  Latency Index       :         23
-  Total States        :          6
+  Latency Index       :          6
+  Total States        :          2
 
   Clock Period        :       10ns
-  Critical Path Delay :     0.53ns
+  Critical Path Delay :     0.47ns
 
-  Net                 :        414
-  Pin Pair            :        867
+  Net                 :        231
+  Pin Pair            :        530
 
   Port                :        551
     In                :        532
@@ -30,14 +30,14 @@ Cyber Synthesis Report
 ========
 
   Total :
-    Total           :        468
+    Total           :        303
       Sequential    : 
-        REG         :        240 (51%)
-      Combinational :        228 (48%)
-        FU          :         33 ( 7%)
-        MUX         :        100 (21%)
-        DEC         :         51 (10%)
-        MISC        :         44 ( 9%)
+        REG         :        168 (55%)
+      Combinational :        135 (44%)
+        FU          :         12 ( 3%)
+        MUX         :         62 (20%)
+        DEC         :         36 (11%)
+        MISC        :         25 ( 8%)
       Memory        :          -
 
 ===================
@@ -48,8 +48,6 @@ Cyber Synthesis Report
                                          (ns)    Stage
     ----------------------------------------------------------
     decr3u                    6      0   0.12         -      2
-    decr4u                    9      0   0.16         -      2
-    incr2u                    3      0   0.10         -      1
 
   Unused Functional Units :
     ---------------------------------------------------
@@ -62,30 +60,25 @@ Cyber Synthesis Report
      Used      Declared                 Used
       Bit           Bit      Count       Bit  * Count
     -------------------------------------------------
-        1             1         33                 33
+        1             1         25                 25
     -------------------------------------------------
         3             3          1                  3
     -------------------------------------------------
-        4             4          1                  4
-    -------------------------------------------------
-    Total                                          40
+    Total                                          28
 
 ===============
 ; Multiplexer ;
 ===============
 
-   1 bit:  2way:32 ,  3way: 1 ,  7way: 3 , 11way: 1 
-   2 bit: (1way: 1),  2way: 1 
-   3 bit:  3way: 1 ,  7way: 1 
-   4 bit:  3way: 1 
-   Total : 145 (# of Fanins)
+   1 bit:  2way:22 ,  3way: 3 ,  6way: 4 
+   3 bit:  2way: 1 
+   Total : 83 (# of Fanins)
 
 ===========
 ; Decoder ;
 ===========
 
-    3to7: 3
-    4to11: 1
+    3to6: 4
 
 ==========
 ; Memory ;
@@ -99,72 +92,52 @@ Cyber Synthesis Report
 
     Total:
         Type          : S
-        Latency       : 1 + L1 + 1 + L2 + 1 + L3
-        Latency Index : 23
-        State No.     : 1, 2, 3, 4, 5, 6
+        Latency       : 1 + L1
+        Latency Index : 6
+        State No.     : 1, 2
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
-        Sub Loops     : L1, L2, L3
+        Sub Loops     : L1
         Line          : ../benchmarks/decimation_filter/decimation.c:47
     L1:
         Type          : S
-        Latency       : 1 * 6
-        Latency Index : 6
+        Latency       : 1 * 5
+        Latency Index : 5
         State No.     : 2
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
         Sub Loops     : -
-        Line          : ../benchmarks/decimation_filter/decimation.c:144
-    L2:
-        Type          : F
-        Latency       : 1 + (4 - 1) * 1
-        Latency Index : 4
-        State No.     : 4
-        Folding Loop  : FL2
-        Folding Stages: 1 , Total Folding States: 1 , Hazard: None
-        User Operator : -
-        Sub Loops     : -
-        Line          : ../benchmarks/decimation_filter/decimation.c:153
-    L3:
-        Type          : F
-        Latency       : 1 + (10 - 1) * 1
-        Latency Index : 10
-        State No.     : 6
-        Folding Loop  : FL3
-        Folding Stages: 1 , Total Folding States: 1 , Hazard: None
-        User Operator : -
-        Sub Loops     : -
-        Line          : ../benchmarks/decimation_filter/decimation.c:259
+        Line          : ../benchmarks/decimation_filter/decimation.c:298
 
 =======
 ; FSM ;
 =======
 
-  Total States      :          6
+  Total States      :          2
   #FSM              :          1
-  States/FSM        :          6
-  FSM Decoder Delay :     0.13ns
+  States/FSM        :          2
+  FSM Decoder Delay :     0.09ns
 
 =========
 ; Delay ;
 =========
 
   Clock Period        :       10ns
-  Critical Path Delay :     0.53ns
+  Critical Path Delay :     0.47ns
 
               Subtotal
       Class       (ns)    Ratio
       -------------------------
       IN           0.00      0%
-      FU           0.16     30%
-      MUX          0.37     69%
+      FU           0.12     25%
+      MUX          0.35     74%
       DEC          0.00      0%
       MISC         0.00      0%
       MEM          0.00      0%
       -------------------------
-      Total        0.53
+      Total        0.47
 
     Path: #1
                                                                 Arrival
@@ -172,10 +145,10 @@ Cyber Synthesis Report
       Name                 / Port [Signal              ]   (ns)   (ns)  Stage
       -----------------------------------------------------------------------
       RG_x                 / dout [                    ]      -    0.00     0
-      decr4u@2             / o1   [decr4u2ot           ]   0.16    0.16     3
-      _DMUX_537            / o1   [bufferline_41_rd00  ]   0.30    0.46     9
-      _NMUX_549            / o1   [bufferline_41_rg00  ]   0.07    0.53    11
-      bufferline_41_rg00   / din  [                    ]      -    0.53    11
+      decr3u@2             / o1   [decr3u2ot           ]   0.12    0.12     2
+      _DMUX_400            / o1   [bufferline_5_01_rd00]   0.28    0.40     6
+      _NMUX_436            / o1   [bufferline_5_11_rg00]   0.07    0.47     8
+      bufferline_5_11_rg00 / din  [                    ]      -    0.47     8
 
   False Path                    :  Unchecked
   Multi Cycle Path              :  Unchecked
@@ -186,93 +159,83 @@ Cyber Synthesis Report
 ; Wire ;
 ========
 
-  Total Net Count      :      414
-  Total Pin Pair Count :      867
-  Const Fanout         :       75
+  Total Net Count      :      231
+  Total Pin Pair Count :      530
+  Const Fanout         :       26
 
   Net Count :
          Bit       Net    Bit*Net
      ----------------------------
-           1       128        128
-           2         4          8
-           3        15         45
-           4         4         16
-           7         3         21
-          11         1         11
-          19         1         19
+           1        90         90
+           3         4         12
+           6         4         24
      ----------------------------
-       Total                  248
+       Total                  126
 
   Pin Pair Count :
       Fanout    Bit    Count   Subtotal
     -----------------------------------
-          35      1        1         35
-          33      1        1         33
-          21      1        1         21
-          11      3        1         33
-          11      1        2         22
-           7      1        3         21
-           6      3        1         18
-           5      1        2         10
-           4      1        2          8
+          26      1        2         52
+          25      1        1         25
+           7      3        1         21
+           6      1        4         24
+           5      1        1          5
            3      3        1          9
            3      1        3          9
-           2      1       36         72
-           1     11        1         11
-           1      7        3         21
-           1      4        3         12
-           1      3       13         39
-           1      2        4          8
-           1      1       79         79
+           2      3        1          6
+           2      1       22         44
+           1      6        4         24
+           1      3        1          3
+           1      1       57         57
     -----------------------------------
-       Total                        461
+       Total                        279
 
   Fanout for Consts:
       Value    Fanout
-          0        53
-          1        22
+          0        22
+          1         4
     ------------------
-      Total        75
+      Total        26
 
   Clock Fanout:
       Name                         Count
       ----------------------------------
-      CLOCK(0..0)                     35
+      CLOCK(0..0)                     26
 
   Reset Fanout:
       Name                         Count
       ----------------------------------
-      RESET(0..0)                     33
+      RESET(0..0)                     25
 
   Register Fanin/Fanout Cone Size:
 
     Fanin: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-      bufferline_41_rg00(0..0)                          14
-      bufferline_41_rg01(0..0)                          14
-      bufferline_41_rg02(0..0)                          14
-      bufferline_41_rg03(0..0)                          14
-      bufferline_41_rg04(0..0)                          14
-      bufferline_41_rg05(0..0)                          14
-      bufferline_41_rg06(0..0)                          14
-      bufferline_41_rg07(0..0)                          14
-      bufferline_41_rg08(0..0)                          14
-      bufferline_41_rg09(0..0)                          14
+      bufferline_5_01_rg00(0..0)                         9
+      bufferline_5_01_rg01(0..0)                         9
+      bufferline_5_01_rg02(0..0)                         9
+      bufferline_5_01_rg03(0..0)                         9
+      bufferline_5_01_rg04(0..0)                         9
+      bufferline_5_01_rg05(0..0)                         9
+      bufferline_5_11_rg00(0..0)                         9
+      bufferline_5_11_rg01(0..0)                         9
+      bufferline_5_11_rg02(0..0)                         9
+      bufferline_5_11_rg03(0..0)                         9
 
     Fanout: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-      B01_streg(2..0)                                   35
-      RG_x(3..0)                                        34
-      bufferline_41_rg00(0..0)                          11
-      bufferline_41_rg01(0..0)                          11
-      bufferline_41_rg02(0..0)                          11
-      bufferline_41_rg03(0..0)                          11
-      bufferline_41_rg04(0..0)                          11
-      bufferline_41_rg05(0..0)                          11
-      bufferline_41_rg06(0..0)                          11
-      bufferline_41_rg07(0..0)                          11
+      RG_x(2..0)                                        26
+      B01_streg(0..0)                                   26
+      bufferline_5_01_rg00(0..0)                         7
+      bufferline_5_01_rg01(0..0)                         7
+      bufferline_5_01_rg02(0..0)                         7
+      bufferline_5_01_rg03(0..0)                         7
+      bufferline_5_01_rg04(0..0)                         7
+      bufferline_5_01_rg05(0..0)                         7
+      bufferline_5_11_rg00(0..0)                         7
+      bufferline_5_11_rg01(0..0)                         7
 
   Routability:
 
@@ -280,61 +243,61 @@ Cyber Synthesis Report
     sorted by "Total" (Total Pin Pair)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      RG_x(3..0)                                     37       11 ( 3bit)
-      CLOCK(0..0)                                    35       35 ( 1bit)
-      RESET(0..0)                                    33       33 ( 1bit)
-      M_19(0..0)                                     21       21 ( 1bit)
-      B01_streg(2..0)                                18        6 ( 3bit)
-      bufferline_41_rd00(0..0)                       11       11 ( 1bit)
-      bufferline_41_we01(0..0)                       11       11 ( 1bit)
-      bufferline_41_d01(10..0)                       11        1 (11bit)
-      decr3u2ot(2..0)                                 9        3 ( 3bit)
-      bufferline_11_rd00(0..0)                        7        7 ( 1bit)
-      bufferline_21_rd00(0..0)                        7        7 ( 1bit)
-      bufferline_31_rd00(0..0)                        7        7 ( 1bit)
-      bufferline_11_d01(6..0)                         7        1 ( 7bit)
-      bufferline_21_d01(6..0)                         7        1 ( 7bit)
-      bufferline_31_d01(6..0)                         7        1 ( 7bit)
+      CLOCK(0..0)                                    26       26 ( 1bit)
+      ST1_02d(0..0)                                  26       26 ( 1bit)
+      RESET(0..0)                                    25       25 ( 1bit)
+      decr3u2ot(2..0)                                21        7 ( 3bit)
+      RG_x(2..0)                                      9        3 ( 3bit)
+      bufferline_5_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_21_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_31_rd00(0..0)                      6        6 ( 1bit)
+      decr3u1ot(2..0)                                 6        2 ( 3bit)
+      bufferline_5_01_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_11_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_21_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_31_d01(5..0)                       6        1 ( 6bit)
       ST1_01d(0..0)                                   5        5 ( 1bit)
-      ST1_03d(0..0)                                   5        5 ( 1bit)
-      ST1_02d(0..0)                                   4        4 ( 1bit)
-      decr4u1ot(3..0)                                 4        1 ( 4bit)
-      decr4u2ot(3..0)                                 4        1 ( 4bit)
-      _NMUX_603(3..0)                                 4        1 ( 4bit)
-      ST1_04d(0..0)                                   3        3 ( 1bit)
-      ST1_06d(0..0)                                   3        3 ( 1bit)
-      C_01(0..0)                                      3        3 ( 1bit)
-      incr2u1ot(2..0)                                 3        1 ( 3bit)
+      bufferline_5_01_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_11_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_21_rg05(0..0)                      3        3 ( 1bit)
+      _NMUX_519(2..0)                                 3        1 ( 3bit)
+      bufferline_5_01_rg00(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg01(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg02(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg03(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg04(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg00(0..0)                      2        2 ( 1bit)
 
     Top 25 Nets
     sorted by "Max" (Maximum Fanout)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      CLOCK(0..0)                                    35       35 ( 1bit)
-      RESET(0..0)                                    33       33 ( 1bit)
-      M_19(0..0)                                     21       21 ( 1bit)
-      RG_x(3..0)                                     37       11 ( 3bit)
-      bufferline_41_rd00(0..0)                       11       11 ( 1bit)
-      bufferline_41_we01(0..0)                       11       11 ( 1bit)
-      bufferline_11_rd00(0..0)                        7        7 ( 1bit)
-      bufferline_21_rd00(0..0)                        7        7 ( 1bit)
-      bufferline_31_rd00(0..0)                        7        7 ( 1bit)
-      B01_streg(2..0)                                18        6 ( 3bit)
+      CLOCK(0..0)                                    26       26 ( 1bit)
+      ST1_02d(0..0)                                  26       26 ( 1bit)
+      RESET(0..0)                                    25       25 ( 1bit)
+      decr3u2ot(2..0)                                21        7 ( 3bit)
+      bufferline_5_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_21_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_31_rd00(0..0)                      6        6 ( 1bit)
       ST1_01d(0..0)                                   5        5 ( 1bit)
-      ST1_03d(0..0)                                   5        5 ( 1bit)
-      ST1_02d(0..0)                                   4        4 ( 1bit)
-      decr3u2ot(2..0)                                 9        3 ( 3bit)
-      ST1_04d(0..0)                                   3        3 ( 1bit)
-      ST1_06d(0..0)                                   3        3 ( 1bit)
-      C_01(0..0)                                      3        3 ( 1bit)
-      FF_in_stage_1(0..0)                             2        2 ( 1bit)
-      JF_02(0..0)                                     2        2 ( 1bit)
-      bufferline_11_rg00(0..0)                        2        2 ( 1bit)
-      bufferline_11_rg01(0..0)                        2        2 ( 1bit)
-      bufferline_11_rg02(0..0)                        2        2 ( 1bit)
-      bufferline_11_rg03(0..0)                        2        2 ( 1bit)
-      bufferline_11_rg04(0..0)                        2        2 ( 1bit)
-      bufferline_11_rg05(0..0)                        2        2 ( 1bit)
+      RG_x(2..0)                                      9        3 ( 3bit)
+      bufferline_5_01_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_11_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_21_rg05(0..0)                      3        3 ( 1bit)
+      decr3u1ot(2..0)                                 6        2 ( 3bit)
+      bufferline_5_01_rg00(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg01(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg02(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg03(0..0)                      2        2 ( 1bit)
+      bufferline_5_01_rg04(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg00(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg01(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg02(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg03(0..0)                      2        2 ( 1bit)
+      bufferline_5_11_rg04(0..0)                      2        2 ( 1bit)
+      bufferline_5_21_rg00(0..0)                      2        2 ( 1bit)
 
 ================
 ; Primary Port ;
@@ -343,6 +306,7 @@ Cyber Synthesis Report
     Name               Type   Bitw
     ------------------------------
       load_coeff        in      1
+      indata            in     19
       odata             out    19
       incoef1_a00       in     17
       incoef1_a01       in     17
@@ -374,5 +338,4 @@ Cyber Synthesis Report
       incoef5_a09       in     17
       incoef5_a10       in     17
       incoef5_a11       in     17
-      indata            in     19
 

@@ -5522,3 +5522,1856 @@ Trying to call synthesis
 
 	Successfully created attrs.h file.
 	Started: C_Pars
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started Meta Heuristic
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	1
+	folding2folding2unroll_timesallfolding2unroll_times4folding2unroll_times2unroll_times0unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 660,7,33,342,145,76,1213,564,7,7,7.00,64,0,0.53ns,-,-,-,-,28,-,-
+	Added :660,7,33,342,145,76,1213,564,7,7,7.00,64,0,0.53ns,-,-,-,-,28,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		folding2folding2unroll_timesallfolding2unroll_times4folding2unroll_times2unroll_times0unroll_timesallfolding2
+		Score: 10000000
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	3
+	folding2unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding2unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		folding2folding2unroll_timesallfolding2unroll_times4folding2unroll_times2unroll_times0unroll_timesallfolding2
+		Score: 10000000
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	4
+	folding2folding2unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding2folding2unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		folding2folding2unroll_timesallfolding2unroll_times4folding2unroll_times2unroll_times0unroll_timesallfolding2
+		Score: 10000000
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		folding2unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		folding2folding2unroll_timesallfolding2unroll_times4folding2unroll_times2unroll_times0unroll_timesallfolding2
+		Score: 10000000
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Mutated @ index: 6 from 0 to 3
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 502,5,15,270,111,58,905,423,5,4,4.50,48,0,0.47ns,-,-,-,-,17,-,-
+	Added :502,5,15,270,111,58,905,423,5,4,4.50,48,0,0.47ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 0
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Mutated @ index: 8 from 4 to 5
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 660,9,37,342,137,75,1237,595,9,9,9.00,69,0,0.53ns,-,-,-,-,32,-,-
+	Added :660,9,37,342,137,75,1237,595,9,9,9.00,69,0,0.53ns,-,-,-,-,32,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2folding1unroll_times2folding1folding2unroll_times8unroll_times2
+		Score: 32
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 2
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Mutated @ index: 9 from 4 to 2
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 736,7,33,384,161,87,1343,621,7,7,7.00,71,0,0.53ns,-,-,-,-,28,-,-
+	Added :736,7,33,384,161,87,1343,621,7,7,7.00,71,0,0.53ns,-,-,-,-,28,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times0unroll_times2folding1folding2unroll_times4unroll_times0
+		Score: 28
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 6
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 1
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Mutated @ index: 9 from 4 to 5
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	8
+	unroll_times0unroll_times0folding2folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0folding2folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times4
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2folding1folding2unroll_times4unroll_times2
+		Score: 28
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 4 to 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Mutated @ index: 8 from 4 to 5
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,-
+	Added :403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 2
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 479,5,19,264,92,57,851,411,5,4,4.50,47,0,0.47ns,-,-,-,-,14,-,-
+	Added :479,5,19,264,92,57,851,411,5,4,4.50,47,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times0unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 7
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,-
+	Added :403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 1
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Mutated @ index: 8 from 5 to 4
+	Mutated @ index: 9 from 4 to 0
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	12
+	unroll_times0unroll_times0unroll_times0folding2folding2unroll_times4unroll_timesallfolding2unroll_times4folding1
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2folding2unroll_times4unroll_timesallfolding2unroll_times4folding1
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 8
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 5
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,-
+	Added :403,5,19,222,76,46,721,354,5,4,4.50,40,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0unroll_times4unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times4unroll_times2
+		Score: 17
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 7
+	Mutated @ index: 0 from 2 to 3
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,-
+	Added :296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 1
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Mutated @ index: 6 from 3 to 0
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	15
+	unroll_timesallunroll_timesallfolding2folding2unroll_times4unroll_times4folding1folding2unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallfolding2folding2unroll_times4unroll_times4folding1folding2unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Mutated @ index: 8 from 5 to 0
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	16
+	unroll_timesallfolding2unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2folding1unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallfolding2unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2folding1unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Mutated @ index: 9 from 4 to 3
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,-
+	Added :296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_timesall
+		Score: 9
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 6
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Mutated @ index: 7 from 1 to 5
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,-
+	Added :296,3,16,168,48,35,513,235,3,3,3.00,29,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallunroll_times8unroll_times8unroll_times2
+		Score: 9
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 7
+	Mutated @ index: 0 from 3 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Mutated @ index: 7 from 1 to 2
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	19
+	folding2unroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallunroll_times0unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding2unroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallunroll_times0unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 7
+	Mutated @ index: 0 from 3 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 398,5,16,222,73,46,709,347,5,5,5.00,41,0,0.47ns,-,-,-,-,16,-,-
+	Added :398,5,16,222,73,46,709,347,5,5,5.00,41,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding1unroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 16
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_times0unroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 14
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 310,4,19,168,54,35,550,255,4,4,4.00,34,0,0.47ns,-,-,-,-,13,-,-
+	Added :310,4,19,168,54,35,550,255,4,4,4.00,34,0,0.47ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 13
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 13
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Mutated @ index: 7 from 1 to 4
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 310,4,19,168,54,35,550,255,4,4,4.00,34,0,0.47ns,-,-,-,-,13,-,-
+	Added :310,4,19,168,54,35,550,255,4,4,4.00,34,0,0.47ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallunroll_times4unroll_times8unroll_times2
+		Score: 13
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_times0unroll_times0folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 13
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 5
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 183,2,4,114,25,24,301,140,2,2,2.00,16,0,0.31ns,-,-,-,-,3,-,-
+	Added :183,2,4,114,25,24,301,140,2,2,2.00,16,0,0.31ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 5
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 1
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	24
+	unroll_timesallunroll_timesallunroll_times4folding2folding2unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times4folding2folding2unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 3 to 2
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Mutated @ index: 8 from 5 to 0
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 446,4,36,234,93,44,798,384,4,4,4.00,39,0,0.6225ns,-,-,-,-,31,-,-
+	Added :446,4,36,234,93,44,798,384,4,4,4.00,39,0,0.6225ns,-,-,-,-,31,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2folding1unroll_times2
+		Score: 31
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 6
+	Mutated @ index: 0 from 3 to 1
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 1
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	26
+	folding2unroll_timesallfolding2folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding2unroll_timesallfolding2folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 9
+	Mutated @ index: 0 from 3 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 4 to 1
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 398,5,16,222,73,46,709,347,5,5,5.00,41,0,0.47ns,-,-,-,-,16,-,-
+	Added :398,5,16,222,73,46,709,347,5,5,5.00,41,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding1unroll_timesallunroll_times0folding2unroll_times4folding2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 16
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 6
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_timesallunroll_times0folding2unroll_times4unroll_times2unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 9
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 2
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 5 to 2
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 204,3,7,120,31,24,352,166,3,3,3.00,22,0,0.31ns,-,-,-,-,7,-,-
+	Added :204,3,7,120,31,24,352,166,3,3,3.00,22,0,0.31ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 0
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 211,4,7,126,33,24,362,171,4,4,4.00,21,0,0.31ns,-,-,-,-,8,-,-
+	Added :211,4,7,126,33,24,362,171,4,4,4.00,21,0,0.31ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallfolding1unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 8
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 5 to 1
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Mutated @ index: 9 from 4 to 5
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	30
+	unroll_timesallunroll_times0folding2folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0folding2folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times4
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 3 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 307,4,16,174,52,35,536,268,4,4,4.00,30,0,0.47ns,-,-,-,-,10,-,-
+	Added :307,4,16,174,52,35,536,268,4,4,4.00,30,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		folding1unroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 0
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 299,4,16,168,50,35,522,242,4,4,4.00,30,0,0.47ns,-,-,-,-,10,-,-
+	Added :299,4,16,168,50,35,522,242,4,4,4.00,30,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times4folding2folding1unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 204,3,7,120,31,24,352,166,3,3,3.00,22,0,0.31ns,-,-,-,-,7,-,-
+	Added :204,3,7,120,31,24,352,166,3,3,3.00,22,0,0.31ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 6
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 0
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 1
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	34
+	unroll_timesallfolding1unroll_times4folding2folding2unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallfolding1unroll_times4folding2folding2unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 8
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 0
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Mutated @ index: 9 from 4 to 1
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 320,5,19,174,58,35,577,270,5,5,5.00,34,0,0.47ns,-,-,-,-,14,-,-
+	Added :320,5,19,174,58,35,577,270,5,5,5.00,34,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2folding1unroll_times0unroll_timesallfolding2unroll_times8folding2
+		Score: 14
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 8
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 9
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 6
+	Mutated @ index: 0 from 3 to 2
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 306,4,16,174,52,35,534,267,4,3,3.50,29,0,0.47ns,-,-,-,-,10,-,-
+	Added :306,4,16,174,52,35,534,267,4,3,3.50,29,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_times0unroll_timesallunroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	37
+	unroll_timesallfolding2unroll_times4unroll_timesallunroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallfolding2unroll_times4unroll_timesallunroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10000000
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 4
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 5 to 2
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 307,4,17,174,51,35,532,246,4,4,4.00,30,0,0.47ns,-,-,-,-,11,-,-
+	Added :307,4,17,174,51,35,532,246,4,4,4.00,30,0,0.47ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times4folding2unroll_times0unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 11
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 8
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 5 to 4
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 300,4,7,168,55,34,519,249,4,4,4.00,36,0,0.34ns,-,-,-,-,10,-,-
+	Added :300,4,7,168,55,34,519,249,4,4,4.00,36,0,0.34ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times2folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 10
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 8
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Didn't mutate @ index: 7
+	Didn't mutate @ index: 8
+	Didn't mutate @ index: 9
+
+
+
+Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+NEXT ITERATION##########################################################################################
+	Parent_0:
+		unroll_timesallunroll_times0unroll_times4folding2unroll_times4unroll_times0unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 7
+	Parent_1:
+		unroll_timesallunroll_timesallunroll_times4folding2unroll_times4unroll_times4unroll_timesallfolding2unroll_times8unroll_times2
+		Score: 3
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 5 to 3
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+	Didn't mutate @ index: 6
+	Mutated @ index: 7 from 1 to 4
+	Mutated @ index: 8 from 5 to 4
+	Didn't mutate @ index: 9
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 303,2,12,168,62,36,530,231,2,2,2.00,25,0,0.47ns,-,-,-,-,6,-,-
+	Added :303,2,12,168,62,36,530,231,2,2,2.00,25,0,0.47ns,-,-,-,-,6,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallfolding2unroll_times4unroll_times4unroll_timesallunroll_times4unroll_times4unroll_times2
+		Score: 6
+Finished Meta Heuristic

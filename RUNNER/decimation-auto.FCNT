@@ -4,19 +4,9 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FCNT{
-	NAME	incr2u
-	LIMIT	1  AUTO
-#	COMMENT
-}
-@FCNT{
 	NAME	decr3u
 	LIMIT	2  AUTO
 #	COMMENT
 }
-@FCNT{
-	NAME	decr4u
-	LIMIT	2  AUTO
-#	COMMENT
-}
-#@HASH{c76ea5498131e63f41d7c812119ec54c}
+#@HASH{38e296725f2a3070c0f9210dba9eee1e}
 #@END{decimation}
