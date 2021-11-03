@@ -5,7 +5,7 @@ bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
          make at Thu Mar 22 14:30:59 JST 2018
  Option  -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 
-bdlpars  ../benchmarks/decimation_filter/decimation.c
+bdlpars  decimation.c
 
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
@@ -31,39 +31,18 @@ bdlpars  ../benchmarks/decimation_filter/decimation.c
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
   == :  1  (2bit:1)
-  |> :  2  (3bit:1, 4bit:1)
+  |> :  4  (3bit:2, 4bit:1, 5bit:1)
   ~|>:  1  (1bit:1)
   INCR:  1  (2bit:1)
-  DECR:  4  (3bit:2, 4bit:2)
-  Data transfer : 30
+  DECR:  8  (3bit:4, 4bit:2, 5bit:2)
+  Data transfer : 47
 
  === array / memory ===
-  read  :  4
-  write :  5
+  read  :  5
+  write :  6
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 6 / 6 / 6.00
+[Performance index max/min/ave] 10 / 10 / 10.00
 
-  Module Name         : decimation
-  Basic Library Name  : CWBSTDBLIB
-
-  Total Area          :        468
-    Sequential        :        240
-    Combinational     :        228
-
-  Latency Index       :         23
-  Total States        :          6
-
-  Clock Period        :       10ns
-  Critical Path Delay :     0.53ns
-
-  Net                 :        414
-  Pin Pair            :        867
-
-  Port                :        551
-    In                :        532
-    Out               :         19
-
-TOTAL AREA 468 (FU: 33 + REG: 240 + MUX: 100 + DEC: 51 + MISC: 44) + pin pair 867(net 414) + 1FSM of 6state
-##### CyberII Normal finish (automatic scheduling mode) [decimation] #####
+!!!!!!!!  CyberII ABNORMAL finish [decimation] (pos=661)  !!!!!!!!
 

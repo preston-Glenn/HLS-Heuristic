@@ -74,8 +74,8 @@ string getResultsFromCSV(vector<int> list){
       vector<string> words = parseCSVLine(results);
       LATENCY = string_to_int(words.at(18));
       AREA    = string_to_int(words.at(0 ));
-    } catch (const char* message){
-		  cout << "Exception occurred!" << message << endl;
+    } catch (exception& ex){
+		  cout << "Exception occurred!"<< endl;
       logger.log("Synthesis Failed at: ");
       logger.log("\t"+int_to_string(NUMBER_OF_RUNS));
       logger.log("\t"+indexToString(list));

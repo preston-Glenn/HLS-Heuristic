@@ -8,8 +8,8 @@
     </hierInfo>
     <fileInfo>
         <sourcefiles>
-            <sourcefile name="../benchmarks/decimation_filter/decimation.c" timestamp="20211102125734"/>
-            <sourcefile name="../benchmarks/decimation_filter/attrs.h" timestamp="20211103053646"/>
+            <sourcefile name="decimation.c" timestamp="20211102125734"/>
+            <sourcefile name="attrs.h" timestamp="20211103050347"/>
         </sourcefiles>
     </fileInfo>
 </sourceInfo>

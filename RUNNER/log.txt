@@ -262,3 +262,5263 @@ Trying to call synthesis
 
 
 
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 2
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 3
+	
+	
+	
+	
+	
+	
+	
+	
+	
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 4
+	
+	
+	
+	
+	
+	
+	
+	
+	
+LASS_COUNT: 
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 5
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ASS_COUNT: 
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 6
+	
+	
+	
+	
+	
+	
+	
+	
+	
+SS_COUNT: 
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 2
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 3
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 4
+	
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 5
+	
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 6
+	
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 2
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 3
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 4
+	
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 5
+	
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 6
+	
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	7
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 7
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	8
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 8
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	9
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 9
+	
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	10
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 10
+	
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	11
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 11
+	
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	12
+	folding1folding1folding1folding1folding1folding1folding1folding1folding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 12
+	
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 13
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 14
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 15
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 16
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 17
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 18
+	
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 19
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 20
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 21
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 22
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 23
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 24
+	
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 25
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 26
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 27
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 28
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 29
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 30
+	
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 31
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 32
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 33
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 34
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 35
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 36
+	
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 37
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 38
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 39
+	
+	
+	
+	
+	
+	
+	
+
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 40
+	
+	
+	
+	
+	
+	
+	
+
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 41
+	
+	
+	
+	
+	
+	
+	
+
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 42
+	
+	
+	
+	
+	
+	
+	
+
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	43
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 43
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	44
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 44
+	
+	
+	
+	
+	
+	
+	
+
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	45
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 45
+	
+	
+	
+	
+	
+	
+	
+
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	46
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 46
+	
+	
+	
+	
+	
+	
+	
+
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	47
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 47
+	
+	
+	
+	
+	
+	
+	
+
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	48
+	folding1folding1folding1folding1folding1folding1folding1folding2folding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 48
+	
+	
+	
+	
+	
+	
+	
+
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 49
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 50
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 51
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 52
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 53
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 54
+	
+	
+	
+	
+	
+	
+	
+
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 55
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 56
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 57
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 58
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 59
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 60
+	
+	
+	
+	
+	
+	
+	
+
+xhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 61
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 62
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 63
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 64
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 65
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 66
+	
+	
+	
+	
+	
+	
+	
+
+haustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 67
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 68
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 69
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 70
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 71
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 72
+	
+	
+	
+	
+	
+	
+	
+
+austive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 73
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 74
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 75
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 76
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 77
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 78
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	79
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 79
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	80
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 80
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	81
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 81
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	82
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 82
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	83
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 83
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	84
+	folding1folding1folding1folding1folding1folding1folding1unroll_times0folding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 84
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 85
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 86
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 87
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 88
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 89
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 90
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 91
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 92
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 93
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 94
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 95
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 96
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+xhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 97
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 98
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 99
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 100
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 101
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 102
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+haustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 103
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 104
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 105
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 106
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 107
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 108
+	
+	
+	
+	
+	
+	
+	
+Exhaustive Search,1,
+austive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 109
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 110
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 111
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 112
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 113
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 114
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	115
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 115
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	116
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 116
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	117
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 117
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	118
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 118
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	119
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 119
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	120
+	folding1folding1folding1folding1folding1folding1folding1unroll_timesallfolding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 120
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 121
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 122
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 123
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 124
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 125
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 126
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 127
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 128
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 129
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 130
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 131
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 132
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+xhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 133
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 134
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 135
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 136
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 137
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 138
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+haustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 139
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 140
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 141
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 142
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 143
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 144
+	
+	
+	
+	
+	
+	
+	
+xhaustive Search,1,
+austive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 145
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 146
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 147
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 148
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 149
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 150
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	151
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 151
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	152
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 152
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	153
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 153
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	154
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 154
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	155
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 155
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	156
+	folding1folding1folding1folding1folding1folding1folding1unroll_times4folding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 156
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 157
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 158
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 159
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 160
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 161
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 162
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 163
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 164
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 165
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 166
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 167
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 168
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+xhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 169
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 170
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 171
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 172
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 173
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,-
+	Added :740,8,33,384,163,87,1365,635,8,8,8.00,73,0,0.53ns,-,-,-,-,29,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 174
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+haustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 175
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 176
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 177
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 178
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 179
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,-
+	Added :640,8,37,336,128,75,1175,560,8,8,8.00,64,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 180
+	
+	
+	
+	
+	
+	
+	
+haustive Search,1,
+austive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 181
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 182
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 183
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 184
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 185
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,-
+	Added :795,10,57,396,179,84,1520,722,10,10,10.00,79,0,0.6225ns,-,-,-,-,54,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 186
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+	
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	187
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Success: 187
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	188
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 188
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	189
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Success: 189
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	190
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Success: 190
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	191
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2unroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Success: 191
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 
+Synthesis Failed at: 
+	192
+	folding1folding1folding1folding1folding1folding1folding1unroll_times8folding2unroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Success: 192
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 193
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 194
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 195
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 196
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+xhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 197
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+haustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,-
+	Added :1055,8,145,576,165,84,1734,825,8,8,8.00,85,0,0.78ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 198
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+Exhaustive Search,1,
+austive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 199
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+xhaustive Search,1,
+	
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 200
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+xhaustive Search,1,
+
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars
+EOF reached.
+	Started: BDL_TRAN
+EOF reached.
+	Finished BDL_TRAN
+RESULTS: 468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,-
+	Added :468,6,33,240,100,51,867,414,6,6,6.00,44,0,0.53ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Success: 201
+	
+	
+	
+	
+	
+	
+	
+austive Search,1,
+xhaustive Search,1,
+Exhaustive Search,1,
+Trying to call synthesis
+
+
+
+	Successfully created attrs.h file.
+	Started: C_Pars

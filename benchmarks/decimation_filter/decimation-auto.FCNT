@@ -18,5 +18,10 @@
 	LIMIT	2  AUTO
 #	COMMENT
 }
-#@HASH{c76ea5498131e63f41d7c812119ec54c}
+@FCNT{
+	NAME	decr8u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+#@HASH{74f935e5a4e9e02c5f94effc9f617eee}
 #@END{decimation}
