@@ -300,7 +300,9 @@ void synthesize(vector<int> indexes){
 			logger.log("Failed to open attrs.h file. Exiting now.");
 			exit(1);
 		}
-		string command = "";
+
+		string command;
+
 		string results = "";
 		if(EXTENSION == ".bdl"){
 			logger.log("\tStarted: BDL_Pars");

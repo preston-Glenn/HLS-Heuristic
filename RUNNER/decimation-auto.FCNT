@@ -1,0 +1,27 @@
+#@VERSION{3.00}
+#@CNT{decimation}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@FCNT{
+	NAME	incr2u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	decr3u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	decr4u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	decr8u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+#@HASH{74f935e5a4e9e02c5f94effc9f617eee}
+#@END{decimation}
