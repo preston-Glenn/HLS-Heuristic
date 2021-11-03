@@ -89,10 +89,21 @@ void addFileResults(string results, vector<int> index_list){
   return;
 }
 
-string listToString(vector<string> list){
+string indexToString(vector<int> indexes){
 	string str = "";
+
 	for(int i = 0; i < list.size();i++){
-	  str.append(list.at(i));
+    string attr_index = "attr" + int_to_string(i+1);
+	  str.append(propertyClass[attr_index].at(indexes.at(i)));
+    str.append(propertyLists[attr_index].at(indexes.at(i)));
 	}
 	return str;
+}
+
+int listToHash(vector<int> indexes){
+  string str = "";
+  for(int i = 0; i < list.size();i++){
+    str.append(indexes.at(i));
+  }
+  return string_to_int(str);
 }

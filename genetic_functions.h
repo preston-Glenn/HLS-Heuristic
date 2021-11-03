@@ -7,18 +7,18 @@ double cost_function(){
 
 vector<string> random_organism(int count = 0){
     vector<string>  organism;
-    
 
     for(int j = 1; j <= class_count; j++){
         string str = "attr"+ int_to_string(j);
-        string new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
+        string new_attribute = rand() % propertyLists[str].size();
         organism.push_back(new_attribute);
     }
 
     // checking if organism has already been made
-    string listsString = listToString( organism);
-    if(attributeMap[listsString] == 1){      // list has already been made
-        if(count > 50){
+    int attributeHash = listToHash(organism);
+
+    if(attributeMap[attributeHash] == 1){      // list has already been made
+        if(count > ATTEMPT_FOR_RANDOM_ORGANISM){
 	        logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
 	      exit(1);
         } else {
@@ -52,13 +52,13 @@ vector<string> mutate(vector<string> child,int count = 0){
     for(int i = 0; i < class_count; i++){
         if(rand() % 100 < MUTATION_RATE * 100){
             string str = "attr"+ int_to_string(i+1);
-            string prev_attr = mutated_child.at(i);
-            string new_attribute = prev_attr;        
+            int prev_attr = mutated_child.at(i);
+            int new_attribute = prev_attr;        
 
-            while(prev_attr == new_attribute){
-                new_attribute = propertyLists[str][rand() % propertyLists[str].size()];
-                cout << "mutation was already present" << endl;
+            while((prev_attr == new_attribute) && propertyLists[str].size() > 1 ){
+                new_attribute = rand() % propertyLists[str].size();
             }
+
             logger.log("\tMutated @ index: "+int_to_string(i)+" from " + prev_attr + " to " + new_attribute);
 	        mutated_child.at(i) = new_attribute;
 
@@ -67,7 +67,7 @@ vector<string> mutate(vector<string> child,int count = 0){
         }
     }
     // // checking if organism has already been made
-    // string listsString = listToString(mutated_child);
+    // string listsString = indexToString(mutated_child);
     // if(attributeMap[listsString] == 1){      // list has already been made
     //     if(count > 20){
     //         logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
@@ -114,8 +114,8 @@ bool genetic_heuristic(int numberOfRuns){
     }
 
 
-    // logger.log("\tGenerated Parent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
-    // logger.log("\tGenerated Parent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
+    // logger.log("\tGenerated Parent_0:\n\t\t"+indexToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
+    // logger.log("\tGenerated Parent_1:\n\t\t"+indexToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
     // Create new child (vector) through cross over
     vector<string> child = parent_0;
@@ -123,8 +123,8 @@ bool genetic_heuristic(int numberOfRuns){
     while(NUMBER_OF_RUNS < numberOfRuns){
       logger.log("NEXT ITERATION##########################################################################################");
 
-        logger.log("\tParent_0:\n\t\t"+listToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
-        logger.log("\tParent_1:\n\t\t"+listToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
+        logger.log("\tParent_0:\n\t\t"+indexToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
+        logger.log("\tParent_1:\n\t\t"+indexToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
 
         child.clear();
         child = crossOver(parent_0,parent_1);
@@ -138,7 +138,7 @@ bool genetic_heuristic(int numberOfRuns){
         }
 
         child_score = cost_function();
-        logger.log("\tGenerated Child:\n\t\t"+listToString(child)+"\n\t\tScore: "+int_to_string(child_score));
+        logger.log("\tGenerated Child:\n\t\t"+indexToString(child)+"\n\t\tScore: "+int_to_string(child_score));
 
         score_tracker.log(int_to_string(child_score));
 
