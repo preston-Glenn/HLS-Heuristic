@@ -1,6 +1,2 @@
 H_BT9003: "reg" variable is used in automatic scheduling mode.
  [Tips] Use "var" or logic type, if possible, which possibly can reduce the number of cycles.
-H_BT9012: The cycle has been increased the number of decoders of the register array for array line_buffer is limited.
- [Tips] Increasing decoders can improve circuit performance.
-        example)
-        reg(0:8) ary[3]/* Cyber rw_port = RW2 */ "2" means decoder number.

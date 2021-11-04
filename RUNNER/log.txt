@@ -9785,3 +9785,7269 @@ Finished Synthesis
 		arrayEXPANDarrayROMarrayLOGICunroll_times0unroll_times0unroll_times0
 		Score: 0.644799
 Finished third Meta Heuristic
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started Meta Heuristic with area weight at: 0.25
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		2
+		arrayRAMarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 2 #################################
+
+	Parent_0:
+		arrayRAMarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.89535
+	Parent_1:
+		arrayRAMarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.4965
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		arrayRAMarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.89535
+	Parent_1:
+		arrayRAMarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.4965
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 0 to 2
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 3
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 0 to 1
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started: Brute Force
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 1
+	
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 2
+	
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 3
+	
+	
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 4
+	
+	
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 5
+	
+	
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 6
+	
+	
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 7
+	
+	
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 8
+	
+	
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		9
+		arrayRAMarrayREGarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 9
+	
+	
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		10
+		arrayRAMarrayREGarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 10
+	
+	
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		11
+		arrayRAMarrayREGarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 11
+	
+	
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 12
+	
+	
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		13
+		arrayRAMarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 13
+	
+	
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		14
+		arrayRAMarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 14
+	
+	
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		15
+		arrayRAMarrayREGarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 15
+	
+	
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 16
+	
+	
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 17
+	
+	
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 18
+	
+	
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 19
+	
+	
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 20
+	
+	
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 21
+	
+	
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 22
+	
+	
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 23
+	
+	
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 24
+	
+	
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 25
+	
+	
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 26
+	
+	
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 27
+	
+	
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 28
+	
+	
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 29
+	
+	
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 30
+	
+	
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 31
+	
+	
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 32
+	
+	
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		33
+		arrayRAMarrayEXPANDarrayREGunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 33
+	
+
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		34
+		arrayRAMarrayEXPANDarrayREGunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 34
+	
+
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		35
+		arrayRAMarrayEXPANDarrayREGunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 35
+	
+
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 36
+	
+
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		37
+		arrayRAMarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 37
+	
+
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		38
+		arrayRAMarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 38
+	
+
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		39
+		arrayRAMarrayEXPANDarrayREGunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 39
+	
+
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 40
+	
+
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		41
+		arrayRAMarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 41
+	
+
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		42
+		arrayRAMarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 42
+	
+
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		43
+		arrayRAMarrayEXPANDarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 43
+	
+
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 44
+	
+
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		45
+		arrayRAMarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 45
+	
+
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		46
+		arrayRAMarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 46
+	
+
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		47
+		arrayRAMarrayEXPANDarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 47
+	
+
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 48
+	
+
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		49
+		arrayRAMarrayEXPANDarrayROMunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 49
+	
+
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		50
+		arrayRAMarrayEXPANDarrayROMunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 50
+	
+
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		51
+		arrayRAMarrayEXPANDarrayROMunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 51
+	
+
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 52
+	
+
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		53
+		arrayRAMarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 53
+	
+
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		54
+		arrayRAMarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 54
+	
+
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		55
+		arrayRAMarrayEXPANDarrayROMunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 55
+	
+
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 56
+	
+
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		57
+		arrayRAMarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 57
+	
+
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		58
+		arrayRAMarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 58
+	
+
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		59
+		arrayRAMarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 59
+	
+
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 60
+	
+
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		61
+		arrayRAMarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 61
+	
+
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		62
+		arrayRAMarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 62
+	
+
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		63
+		arrayRAMarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 63
+	
+
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 64
+	
+
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 65
+	
+CLASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 66
+	
+CLASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 67
+	
+CLASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 68
+	
+CLASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 69
+	
+CLASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 70
+	
+CLASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 71
+	
+CLASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 72
+	
+CLASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		73
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 73
+	
+CLASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		74
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 74
+	
+CLASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		75
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 75
+	
+CLASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 76
+	
+CLASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		77
+		arrayRAMarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 77
+	
+CLASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		78
+		arrayRAMarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 78
+	
+CLASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		79
+		arrayRAMarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 79
+	
+CLASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 80
+	
+CLASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,-
+	Added :3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 81
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,-
+	Added :5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 82
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,-
+	Added :3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 83
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 84
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,-
+	Added :2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 85
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,-
+	Added :5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 86
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,-
+	Added :2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 87
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 88
+	
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 89
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 90
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 91
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 92
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 93
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 94
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 95
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 96
+	
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 97
+	
+LASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 98
+	
+LASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 99
+	
+LASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 100
+	
+LASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 101
+	
+LASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 102
+	
+LASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 103
+	
+LASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 104
+	
+LASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		105
+		arrayRAMarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 105
+	
+LASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		106
+		arrayRAMarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 106
+	
+LASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		107
+		arrayRAMarrayLOGICarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 107
+	
+LASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 108
+	
+LASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		109
+		arrayRAMarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 109
+	
+LASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		110
+		arrayRAMarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 110
+	
+LASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		111
+		arrayRAMarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 111
+	
+LASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 112
+	
+LASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 113
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 114
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 115
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 116
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 117
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 118
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 119
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 120
+	
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 121
+	
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 122
+	
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 123
+	
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 124
+	
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 125
+	
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 126
+	
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 127
+	
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 128
+	
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 129
+
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 130
+
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 131
+
+	
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 132
+
+	
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 133
+
+	
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 134
+
+	
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 135
+
+	
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 136
+
+	
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		137
+		arrayREGarrayREGarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 137
+
+	
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		138
+		arrayREGarrayREGarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 138
+
+	
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		139
+		arrayREGarrayREGarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 139
+
+	
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 140
+
+	
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		141
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 141
+
+	
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		142
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 142
+
+	
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		143
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 143
+
+	
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 144
+
+	
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 145
+
+	
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 146
+
+	
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 147
+
+	
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 148
+
+	
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 149
+
+	
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 150
+
+	
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 151
+
+	
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 152
+
+	
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 153
+
+	
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 154
+
+	
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 155
+
+	
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 156
+
+	
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 157
+
+	
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 158
+
+	
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 159
+
+	
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 160
+
+	
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		161
+		arrayREGarrayEXPANDarrayREGunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 161
+
+
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		162
+		arrayREGarrayEXPANDarrayREGunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 162
+
+
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		163
+		arrayREGarrayEXPANDarrayREGunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 163
+
+
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 164
+
+
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		165
+		arrayREGarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 165
+
+
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		166
+		arrayREGarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 166
+
+
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		167
+		arrayREGarrayEXPANDarrayREGunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 167
+
+
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 168
+
+
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		169
+		arrayREGarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 169
+
+
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		170
+		arrayREGarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 170
+
+
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		171
+		arrayREGarrayEXPANDarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 171
+
+
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 172
+
+
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		173
+		arrayREGarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 173
+
+
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		174
+		arrayREGarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 174
+
+
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		175
+		arrayREGarrayEXPANDarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 175
+
+
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 176
+
+
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		177
+		arrayREGarrayEXPANDarrayROMunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 177
+
+
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		178
+		arrayREGarrayEXPANDarrayROMunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 178
+
+
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		179
+		arrayREGarrayEXPANDarrayROMunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 179
+
+
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 180
+
+
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		181
+		arrayREGarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 181
+
+
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		182
+		arrayREGarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 182
+
+
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		183
+		arrayREGarrayEXPANDarrayROMunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 183
+
+
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 184
+
+
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		185
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 185
+
+
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		186
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 186
+
+
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		187
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 187
+
+
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 188
+
+
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		189
+		arrayREGarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 189
+
+
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		190
+		arrayREGarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 190
+
+
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		191
+		arrayREGarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 191
+
+
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 192
+
+
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 193
+
+CLASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 194
+
+CLASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 195
+
+CLASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 196
+
+CLASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 197
+
+CLASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 198
+
+CLASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 199
+
+CLASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 200
+
+CLASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		201
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 201
+
+CLASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		202
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 202
+
+CLASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		203
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 203
+
+CLASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 204
+
+CLASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		205
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 205
+
+CLASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		206
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 206
+
+CLASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		207
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 207
+
+CLASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 208
+
+CLASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,-
+	Added :3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 209
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,-
+	Added :5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 210
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,-
+	Added :3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 211
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 212
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,-
+	Added :2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 213
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,-
+	Added :5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 214
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,-
+	Added :2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 215
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 216
+
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 217
+
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 218
+
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 219
+
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 220
+
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 221
+
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 222
+
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 223
+
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 224
+
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 225
+
+LASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 226
+
+LASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 227
+
+LASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 228
+
+LASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 229
+
+LASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 230
+
+LASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 231
+
+LASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 232
+
+LASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		233
+		arrayREGarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 233
+
+LASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		234
+		arrayREGarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 234
+
+LASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		235
+		arrayREGarrayLOGICarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 235
+
+LASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 236
+
+LASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		237
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 237
+
+LASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		238
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 238
+
+LASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		239
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 239
+
+LASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 240
+
+LASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 241
+
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 242
+
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 243
+
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 244
+
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 245
+
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 246
+
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 247
+
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 248
+
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 249
+
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 250
+
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 251
+
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 252
+
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 253
+
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 254
+
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 255
+
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 256
+
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 257
+CLASS_COUNT: 
+	
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 258
+CLASS_COUNT: 
+	
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 259
+CLASS_COUNT: 
+	
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 260
+CLASS_COUNT: 
+	
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 261
+CLASS_COUNT: 
+	
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 262
+CLASS_COUNT: 
+	
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 263
+CLASS_COUNT: 
+	
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 264
+CLASS_COUNT: 
+	
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		265
+		arrayEXPANDarrayREGarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 265
+CLASS_COUNT: 
+	
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		266
+		arrayEXPANDarrayREGarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 266
+CLASS_COUNT: 
+	
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		267
+		arrayEXPANDarrayREGarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 267
+CLASS_COUNT: 
+	
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 268
+CLASS_COUNT: 
+	
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		269
+		arrayEXPANDarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 269
+CLASS_COUNT: 
+	
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		270
+		arrayEXPANDarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 270
+CLASS_COUNT: 
+	
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		271
+		arrayEXPANDarrayREGarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 271
+CLASS_COUNT: 
+	
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 272
+CLASS_COUNT: 
+	
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 273
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 274
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 275
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 276
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 277
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 278
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 279
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 280
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 281
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 282
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 283
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 284
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 285
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 286
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 287
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 288
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		289
+		arrayEXPANDarrayEXPANDarrayREGunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 289
+CLASS_COUNT: 
+
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		290
+		arrayEXPANDarrayEXPANDarrayREGunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 290
+CLASS_COUNT: 
+
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		291
+		arrayEXPANDarrayEXPANDarrayREGunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 291
+CLASS_COUNT: 
+
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 292
+CLASS_COUNT: 
+
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		293
+		arrayEXPANDarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 293
+CLASS_COUNT: 
+
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		294
+		arrayEXPANDarrayEXPANDarrayREGunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 294
+CLASS_COUNT: 
+
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		295
+		arrayEXPANDarrayEXPANDarrayREGunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 295
+CLASS_COUNT: 
+
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 296
+CLASS_COUNT: 
+
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		297
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 297
+CLASS_COUNT: 
+
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		298
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 298
+CLASS_COUNT: 
+
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		299
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 299
+CLASS_COUNT: 
+
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 300
+CLASS_COUNT: 
+
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		301
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 301
+CLASS_COUNT: 
+
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		302
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 302
+CLASS_COUNT: 
+
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		303
+		arrayEXPANDarrayEXPANDarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 303
+CLASS_COUNT: 
+
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 304
+CLASS_COUNT: 
+
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		305
+		arrayEXPANDarrayEXPANDarrayROMunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 305
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		306
+		arrayEXPANDarrayEXPANDarrayROMunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 306
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		307
+		arrayEXPANDarrayEXPANDarrayROMunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 307
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 308
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		309
+		arrayEXPANDarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 309
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		310
+		arrayEXPANDarrayEXPANDarrayROMunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 310
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		311
+		arrayEXPANDarrayEXPANDarrayROMunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 311
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 312
+CLASS_COUNT: 
+
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		313
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 313
+CLASS_COUNT: 
+
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		314
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 314
+CLASS_COUNT: 
+
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		315
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 315
+CLASS_COUNT: 
+
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 316
+CLASS_COUNT: 
+
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		317
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 317
+CLASS_COUNT: 
+
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		318
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 318
+CLASS_COUNT: 
+
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		319
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 319
+CLASS_COUNT: 
+
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 320
+CLASS_COUNT: 
+
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 321
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 322
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 323
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 324
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 325
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 326
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 327
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 328
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		329
+		arrayEXPANDarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 329
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		330
+		arrayEXPANDarrayROMarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 330
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		331
+		arrayEXPANDarrayROMarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 331
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 332
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		333
+		arrayEXPANDarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 333
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		334
+		arrayEXPANDarrayROMarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 334
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		335
+		arrayEXPANDarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 335
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 336
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,-
+	Added :3200,7,1739,972,412,19,5747,2582,7,7,7.00,58,-,5.0713ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 337
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,-
+	Added :5488,7,3920,1056,439,19,9449,4384,7,7,7.00,54,-,5.6013ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 338
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,-
+	Added :3181,9,1699,948,469,9,5930,2670,9,9,9.00,56,-,5.3162ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 339
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 340
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,-
+	Added :2884,3,1735,810,300,0,5068,2350,3,3,3.00,39,-,5.0713ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 341
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,-
+	Added :5057,3,3916,840,267,0,8563,4087,3,3,3.00,34,-,5.6013ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 342
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,-
+	Added :2916,7,1695,798,380,0,5355,2482,7,7,7.00,43,-,5.3162ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 343
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 344
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 345
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 346
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,-
+	Added :2730,9,1221,954,481,9,5129,2251,9,9,9.00,65,-,6.1075ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 347
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 348
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 349
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 350
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,-
+	Added :2465,7,1217,804,392,0,4541,2053,7,7,7.00,52,-,6.0375ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 351
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 352
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 353
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 354
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 355
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 356
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 357
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 358
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 359
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 360
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		361
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 361
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		362
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 362
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		363
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 363
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 364
+CLASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		365
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 365
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		366
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 366
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		367
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 367
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 368
+CLASS_COUNT: 
+LASS_COUNT: 
+
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2661,7,1127,972,476,19,4982,2165,7,7,7.00,67,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 369
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,-
+	Added :4018,7,2390,1056,490,19,7147,3250,7,7,7.00,63,-,6.1218ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 370
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 371
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 372
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2347,3,1123,816,362,0,4290,1922,3,3,3.00,46,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 373
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 374
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,-
+	Added :2343,7,1083,804,406,0,4402,1957,7,7,7.00,50,-,6.0425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 375
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 376
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 377
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,-
+	Added :4430,6,2964,960,433,19,7818,3620,6,5,5.50,54,0,5.9718ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 378
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,-
+	Added :3280,6,1833,942,442,9,5927,2674,6,5,5.50,54,0,5.8183ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 379
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 380
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+	
+
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,-
+	Added :2739,2,1699,750,252,0,4700,2175,2,2,2.00,38,0,5.5925ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 381
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 382
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 383
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 384
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+
+
+
+Finished: Brute Force
