@@ -90,7 +90,7 @@ int main(int argc, char** argv){
 		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 
 		ValueArg<float>  mutationRateArg("r","rate","The rate at which the allels mutate.",false,0.1,"mutation rate");
-		ValueArg<float>  weightArg("w","weight","The weight for the AREA in the cost function. This will overide the program from running at multiple different weight values.",false,0,"AREA weight");
+		ValueArg<float>  weightArg("w","weight","The weight for the AREA in the cost function. This will overide the program from running at multiple different weight values.",false,-1,"AREA weight");
 		ValueArg<int>    seedArg("s","seed","The randomness seed for the program.",false,1,"Program seed");
 		ValueArg<string> resultsFileArg("f","results","The filename for the results output", false,RESULTS_DIRECTORY,"Results file.");
 		ValueArg<string> resultLabelArg("l","label", "The label for the test",false,"","Results label");
@@ -196,7 +196,7 @@ int main(int argc, char** argv){
 
 		// TODO RESET attributeMap
 		if(heuristic_value){
-		  if(AREA_WEIGHT == 0){
+		  if(AREA_WEIGHT == -1){
 
 			AREA_WEIGHT = 0;
 		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
