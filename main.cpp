@@ -198,28 +198,42 @@ int main(int argc, char** argv){
 		if(heuristic_value){
 		  if(AREA_WEIGHT == 0){
 
+			AREA_WEIGHT = 0;
+		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+		    meta_heuristic(NUMBER_OF_ITERATIONS/6);
+		    logger.log("Finished first Meta Heuristic");
+
 		    AREA_WEIGHT = .25;
 		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-		    meta_heuristic(NUMBER_OF_ITERATIONS/3);
+		    meta_heuristic(2*NUMBER_OF_ITERATIONS/6);
 		    logger.log("Finished first Meta Heuristic");
 
 		    AREA_WEIGHT = .5;
-                    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-                    meta_heuristic(2*NUMBER_OF_ITERATIONS/3);
-                    logger.log("Finished second Meta Heuristic");
+			logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+			meta_heuristic(3*NUMBER_OF_ITERATIONS/6);
+			logger.log("Finished second Meta Heuristic");
 
 		    AREA_WEIGHT = .75;
-                    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-                    meta_heuristic(NUMBER_OF_ITERATIONS);
-                    logger.log("Finished third Meta Heuristic");
+			logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+			meta_heuristic(4*NUMBER_OF_ITERATIONS/6);
+			logger.log("Finished third Meta Heuristic");
+
+			AREA_WEIGHT = 1;
+		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+		    meta_heuristic(5*NUMBER_OF_ITERATIONS/6);
+		    logger.log("Finished first Meta Heuristic");
+
+			AREA_WEIGHT = 0;
+		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+		    meta_heuristic(NUMBER_OF_ITERATIONS);
+		    logger.log("Finished first Meta Heuristic");
+
+
 
 		  } else {
 		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-                    meta_heuristic(NUMBER_OF_ITERATIONS);
-                    logger.log("Finished Meta Heuristic");
-
-
-
+			meta_heuristic(NUMBER_OF_ITERATIONS);
+			logger.log("Finished Meta Heuristic");
 
 		  }
 		}
