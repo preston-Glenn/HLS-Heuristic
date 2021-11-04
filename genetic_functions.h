@@ -1,5 +1,5 @@
-int MAX_AREA = 5000;
-int MAX_LATENCY = 10;
+int MAX_AREA = 0;
+int MAX_LATENCY = 0;
 
 // Save cost
 double cost_function(){

@@ -9,7 +9,7 @@
     <fileInfo>
         <sourcefiles>
             <sourcefile name="../benchmarks/decimation_filter/decimation.c" timestamp="20211102125734"/>
-            <sourcefile name="../benchmarks/decimation_filter/attrs.h" timestamp="20211104193734"/>
+            <sourcefile name="../benchmarks/decimation_filter/attrs.h" timestamp="20211104205450"/>
         </sourcefiles>
     </fileInfo>
 </sourceInfo>
