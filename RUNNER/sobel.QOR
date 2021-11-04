@@ -8,18 +8,18 @@ Cyber Synthesis Report
   Module Name         : sobel
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :      3,591
-    Sequential        :        846
-    Combinational     :      2,745
+  Total Area          :      2,662
+    Sequential        :        972
+    Combinational     :      1,690
 
-  Latency Index       :          7
-  Total States        :          3
+  Latency Index       :         26
+  Total States        :          7
 
   Clock Period        :       10ns
-  Critical Path Delay :   6.1218ns
+  Critical Path Delay :   6.2125ns
 
-  Net                 :      2,945
-  Pin Pair            :      6,252
+  Net                 :      2,171
+  Pin Pair            :      5,010
 
   Port                :         34
     In                :         26
@@ -30,14 +30,14 @@ Cyber Synthesis Report
 ========
 
   Total :
-    Total           :      3,591
+    Total           :      2,662
       Sequential    : 
-        REG         :        846 (23%)
-      Combinational :      2,745 (76%)
-        FU          :      2,386 (66%)
-        MUX         :        316 ( 8%)
-        DEC         :          0 ( 0%)
-        MISC        :         43 ( 1%)
+        REG         :        972 (36%)
+      Combinational :      1,690 (63%)
+        FU          :      1,127 (42%)
+        MUX         :        474 (17%)
+        DEC         :         19 ( <1%)
+        MISC        :         70 ( 2%)
       Memory        :          -
 
 ===================
@@ -47,15 +47,15 @@ Cyber Synthesis Report
     FU Name                Area    Reg  Delay  Pipeline  Count
                                          (ns)    Stage
     ----------------------------------------------------------
-    add12s_10                75      0   0.44         -      1
-    add16s                  100      0   0.58         -      1
+    add4s                    26      0   0.36         -      1
     addsub32s               263      0   1.53         -      1
     addsub32s_32            263      0   1.53         -      1
-    addsub32s_32_1          263      0   1.53         -      1
-    addsub32s_32_2          263      0   1.53         -      2
-    incr2s                    2      0   0.10         -      2
-    mul12s                  652      0   1.96         -      3
-    mul8u                   337      0   1.28         -      1
+    addsub32s_32_1          263      0   1.53         -      2
+    decr2u_1                  2      0   0.10         -      2
+    incr2s                    2      0   0.10         -      4
+    mul12s                  652      0   1.96         -      1
+    sub2s                    10      0   0.23         -      1
+    sub2u                    10      0   0.18         -      1
 
   Unused Functional Units :
     ---------------------------------------------------
@@ -68,30 +68,35 @@ Cyber Synthesis Report
      Used      Declared                 Used
       Bit           Bit      Count       Bit  * Count
     -------------------------------------------------
-        1             1          1                  1
+        1             1          3                  3
     -------------------------------------------------
         2             2          2                  4
     -------------------------------------------------
-        8             8          9                 72
+        3             3          1                  3
+    -------------------------------------------------
+        8             8         11                 88
     -------------------------------------------------
        32            32          2                 64
     -------------------------------------------------
-    Total                                         141
+    Total                                         162
 
 ===============
 ; Multiplexer ;
 ===============
 
-   2 bit:  2way: 2 ,  3way: 2 
-   8 bit:  2way:10 ,  3way: 2 
-  32 bit:  2way: 3 ,  3way: 2 
-   Total : 612 (# of Fanins)
+   1 bit:  2way: 1 ,  3way: 2 
+   2 bit:  2way: 5 ,  4way: 1 
+   3 bit:  2way: 1 ,  4way: 1 ,  5way: 1 
+   4 bit:  2way: 1 
+   8 bit: (1way: 2),  2way:10 ,  3way: 3 ,  5way: 1 ,  9way: 1 
+  32 bit:  2way: 2 ,  3way: 2 ,  4way: 1 
+   Total : 869 (# of Fanins)
 
 ===========
 ; Decoder ;
 ===========
 
-    None
+    4to12: 1
 
 ==========
 ; Memory ;
@@ -101,7 +106,7 @@ Cyber Synthesis Report
                                                                    outside)
     Name                   Type   Kind     Bit  Word  Area  Count  Count
     ------------------------------------------------------------------------
-    MEMB8W3                -      R1         8     3     -      3      0
+    MEMB8W9                -      R1         8     9     -      1      0
 
 ===========
 ; Latency ;
@@ -109,75 +114,95 @@ Cyber Synthesis Report
 
     Total:
         Type          : S
-        Latency       : 1 + L1
-        Latency Index : 7
-        State No.     : 1, 2, 3
+        Latency       : 1 + L1 + 1 + L2
+        Latency Index : 26
+        State No.     : 1, 2, 3, 4, 5, 6, 7
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
-        Sub Loops     : L1
+        Sub Loops     : L1, L2
         Line          : ../benchmarks/sobel/sobel.c:43
     L1:
         Type          : S
-        Latency       : 2 * 3
+        Latency       : 3 * 2
         Latency Index : 6
-        State No.     : 2, 3
+        State No.     : 2, 3, 4
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
         Sub Loops     : -
+        Line          : ../benchmarks/sobel/sobel.c:64
+    L2:
+        Type          : S
+        Latency       : L3 * 3
+        Latency Index : 18
+        State No.     : 6, 7
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L3
         Line          : ../benchmarks/sobel/sobel.c:82
+    L3:
+        Type          : S
+        Latency       : 2 * 3
+        Latency Index : 6
+        State No.     : 6, 7
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/sobel/sobel.c:84
 
 =======
 ; FSM ;
 =======
 
-  Total States      :          3
+  Total States      :          7
   #FSM              :          1
-  States/FSM        :          3
-  FSM Decoder Delay :     0.09ns
+  States/FSM        :          7
+  FSM Decoder Delay :     0.13ns
 
 =========
 ; Delay ;
 =========
 
   Clock Period        :       10ns
-  Critical Path Delay :   6.1218ns
+  Critical Path Delay :   6.2125ns
 
               Subtotal
       Class       (ns)    Ratio
       -------------------------
       IN           0.00      0%
-      FU           5.27     86%
-      MUX          0.60      9%
+      FU           5.19     83%
+      MUX          0.80     12%
       DEC          0.00      0%
-      MISC         0.25      4%
+      MISC         0.23      3%
       MEM          0.00      0%
       -------------------------
-      Total        6.12
+      Total        6.21
 
     Path: #1
                                                                 Arrival
                                                           Delay    Time Logic
       Name                 / Port [Signal              ]   (ns)   (ns)  Stage
       -----------------------------------------------------------------------
-      RG_rowOffset         / dout [                    ]      -    0.00     0
-      incr2s@2             / o1   [incr2s2ot           ]   0.10    0.10     2
-      _DMUX_477            / o1   [TR_03               ]   0.21    0.31     5
-      _NMUX_471            / o1   [TR_01               ]   0.07    0.38     7
-      mul12s@1             / o1   [mul12s1ot           ]   1.49    1.86    41
-      add16s@1             / o1   [add16s1ot           ]   0.00    1.86    41
-      addsub32s_32@1       / o1   [addsub32s_321ot     ]   1.25    3.11    59
-      addsub32s_32_2@1     / o1   [addsub32s_32_21ot   ]   0.53    3.64    66
-      _NMUX_419            / o1   [sumY_t2             ]   0.07    3.71    68
-      _ROR_1161            / o1   [                    ]   0.15    3.86    71
-      _LOGIC_1159          / o1   [C_02                ]   0.04    3.90    72
-      _LOGIC_1279          / o1   [                    ]   0.06    3.96    73
-      _NMUX_429            / o1   [addsub32s1i2        ]   0.11    4.07    77
-      addsub32s@1          / o1   [addsub32s1ot        ]   1.38    5.45   100
-      addsub32s_32_2@2     / o1   [addsub32s_32_22ot   ]   0.53    5.98   107
-      _NMUX_413            / o1   [RG_sumX             ]   0.14    6.12   109
-      RG_sumX              / din  [                    ]      -    6.12   109
+      RG_colOffset_Y       / dout [                    ]      -    0.00     0
+      sub2s@1              / o1   [sub2s1ot            ]   0.18    0.18     5
+      _NMUX_550            / o1   [line_buffer_ad00    ]   0.07    0.25     7
+      _DMUX_429            / o1   [line_buffer_rd00    ]   0.34    0.59    14
+      _NMUX_592            / o1   [TR_04               ]   0.07    0.66    16
+      mul12s@1             / o1   [mul12s1ot           ]   1.49    2.15    50
+      addsub32s_32@1       / o1   [addsub32s_321ot     ]   1.08    3.23    66
+      addsub32s_32_1@1     / o1   [addsub32s_32_11ot   ]   0.53    3.76    73
+      _NMUX_529            / o1   [sumX_t2             ]   0.07    3.83    75
+      _ROR_976             / o1   [                    ]   0.15    3.98    78
+      _LOGIC_974           / o1   [C_01                ]   0.04    4.02    79
+      _LOGIC_1158          / o1   [                    ]   0.04    4.06    80
+      _NMUX_538            / o1   [addsub32s1i1        ]   0.11    4.17    84
+      addsub32s@1          / o1   [addsub32s1ot        ]   1.38    5.54   107
+      addsub32s_32_1@2     / o1   [addsub32s_32_12ot   ]   0.53    6.07   114
+      _NMUX_515            / o1   [RG_sumY             ]   0.14    6.21   116
+      RG_sumY              / din  [                    ]      -    6.21   116
 
   False Path                    :  Unchecked
   Multi Cycle Path              :  Unchecked
@@ -188,103 +213,109 @@ Cyber Synthesis Report
 ; Wire ;
 ========
 
-  Total Net Count      :    2,945
-  Total Pin Pair Count :    6,252
-  Const Fanout         :      191
+  Total Net Count      :    2,171
+  Total Pin Pair Count :    5,010
+  Const Fanout         :      253
 
   Net Count :
          Bit       Net    Bit*Net
      ----------------------------
-           1        36         36
-           2        12         24
-           8        28        224
-           9         1          9
-          10         1         10
-          16         3         48
-          17         1         17
-          32        12        384
+           1        79         79
+           2        17         34
+           3        18         54
+           4         2          8
+           8        36        288
+          12         1         12
+          16         1         16
+          32        11        352
      ----------------------------
-       Total                  752
+       Total                  843
 
   Pin Pair Count :
       Fanout    Bit    Count   Subtotal
     -----------------------------------
-          23      1        1         23
-          17      1        1         17
-          11      2        1         22
+          20      1        1         20
+          18      1        1         18
+          14      1        1         14
+          11      8        1         88
           11      1        1         11
+          10      2        1         20
           10      1        1         10
            9      1        1          9
            8      1        1          8
-           7      1        1          7
-           5      1        3         15
+           7      3        1         21
+           7      2        1         14
+           7      1        2         14
+           6      2        1         12
+           6      1        8         48
+           5      1        2         10
+           4      2        1          8
            4      1        1          4
+           3     32        1         96
            3     31        2        186
-           3     24        1         72
-           3      8        3         72
-           3      2        2         12
-           2     32        1         64
-           2     24        1         48
-           2     10        1         20
-           2      8        8        128
-           2      1        5         10
-           1     32        7        224
-           1     17        1         17
-           1     16        2         32
-           1      9        2         18
-           1      8       19        152
-           1      6        1          6
-           1      2        7         14
-           1      1       27         27
+           3      8        1         24
+           3      6        1         18
+           3      1        1          3
+           2     24        2         96
+           2     15        1         30
+           2      8       10        160
+           2      1       10         20
+           1     32        6        192
+           1      9        1          9
+           1      8       25        200
+           1      4        2          8
+           1      3       16         48
+           1      2       12         24
+           1      1       58         58
     -----------------------------------
-       Total                      1,228
+       Total                      1,501
 
   Fanout for Consts:
       Value    Fanout
-          0       171
-          1        20
+          0       204
+          1        49
     ------------------
-      Total       191
+      Total       253
 
   Clock Fanout:
       Name                         Count
       ----------------------------------
-      CLOCK(0:1)                      17
+      CLOCK(0:1)                      20
 
   Reset Fanout:
       Name                         Count
       ----------------------------------
-      RESET(0:1)                       8
+      RESET(0:1)                      11
 
   Register Fanin/Fanout Cone Size:
 
     Fanin: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-      sobel_ret_r(0:8)                                  18
-      RG_sumX(0:32)                                     17
-      RG_sumY(0:32)                                     12
-      RG_03(0:8)                                         4
-      RG_05(0:8)                                         4
-      B01_streg(0:2)                                     3
-      RG_rowOffset(0:2)                                  3
-      line_buffer_a_0_rg00(0:8)                          3
-      line_buffer_a_0_rg01(0:8)                          3
-      line_buffer_a_0_rg02(0:8)                          3
+      RG_sumY(0:32)                                     19
+      sobel_ret_r(0:8)                                  19
+      line_buffer_rg06(0:8)                             16
+      RG_sumX(0:32)                                     16
+      RG_rowOffset(0:8)                                 15
+      line_buffer_rg02(0:8)                             15
+      line_buffer_rg10(0:8)                             15
+      line_buffer_rg00(0:8)                             14
+      line_buffer_rg01(0:8)                             14
+      line_buffer_rg04(0:8)                             14
 
     Fanout: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-      B01_streg(0:2)                                    14
-      RG_rowOffset(0:2)                                 10
-      line_buffer_a_0_rg00(0:8)                          5
-      line_buffer_a_0_rg01(0:8)                          5
-      line_buffer_a_0_rg02(0:8)                          5
-      line_buffer_a_2_rg00(0:8)                          5
-      line_buffer_a_2_rg01(0:8)                          5
-      line_buffer_a_2_rg02(0:8)                          5
-      RG_sumY(0:32)                                      3
-      RG_03(0:8)                                         3
+      RG_colOffset_Y(0:2)                               19
+      B01_streg(0:3)                                    19
+      RG_rowOffset(0:8)                                 16
+      line_buffer_rg06(0:8)                             13
+      line_buffer_rg02(0:8)                             13
+      line_buffer_rg10(0:8)                             13
+      line_buffer_rg00(0:8)                             13
+      line_buffer_rg01(0:8)                             13
+      line_buffer_rg04(0:8)                             13
+      line_buffer_rg05(0:8)                             13
 
   Routability:
 
@@ -294,59 +325,59 @@ Cyber Synthesis Report
       -----------------------------------------------------------------
       addsub32s1ot(0:32)                             98        5 ( 1bit)
       addsub32s_321ot(0:32)                          98        5 ( 1bit)
-      RG_sumX(0:32)                                  88        3 (24bit)
-      RG_sumY(0:32)                                  64        2 (32bit)
-      sumY_t2(0:32)                                  56        2 (24bit)
-      add12s_101ot(0:10)                             32       23 ( 1bit)
+      RG_sumY(0:32)                                  96        3 (32bit)
+      line_buffer_rd00(0:8)                          88       11 ( 8bit)
+      RG_sumX(0:32)                                  72        3 ( 8bit)
+      sumX_t2(0:32)                                  56        2 (24bit)
+      mul12s1ot(0:16)                                48       18 ( 1bit)
       addsub32s1i1(0:32)                             32        1 (32bit)
       addsub32s1i2(0:32)                             32        1 (32bit)
       addsub32s_32_11ot(0:32)                        32        1 (32bit)
-      addsub32s_32_21ot(0:32)                        32        1 (32bit)
-      addsub32s_32_22ot(0:32)                        32        1 (32bit)
-      _NMUX_413(0:32)                                32        1 (32bit)
-      _NMUX_415(0:32)                                32        1 (32bit)
-      mul12s1ot(0:16)                                26        2 (10bit)
-      line_buffer_a_2_rg00(0:8)                      24        3 ( 8bit)
-      line_buffer_a_2_rg01(0:8)                      24        3 ( 8bit)
-      line_buffer_a_2_rg02(0:8)                      24        3 ( 8bit)
-      incr2s2ot(0:2)                                 22       11 ( 2bit)
-      CLOCK(0:1)                                     17       17 ( 1bit)
-      add16s1ot(0:17)                                17        1 (17bit)
-      RG_03(0:8)                                     16        2 ( 8bit)
+      addsub32s_32_12ot(0:32)                        32        1 (32bit)
+      _NMUX_513(0:32)                                32        1 (32bit)
+      _NMUX_515(0:32)                                32        1 (32bit)
+      RG_rowOffset(0:8)                              30        6 ( 2bit)
+      B01_streg(0:3)                                 21        7 ( 3bit)
+      CLOCK(0:1)                                     20       20 ( 1bit)
+      incr2s2ot(0:2)                                 20       10 ( 2bit)
       sobel_ret_r(0:8)                               16        2 ( 8bit)
-      line_buffer_a_0_rg00(0:8)                      16        2 ( 8bit)
-      line_buffer_a_0_rg01(0:8)                      16        2 ( 8bit)
-      line_buffer_a_0_rg02(0:8)                      16        2 ( 8bit)
+      line_buffer_rg00(0:8)                          16        2 ( 8bit)
+      line_buffer_rg01(0:8)                          16        2 ( 8bit)
+      line_buffer_rg02(0:8)                          16        2 ( 8bit)
+      line_buffer_rg04(0:8)                          16        2 ( 8bit)
+      line_buffer_rg05(0:8)                          16        2 ( 8bit)
+      line_buffer_rg06(0:8)                          16        2 ( 8bit)
+      line_buffer_rg08(0:8)                          16        2 ( 8bit)
 
     Top 25 Nets
     sorted by "Max" (Maximum Fanout)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      add12s_101ot(0:10)                             32       23 ( 1bit)
-      CLOCK(0:1)                                     17       17 ( 1bit)
-      incr2s2ot(0:2)                                 22       11 ( 2bit)
-      ST1_02d(0:1)                                   11       11 ( 1bit)
-      ST1_01d(0:1)                                   10       10 ( 1bit)
-      U_06(0:1)                                       9        9 ( 1bit)
-      RESET(0:1)                                      8        8 ( 1bit)
-      Gx_a_21ot(0:2)                                  8        7 ( 1bit)
+      CLOCK(0:1)                                     20       20 ( 1bit)
+      mul12s1ot(0:16)                                48       18 ( 1bit)
+      ST1_06d(0:1)                                   14       14 ( 1bit)
+      line_buffer_rd00(0:8)                          88       11 ( 8bit)
+      RESET(0:1)                                     11       11 ( 1bit)
+      incr2s2ot(0:2)                                 20       10 ( 2bit)
+      M_51(0:1)                                      10       10 ( 1bit)
+      U_15(0:1)                                       9        9 ( 1bit)
+      ST1_05d(0:1)                                    8        8 ( 1bit)
+      B01_streg(0:3)                                 21        7 ( 3bit)
+      RG_colOffset_Y(0:2)                            14        7 ( 2bit)
+      RG_rowOffset_1(0:2)                             8        7 ( 1bit)
+      ST1_03d(0:1)                                    7        7 ( 1bit)
+      RG_rowOffset(0:8)                              30        6 ( 2bit)
+      Gy1ot(0:3)                                      8        6 ( 1bit)
+      incr2s1ot(0:2)                                  7        6 ( 1bit)
+      FF_Y(0:1)                                       6        6 ( 1bit)
+      RG_07(0:1)                                      6        6 ( 1bit)
+      ST1_01d(0:1)                                    6        6 ( 1bit)
+      ST1_02d(0:1)                                    6        6 ( 1bit)
+      ST1_04d(0:1)                                    6        6 ( 1bit)
+      ST1_07d(0:1)                                    6        6 ( 1bit)
       addsub32s1ot(0:32)                             98        5 ( 1bit)
       addsub32s_321ot(0:32)                          98        5 ( 1bit)
-      ST1_03d(0:1)                                    5        5 ( 1bit)
-      incr2s1ot(0:2)                                  5        4 ( 1bit)
-      RG_sumX(0:32)                                  88        3 (24bit)
-      line_buffer_a_2_rg00(0:8)                      24        3 ( 8bit)
-      line_buffer_a_2_rg01(0:8)                      24        3 ( 8bit)
-      line_buffer_a_2_rg02(0:8)                      24        3 ( 8bit)
-      RG_rowOffset(0:2)                               6        3 ( 2bit)
-      B01_streg(0:2)                                  6        3 ( 2bit)
-      RG_sumY(0:32)                                  64        2 (32bit)
-      sumY_t2(0:32)                                  56        2 (24bit)
-      mul12s1ot(0:16)                                26        2 (10bit)
-      RG_03(0:8)                                     16        2 ( 8bit)
-      sobel_ret_r(0:8)                               16        2 ( 8bit)
-      line_buffer_a_0_rg00(0:8)                      16        2 ( 8bit)
-      line_buffer_a_0_rg01(0:8)                      16        2 ( 8bit)
+      incr2s3ot(0:2)                                  8        4 ( 2bit)
 
 ================
 ; Primary Port ;

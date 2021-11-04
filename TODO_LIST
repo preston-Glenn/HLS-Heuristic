@@ -15,14 +15,21 @@ Done:
 
 - add TCLAP functions 
 
-Todo:
-- prep and check CSV file over multiple different AREA/LATENCY weights
+
 - TCLAP choose results file_name else iterate on results
 - TCLAP to choose csv_class_name
-- validate Heuristic --create prgoram to randomly simulate exploration
-3. meta heuristic
-5. Powerpoint
 
+-------------------------------------------------------------------------------
+MAJOR FIX:
+- fix scaling issue of cost function latency at 1 is overpowered by
+
+Todo:
+- if results file already exists just append to it and dont readd header
+- add label tag to csv file
+- prep and check CSV file over multiple different AREA/LATENCY weights
+- validate Heuristic --create prgoram to randomly simulate exploration
+- Powerpoint
+- failed count vs successful synthesis
 
 
 

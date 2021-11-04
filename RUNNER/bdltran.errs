@@ -23,30 +23,28 @@ I_BT6773: The BLIB and FLIB files are loaded.
  === array / memory ===
   read  :  5
   write :  4
-I_BT4441: Memory array 'Gy' is expanded at 1-th dimension from right.
-	[Source Lines]
-	57(../benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
 I_BT4383: Generate memory library file / memory constraint file.
 	sobel-auto.MLIB
 	sobel-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  -  :  2  (32bit:2)
-  +  :  6  (10bit:1, 16bit:1, 32bit:4)
-  *  :  5  (8bit:1, 9bit:4)
+  -  :  4  (2bit:2, 32bit:2)
+  +  :  4  (4bit:1, 32bit:3)
+  *  :  2  (9bit:2)
   ~  :  1  (8bit:1)
   &> :  2  (1bit:2)
   ~&>:  3  (1bit:3)
-  |> :  3  (23bit:3)
+  |> :  4  (1bit:1, 23bit:3)
   &  :  3  (1bit:3)
-  ~|>:  1  (1bit:1)
-  INCR:  2  (2bit:2)
-  Data transfer : 98
+  ~|>:  2  (1bit:2)
+  INCR:  4  (2bit:4)
+  DECR:  2  (2bit:2)
+  Data transfer : 101
 
  === array / memory ===
-  read  :  9
-  write :  9
+  read  :  5
+  write :  6
 I_BT4382: Generate functional unit library files / functional unit constraint files.
 	sobel-auto.FLIB
 	sobel-auto.FCNT
@@ -54,34 +52,34 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	sobel-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 3 / 3 / 3.00
+[Performance index max/min/ave] 7 / 7 / 7.00
 
   Module Name         : sobel
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :      3,591
-    Sequential        :        846
-    Combinational     :      2,745
+  Total Area          :      2,662
+    Sequential        :        972
+    Combinational     :      1,690
 
-  Latency Index       :          7
-  Total States        :          3
+  Latency Index       :         26
+  Total States        :          7
 
   Clock Period        :       10ns
-  Critical Path Delay :   6.1218ns
+  Critical Path Delay :   6.2125ns
 
-  Net                 :      2,945
-  Pin Pair            :      6,252
+  Net                 :      2,171
+  Pin Pair            :      5,010
 
   Port                :         34
     In                :         26
     Out               :          8
 
-TOTAL AREA 3,591 (FU: 2,386 + REG: 846 + MUX: 316 + DEC: 0 + MISC: 43) + pin pair 6,252(net 2,945) + 1FSM of 3state
+TOTAL AREA 2,662 (FU: 1,127 + REG: 972 + MUX: 474 + DEC: 19 + MISC: 70) + pin pair 5,010(net 2,171) + 1FSM of 7state
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
 	 1 warning      exist
-	28 information  exist
-	 1 tips         exist
+	16 information  exist
+	 2 tips         exist
 	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS
 ##### CyberII Normal finish (automatic scheduling mode) [sobel] #####
 

@@ -67,8 +67,8 @@ string getResultsFromCSV(vector<int> list){
     getline(file,results);
     cout << results << endl;
     getline(file,results);
-    cout << "Results: " << results << "space" << endl;
-    logger.log("RESULTS: "+results);
+    cout << "Results: " << results <<  endl;
+    logger.log("\tRESULTS: "+results);
 
     try{
       vector<string> words = parseCSVLine(results);
@@ -76,9 +76,9 @@ string getResultsFromCSV(vector<int> list){
       AREA    = string_to_int(words.at(0 ));
     } catch (exception& ex){
 		  cout << "Exception occurred!"<< endl;
-      logger.log("Synthesis Failed at: ");
-      logger.log("\t"+int_to_string(NUMBER_OF_RUNS));
-      logger.log("\t"+indexToString(list));
+      logger.log("\tSynthesis Failed at: ");
+      logger.log("\t\t"+int_to_string(NUMBER_OF_RUNS));
+      logger.log("\t\t"+indexToString(list));
       AREA = 10000000;
 			LATENCY = 10000000;
       return "";
@@ -98,7 +98,6 @@ string getResultsFromCSV(vector<int> list){
 
 
 void addFileResults(string results, vector<int> index_list){
-  bool file_opened = false;
   string indexes = "";
   for(int i = 0; i < class_count; i++){
     indexes+=int_to_string(index_list.at(i));
@@ -109,7 +108,6 @@ void addFileResults(string results, vector<int> index_list){
   ofstream file;
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
-
 
     string modified_results = "Exhaustive Search,1," + indexes  + "," + results;
     file << modified_results << endl;

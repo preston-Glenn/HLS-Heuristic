@@ -1,7 +1,20 @@
+int MAX_AREA = 5000;
+int MAX_LATENCY = 10;
 
 // Save cost
 double cost_function(){
-  return AREA * AREA_WEIGHT + LATENCY * ( 1 - AREA_WEIGHT);
+  if(AREA == 10000000 && LATENCY == 10000000 ) return 1;
+  if(AREA > MAX_AREA) MAX_AREA = AREA;
+  if(LATENCY > MAX_LATENCY) MAX_LATENCY = LATENCY;
+
+  cout << (float)AREA/MAX_AREA << endl;
+  cout << MAX_AREA << endl;
+  double areaValue, latencyValue;
+  areaValue = (double)AREA/MAX_AREA;
+  latencyValue = (double)LATENCY/MAX_LATENCY;
+  double result = areaValue * AREA_WEIGHT + latencyValue * (1 - AREA_WEIGHT);
+  cout << result << endl;
+  return result;
 }
 
 
@@ -14,19 +27,8 @@ vector<int> random_organism(int count = 0){
         organism.push_back(new_attribute);
     }
 
-    // checking if organism has already been made
-    int attributeHash = listToHash(organism);
-
-    if(attributeMap[attributeHash] == 1){      // list has already been made
-        if(count > ATTEMPT_FOR_RANDOM_ORGANISM){
-	        logger.log("UNABLE TO FIND NEW ORGANISM\nEXITING ");
-	      exit(1);
-        } else {
-            return random_organism(count + 1);
-        }
-    } else{
-        return organism;
-    }
+    return organism;
+    
 
 }
 
@@ -83,7 +85,7 @@ vector<int> mutate(vector<int> child,int count = 0){
 
 }
 
-bool genetic_heuristic(int numberOfRuns){
+void genetic_heuristic(int numberOfRuns){
     Logger score_tracker;
     score_tracker.setFileName("score_tracker.csv");
 
@@ -92,9 +94,9 @@ bool genetic_heuristic(int numberOfRuns){
     vector<int> parent_0 = random_organism();
     vector<int> parent_1 = random_organism();
 
-    int score_parent_0 = 0;
-    int score_parent_1 = 0;
-    int child_score = 0;
+    double score_parent_0 = 0;
+    double score_parent_1 = 0;
+    double child_score = 0;
 
     synthesize(parent_0);
     score_parent_0 = cost_function();
@@ -121,10 +123,10 @@ bool genetic_heuristic(int numberOfRuns){
     vector<int> child = parent_0;
 
     while(NUMBER_OF_RUNS < numberOfRuns){
-      logger.log("NEXT ITERATION##########################################################################################");
+      logger.log("############################### ITERATION "+int_to_string(NUMBER_OF_RUNS)+" #################################\n");
 
-        logger.log("\tParent_0:\n\t\t"+indexToString(parent_0)+"\n\t\tScore: "+int_to_string(score_parent_0));
-        logger.log("\tParent_1:\n\t\t"+indexToString(parent_1)+"\n\t\tScore: "+int_to_string(score_parent_1));
+        logger.log("\tParent_0:\n\t\t"+indexToString(parent_0)+"\n\t\tScore: "+double_to_string(score_parent_0));
+        logger.log("\tParent_1:\n\t\t"+indexToString(parent_1)+"\n\t\tScore: "+double_to_string(score_parent_1));
 
         child.clear();
         child = crossOver(parent_0,parent_1);
@@ -138,9 +140,9 @@ bool genetic_heuristic(int numberOfRuns){
         }
 
         child_score = cost_function();
-        logger.log("\tGenerated Child:\n\t\t"+indexToString(child)+"\n\t\tScore: "+int_to_string(child_score));
+        logger.log("\tGenerated Child:\n\t\t"+indexToString(child)+"\n\t\tScore: "+double_to_string(child_score));
 
-        score_tracker.log(int_to_string(child_score));
+        score_tracker.log(double_to_string(child_score));
 
         // Comparing score of child and parents and swiching out if necessary
         if(child_score < score_parent_0 && child_score < score_parent_1 ){

@@ -20,7 +20,7 @@
 using namespace TCLAP;
 using namespace std;
 
-bool meta_heuristic(int numberOfRuns);
+void meta_heuristic(int numberOfRuns);
 void bruteForce (vector<int> list ,int count) ;
 void parseFile(string t);
 void synthesize(vector<int> l);
@@ -51,6 +51,7 @@ string FILE_WITH_DIR = "";			// passed in path of file.c
 string FILE_NAME_WITH_EXT = ""; 		// filename with extension
 string RESULTS_DIRECTORY = "RESULTS";		// file to store results (.csv)
 string CSV_HEADER = "Method,Iteration,ATTR,AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP";
+string LABEL;
 
 bool CUSTOMISED_AREA_WEIGHT = false;
 bool heuristic_value;
@@ -64,6 +65,7 @@ int AREA;
 float MUTATION_RATE = 0.25;   // ADD TO TCLAP
 float AREA_WEIGHT = 0.5;     // ADD TO TCLAP
 int SEED = 1;                // ADD TO TCLAP
+int NUMBER_OF_ITERATIONS = 0;
 
 #include "csv_function.h"
 #include "genetic_functions.h"
@@ -72,20 +74,6 @@ int main(int argc, char** argv){
   
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
-	int results_count = 0;
-	while(true){
-	  RESULTS_DIRECTORY =  "RESULTS_0";
-	  string temp = int_to_string(results_count);
-	  RESULTS_DIRECTORY += temp;
-	  RESULTS_DIRECTORY += ".csv";
-	  ifstream file(RESULTS_DIRECTORY.c_str());
-	  if(!file.is_open()){
-	    file.close();
-	    break;
-	  }
-	   results_count++;
-	}
-	cout << RESULTS_DIRECTORY << endl;
 	logger.setFileName("log.txt");
 	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
@@ -101,19 +89,50 @@ int main(int argc, char** argv){
 		SwitchArg verbose("v","verbose","The program will be more verbose",cmd,false);
 		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 
-		ValueArg<float> mutationRateArg("r","rate","The rate at which the allels mutate.",false,0.1,"mutation rate");
-		ValueArg<float> weightArg("w","weight","The name of the output file.",false,0,"output filename");
-		ValueArg<int>   seedArg("s","seed","The randomness seed for the program.",false,1,"Program seed");
-
+		ValueArg<float>  mutationRateArg("r","rate","The rate at which the allels mutate.",false,0.1,"mutation rate");
+		ValueArg<float>  weightArg("w","weight","The weight for the AREA in the cost function. This will overide the program from running at multiple different weight values.",false,0,"AREA weight");
+		ValueArg<int>    seedArg("s","seed","The randomness seed for the program.",false,1,"Program seed");
+		ValueArg<string> resultsFileArg("f","results","The filename for the results output", false,RESULTS_DIRECTORY,"Results file.");
+		ValueArg<string> resultLabelArg("l","label", "The label for the test",false,"","Results label");
+		ValueArg<int>    numberOfRunArg("n","number", "The total number of iterations for meta-heuristic",false,50,"Total number of iteration.");
 
 		// Add arguments
 		cmd.add(mutationRateArg);
 		cmd.add(weightArg);
 		cmd.add(seedArg);
 		cmd.add(file_name_arg);
+		cmd.add(resultsFileArg);
+		cmd.add(resultLabelArg);
+		cmd.add(numberOfRunArg);
 		
 		// Parse the args.
 		cmd.parse(argc, argv);
+		
+		NUMBER_OF_ITERATIONS = numberOfRunArg.getValue();
+
+		if(resultsFileArg.getValue() == ""){
+		int results_count = 0;
+		while(true){
+		  RESULTS_DIRECTORY =  "RESULTS_0";
+		  string temp = int_to_string(results_count);
+		  RESULTS_DIRECTORY += temp;
+		  RESULTS_DIRECTORY += ".csv";
+		  ifstream file(RESULTS_DIRECTORY.c_str());
+		  if(!file.is_open()){
+		    file.close();
+		    break;
+		  }
+		  results_count++;
+		}
+		cout << RESULTS_DIRECTORY << endl;
+
+		} else {
+
+		  RESULTS_DIRECTORY = resultsFileArg.getValue();
+		}
+
+
+		LABEL = resultLabelArg.getValue();
 
 		// Store values
 		SEED = seedArg.getValue();
@@ -177,11 +196,32 @@ int main(int argc, char** argv){
 
 		// TODO RESET attributeMap
 		if(heuristic_value){
-		  logger.log("Started Meta Heuristic");
-		  int numberOfRuns = 1000;
-		  meta_heuristic(numberOfRuns);
-		  logger.log("Finished Meta Heuristic");
+		  if(AREA_WEIGHT == 0){
 
+		    AREA_WEIGHT = .25;
+		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+		    meta_heuristic(NUMBER_OF_ITERATIONS/3);
+		    logger.log("Finished first Meta Heuristic");
+
+		    AREA_WEIGHT = .5;
+                    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+                    meta_heuristic(2*NUMBER_OF_ITERATIONS/3);
+                    logger.log("Finished second Meta Heuristic");
+
+		    AREA_WEIGHT = .75;
+                    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+                    meta_heuristic(NUMBER_OF_ITERATIONS);
+                    logger.log("Finished third Meta Heuristic");
+
+		  } else {
+		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+                    meta_heuristic(NUMBER_OF_ITERATIONS);
+                    logger.log("Finished Meta Heuristic");
+
+
+
+
+		  }
 		}
 	}
 	catch (ArgException& e)  // catch any exceptions
@@ -208,7 +248,7 @@ void bruteForce (vector<int> list, int count = 1) {
 
 			logger.log("Trying to call synthesis");
 			try{
-				synthesize(extendedList);
+			  synthesize(extendedList); // if success
 				if(true){
 					logger.log("Success: "+ int_to_string(NUMBER_OF_RUNS));
 					for(int j = 0; j < class_count; j++){
@@ -275,11 +315,11 @@ void parseFile(string file_name){
 
 // Indexes is a list of the sub indexes of each choosen property for a given attribute
 void synthesize(vector<int> indexes){
-	logger.log("\n\n");
+	logger.log("\n\nStarting Synthesis");
 
 	int attributeHash = listToHash(indexes);
     if(attributeMap[attributeHash]){
-		logger.log("Already synthesised");
+		logger.log("\tAlready synthesised");
 		AREA    = attributeMap_AREA[attributeHash];
 		LATENCY = attributeMap_LATENCY[attributeHash];
 	} else {
@@ -306,34 +346,35 @@ void synthesize(vector<int> indexes){
 
 		string results = "";
 		if(EXTENSION == ".bdl"){
-			logger.log("\tStarted: BDL_Pars");
-			command = "bdlpars " +  FILE_WITH_DIR;
-			results = commandLine(command);
-			if(VERBOSE) logger.log("\tCalled bdlpars with: "+ command);
+		  if(VERBOSE)logger.log("\tStarted: BDL_Pars");
+		  command = "bdlpars " +  FILE_WITH_DIR;
+		  results = commandLine(command);
+		  if(VERBOSE) logger.log("\tCalled bdlpars with: "+ command);
 		} else if(EXTENSION == ".c"){
-			logger.log("\tStarted: C_Pars");
-			command = "bdlpars " +  FILE_WITH_DIR;
-			results = commandLine(command);
-			if(VERBOSE) logger.log("\tCalled cpars with: "+ command);
+		  if(VERBOSE)logger.log("\tStarted: C_Pars");
+		  command = "bdlpars " +  FILE_WITH_DIR;
+		  results = commandLine(command);
+		  if(VERBOSE) logger.log("\tCalled cpars with: "+ command);
 		}
 		
 		
 		string synthesisResults = "";
 
 
-		logger.log("\tStarted: BDL_TRAN");
-		command = "bdltran -c1000 -s " + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > tran.output";
+		if(VERBOSE)logger.log("\tStarted: BDL_TRAN");
+		command = "bdltran -c1000 -s " + FILE_NAME + ".IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs";
 		if(VERBOSE) logger.log("\tCalled bdltran with: "+ command);
 		synthesisResults = commandLine(command);
 		
 
 		if(VERBOSE) logger.log(synthesisResults);
-		logger.log("\tFinished BDL_TRAN");
+		if(VERBOSE) logger.log("\tFinished BDL_TRAN");
 
 		results = getResultsFromCSV(indexes);
 		if(AREA == 0 && LATENCY == 1){  // dont add results to file
 			AREA = 10000000;
 			LATENCY = 10000000;
+			logger.log("\tRESULTS set to 10000000");
 		} else {
 			addFileResults(results, indexes);			
 		}
@@ -341,9 +382,10 @@ void synthesize(vector<int> indexes){
 
 
 		attributeMap[attributeHash] = 1;
-        attributeMap_AREA[attributeHash] = AREA;
-        attributeMap_LATENCY[attributeHash] = LATENCY;
-        logger.log("\tAdded attribute string to attr, AREA, and Latency map.");
+		attributeMap_AREA[attributeHash] = AREA;
+		attributeMap_LATENCY[attributeHash] = LATENCY;
+		logger.log("\tAdded attribute string to attr, AREA, and Latency map.");
+		logger.log("Finished Synthesis\n\n");
 
 	}
 }
@@ -352,7 +394,7 @@ void synthesize(vector<int> indexes){
 
 
 
-bool meta_heuristic(int numberOfRuns){
+void meta_heuristic(int numberOfRuns){
 
 	genetic_heuristic(numberOfRuns);
 

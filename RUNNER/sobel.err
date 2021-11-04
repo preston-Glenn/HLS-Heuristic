@@ -8,50 +8,17 @@ I_BT4169: All signals are synthesized as ascending bit-order because all declare
 I_BT4607: for loop is unrolled
 	[Source Lines]
 	65(../benchmarks/sobel/sobel.c):      for(X=0;X< 3;X++){
-I_BT4607: for loop is unrolled
-	[Source Lines]
-	64(../benchmarks/sobel/sobel.c):    for(Y=2;Y>0;Y--){
-I_BT4607: for loop is unrolled
-	[Source Lines]
-	84(../benchmarks/sobel/sobel.c):      for(colOffset = -1; colOffset <=1; colOffset++){
-I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
-	[Source Lines]
-	85(../benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
-I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
-	[Source Lines]
-	86(../benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
-I_BT4441: Memory array 'Gy' is expanded at 1-th dimension from right.
-	[Source Lines]
-	57(../benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
-I_BT4442: Array signal Gx is expanded at dimension #1 from right.
-	[Source Lines]
-	52(../benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
-I_BT4442: Array signal line_buffer is expanded at dimension #1 from right.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT4121: Array Gx_a_0 is synthesized as a combinational circuit.
-I_BT5047: Array reference Gx_a_1 replaced by constant because constant array is initialized with same values.
-I_BT4121: Array Gx_a_2 is synthesized as a combinational circuit.
-I_BT5514: 2 address decoders (R1,W1) to access to array signal 'line_buffer_a_0'.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'line_buffer_a_1'.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'line_buffer_a_2'.
+I_BT4121: Array Gy is synthesized as a combinational circuit.
+I_BT5514: 5 address decoders (R4,W1) to access to array signal 'line_buffer'.
 	[Source Lines]
 	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
-	52(../benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
 	85(../benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
-I_BT8371: Height of operation tree has been reduced.
-	[Source Lines]
-	86(../benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
 I_BT4383: Generate memory library file / memory constraint file.
 	sobel-auto.MLIB
 	sobel-auto.MCNT
-I_BT4395: 2 functional units templates are generated.
+I_BT4395: 1 functional units template is generated.
 I_BT4392: No arithmetic macro functional unit required.
 I_BT4319: Empty FLIB file (sobel-amacro-auto.FLIB) generated. No functional units required.
  [Action] If required, confirm the description.
@@ -67,6 +34,6 @@ W_BT2751: No information about memory area in MLIB file.
  [Action] Add area information to MLIB file using MLIBgen.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
 	 1 warning      exist
-	28 information  exist
-	 1 tips         exist
+	16 information  exist
+	 2 tips         exist
 	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS
