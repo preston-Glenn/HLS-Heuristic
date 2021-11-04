@@ -8,7 +8,7 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  5 / 5 / 5.00
+# Performance index  max/min/ave  4 / 4 / 4.00
 # Data-path info.    
 # Bp-Option  ../benchmarks/decimation_filter/decimation.c
 # Option  -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
@@ -46,8 +46,8 @@ in   unsigned ter(0:17)  incoef5_a08/* Cyber bit_order = down, ary_idx = 8 */ /*
 in   unsigned ter(0:17)  incoef5_a09/* Cyber bit_order = down, ary_idx = 9 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
 in   unsigned ter(0:17)  incoef5_a10/* Cyber bit_order = down, ary_idx = 10 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
 in   unsigned ter(0:17)  incoef5_a11/* Cyber bit_order = down, ary_idx = 11 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-unsigned reg(0:1)  FF_x/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
-unsigned reg(0:4)  RG_x/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
+unsigned reg(0:2)  RG_x/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
+unsigned reg(0:5)  RG_x_01/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
 in   unsigned port(0:19)  indata/* Cyber bit_order = down */ /* line# ../benchmarks/decimation_filter/decimation.c:34 */;
 
 /* Cyber default_bit_order = down */
@@ -56,74 +56,57 @@ decimation()
 {
     unsigned ter(0:1)  CT_03/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  JF_03/* Cyber bit_order = down */;
-    unsigned ter(0:4)  x1_t1/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:4)  M_14_t/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:4)  x1_t/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:4)  M_111_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:5)  x1_t1/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:5)  M_23_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:5)  x1_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:5)  M_211_t/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  CT_02/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  JF_02/* Cyber bit_order = down */;
-    unsigned ter(0:3)  x2_t1/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:3)  M_13_t/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:3)  x2_t/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:3)  M_121_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  x4_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  M_331_t/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  CT_01/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  JF_01/* Cyber bit_order = down */;
-    unsigned ter(0:2)  M_23_t/* Cyber bit_order = down, other = DC */;
-    unsigned ter(0:2)  x3_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:3)  M_34_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:3)  x2_t/* Cyber bit_order = down, other = DC */;
     unsigned ter(0:1)  in_stage_11_t/* Cyber bit_order = down, other = DC */;
-    unsigned var(0:3)  M_25/* Cyber bit_order = down */;
-    unsigned var(0:4)  M_24/* Cyber bit_order = down */;
-    unsigned var(0:2)  M_23/* Cyber bit_order = down */;
-    unsigned var(0:3)  M_121/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:4)  M_111/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned reg(0:1)  bufferline_1_11[4]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0:1)  bufferline_1_01[4]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0:1)  bufferline_41[11]/* Cyber bit_order = down, sig2mu = bufferline_4[] */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
-    unsigned reg(0:1)  bufferline_31[7]/* Cyber bit_order = down, sig2mu = bufferline_3[] */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:5)  M_36/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_35/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_34/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_331/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:5)  M_211/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned reg(0:1)  bufferline_4_31[3]/* Cyber bit_order = down, sig2mu = bufferline_4[] */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0:1)  bufferline_4_21[3]/* Cyber bit_order = down, sig2mu = bufferline_4[] */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0:1)  bufferline_4_11[3]/* Cyber bit_order = down, sig2mu = bufferline_4[] */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0:1)  bufferline_4_01[3]/* Cyber bit_order = down, sig2mu = bufferline_4[] */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0:1)  bufferline_1_31[2]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0:1)  bufferline_1_21[2]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0:1)  bufferline_1_11[2]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0:1)  bufferline_1_01[2]/* Cyber bit_order = down, sig2mu = bufferline_1[] */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0:1)  bufferline_51[24]/* Cyber bit_order = down, sig2mu = bufferline_5[] */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
     unsigned var(0:1)  x4/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
     unsigned var(0:2)  x3/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
     unsigned var(0:3)  x2/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
-    unsigned var(0:4)  x1/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
+    unsigned var(0:5)  x1/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
     unsigned var(0:1)  in_stage_11/* Cyber bit_order = down, pipeline_forwarding = YES */ /* line# ../benchmarks/decimation_filter/decimation.c:53 */;
-    unsigned var(0:36)  M_22/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:20)  M_21/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:17)  M_20/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:19)  M_19/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:36)  M_18/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:20)  M_17/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:17)  M_16/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:19)  M_15/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:19)  bufferline_5_a23/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 23 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a22/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 22 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a21/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 21 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a20/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 20 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a19/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 19 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a18/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 18 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a17/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 17 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a16/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 16 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a15/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 15 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a14/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 14 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a13/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 13 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a12/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 12 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a11/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 11 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a10/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 10 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a09/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 9 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a08/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 8 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a07/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 7 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a06/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 6 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a05/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 5 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a04/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 4 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a03/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a02/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_5_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned var(0:19)  bufferline_2_a06/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 6 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a05/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 5 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a04/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 4 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a03/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a02/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
-    unsigned var(0:19)  bufferline_2_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:2)  M_33/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:36)  M_32/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:20)  M_31/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:17)  M_30/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:19)  bufferline_2_3_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_3_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_2_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_2_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_1_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_1_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_0_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_2_0_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned var(0:19)  bufferline_3_a06/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 6 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a05/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 5 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a04/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 4 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a03/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a02/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned var(0:19)  bufferline_3_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
     unsigned var(0:17)  incoef5_var_a11/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 11 */ /* line# ../benchmarks/decimation_filter/decimation.c:92 */;
     unsigned var(0:17)  incoef5_var_a10/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 10 */ /* line# ../benchmarks/decimation_filter/decimation.c:92 */;
     unsigned var(0:17)  incoef5_var_a09/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 9 */ /* line# ../benchmarks/decimation_filter/decimation.c:92 */;
@@ -150,18 +133,33 @@ decimation()
     unsigned var(0:17)  incoef2_var_a02/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:89 */;
     unsigned var(0:17)  incoef2_var_a01/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:89 */;
     unsigned var(0:17)  incoef2_var_a00/* Cyber bit_order = down, pipeline_forwarding = YES, ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:89 */;
-    unsigned var(0:4)  M_14/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:3)  M_13/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_29/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_28/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_27/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_26/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_25/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_24/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:5)  M_23/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_22/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_21/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_20/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:1)  M_19/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:3)  M_18/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:19)  M_17/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:2)  M_16/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:1)  M_15/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:3)  M_14/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:19)  M_13/* Cyber bit_order = down, pipeline_forwarding = YES */;
     unsigned var(0:32)  M_12/* Cyber bit_order = down, pipeline_forwarding = YES */;
     unsigned var(0:32)  M_11/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:1)  M_10/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:2)  M_09/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:3)  M_08/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:19)  M_07/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:1)  M_06/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:2)  M_05/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:3)  M_04/* Cyber bit_order = down, pipeline_forwarding = YES */;
-    unsigned var(0:19)  M_03/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_10/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_09/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_08/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_07/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_06/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_05/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_04/* Cyber bit_order = down, pipeline_forwarding = YES */;
+    unsigned var(0:32)  M_03/* Cyber bit_order = down, pipeline_forwarding = YES */;
     unsigned var(0:32)  M_02/* Cyber bit_order = down, pipeline_forwarding = YES */;
     unsigned var(0:32)  M_01/* Cyber bit_order = down, pipeline_forwarding = YES */;
 
@@ -172,29 +170,31 @@ ST1_00 :
 
 ST1_01 :
     in_stage_11_t(0:1) = indata(0:19); 	/* line# ../benchmarks/decimation_filter/decimation.c:136 */
-    bufferline_1_01[(unsigned ter(0:2))(3(0:2))](0:1) = bufferline_1_11[(unsigned ter(0:2))(2(0:2))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-    bufferline_1_11[(unsigned ter(0:2))(2(0:2))](0:1) = bufferline_1_01[(unsigned ter(0:2))(2(0:2))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-    bufferline_1_01[(unsigned ter(0:2))(2(0:2))](0:1) = bufferline_1_11[(unsigned ter(0:1))(1(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    bufferline_1_21[(unsigned ter(0:1))(1(0:1))](0:1) = bufferline_1_11[(unsigned ter(0:1))(1(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
     bufferline_1_11[(unsigned ter(0:1))(1(0:1))](0:1) = bufferline_1_01[(unsigned ter(0:1))(1(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-    bufferline_1_01[(unsigned ter(0:1))(1(0:1))](0:1) = bufferline_1_11[(unsigned ter(0:1))(0(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    bufferline_1_01[(unsigned ter(0:1))(1(0:1))](0:1) = bufferline_1_31[(unsigned ter(0:1))(0(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    bufferline_1_31[(unsigned ter(0:1))(0(0:1))](0:1) = bufferline_1_21[(unsigned ter(0:1))(0(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    bufferline_1_21[(unsigned ter(0:1))(0(0:1))](0:1) = bufferline_1_11[(unsigned ter(0:1))(0(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
     bufferline_1_11[(unsigned ter(0:1))(0(0:1))](0:1) = bufferline_1_01[(unsigned ter(0:1))(0(0:1))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
     bufferline_1_01[(unsigned ter(0:1))(0(0:1))](0:1) = in_stage_11_t(0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:147 */
-    FF_x(0:1) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
+    RG_x(0:2) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
     goto ST1_02;
     $
 
 ST1_02 :
-    FF_x(0:1) = x3_t(1:1);
-    RG_x(0:4) = (unsigned ter(0:3))(6(0:3)); 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
     if (CT_01(0:1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
         JF_01(0:1) = 1(0:1);
+        RG_x(0:2) = x2_t(1:2);
     }
     else {
+        RG_x(0:2) = (unsigned ter(0:2))(2(0:2)); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
         JF_01(0:1) = 0(0:1);
+        bufferline_4_21[(unsigned ter(0:2))(2(0:2))](0:1) = bufferline_4_11[(unsigned ter(0:2))(2(0:2))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        bufferline_4_11[(unsigned ter(0:2))(2(0:2))](0:1) = bufferline_4_01[(unsigned ter(0:2))(2(0:2))](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
     }
-    M_23_t(0:2) = x3_t(0:2); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-    CT_01(0:1) = (unsigned ter(0:1))(~M_23_t(0:1)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-    x3_t(0:2) = (unsigned ter(0:2))(FF_x(0:1) + 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
+    M_34_t(0:3) = x2_t(0:3); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
+    CT_01(0:1) = (unsigned ter(0:1))(~M_34_t(0:1)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
+    x2_t(0:3) = (unsigned ter(0:3))(RG_x(0:2) + 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
     /* Cyber sfdl_jump = exclusive */
     if (JF_01(0:1)) {
         goto ST1_02;
@@ -205,19 +205,21 @@ ST1_02 :
     $
 
 ST1_03 :
-    RG_x(0:4) = x2_t(0:3); 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
-    if (CT_02(0:1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
-        M_13_t(0:3) = (unsigned ter(0:3))(M_121_t(0:3) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
-        bufferline_31[M_121_t(0:3)](0:1) = bufferline_31[M_13_t(0:3)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+    RG_x(0:2) = x4_t(0:1);
+    RG_x_01(0:5) = (unsigned ter(0:5))(23(0:5)); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
+    if (CT_02(0:1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
         JF_02(0:1) = 1(0:1);
-        M_121_t(0:3) = x2_t1(0:3);
-        x2_t(0:3) = (unsigned ter(0:3))(x2_t1(0:3) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
     }
     else {
         JF_02(0:1) = 0(0:1);
     }
-    x2_t1(0:3) = RG_x(1:3); 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
-    CT_02(0:1) = (unsigned ter(0:1))(|>x2_t1(0:3)); 	/* line# ../benchmarks/decimation_filter/decimation.c:221 */
+    x4_t(0:1) = (unsigned ter(0:1))(RG_x(0:2) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    CT_02(0:1) = x4_t(0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    bufferline_4_01[RG_x(0:2)](0:1) = bufferline_4_31[M_331_t(0:1)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    bufferline_4_31[M_331_t(0:1)](0:1) = bufferline_4_21[M_331_t(0:1)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    bufferline_4_21[M_331_t(0:1)](0:1) = bufferline_4_11[M_331_t(0:1)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    bufferline_4_11[M_331_t(0:1)](0:1) = bufferline_4_01[M_331_t(0:1)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    M_331_t(0:1) = (unsigned ter(0:1))(RG_x(0:2) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
     /* Cyber sfdl_jump = exclusive */
     if (JF_02(0:1)) {
         goto ST1_03;
@@ -228,30 +230,25 @@ ST1_03 :
     $
 
 ST1_04 :
-    RG_x(0:4) = (unsigned ter(0:4))(10(0:4)); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
-    goto ST1_05;
-    $
-
-ST1_05 :
-    RG_x(0:4) = x1_t(0:4); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
-    if (CT_03(0:1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
-        M_14_t(0:4) = (unsigned ter(0:4))(M_111_t(0:4) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    RG_x_01(0:5) = x1_t(0:5); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
+    if (CT_03(0:1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
+        M_23_t(0:5) = (unsigned ter(0:5))(M_211_t(0:5) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         JF_03(0:1) = 0(0:1);
-        bufferline_41[M_111_t(0:4)](0:1) = bufferline_41[M_14_t(0:4)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
-        M_111_t(0:4) = x1_t1(0:4);
-        x1_t(0:4) = (unsigned ter(0:4))(x1_t1(0:4) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+        bufferline_51[M_211_t(0:5)](0:1) = bufferline_51[M_23_t(0:5)](0:1); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        M_211_t(0:5) = x1_t1(0:5);
+        x1_t(0:5) = (unsigned ter(0:5))(x1_t1(0:5) - 1); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
     }
     else {
         JF_03(0:1) = 1(0:1);
     }
-    x1_t1(0:4) = RG_x(0:4); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
-    CT_03(0:1) = (unsigned ter(0:1))(|>x1_t1(0:4)); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    x1_t1(0:5) = RG_x_01(0:5); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
+    CT_03(0:1) = (unsigned ter(0:1))(|>x1_t1(0:5)); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
     /* Cyber sfdl_jump = exclusive */
     if (JF_03(0:1)) {
         goto ST1_01;
     }
     else {
-        goto ST1_05;
+        goto ST1_04;
     }
 }
 
@@ -262,18 +259,65 @@ ST1_05 :
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
 #  1  incr2u     1  (u)INCR           2,3    1000      3
-#  2  decr3u     2  (u)DECR           3,4    1200      6
-#  3  decr4u     2  (u)DECR           4,5    1600      9
+#  2  decr2u     2  (u)DECR           2,3    1000      2
+#  3  decr8u     2  (u)DECR           8,9    2500     22
 #@END
 
 #@MCNT %AUTO%.MCNT
 ##@CNT { test }
 #@MCNT {
-#    NAME	bufferline_3[]
+#    NAME	incoef1_var[]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	17
+#    DELAY	0
+#}
+#@MCNT {
+#    NAME	bufferline_5[]
 #    LIMIT	1
 #    KIND	R1,W1
 #    BITWIDTH	19
 #    DELAY	0
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R4,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	0
+#    ARRAY_DIV_NAME	bufferline_1_0
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R4,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	1
+#    ARRAY_DIV_NAME	bufferline_1_1
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R3,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	2
+#    ARRAY_DIV_NAME	bufferline_1_2
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R3,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	3
+#    ARRAY_DIV_NAME	bufferline_1_3
 #}
 #@MCNT {
 #    NAME	bufferline_4[]
@@ -281,58 +325,55 @@ ST1_05 :
 #    KIND	R1,W1
 #    BITWIDTH	19
 #    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	0
+#    ARRAY_DIV_NAME	bufferline_4_0
 #}
 #@MCNT {
-#    NAME	incoef1_var[]
+#    NAME	bufferline_4[]
 #    LIMIT	1
 #    KIND	R1,W1
-#    BITWIDTH	17
+#    BITWIDTH	19
 #    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	0
-#    ARRAY_DIV_NAME	incoef1_var_0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	1
+#    ARRAY_DIV_NAME	bufferline_4_1
 #}
 #@MCNT {
-#    NAME	incoef1_var[]
+#    NAME	bufferline_4[]
 #    LIMIT	1
 #    KIND	R1,W1
-#    BITWIDTH	17
-#    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	1
-#    ARRAY_DIV_NAME	incoef1_var_1
-#}
-#@MCNT {
-#    NAME	bufferline_1[]
-#    LIMIT	1
-#    KIND	R6,W1
 #    BITWIDTH	19
 #    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	0
-#    ARRAY_DIV_NAME	bufferline_1_0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	2
+#    ARRAY_DIV_NAME	bufferline_4_2
 #}
 #@MCNT {
-#    NAME	bufferline_1[]
+#    NAME	bufferline_4[]
 #    LIMIT	1
-#    KIND	R6,W1
+#    KIND	R1,W1
 #    BITWIDTH	19
 #    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	1
-#    ARRAY_DIV_NAME	bufferline_1_1
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	3
+#    ARRAY_DIV_NAME	bufferline_4_3
 #}
 ##@END { test }
 
 #@MLMT %AUTO%.MLMT
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  bufferline_3[]    1  R1,W1            19x7     0                 	
-#  2  bufferline_4[]    1  R1,W1           19x11     0                 	
-#  3  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_0  	
-#  4  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_1  	
-#  5  bufferline_1[]    1  R6,W1            19x4     0  bufferline_1_0 	
-#  6  bufferline_1[]    1  R6,W1            19x4     0  bufferline_1_1 	
+#  1  incoef1_var[]    1  R1,W1            17x4     0                 	
+#  2  bufferline_5[]    1  R1,W1           19x24     0                 	
+#  3  bufferline_1[]    1  R4,W1            19x2     0  bufferline_1_0 	
+#  4  bufferline_1[]    1  R4,W1            19x2     0  bufferline_1_1 	
+#  5  bufferline_1[]    1  R3,W1            19x2     0  bufferline_1_2 	
+#  6  bufferline_1[]    1  R3,W1            19x2     0  bufferline_1_3 	
+#  7  bufferline_4[]    1  R1,W1            19x3     0  bufferline_4_0 	
+#  8  bufferline_4[]    1  R1,W1            19x3     0  bufferline_4_1 	
+#  9  bufferline_4[]    1  R1,W1            19x3     0  bufferline_4_2 	
+# 10  bufferline_4[]    1  R1,W1            19x3     0  bufferline_4_3 	
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
