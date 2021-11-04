@@ -8,9 +8,9 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  5 / 5 / 5.00
-# Data-path info.    REG: 186(area),31(FFs), MUX: 69(area),109(fanins)
-# CSV info.          333,5,17,186,62,34,595,304,5,5,5.00,34,0,0.43ns,-,-,-,-,12,-,-
+# Performance index  max/min/ave  6 / 6 / 6.00
+# Data-path info.    REG: 336(area),56(FFs), MUX: 128(area),196(fanins)
+# CSV info.          631,6,34,336,121,75,1137,539,6,6,6.00,65,0,0.53ns,-,-,-,-,26,-,-
 # Bp-Option  ../benchmarks/decimation_filter/decimation.c
 # Option  -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
@@ -57,15 +57,22 @@ unsigned const ter(2..0)  ST1_02 = 1;
 unsigned const ter(2..0)  ST1_03 = 2;
 unsigned const ter(2..0)  ST1_04 = 3;
 unsigned const ter(2..0)  ST1_05 = 4;
+unsigned const ter(2..0)  ST1_06 = 5;
 
 /* Cyber default_bit_order = down */
 process
 decimation()
 {
+    unsigned ter(0..0)  M_49;
+    unsigned ter(0..0)  M_48;
     unsigned ter(1..0)  TR_03/* Cyber FSM = ter */;
+    unsigned ter(2..0)  TR_01/* Cyber other = DC */;
     unsigned reg(2..0)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0..0)  U_10;
+    unsigned ter(0..0)  C_03;
+    unsigned ter(0..0)  C_02;
     unsigned ter(0..0)  C_01;
-    unsigned ter(0..0)  U_01;
+    unsigned ter(0..0)  ST1_06d/* Cyber FSM = dec */;
     unsigned ter(0..0)  ST1_05d/* Cyber FSM = dec */;
     unsigned ter(0..0)  ST1_04d/* Cyber FSM = dec */;
     unsigned ter(0..0)  ST1_03d/* Cyber FSM = dec */;
@@ -111,22 +118,55 @@ decimation()
     unsigned ter(1..0)  bufferline_5_01_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
     unsigned reg(0..0)  bufferline_5_01_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
     unsigned reg(0..0)  bufferline_5_01_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:104 */;
-    unsigned ter(0..0)  bufferline_1_11_we01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(0..0)  bufferline_1_11_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(3..0)  bufferline_1_11_d01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(1..0)  bufferline_1_11_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_11_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_11_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_11_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_11_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(0..0)  bufferline_1_01_we01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(0..0)  bufferline_1_01_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(3..0)  bufferline_1_01_d01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned ter(1..0)  bufferline_1_01_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_01_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_01_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_01_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
-    unsigned reg(0..0)  bufferline_1_01_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned ter(0..0)  bufferline_41_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned ter(10..0)  bufferline_41_d01 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned ter(3..0)  bufferline_41_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg10 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg09 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg08 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg07 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg06 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg05 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg04 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned reg(0..0)  bufferline_41_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:103 */;
+    unsigned ter(0..0)  bufferline_31_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned ter(6..0)  bufferline_31_d01 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned ter(2..0)  bufferline_31_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg06 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg05 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg04 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned reg(0..0)  bufferline_31_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:102 */;
+    unsigned ter(0..0)  bufferline_21_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned ter(6..0)  bufferline_21_d01 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned ter(2..0)  bufferline_21_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg06 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg05 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg04 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned reg(0..0)  bufferline_21_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:101 */;
+    unsigned ter(0..0)  bufferline_11_we01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned ter(0..0)  bufferline_11_rd00/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned ter(6..0)  bufferline_11_d01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned ter(2..0)  bufferline_11_ad01/* Cyber other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg06 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg05 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg04 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg03 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg02 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg01 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned reg(0..0)  bufferline_11_rg00 /* line# ../benchmarks/decimation_filter/decimation.c:100 */;
+    unsigned ter(3..0)  decr4u2i1/* Cyber other = DC */;
+    unsigned ter(3..0)  decr4u2ot;
+    unsigned ter(3..0)  decr4u1i1/* Cyber other = DC */;
+    unsigned ter(3..0)  decr4u1ot;
     unsigned ter(2..0)  decr3u2i1/* Cyber other = DC */;
     unsigned ter(2..0)  decr3u2ot;
     unsigned ter(2..0)  decr3u1i1/* Cyber other = DC */;
@@ -135,68 +175,191 @@ decimation()
     unsigned ter(0..0)  decr2u_12ot;
     unsigned ter(1..0)  decr2u_11i1/* Cyber other = DC */;
     unsigned ter(0..0)  decr2u_11ot;
-    unsigned ter(0..0)  incr2u1i1/* Cyber other = DC */;
-    unsigned ter(1..0)  incr2u1ot;
-    unsigned ter(0..0)  JF_02/* Cyber other = DC */;
-    unsigned ter(0..0)  M_231_t/* Cyber other = DC */;
-    unsigned reg(2..0)  RG_x_01/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
-    unsigned reg(0..0)  FF_in_stage_1_x/* Cyber reset_sig = void */ /* line# ../benchmarks/decimation_filter/decimation.c:53,86 */;
+    unsigned reg(3..0)  RG_x_01/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/decimation_filter/decimation.c:86 */;
+    unsigned reg(0..0)  FF_in_stage_1/* Cyber reset_sig = void */ /* line# ../benchmarks/decimation_filter/decimation.c:53 */;
 
 ST1_01 :
-    decr3u1ot(2..0) ::= decr3u@1(decr3u1i1(2..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144 */
-    decr3u2ot(2..0) ::= decr3u@2(decr3u2i1(2..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    decr4u1ot(3..0) ::= decr4u@1(decr4u1i1(3..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    decr4u2ot(3..0) ::= decr4u@2(decr4u2i1(3..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    decr3u1ot(2..0) ::= decr3u@1(decr3u1i1(2..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,181 */
+    decr3u2ot(2..0) ::= decr3u@2(decr3u2i1(2..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:145,182 */
     decr2u_11ot(0..0) ::= decr2u_1@1(decr2u_11i1(1..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
     decr2u_12ot(0..0) ::= decr2u_1@2(decr2u_12i1(1..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
-    incr2u1ot(1..0) ::= incr2u@1(incr2u1i1(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-    bufferline_1_01_d01(3..0) ::= (unsigned ter(0:4))(decoder(bufferline_1_01_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-    bufferline_1_01_rd00(0..0) ::= dmux (decr3u2ot(2..1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:100,145 */
-        case 0 :  bufferline_1_01_rg00(0..0);
-        case 1 :  bufferline_1_01_rg01(0..0);
-        case 2 :  bufferline_1_01_rg02(0..0);
-        case 3 :  bufferline_1_01_rg03(0..0);
+    bufferline_11_d01(6..0) ::= (unsigned ter(0:8))(decoder(bufferline_11_ad01(2..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+    bufferline_11_rd00(0..0) ::= dmux (decr3u2ot(2..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:100,145 */
+        case 0 :  bufferline_11_rg00(0..0);
+        case 1 :  bufferline_11_rg01(0..0);
+        case 2 :  bufferline_11_rg02(0..0);
+        case 3 :  bufferline_11_rg03(0..0);
+        case 4 :  bufferline_11_rg04(0..0);
+        case 5 :  bufferline_11_rg05(0..0);
+        case 6 :  bufferline_11_rg06(0..0);
     };
-    bufferline_1_01_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_01_we01(0..0) & bufferline_1_01_d01(3..3))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+    bufferline_11_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(6..6))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
         default : 
             nmux {
-                when (ST1_03d(0..0)) :  FF_in_stage_1_x(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:147 */
-                default :  bufferline_1_01_rg00(0..0);
+                when (ST1_03d(0..0)) :  FF_in_stage_1(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:147 */
+                default :  bufferline_11_rg00(0..0);
             };
     };
-    bufferline_1_01_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_01_we01(0..0) & bufferline_1_01_d01(2..2))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_01_rg01(0..0);
+    bufferline_11_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(5..5))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg01(0..0);
     };
-    bufferline_1_01_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_01_we01(0..0) & bufferline_1_01_d01(1..1))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_01_rg02(0..0);
+    bufferline_11_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(4..4))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg02(0..0);
     };
-    bufferline_1_01_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_01_we01(0..0) & bufferline_1_01_d01(0..0))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_01_rg03(0..0);
+    bufferline_11_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(3..3))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg03(0..0);
     };
-    bufferline_1_11_d01(3..0) ::= (unsigned ter(0:4))(decoder(bufferline_1_11_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-    bufferline_1_11_rd00(0..0) ::= dmux (decr3u2ot(2..1)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:100,145 */
-        case 0 :  bufferline_1_11_rg00(0..0);
-        case 1 :  bufferline_1_11_rg01(0..0);
-        case 2 :  bufferline_1_11_rg02(0..0);
-        case 3 :  bufferline_1_11_rg03(0..0);
+    bufferline_11_rg04(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(2..2))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg04(0..0);
     };
-    bufferline_1_11_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_11_we01(0..0) & bufferline_1_11_d01(3..3))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_11_rg00(0..0);
+    bufferline_11_rg05(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(1..1))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg05(0..0);
     };
-    bufferline_1_11_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_11_we01(0..0) & bufferline_1_11_d01(2..2))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_11_rg01(0..0);
+    bufferline_11_rg06(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
+        when ((unsigned ter(0:1))(bufferline_11_we01(0..0) & bufferline_11_d01(0..0))) :  bufferline_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
+        default :  bufferline_11_rg06(0..0);
     };
-    bufferline_1_11_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_11_we01(0..0) & bufferline_1_11_d01(1..1))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_11_rg02(0..0);
+    bufferline_21_d01(6..0) ::= (unsigned ter(0:8))(decoder(bufferline_21_ad01(2..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:101 */
+    bufferline_21_rd00(0..0) ::= dmux (decr3u2ot(2..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182 */
+        case 0 :  bufferline_21_rg00(0..0);
+        case 1 :  bufferline_21_rg01(0..0);
+        case 2 :  bufferline_21_rg02(0..0);
+        case 3 :  bufferline_21_rg03(0..0);
+        case 4 :  bufferline_21_rg04(0..0);
+        case 5 :  bufferline_21_rg05(0..0);
+        case 6 :  bufferline_21_rg06(0..0);
     };
-    bufferline_1_11_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:100 */
-        when ((unsigned ter(0:1))(bufferline_1_11_we01(0..0) & bufferline_1_11_d01(0..0))) :  M_231_t(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        default :  bufferline_1_11_rg03(0..0);
+    bufferline_21_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(6..6))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg00(0..0);
+    };
+    bufferline_21_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(5..5))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg01(0..0);
+    };
+    bufferline_21_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(4..4))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg02(0..0);
+    };
+    bufferline_21_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(3..3))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg03(0..0);
+    };
+    bufferline_21_rg04(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(2..2))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg04(0..0);
+    };
+    bufferline_21_rg05(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(1..1))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg05(0..0);
+    };
+    bufferline_21_rg06(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:101,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_21_d01(0..0))) :  bufferline_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+        default :  bufferline_21_rg06(0..0);
+    };
+    bufferline_31_d01(6..0) ::= (unsigned ter(0:8))(decoder(bufferline_31_ad01(2..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:102 */
+    bufferline_31_rd00(0..0) ::= dmux (decr3u2ot(2..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        case 0 :  bufferline_31_rg00(0..0);
+        case 1 :  bufferline_31_rg01(0..0);
+        case 2 :  bufferline_31_rg02(0..0);
+        case 3 :  bufferline_31_rg03(0..0);
+        case 4 :  bufferline_31_rg04(0..0);
+        case 5 :  bufferline_31_rg05(0..0);
+        case 6 :  bufferline_31_rg06(0..0);
+    };
+    bufferline_31_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(6..6))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg00(0..0);
+    };
+    bufferline_31_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(5..5))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg01(0..0);
+    };
+    bufferline_31_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(4..4))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg02(0..0);
+    };
+    bufferline_31_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(3..3))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg03(0..0);
+    };
+    bufferline_31_rg04(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(2..2))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg04(0..0);
+    };
+    bufferline_31_rg05(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(1..1))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg05(0..0);
+    };
+    bufferline_31_rg06(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:102,182,222 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & bufferline_31_d01(0..0))) :  bufferline_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+        default :  bufferline_31_rg06(0..0);
+    };
+    bufferline_41_d01(10..0) ::= (unsigned ter(0:16))(decoder(bufferline_41_ad01(3..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:103 */
+    bufferline_41_rd00(0..0) ::= dmux (decr4u2ot(3..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        case 0 :  bufferline_41_rg00(0..0);
+        case 1 :  bufferline_41_rg01(0..0);
+        case 2 :  bufferline_41_rg02(0..0);
+        case 3 :  bufferline_41_rg03(0..0);
+        case 4 :  bufferline_41_rg04(0..0);
+        case 5 :  bufferline_41_rg05(0..0);
+        case 6 :  bufferline_41_rg06(0..0);
+        case 7 :  bufferline_41_rg07(0..0);
+        case 8 :  bufferline_41_rg08(0..0);
+        case 9 :  bufferline_41_rg09(0..0);
+        case 10 :  bufferline_41_rg10(0..0);
+    };
+    bufferline_41_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(10..10))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg00(0..0);
+    };
+    bufferline_41_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(9..9))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg01(0..0);
+    };
+    bufferline_41_rg02(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(8..8))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg02(0..0);
+    };
+    bufferline_41_rg03(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(7..7))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg03(0..0);
+    };
+    bufferline_41_rg04(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(6..6))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg04(0..0);
+    };
+    bufferline_41_rg05(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(5..5))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg05(0..0);
+    };
+    bufferline_41_rg06(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(4..4))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg06(0..0);
+    };
+    bufferline_41_rg07(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(3..3))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg07(0..0);
+    };
+    bufferline_41_rg08(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(2..2))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg08(0..0);
+    };
+    bufferline_41_rg09(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(1..1))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg09(0..0);
+    };
+    bufferline_41_rg10(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:103,260 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_41_d01(0..0))) :  bufferline_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+        default :  bufferline_41_rg10(0..0);
     };
     bufferline_5_01_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_01_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
     bufferline_5_01_rd00(0..0) ::= dmux (decr2u_12ot(0..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
@@ -204,11 +367,11 @@ ST1_01 :
         case 1 :  bufferline_5_01_rg01(0..0);
     };
     bufferline_5_01_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_01_d01(2..2))) :  bufferline_5_71_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_01_d01(2..2))) :  bufferline_5_71_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_01_rg00(0..0);
     };
     bufferline_5_01_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_01_d01(1..1))) :  bufferline_5_71_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_01_d01(1..1))) :  bufferline_5_71_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_01_rg01(0..0);
     };
     bufferline_5_11_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_11_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -217,11 +380,11 @@ ST1_01 :
         case 1 :  bufferline_5_11_rg01(0..0);
     };
     bufferline_5_11_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_11_d01(2..2))) :  bufferline_5_01_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_11_d01(2..2))) :  bufferline_5_01_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_11_rg00(0..0);
     };
     bufferline_5_11_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_11_d01(1..1))) :  bufferline_5_01_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_11_d01(1..1))) :  bufferline_5_01_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_11_rg01(0..0);
     };
     bufferline_5_21_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_21_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -230,11 +393,11 @@ ST1_01 :
         case 1 :  bufferline_5_21_rg01(0..0);
     };
     bufferline_5_21_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_21_d01(2..2))) :  bufferline_5_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_21_d01(2..2))) :  bufferline_5_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_21_rg00(0..0);
     };
     bufferline_5_21_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_21_d01(1..1))) :  bufferline_5_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_21_d01(1..1))) :  bufferline_5_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_21_rg01(0..0);
     };
     bufferline_5_31_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_31_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -243,11 +406,11 @@ ST1_01 :
         case 1 :  bufferline_5_31_rg01(0..0);
     };
     bufferline_5_31_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_31_d01(2..2))) :  bufferline_5_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_31_d01(2..2))) :  bufferline_5_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_31_rg00(0..0);
     };
     bufferline_5_31_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_31_d01(1..1))) :  bufferline_5_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_31_d01(1..1))) :  bufferline_5_21_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_31_rg01(0..0);
     };
     bufferline_5_41_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_41_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -256,11 +419,11 @@ ST1_01 :
         case 1 :  bufferline_5_41_rg01(0..0);
     };
     bufferline_5_41_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_41_d01(2..2))) :  bufferline_5_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_41_d01(2..2))) :  bufferline_5_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_41_rg00(0..0);
     };
     bufferline_5_41_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_41_d01(1..1))) :  bufferline_5_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_41_d01(1..1))) :  bufferline_5_31_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_41_rg01(0..0);
     };
     bufferline_5_51_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_51_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -269,11 +432,11 @@ ST1_01 :
         case 1 :  bufferline_5_51_rg01(0..0);
     };
     bufferline_5_51_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_51_d01(2..2))) :  bufferline_5_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_51_d01(2..2))) :  bufferline_5_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_51_rg00(0..0);
     };
     bufferline_5_51_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_51_d01(1..1))) :  bufferline_5_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_51_d01(1..1))) :  bufferline_5_41_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_51_rg01(0..0);
     };
     bufferline_5_61_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_61_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -282,11 +445,11 @@ ST1_01 :
         case 1 :  bufferline_5_61_rg01(0..0);
     };
     bufferline_5_61_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_61_d01(2..2))) :  bufferline_5_51_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_61_d01(2..2))) :  bufferline_5_51_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_61_rg00(0..0);
     };
     bufferline_5_61_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_61_d01(1..1))) :  bufferline_5_51_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_61_d01(1..1))) :  bufferline_5_51_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_61_rg01(0..0);
     };
     bufferline_5_71_d01(2..0) ::= (unsigned ter(0:4))(decoder(bufferline_5_71_ad01(1..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:104 */
@@ -295,24 +458,21 @@ ST1_01 :
         case 1 :  bufferline_5_71_rg01(0..0);
     };
     bufferline_5_71_rg00(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_71_d01(2..2))) :  bufferline_5_61_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_71_d01(2..2))) :  bufferline_5_61_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_71_rg00(0..0);
     };
     bufferline_5_71_rg01(0..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:104,299 */
-        when ((unsigned ter(0:1))(ST1_05d(0..0) & bufferline_5_71_d01(1..1))) :  bufferline_5_61_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
+        when ((unsigned ter(0:1))(ST1_06d(0..0) & bufferline_5_71_d01(1..1))) :  bufferline_5_61_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
         default :  bufferline_5_71_rg01(0..0);
     };
-    M_231_t(0..0) ::= dmux (decr3u2ot(0..0)) { 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        case 0 :  bufferline_1_01_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-        case 1 :  bufferline_1_11_rd00(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:145 */
-    };
-    incr2u1i1(0..0) ::= FF_in_stage_1_x(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
     decr2u_11i1(1..0) ::= RG_x_01(1..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
     decr2u_12i1(1..0) ::= RG_x_01(1..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
-    decr3u1i1(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144 */
-    decr3u2i1(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
-    bufferline_1_01_ad01(1..0) ::= RG_x_01(2..1); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
-    bufferline_1_11_ad01(1..0) ::= RG_x_01(2..1); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
+    decr4u1i1(3..0) ::= RG_x_01(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    decr4u2i1(3..0) ::= RG_x_01(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
+    bufferline_11_ad01(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
+    bufferline_21_ad01(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:182 */
+    bufferline_31_ad01(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:222 */
+    bufferline_41_ad01(3..0) ::= RG_x_01(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:260 */
     bufferline_5_01_ad01(1..0) ::= RG_x_01(1..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
     bufferline_5_11_ad01(1..0) ::= 0(0..0) :: decr2u_12ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
     bufferline_5_21_ad01(1..0) ::= 0(0..0) :: decr2u_12ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
@@ -322,26 +482,34 @@ ST1_01 :
     bufferline_5_61_ad01(1..0) ::= 0(0..0) :: decr2u_12ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
     bufferline_5_71_ad01(1..0) ::= 0(0..0) :: decr2u_12ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:299 */
     C_01(0..0) ::= |>RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144 */
-    U_01(0..0) ::= (unsigned ter(0:1))(ST1_02d(0..0) & C_01(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144 */
-    RG_x_01(2..0) ::= nmux {
-        when ((unsigned ter(0:1))(ST1_01d(0..0) | ST1_04d(0..0))) :  (unsigned ter(0:3))(ST1_01d(0..0) :: 2(1..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,298 */
-        when (ST1_02d(0..0)) :  decr3u1ot(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144 */
-        when (ST1_05d(0..0)) :  0(1..0) :: decr2u_11ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
+    C_02(0..0) ::= |>decr3u1ot(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:181,221 */
+    C_03(0..0) ::= |>decr4u1ot(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    U_10(0..0) ::= (unsigned ter(0:1))(ST1_05d(0..0) & ~C_03(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    M_48(0..0) ::= ST1_01d(0..0) | ST1_03d(0..0);
+    M_49(0..0) ::= (unsigned ter(0:1))(ST1_02d(0..0) | (unsigned ter(0:1))(ST1_04d(0..0) & C_02(0..0))); 	/* line# ../benchmarks/decimation_filter/decimation.c:181,221 */
+    TR_01(2..0) ::= nmux {
+        when ((unsigned ter(0:1))(M_48(0..0) | U_10(0..0))) :  (unsigned ter(0:3))(M_48(0..0) :: 2(1..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,181,298 */
+        when (M_49(0..0)) :  decr3u1ot(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,181 */
+        when (ST1_06d(0..0)) :  (unsigned ter(0:3))(0(1..0) :: decr2u_11ot(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
     };
-    FF_in_stage_1_x(0..0) ::= nmux {
+    RG_x_01(3..0) ::= nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:181,221,259 */
+        when ((unsigned ter(0:1))((unsigned ter(0:1))((unsigned ter(0:1))(M_48(0..0) | M_49(0..0)) | U_10(0..0)) | ST1_06d(0..0))) :  (unsigned ter(0:4))(0(0..0) :: TR_01(2..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,181,298 */
+        when ((unsigned ter(0:1))(ST1_04d(0..0) & ~C_02(0..0))) :  10(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+        when ((unsigned ter(0:1))(ST1_05d(0..0) & C_03(0..0))) :  decr4u1ot(3..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:259 */
+    };
+    FF_in_stage_1(0..0) ::= nmux {
         when (ST1_01d(0..0)) :  indata(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:136 */
-        when (ST1_03d(0..0)) :  0(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-        when (ST1_04d(0..0)) :  incr2u1ot(0..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-        default :  FF_in_stage_1_x(0..0);
+        default :  FF_in_stage_1(0..0);
     };
-    JF_02(0..0) ::= (unsigned ter(0:1))(~incr2u1ot(1..1)); 	/* line# ../benchmarks/decimation_filter/decimation.c:153 */
-    bufferline_1_01_we01(0..0) ::= (unsigned ter(0:1))(U_01(0..0) & ~RG_x_01(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
-    bufferline_1_11_we01(0..0) ::= (unsigned ter(0:1))(U_01(0..0) & RG_x_01(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
+    decr3u1i1(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,181 */
+    decr3u2i1(2..0) ::= RG_x_01(2..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145,182 */
+    bufferline_11_we01(0..0) ::= (unsigned ter(0:1))(ST1_02d(0..0) & C_01(0..0)); 	/* line# ../benchmarks/decimation_filter/decimation.c:144,145 */
     ST1_01d(0..0) ::= (unsigned ter(0:1))(~|>B01_streg(2..0));
     ST1_02d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(2..0) ^ ST1_02(2..0)));
     ST1_03d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(2..0) ^ ST1_03(2..0)));
     ST1_04d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(2..0) ^ ST1_04(2..0)));
     ST1_05d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(2..0) ^ ST1_05(2..0)));
+    ST1_06d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(2..0) ^ ST1_06(2..0)));
     TR_03(1..0) ::= nmux {
         when (ST1_03d(0..0)) :  3(1..0);
         default :  (unsigned ter(0:2))(0(0..0) :: ST1_01d(0..0));
@@ -355,13 +523,19 @@ ST1_01 :
             };
         when (ST1_04d(0..0)) : 
             nmux {
-                when (JF_02(0..0)) :  ST1_04(2..0);
-                when (!JF_02(0..0)) :  ST1_05(2..0);
+                when (C_02(0..0)) :  ST1_04(2..0);
+                when (!C_02(0..0)) :  ST1_05(2..0);
                 default :  ST1_01(2..0);
             };
         when (ST1_05d(0..0)) : 
+            nmux {
+                when (C_03(0..0)) :  ST1_05(2..0);
+                when (!C_03(0..0)) :  ST1_06(2..0);
+                default :  ST1_01(2..0);
+            };
+        when (ST1_06d(0..0)) : 
             nmux { 	/* line# ../benchmarks/decimation_filter/decimation.c:298 */
-                when (!(~decr2u_11ot(0..0))) :  ST1_05(2..0);
+                when (!(~decr2u_11ot(0..0))) :  ST1_06(2..0);
                 default :  ST1_01(2..0);
             };
         default :  (unsigned ter(0:3))(0(0..0) :: TR_03(1..0));
@@ -376,52 +550,40 @@ ST1_01 :
 ##@CLK  100000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  incr2u     1  (u)INCR           1,2    1000      3
-#  2  decr2u_1    2  (u)DECR           2,1    1000      2
-#  3  decr3u     2  (u)DECR           3,3    1200      6
+#  1  decr2u_1    2  (u)DECR           2,1    1000      2
+#  2  decr3u     2  (u)DECR           3,3    1200      6
+#  3  decr4u     2  (u)DECR           4,4    1600      9
 #@END
 
 #@MCNT %AUTO%.MCNT
 ##@CNT { test }
 #@MCNT {
-#    NAME	incoef1_var[]
-#    LIMIT	1
-#    KIND	R1,W1
-#    BITWIDTH	17
-#    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	0
-#    ARRAY_DIV_NAME	incoef1_var_0
-#}
-#@MCNT {
-#    NAME	incoef1_var[]
-#    LIMIT	1
-#    KIND	R1,W1
-#    BITWIDTH	17
-#    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	1
-#    ARRAY_DIV_NAME	incoef1_var_1
-#}
-#@MCNT {
 #    NAME	bufferline_1[]
 #    LIMIT	1
 #    KIND	R1,W1
 #    BITWIDTH	19
 #    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	0
-#    ARRAY_DIV_NAME	bufferline_1_0
 #}
 #@MCNT {
-#    NAME	bufferline_1[]
+#    NAME	bufferline_2[]
 #    LIMIT	1
 #    KIND	R1,W1
 #    BITWIDTH	19
 #    DELAY	0
-#    ARRAY_DIV	2
-#    ARRAY_DIV_INDEX	1
-#    ARRAY_DIV_NAME	bufferline_1_1
+#}
+#@MCNT {
+#    NAME	bufferline_3[]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	19
+#    DELAY	0
+#}
+#@MCNT {
+#    NAME	bufferline_4[]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	19
+#    DELAY	0
 #}
 #@MCNT {
 #    NAME	bufferline_5[]
@@ -508,10 +670,10 @@ ST1_01 :
 #@MLMT %AUTO%.MLMT
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_0  	
-#  2  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_1  	
-#  3  bufferline_1[]    1  R1,W1            19x4     0  bufferline_1_0 	
-#  4  bufferline_1[]    1  R1,W1            19x4     0  bufferline_1_1 	
+#  1  bufferline_1[]    1  R1,W1            19x7     0                 	
+#  2  bufferline_2[]    1  R1,W1            19x7     0                 	
+#  3  bufferline_3[]    1  R1,W1            19x7     0                 	
+#  4  bufferline_4[]    1  R1,W1           19x11     0                 	
 #  5  bufferline_5[]    1  R1,W1            19x3     0  bufferline_5_0 	
 #  6  bufferline_5[]    1  R1,W1            19x3     0  bufferline_5_1 	
 #  7  bufferline_5[]    1  R1,W1            19x3     0  bufferline_5_2 	

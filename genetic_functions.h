@@ -61,11 +61,11 @@ vector<int> mutate(vector<int> child,int count = 0){
                 new_attribute = rand() % propertyLists[str].size();
             }
 
-            logger.log("\tMutated @ index: "+int_to_string(i)+" from " + int_to_string(prev_attr) + " to " + int_to_string(new_attribute));
+            if(VERBOSE) logger.log("\tMutated @ index: "+int_to_string(i)+" from " + int_to_string(prev_attr) + " to " + int_to_string(new_attribute));
 	        mutated_child.at(i) = new_attribute;
 
         } else {
-            logger.log("\tDidn't mutate @ index: " + int_to_string(i));
+	  if(VERBOSE) logger.log("\tDidn't mutate @ index: " + int_to_string(i));
         }
     }
     // // checking if organism has already been made
