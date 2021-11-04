@@ -13677,3 +13677,4634 @@ Finished Synthesis
 		unroll_timesallunroll_timesallunroll_times4unroll_times2folding2folding1folding2folding2unroll_timesallunroll_times4
 		Score: 1
 Finished first Meta Heuristic
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Added CSV header
+Directory: ../benchmarks/decimation_filter/
+FILE_W/O E: decimation
+FILE_NameE: decimation.c
+PARSE_FILE: ../benchmarks/decimation_filter/lib_decimation.info
+Started: Parsing
+CLASS_COUNT: 10
+Finished: Parsing
+Started Meta Heuristic with area weight at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		1
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 311,5,23,168,65,28,572,289,5,4,4.50,27,0,0.53ns,-,-,-,-,17,-,-
+	Added :311,5,23,168,65,28,572,289,5,4,4.50,27,0,0.53ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 2 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		3
+		folding1unroll_times2folding2unroll_times4unroll_times0unroll_timesallunroll_times0folding1unroll_timesallunroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2folding2unroll_times4unroll_times0unroll_timesallunroll_times0folding1unroll_timesallunroll_times4
+		Score: 1
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 381,6,13,204,83,39,702,343,6,6,6.00,42,0,0.47ns,-,-,-,-,21,-,-
+	Added :381,6,13,204,83,39,702,343,6,6,6.00,42,0,0.47ns,-,-,-,-,21,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1unroll_times2unroll_timesallunroll_timesallfolding1
+		Score: 1
+############################### ITERATION 4 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		5
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallunroll_timesallfolding2unroll_timesallunroll_times4unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallunroll_timesallfolding2unroll_timesallunroll_times4unroll_times0
+		Score: 1
+############################### ITERATION 5 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 395,5,23,216,83,38,712,355,5,4,4.50,35,0,0.53ns,-,-,-,-,17,-,-
+	Added :395,5,23,216,83,38,712,355,5,4,4.50,35,0,0.53ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2unroll_times2unroll_times2folding2unroll_timesallunroll_timesallunroll_times0unroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 6 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 477,6,31,246,101,50,880,427,6,6,6.00,49,0,0.53ns,-,-,-,-,26,-,-
+	Added :477,6,31,246,101,50,880,427,6,6,6.00,49,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_times4unroll_times0unroll_timesallunroll_times0unroll_times8unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 7 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_times4unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times0
+		Score: 1
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 322,5,13,174,69,32,586,294,5,5,5.00,34,0,0.47ns,-,-,-,-,16,-,-
+	Added :322,5,13,174,69,32,586,294,5,5,5.00,34,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+############################### ITERATION 8 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		9
+		folding1unroll_times2unroll_times0unroll_times2unroll_timesallfolding1folding1unroll_times12folding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_times2unroll_timesallfolding1folding1unroll_times12folding2unroll_times0
+		Score: 1
+############################### ITERATION 9 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		10
+		folding1folding2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1folding2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 10 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		11
+		folding1folding1folding2unroll_timesallfolding1folding1unroll_timesallunroll_times0unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1folding1folding2unroll_timesallfolding1folding1unroll_timesallunroll_times0unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 11 #################################
+
+	Parent_0:
+		folding1unroll_times2unroll_times0unroll_times4unroll_timesallfolding1folding1folding1folding2unroll_timesall
+		Score: 1
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 326,5,26,174,59,35,590,274,5,5,5.00,32,0,0.47ns,-,-,-,-,14,-,-
+	Added :326,5,26,174,59,35,590,274,5,5,5.00,32,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4folding1unroll_times0unroll_times4unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times8unroll_times0
+		Score: 0.683438
+############################### ITERATION 12 #################################
+
+	Parent_0:
+		unroll_times4folding1unroll_times0unroll_times4unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times8unroll_times0
+		Score: 0.683438
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 140,3,17,72,25,11,263,118,3,3,3.00,15,0,0.47ns,-,-,-,-,9,-,-
+	Added :140,3,17,72,25,11,263,118,3,3,3.00,15,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+############################### ITERATION 13 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 581,7,35,294,127,65,1085,489,7,7,7.00,60,0,0.53ns,-,-,-,-,26,-,-
+	Added :581,7,35,294,127,65,1085,489,7,7,7.00,60,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1folding1unroll_times12unroll_times4unroll_times2
+		Score: 1
+############################### ITERATION 14 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 527,7,17,282,118,57,967,459,7,7,7.00,53,0,0.47ns,-,-,-,-,19,-,-
+	Added :527,7,17,282,118,57,967,459,7,7,7.00,53,0,0.47ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallfolding1unroll_times4unroll_times0
+		Score: 0.907057
+############################### ITERATION 15 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		16
+		unroll_times4folding2unroll_times4unroll_timesallfolding1folding1unroll_times0unroll_times4unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4folding2unroll_times4unroll_timesallfolding1folding1unroll_times0unroll_times4unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		17
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1folding2unroll_timesallfolding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1folding2unroll_timesallfolding2folding1
+		Score: 1
+############################### ITERATION 17 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		folding1unroll_times2unroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.675052
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 308,5,35,150,63,29,585,267,5,5,5.00,31,0,0.53ns,-,-,-,-,20,-,-
+	Added :308,5,35,150,63,29,585,267,5,5,5.00,31,0,0.53ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_times4unroll_timesallfolding1folding2folding1unroll_timesallunroll_timesallunroll_times0
+		Score: 0.53012
+############################### ITERATION 18 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_times4unroll_times2unroll_times4unroll_timesallfolding1folding2folding1unroll_timesallunroll_timesallunroll_times0
+		Score: 0.53012
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		19
+		unroll_times2unroll_times2folding2unroll_timesallunroll_times0folding1folding1unroll_times4unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2unroll_times2folding2unroll_timesallunroll_times0folding1folding1unroll_times4unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 19 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_times4unroll_times2unroll_times4unroll_timesallfolding1folding2folding1unroll_timesallunroll_timesallunroll_times0
+		Score: 0.53012
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 298,4,35,144,59,29,558,252,4,4,4.00,31,0,0.53ns,-,-,-,-,19,-,-
+	Added :298,4,35,144,59,29,558,252,4,4,4.00,31,0,0.53ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallunroll_times0folding2folding1unroll_timesallunroll_timesallunroll_times0
+		Score: 0.512909
+############################### ITERATION 20 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallunroll_times0folding2folding1unroll_timesallunroll_timesallunroll_times0
+		Score: 0.512909
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+############################### ITERATION 21 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 324,5,31,168,67,28,599,302,5,5,5.00,30,0,0.53ns,-,-,-,-,20,-,-
+	Added :324,5,31,168,67,28,599,302,5,5,5.00,30,0,0.53ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_times2unroll_timesallfolding2unroll_timesallunroll_timesallfolding1folding1unroll_timesallfolding2
+		Score: 0.557659
+############################### ITERATION 22 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		23
+		folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 23 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,-
+	Added :194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times4folding1unroll_times4unroll_timesallfolding2
+		Score: 0.333907
+############################### ITERATION 24 #################################
+
+	Parent_0:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.293501
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 117,2,12,66,19,11,207,91,2,2,2.00,9,0,0.47ns,-,-,-,-,7,-,-
+	Added :117,2,12,66,19,11,207,91,2,2,2.00,9,0,0.47ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.201377
+############################### ITERATION 25 #################################
+
+	Parent_0:
+		unroll_times4unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.201377
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 290,4,19,150,62,28,535,245,4,4,4.00,31,0,0.47ns,-,-,-,-,13,-,-
+	Added :290,4,19,150,62,28,535,245,4,4,4.00,31,0,0.47ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times0unroll_timesallunroll_timesallunroll_times2folding2unroll_times2unroll_times4unroll_timesallfolding1
+		Score: 0.499139
+############################### ITERATION 26 #################################
+
+	Parent_0:
+		unroll_times4unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.201377
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 705,3,116,408,88,43,1061,500,3,3,3.00,50,0,0.69ns,-,-,-,-,27,-,-
+	Added :705,3,116,408,88,43,1061,500,3,3,3.00,50,0,0.69ns,-,-,-,-,27,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_timesallunroll_times2folding2unroll_times4unroll_times4unroll_timesallunroll_times4unroll_times0unroll_times4
+		Score: 1
+############################### ITERATION 27 #################################
+
+	Parent_0:
+		unroll_times4unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding1
+		Score: 0.201377
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 135,3,12,78,22,11,245,131,3,3,3.00,12,0,0.47ns,-,-,-,-,8,-,-
+	Added :135,3,12,78,22,11,245,131,3,3,3.00,12,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		29
+		unroll_times0unroll_timesallfolding1folding2unroll_timesallfolding1unroll_timesallfolding1folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_timesallfolding1folding2unroll_timesallfolding1unroll_timesallfolding1folding2folding2
+		Score: 1
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		30
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1folding1unroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1folding1unroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 30 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 256,6,19,132,59,21,493,251,6,6,6.00,25,0,0.47ns,-,-,-,-,16,-,-
+	Added :256,6,19,132,59,21,493,251,6,6,6.00,25,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0folding1unroll_times2unroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.363121
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		32
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 32 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		33
+		folding1unroll_timesallfolding2folding2folding2unroll_times2unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallfolding2folding2folding2unroll_times2unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 33 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 135,3,12,78,22,11,245,131,3,3,3.00,12,0,0.47ns,-,-,-,-,8,-,-
+	Added :135,3,12,78,22,11,245,131,3,3,3.00,12,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallunroll_times2
+		Score: 0.191489
+############################### ITERATION 34 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		35
+		folding1unroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times4folding1folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times4folding1folding2
+		Score: 1
+############################### ITERATION 35 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 275,4,12,150,56,29,493,241,4,4,4.00,28,0,0.47ns,-,-,-,-,13,-,-
+	Added :275,4,12,150,56,29,493,241,4,4,4.00,28,0,0.47ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding2unroll_times2unroll_times4unroll_timesallfolding1
+		Score: 0.390071
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		37
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1unroll_timesallunroll_times12unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_timesallfolding2folding2folding1unroll_timesallunroll_times12unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 148,4,9,84,31,10,281,153,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,-
+	Added :148,4,9,84,31,10,281,153,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2folding1unroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.209929
+############################### ITERATION 38 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 301,5,13,162,66,28,552,277,5,5,5.00,32,0,0.47ns,-,-,-,-,15,-,-
+	Added :301,5,13,162,66,28,552,277,5,5,5.00,32,0,0.47ns,-,-,-,-,15,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallfolding2unroll_timesallfolding2unroll_times2unroll_times12unroll_timesallfolding2
+		Score: 0.42695
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 522,4,36,276,109,55,928,441,4,4,4.00,46,0,0.6225ns,-,-,-,-,31,-,-
+	Added :522,4,36,276,109,55,928,441,4,4,4.00,46,0,0.6225ns,-,-,-,-,31,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_timesallunroll_timesallfolding2unroll_times0folding2unroll_timesallunroll_times4folding1folding2
+		Score: 0.740426
+############################### ITERATION 40 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		41
+		folding2unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times2
+		Score: 1
+############################### ITERATION 41 #################################
+
+	Parent_0:
+		folding1unroll_timesallunroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191489
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+############################### ITERATION 42 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 549,6,17,300,108,63,967,445,6,6,6.00,61,0,0.47ns,-,-,-,-,19,-,-
+	Added :549,6,17,300,108,63,967,445,6,6,6.00,61,0,0.47ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_times4unroll_times8folding2
+		Score: 0.778723
+############################### ITERATION 43 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		44
+		unroll_timesallunroll_times2folding1unroll_times2folding2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1unroll_times2folding2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 44 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 258,6,21,132,59,21,503,257,6,6,6.00,25,0,0.47ns,-,-,-,-,16,-,-
+	Added :258,6,21,132,59,21,503,257,6,6,6.00,25,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2folding1unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_times0unroll_timesallfolding2
+		Score: 0.365957
+############################### ITERATION 45 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,-
+	Added :136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times4unroll_times0unroll_times0folding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.192908
+############################### ITERATION 46 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		47
+		folding2unroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_times8folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_times8folding2
+		Score: 1
+############################### ITERATION 47 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallfolding1unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times2
+		Score: 0.0397163
+############################### ITERATION 48 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times0
+		Score: 0.0198582
+############################### ITERATION 49 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 138,4,7,78,29,10,259,123,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,-
+	Added :138,4,7,78,29,10,259,123,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.195745
+############################### ITERATION 50 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		51
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_times4folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_times4folding2
+		Score: 1
+############################### ITERATION 51 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		52
+		unroll_timesallfolding2unroll_times4unroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_times4unroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 52 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,-
+	Added :123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_times4unroll_times4unroll_timesallfolding2
+		Score: 0.174468
+############################### ITERATION 53 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		54
+		unroll_timesallfolding2unroll_timesallunroll_times4folding1folding1unroll_timesallunroll_times4unroll_times8folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_times4folding1folding1unroll_timesallunroll_times4unroll_times8folding2
+		Score: 1
+############################### ITERATION 54 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 246,5,13,132,53,21,456,237,5,5,5.00,27,0,0.47ns,-,-,-,-,16,-,-
+	Added :246,5,13,132,53,21,456,237,5,5,5.00,27,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_times2unroll_times0unroll_times4unroll_timesallunroll_times4unroll_timesallunroll_timesall
+		Score: 0.348936
+############################### ITERATION 55 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 238,5,17,132,43,23,436,202,5,5,5.00,23,0,0.47ns,-,-,-,-,12,-,-
+	Added :238,5,17,132,43,23,436,202,5,5,5.00,23,0,0.47ns,-,-,-,-,12,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1unroll_times0unroll_timesallfolding1unroll_times4unroll_times4unroll_timesallunroll_times0
+		Score: 0.337589
+############################### ITERATION 56 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		57
+		folding2unroll_times2folding1folding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2folding1folding2unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_timesall
+		Score: 1
+############################### ITERATION 57 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,-
+	Added :347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_times4folding1folding1
+		Score: 0.492199
+############################### ITERATION 58 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallunroll_times4
+		Score: 0.0198582
+############################### ITERATION 59 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		60
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding2folding2unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding2folding2unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 60 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 363,4,17,204,64,42,624,289,4,4,4.00,36,0,0.47ns,-,-,-,-,10,-,-
+	Added :363,4,17,204,64,42,624,289,4,4,4.00,36,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times2unroll_times12unroll_times8folding2
+		Score: 0.514894
+############################### ITERATION 61 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 722,4,125,414,89,44,1087,510,4,4,4.00,50,0,0.74ns,-,-,-,-,32,-,-
+	Added :722,4,125,414,89,44,1087,510,4,4,4.00,50,0,0.74ns,-,-,-,-,32,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding1unroll_times0folding1unroll_timesallunroll_times4unroll_times0folding2
+		Score: 1
+############################### ITERATION 62 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		63
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4folding2folding2
+		Score: 1
+############################### ITERATION 63 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,-
+	Added :159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.220222
+############################### ITERATION 64 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		65
+		folding2folding1unroll_timesallunroll_times0folding2unroll_times2unroll_times4unroll_times4unroll_timesallunroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2folding1unroll_timesallunroll_times0folding2unroll_times2unroll_times4unroll_times4unroll_timesallunroll_times2
+		Score: 1
+############################### ITERATION 65 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		66
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1folding1unroll_times4unroll_times8folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1folding1unroll_times4unroll_times8folding2
+		Score: 1
+############################### ITERATION 66 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 124,3,7,72,19,12,228,106,3,3,3.00,14,0,0.31ns,-,-,-,-,7,-,-
+	Added :124,3,7,72,19,12,228,106,3,3,3.00,14,0,0.31ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times4unroll_timesallunroll_timesallunroll_timesall
+		Score: 0.171745
+############################### ITERATION 67 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 606,5,41,318,127,61,1094,494,5,5,5.00,59,0,0.6225ns,-,-,-,-,34,-,-
+	Added :606,5,41,318,127,61,1094,494,5,5,5.00,59,0,0.6225ns,-,-,-,-,34,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times2unroll_timesallunroll_timesallunroll_times0unroll_times2unroll_timesallfolding1unroll_timesall
+		Score: 0.839335
+############################### ITERATION 68 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0240964
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 69 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 246,5,13,132,53,21,456,237,5,5,5.00,27,0,0.47ns,-,-,-,-,16,-,-
+	Added :246,5,13,132,53,21,456,237,5,5,5.00,27,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times0unroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.34072
+############################### ITERATION 70 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		71
+		unroll_times2folding2unroll_times2folding2unroll_timesallfolding1folding2unroll_times8unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2folding2unroll_times2folding2unroll_timesallfolding1folding2unroll_times8unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 71 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,-
+	Added :347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallfolding1folding1folding2
+		Score: 0.480609
+############################### ITERATION 72 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times4unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 73 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 73 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 211,4,7,126,33,24,362,171,4,4,4.00,21,0,0.31ns,-,-,-,-,8,-,-
+	Added :211,4,7,126,33,24,362,171,4,4,4.00,21,0,0.31ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times8unroll_times4
+		Score: 0.292244
+############################### ITERATION 74 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 320,5,31,162,68,28,598,303,5,5,5.00,31,0,0.53ns,-,-,-,-,20,-,-
+	Added :320,5,31,162,68,28,598,303,5,5,5.00,31,0,0.53ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_times4unroll_times4unroll_timesallfolding1folding1unroll_times4unroll_timesallunroll_timesall
+		Score: 0.443213
+############################### ITERATION 75 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 130,3,5,78,25,10,233,111,3,3,3.00,12,0,0.34ns,-,-,-,-,6,-,-
+	Added :130,3,5,78,25,10,233,111,3,3,3.00,12,0,0.34ns,-,-,-,-,6,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times2folding2unroll_timesallfolding1unroll_timesallunroll_times0unroll_timesallfolding2
+		Score: 0.180055
+############################### ITERATION 76 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,-
+	Added :324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times4unroll_timesallunroll_times4unroll_times4unroll_times2
+		Score: 0.448753
+############################### ITERATION 77 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 609,3,113,354,68,33,897,421,3,3,3.00,41,0,0.69ns,-,-,-,-,26,-,-
+	Added :609,3,113,354,68,33,897,421,3,3,3.00,41,0,0.69ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding2unroll_timesallunroll_timesallunroll_times0folding2
+		Score: 0.84349
+############################### ITERATION 78 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 193,3,19,108,33,18,335,155,3,3,3.00,15,0,0.53ns,-,-,-,-,13,-,-
+	Added :193,3,19,108,33,18,335,155,3,3,3.00,15,0,0.53ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding1unroll_times0unroll_timesallunroll_timesallfolding2
+		Score: 0.267313
+############################### ITERATION 79 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,-
+	Added :137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1unroll_timesallunroll_times4folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.189751
+############################### ITERATION 80 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 375,5,23,210,65,42,655,305,5,5,5.00,35,0,0.53ns,-,-,-,-,16,-,-
+	Added :375,5,23,210,65,42,655,305,5,5,5.00,35,0,0.53ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding1unroll_times4unroll_times2folding1folding2unroll_times8folding2
+		Score: 0.519391
+############################### ITERATION 81 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 578,7,31,300,124,65,1067,483,7,7,7.00,58,0,0.53ns,-,-,-,-,26,-,-
+	Added :578,7,31,300,124,65,1067,483,7,7,7.00,58,0,0.53ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1unroll_timesallunroll_timesallunroll_times2folding1unroll_timesallunroll_times4folding2
+		Score: 0.800554
+############################### ITERATION 82 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 82 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		83
+		folding1unroll_times2unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_times4unroll_timesallunroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallfolding2folding1unroll_timesallunroll_times4unroll_timesallunroll_timesall
+		Score: 1
+############################### ITERATION 83 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,-
+	Added :123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_times4unroll_times8unroll_timesallfolding2
+		Score: 0.17036
+############################### ITERATION 84 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,-
+	Added :136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_times2
+		Score: 0.188366
+############################### ITERATION 85 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		86
+		unroll_timesallunroll_timesallfolding1unroll_timesallfolding2folding1unroll_timesallunroll_times12folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallfolding1unroll_timesallfolding2folding1unroll_timesallunroll_times12folding2folding2
+		Score: 1
+############################### ITERATION 86 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,-
+	Added :159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_times2unroll_timesallfolding1unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.220222
+############################### ITERATION 87 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		88
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times2unroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times2unroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 88 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		89
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times0folding1unroll_times2folding2folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times0folding1unroll_times2folding2folding2folding2
+		Score: 1
+############################### ITERATION 89 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 90 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 155,4,13,84,32,10,285,158,4,4,4.00,16,0,0.43ns,-,-,-,-,10,-,-
+	Added :155,4,13,84,32,10,285,158,4,4,4.00,16,0,0.43ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times4unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.214681
+############################### ITERATION 91 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times4unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0193906
+############################### ITERATION 92 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		93
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1folding2unroll_timesallunroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1folding2unroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 93 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		94
+		unroll_times4unroll_times0folding2unroll_times2unroll_timesallfolding1folding2unroll_timesallfolding1folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times0folding2unroll_times2unroll_timesallfolding1folding2unroll_timesallfolding1folding2
+		Score: 1
+############################### ITERATION 94 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		95
+		unroll_timesallunroll_times2unroll_times0folding2unroll_times0folding1unroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0folding2unroll_times0folding1unroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 95 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.0387812
+############################### ITERATION 96 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,-
+	Added :347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4folding1unroll_times0
+		Score: 0.480609
+############################### ITERATION 97 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		98
+		unroll_timesallfolding2unroll_timesallfolding2folding1folding1unroll_timesallfolding1folding1folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallfolding2folding1folding1unroll_timesallfolding1folding1folding2
+		Score: 1
+############################### ITERATION 98 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times4folding1unroll_timesallunroll_times8unroll_timesallunroll_times2
+		Score: 0.0193906
+############################### ITERATION 99 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		100
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_times4folding1unroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_times4folding1unroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 100 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,-
+	Added :324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times4folding1unroll_timesallunroll_times8unroll_times4folding1
+		Score: 0.448753
+############################### ITERATION 101 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 293,4,31,150,56,29,533,241,4,4,4.00,27,0,0.53ns,-,-,-,-,19,-,-
+	Added :293,4,31,150,56,29,533,241,4,4,4.00,27,0,0.53ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_timesallfolding1unroll_times0folding2unroll_timesallfolding2
+		Score: 0.405817
+############################### ITERATION 102 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 102 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		103
+		unroll_times4unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding1unroll_timesallfolding2folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding1unroll_timesallfolding2folding2folding2
+		Score: 1
+############################### ITERATION 103 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		104
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times8folding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times8folding2folding2
+		Score: 1
+############################### ITERATION 104 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times4folding1unroll_timesallfolding1unroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 105 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_timesall
+		Score: 0.0193906
+############################### ITERATION 106 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 22,2,3,18,1,0,41,16,2,2,2.00,0,0,0.14ns,-,-,-,-,5,-,-
+	Added :22,2,3,18,1,0,41,16,2,2,2.00,0,0,0.14ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallfolding2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0304709
+############################### ITERATION 107 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 24,2,5,18,1,0,46,19,2,2,2.00,0,0,0.184ns,-,-,-,-,3,-,-
+	Added :24,2,5,18,1,0,46,19,2,2,2.00,0,0,0.184ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.033241
+############################### ITERATION 108 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_times4folding2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.0387812
+############################### ITERATION 109 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 301,5,13,162,66,28,552,277,5,5,5.00,32,0,0.47ns,-,-,-,-,15,-,-
+	Added :301,5,13,162,66,28,552,277,5,5,5.00,32,0,0.47ns,-,-,-,-,15,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times2unroll_timesallunroll_timesallfolding2
+		Score: 0.416898
+############################### ITERATION 110 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding2unroll_timesallunroll_times4unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 111 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+############################### ITERATION 111 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 138,4,7,78,29,10,259,123,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,-
+	Added :138,4,7,78,29,10,259,123,4,4,4.00,14,0,0.34ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_times2folding1unroll_timesallfolding2unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.191136
+############################### ITERATION 112 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,-
+	Added :324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times4unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_times4unroll_times2
+		Score: 0.448753
+############################### ITERATION 113 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 404,6,19,222,71,47,721,339,6,6,6.00,45,0,0.47ns,-,-,-,-,16,-,-
+	Added :404,6,19,222,71,47,721,339,6,6,6.00,45,0,0.47ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times8unroll_times2
+		Score: 0.559557
+############################### ITERATION 114 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		115
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1unroll_timesallunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1unroll_timesallunroll_times0unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 115 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,-
+	Added :136,3,13,78,23,11,240,110,3,3,3.00,11,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0folding2unroll_timesallfolding1unroll_timesallfolding1unroll_timesallunroll_times4
+		Score: 0.188366
+############################### ITERATION 116 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		117
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times0unroll_timesallunroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times0unroll_timesallunroll_timesall
+		Score: 1
+############################### ITERATION 117 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 203,3,5,126,29,24,336,160,3,3,3.00,19,0,0.31ns,-,-,-,-,5,-,-
+	Added :203,3,5,126,29,24,336,160,3,3,3.00,19,0,0.31ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times8folding2
+		Score: 0.281163
+############################### ITERATION 118 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 155,4,13,84,32,10,285,158,4,4,4.00,16,0,0.43ns,-,-,-,-,10,-,-
+	Added :155,4,13,84,32,10,285,158,4,4,4.00,16,0,0.43ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.214681
+############################### ITERATION 119 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		120
+		folding2unroll_timesallunroll_timesallunroll_timesallfolding1folding2folding2unroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_timesallunroll_timesallunroll_timesallfolding1folding2folding2unroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 120 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 319,5,31,162,68,28,596,302,5,5,5.00,30,0,0.53ns,-,-,-,-,20,-,-
+	Added :319,5,31,162,68,28,596,302,5,5,5.00,30,0,0.53ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times0unroll_times8unroll_timesallunroll_times0
+		Score: 0.441828
+############################### ITERATION 121 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1
+		Score: 0.0193906
+############################### ITERATION 122 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 458,5,31,240,100,43,839,388,5,5,5.00,44,0,0.6225ns,-,-,-,-,32,-,-
+	Added :458,5,31,240,100,43,839,388,5,5,5.00,44,0,0.6225ns,-,-,-,-,32,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_times2unroll_times2unroll_timesallunroll_times4unroll_timesallunroll_times0folding1folding2
+		Score: 0.634349
+############################### ITERATION 123 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		124
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times8unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times8unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 124 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		125
+		unroll_timesallunroll_times2folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 125 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		126
+		folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 126 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 459,5,39,234,98,44,837,379,5,5,5.00,44,0,0.6225ns,-,-,-,-,35,-,-
+	Added :459,5,39,234,98,44,837,379,5,5,5.00,44,0,0.6225ns,-,-,-,-,35,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0folding1unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallfolding1unroll_times0
+		Score: 0.635734
+############################### ITERATION 127 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 116,2,12,66,19,11,205,90,2,2,2.00,8,0,0.47ns,-,-,-,-,7,-,-
+	Added :116,2,12,66,19,11,205,90,2,2,2.00,8,0,0.47ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_times0folding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.160665
+############################### ITERATION 128 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 22,2,3,18,1,0,41,16,2,2,2.00,0,0,0.14ns,-,-,-,-,5,-,-
+	Added :22,2,3,18,1,0,41,16,2,2,2.00,0,0,0.14ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0304709
+############################### ITERATION 129 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 142,4,5,84,30,10,262,146,4,3,3.50,13,0,0.34ns,-,-,-,-,7,-,-
+	Added :142,4,5,84,30,10,262,146,4,3,3.50,13,0,0.34ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2unroll_times2unroll_timesallunroll_times4unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.196676
+############################### ITERATION 130 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding2unroll_timesallunroll_times4unroll_timesallunroll_times0
+		Score: 0.0193906
+############################### ITERATION 131 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding1
+		Score: 0.0193906
+############################### ITERATION 131 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		132
+		folding2unroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallfolding1folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallfolding1folding2
+		Score: 1
+############################### ITERATION 132 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		133
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 133 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		134
+		unroll_timesallfolding2unroll_timesallfolding2unroll_timesallunroll_times4unroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallfolding2unroll_timesallunroll_times4unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 134 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 734,5,125,420,93,44,1118,527,5,5,5.00,52,0,0.78ns,-,-,-,-,33,-,-
+	Added :734,5,125,420,93,44,1118,527,5,5,5.00,52,0,0.78ns,-,-,-,-,33,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallfolding1unroll_times0folding2
+		Score: 1
+############################### ITERATION 135 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 117,2,12,66,19,11,207,91,2,2,2.00,9,0,0.47ns,-,-,-,-,7,-,-
+	Added :117,2,12,66,19,11,207,91,2,2,2.00,9,0,0.47ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.159401
+############################### ITERATION 136 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		137
+		folding1unroll_times2folding2unroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times0folding1
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2folding2unroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times0folding1
+		Score: 1
+############################### ITERATION 137 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 231,4,13,126,48,21,415,215,4,4,4.00,23,0,0.47ns,-,-,-,-,10,-,-
+	Added :231,4,13,126,48,21,415,215,4,4,4.00,23,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.314714
+############################### ITERATION 138 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		139
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_timesallunroll_times4folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_timesallunroll_times4folding2
+		Score: 1
+############################### ITERATION 139 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 0,1,0,0,0,0,20,1,0,0,0.00,0,0,0ns,-,-,-,-,1,-,-
+	RESULTS set to 10000000
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 140 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.0381471
+############################### ITERATION 141 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 130,3,5,78,25,10,233,111,3,3,3.00,12,0,0.34ns,-,-,-,-,6,-,-
+	Added :130,3,5,78,25,10,233,111,3,3,3.00,12,0,0.34ns,-,-,-,-,6,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times2folding1unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.177112
+############################### ITERATION 142 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		143
+		unroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding1unroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallfolding1unroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 143 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,-
+	Added :137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding1folding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.186649
+############################### ITERATION 144 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallunroll_times4
+		Score: 0.0198582
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+############################### ITERATION 145 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		146
+		unroll_timesallunroll_times2folding2folding2folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2folding2folding2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times2
+		Score: 1
+############################### ITERATION 146 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		147
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_times4unroll_timesallfolding2unroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_times4unroll_timesallfolding2unroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 147 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		148
+		unroll_timesallfolding2unroll_timesallunroll_times0folding2folding1unroll_timesallfolding2unroll_times4folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_times0folding2folding1unroll_timesallfolding2unroll_times4folding2
+		Score: 1
+############################### ITERATION 148 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 448,4,37,234,92,44,797,364,4,4,4.00,41,0,0.6225ns,-,-,-,-,32,-,-
+	Added :448,4,37,234,92,44,797,364,4,4,4.00,41,0,0.6225ns,-,-,-,-,32,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times0folding1unroll_timesallunroll_timesallfolding1folding2
+		Score: 0.610354
+############################### ITERATION 149 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 261,5,17,138,59,20,493,258,5,5,5.00,27,0,0.43ns,-,-,-,-,13,-,-
+	Added :261,5,17,138,59,20,493,258,5,5,5.00,27,0,0.43ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2unroll_timesallunroll_timesallunroll_times2folding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.355586
+############################### ITERATION 150 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 212,3,13,120,39,22,370,167,3,3,3.00,18,0,0.47ns,-,-,-,-,9,-,-
+	Added :212,3,13,120,39,22,370,167,3,3,3.00,18,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_times0folding1unroll_timesallunroll_times12unroll_timesallunroll_timesall
+		Score: 0.288828
+############################### ITERATION 151 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 317,5,5,186,59,34,553,288,5,4,4.50,33,0,0.34ns,-,-,-,-,9,-,-
+	Added :317,5,5,186,59,34,553,288,5,4,4.50,33,0,0.34ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times2unroll_times2unroll_timesallfolding1unroll_timesallfolding1unroll_timesallfolding2unroll_times8folding2
+		Score: 0.43188
+############################### ITERATION 152 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,-
+	Added :159,4,13,90,31,10,286,157,4,3,3.50,15,0,0.43ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_times2unroll_timesallunroll_times0unroll_timesallunroll_times4unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.216621
+############################### ITERATION 153 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		154
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times4unroll_timesallunroll_timesallfolding1
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_times4unroll_timesallunroll_timesallfolding1
+		Score: 1
+############################### ITERATION 154 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 348,3,27,186,70,33,613,278,3,3,3.00,32,0,0.6225ns,-,-,-,-,28,-,-
+	Added :348,3,27,186,70,33,613,278,3,3,3.00,32,0,0.6225ns,-,-,-,-,28,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallfolding1folding2
+		Score: 0.474114
+############################### ITERATION 155 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		156
+		unroll_timesallfolding2unroll_times0unroll_times0unroll_times4unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_times0unroll_times0unroll_times4unroll_timesallunroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 156 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		157
+		folding2unroll_times0unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times0unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 157 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 416,4,17,228,83,48,735,331,4,4,4.00,40,0,0.47ns,-,-,-,-,10,-,-
+	Added :416,4,17,228,83,48,735,331,4,4,4.00,40,0,0.47ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_times4unroll_timesallunroll_times4unroll_times2
+		Score: 0.566757
+############################### ITERATION 158 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		159
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1folding2unroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1folding2unroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 159 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,-
+	Added :123,3,5,78,17,12,212,100,3,3,3.00,11,0,0.31ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding2unroll_times4unroll_timesallunroll_timesallfolding1
+		Score: 0.167575
+############################### ITERATION 160 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0381471
+############################### ITERATION 161 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		162
+		folding2unroll_times2unroll_times4unroll_times0unroll_times4unroll_times4unroll_timesallunroll_times12unroll_times0folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_times4unroll_times0unroll_times4unroll_times4unroll_timesallunroll_times12unroll_times0folding2
+		Score: 1
+############################### ITERATION 162 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		163
+		folding2unroll_times2unroll_timesallunroll_times0unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_timesallunroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_timesallunroll_times0unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+############################### ITERATION 163 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times4unroll_times0unroll_times4folding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+############################### ITERATION 164 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,-
+	Added :324,3,13,180,66,36,567,252,3,3,3.00,29,0,0.47ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_times0unroll_times4folding2
+		Score: 0.441417
+############################### ITERATION 165 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		166
+		folding1unroll_times2folding1unroll_times0unroll_timesallfolding1folding2unroll_timesallunroll_timesallunroll_times4
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_times2folding1unroll_times0unroll_timesallfolding1folding2unroll_timesallunroll_timesallunroll_times4
+		Score: 1
+############################### ITERATION 166 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		167
+		folding2unroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_times0unroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding2unroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_times0unroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 167 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallunroll_times2
+		Score: 0.0190736
+############################### ITERATION 168 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,-
+	Added :347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times0unroll_timesallunroll_timesallfolding1folding2
+		Score: 0.472752
+############################### ITERATION 169 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		170
+		unroll_timesallfolding2unroll_timesallunroll_times0unroll_times2unroll_times0unroll_timesallfolding2folding2folding1
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding2unroll_timesallunroll_times0unroll_times2unroll_times0unroll_timesallfolding2folding2folding1
+		Score: 1
+############################### ITERATION 170 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,-
+	Added :194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding2unroll_times4folding1folding1unroll_times4unroll_timesallfolding2
+		Score: 0.264305
+############################### ITERATION 171 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		172
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallunroll_times0folding2folding2unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallunroll_times0folding2folding2unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 172 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,-
+	Added :194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1folding1unroll_timesallunroll_timesallfolding2
+		Score: 0.264305
+############################### ITERATION 173 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 130,3,7,72,27,10,246,116,3,3,3.00,14,0,0.34ns,-,-,-,-,8,-,-
+	Added :130,3,7,72,27,10,246,116,3,3,3.00,14,0,0.34ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_times2folding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.177112
+############################### ITERATION 174 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 274,4,13,150,55,29,486,218,4,4,4.00,27,0,0.47ns,-,-,-,-,14,-,-
+	Added :274,4,13,150,55,29,486,218,4,4,4.00,27,0,0.47ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times0folding1unroll_times2unroll_timesallunroll_timesallfolding2
+		Score: 0.373297
+############################### ITERATION 175 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 609,3,113,354,68,33,897,421,3,3,3.00,41,0,0.69ns,-,-,-,-,26,-,-
+	Added :609,3,113,354,68,33,897,421,3,3,3.00,41,0,0.69ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_times0unroll_times4
+		Score: 0.8297
+############################### ITERATION 176 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		177
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1unroll_times2unroll_timesallunroll_times0folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding1unroll_times2unroll_timesallunroll_times0folding2
+		Score: 1
+############################### ITERATION 177 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 0,1,0,0,0,0,20,1,0,0,0.00,0,0,0ns,-,-,-,-,1,-,-
+	RESULTS set to 10000000
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_times4unroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 178 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 7
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		unroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0299728
+############################### ITERATION 178 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 140,3,17,72,25,11,263,118,3,3,3.00,15,0,0.47ns,-,-,-,-,9,-,-
+	Added :140,3,17,72,25,11,263,118,3,3,3.00,15,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times4unroll_times2folding1unroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.190736
+############################### ITERATION 179 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		180
+		unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallfolding2unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallfolding2unroll_times0
+		Score: 1
+############################### ITERATION 180 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,-
+	Added :137,3,13,78,23,11,242,111,3,3,3.00,12,0,0.47ns,-,-,-,-,9,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1folding2unroll_timesallunroll_times4unroll_timesallunroll_times4unroll_timesallfolding2
+		Score: 0.186649
+############################### ITERATION 181 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 246,5,17,132,52,21,458,216,5,5,5.00,24,0,0.47ns,-,-,-,-,13,-,-
+	Added :246,5,17,132,52,21,458,216,5,5,5.00,24,0,0.47ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding1unroll_times0unroll_times2unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.33515
+############################### ITERATION 182 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times0unroll_timesallunroll_timesallunroll_timesallunroll_times4
+		Score: 0.0190736
+############################### ITERATION 183 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,-
+	Added :194,3,19,108,33,18,337,156,3,3,3.00,16,0,0.53ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_times2folding1unroll_times4unroll_timesallfolding2
+		Score: 0.264305
+############################### ITERATION 184 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+	Added :14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times4unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+############################### ITERATION 185 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 828,5,129,468,114,54,1295,607,5,5,5.00,63,0,0.74ns,-,-,-,-,35,-,-
+	Added :828,5,129,468,114,54,1295,607,5,5,5.00,63,0,0.74ns,-,-,-,-,35,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_times0unroll_times2unroll_times2unroll_timesallunroll_timesallunroll_times0folding2
+		Score: 1
+############################### ITERATION 186 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 9
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 0,1,0,0,0,0,20,1,0,0,0.00,0,0,0ns,-,-,-,-,1,-,-
+	RESULTS set to 10000000
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 187 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		188
+		unroll_timesallunroll_times2unroll_timesallunroll_times0folding1folding1unroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0folding1folding1unroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 188 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 103,2,4,66,13,12,177,80,2,2,2.00,8,0,0.31ns,-,-,-,-,3,-,-
+	Added :103,2,4,66,13,12,177,80,2,2,2.00,8,0,0.31ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_timesallfolding1unroll_times4unroll_times0unroll_timesallfolding2
+		Score: 0.124396
+############################### ITERATION 189 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		190
+		unroll_timesallunroll_times2folding2unroll_times0unroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_times0unroll_timesallfolding1unroll_timesallunroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 190 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		191
+		unroll_timesallunroll_times2unroll_times0unroll_times4unroll_times0folding1unroll_timesallunroll_timesallfolding2folding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_times0unroll_times4unroll_times0folding1unroll_timesallunroll_timesallfolding2folding2
+		Score: 1
+############################### ITERATION 191 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 8
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 0,1,0,0,0,0,20,1,0,0,0.00,0,0,0ns,-,-,-,-,1,-,-
+	RESULTS set to 10000000
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_timesallunroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 1
+############################### ITERATION 192 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 265,5,17,144,58,20,494,257,5,4,4.50,26,0,0.43ns,-,-,-,-,13,-,-
+	Added :265,5,17,144,58,20,494,257,5,4,4.50,26,0,0.43ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0unroll_times2unroll_times4unroll_times0unroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_timesallunroll_times4
+		Score: 0.320048
+############################### ITERATION 193 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,-
+	Added :347,3,25,192,68,33,598,275,3,3,3.00,29,0,0.6225ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallfolding1unroll_timesallfolding1unroll_timesallunroll_timesallfolding1folding2
+		Score: 0.419082
+############################### ITERATION 194 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		195
+		unroll_times0folding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times12unroll_timesallfolding2
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_times0folding1unroll_timesallunroll_timesallunroll_timesallfolding1folding2unroll_times12unroll_timesallfolding2
+		Score: 1
+############################### ITERATION 195 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,-
+	Added :28,2,3,24,1,0,45,18,2,2,2.00,0,0,0.1ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallfolding1unroll_timesallunroll_times4unroll_timesallfolding1unroll_timesallfolding1unroll_timesallfolding2
+		Score: 0.0338164
+############################### ITERATION 196 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 235,4,16,126,49,21,434,222,4,4,4.00,23,0,0.47ns,-,-,-,-,11,-,-
+	Added :235,4,16,126,49,21,434,222,4,4,4.00,23,0,0.47ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		folding1unroll_timesallunroll_times2unroll_times0unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallunroll_times0
+		Score: 0.283816
+############################### ITERATION 197 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 
+	Synthesis Failed at: 
+		198
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding2unroll_timesallunroll_times12unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2folding2unroll_timesallunroll_timesallfolding2unroll_timesallunroll_times12unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 198 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 6
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 300,4,7,168,55,34,519,249,4,4,4.00,36,0,0.34ns,-,-,-,-,10,-,-
+	Added :300,4,7,168,55,34,519,249,4,4,4.00,36,0,0.34ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times0unroll_times2unroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_times8folding1
+		Score: 0.362319
+############################### ITERATION 199 #################################
+
+	Parent_0:
+		unroll_timesallunroll_times2unroll_timesallunroll_times0unroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0190736
+	Parent_1:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallunroll_timesallfolding1unroll_timesallunroll_timesallunroll_timesallfolding2
+		Score: 0.0193906
+	Crossover ocurred at: 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	RESULTS: 305,5,31,156,61,29,563,261,5,5,5.00,28,0,0.53ns,-,-,-,-,20,-,-
+	Added :305,5,31,156,61,29,563,261,5,5,5.00,28,0,0.53ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		unroll_timesallunroll_times2unroll_timesallunroll_timesallfolding1folding1folding1unroll_timesallunroll_timesallfolding2
+		Score: 0.368357
+Finished Meta Heuristic
