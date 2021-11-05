@@ -30,18 +30,19 @@ bdlpars  ../benchmarks/decimation_filter/decimation.c
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  |> :  3  (2bit:1, 4bit:1, 5bit:1)
+  == :  1  (2bit:1)
+  |> :  4  (3bit:3, 5bit:1)
   ~|>:  1  (1bit:1)
-  INCR:  1  (1bit:1)
-  DECR:  6  (2bit:2, 4bit:2, 5bit:2)
-  Data transfer : 37
+  INCR:  1  (2bit:1)
+  DECR:  8  (3bit:6, 5bit:2)
+  Data transfer : 47
 
  === array / memory ===
   read  :  6
   write :  7
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 7 / 7 / 7.00
+[Performance index max/min/ave] 9 / 9 / 9.00
 
 !!!!!!!!  CyberII ABNORMAL finish [decimation] (pos=661)  !!!!!!!!
 

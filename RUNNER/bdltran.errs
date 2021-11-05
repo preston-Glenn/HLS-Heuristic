@@ -29,11 +29,12 @@ I_BT4383: Generate memory library file / memory constraint file.
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  |> :  3  (2bit:1, 4bit:1, 5bit:1)
+  == :  1  (2bit:1)
+  |> :  4  (3bit:3, 5bit:1)
   ~|>:  1  (1bit:1)
-  INCR:  1  (1bit:1)
-  DECR:  6  (2bit:2, 4bit:2, 5bit:2)
-  Data transfer : 37
+  INCR:  1  (2bit:1)
+  DECR:  8  (3bit:6, 5bit:2)
+  Data transfer : 47
 
  === array / memory ===
   read  :  6
@@ -43,18 +44,19 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	decimation-auto.FCNT
 	decimation-amacro-auto.FLIB
 	decimation-amacro-auto.FCNT
+10 / 10 step assignment done
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 7 / 7 / 7.00
+[Performance index max/min/ave] 9 / 9 / 9.00
 F_BT4625: Pipeline latency (1) less than DII (2).
  [Action] Reduce pipeline DII less than the latency using "-ZZpipeline" option or "folding"  attribute.
 	[Source Lines]
-	259(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE4-1; x > 0; x--) {
+	221(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE3-1; x > 0; x--) {
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
 	 1 fatal error  exist
-	63 warning      exist
-	44 information  exist
+	51 warning      exist
+	41 information  exist
 	 1 tips         exist
 	---> SEE decimation.err FILE and decimation.tips FILE for DETAILS
 
