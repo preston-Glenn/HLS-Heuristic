@@ -1,5 +1,5 @@
-option -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
-I_BT1173: LOG file is generated. (decimation.LOG.gz)
+option -c1000 -s interpolation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+I_BT1173: LOG file is generated. (interpolation.LOG.gz)
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
 [Datapath delay]   90,000 (1/10ps)
@@ -10,55 +10,71 @@ I_BT6773: The BLIB and FLIB files are loaded.
 
 ******* Initial # of operations in the input behavior description *******
  === Operators ===
-  -  : 10  (32bit:10)
-  <  : 10  (32bit:10)
-  ++ : 15  (32bit:15)
-  >  :  5  (32bit:5)
-  -- :  5  (32bit:5)
-  == : 10  (1bit:1, 32bit:9)
-  +  : 10  (19bit:5, 37bit:5)
-  *  :  5  (20bit:5)
-  Data transfer : 227
+  -  :  1  (32bit:1)
+  >  :  1  (32bit:1)
+  -- :  1  (32bit:1)
+  <  :  4  (32bit:4)
+  ++ :  4  (32bit:4)
+  *  : 10  (17bit:4, 36bit:3, 45bit:2, 54bit:1)
+  +  :  7  (36bit:4, 45bit:1, 54bit:1, 63bit:1)
+  Data transfer : 79
 
  === array / memory ===
-  read  : 25
-  write : 15
+  read  :  9
+  write :  2
 I_BT4383: Generate memory library file / memory constraint file.
-	decimation-auto.MLIB
-	decimation-auto.MCNT
+	interpolation-auto.MLIB
+	interpolation-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  == :  1  (2bit:1)
-  |> :  4  (3bit:3, 5bit:1)
-  ~|>:  1  (1bit:1)
-  INCR:  1  (2bit:1)
-  DECR:  8  (3bit:6, 5bit:2)
-  Data transfer : 47
+  -  : 43  (2bit:4, 3bit:1, 5bit:3, 6bit:2, 8bit:2, 9bit:5, 11bit:4, 12bit:2, 13bit:1, 14bit:7, 15bit:2, 16bit:10)
+  *  :  9  (9bit:2, 16bit:7)
+  +  : 59  (1bit:2, 2bit:2, 3bit:2, 4bit:1, 5bit:3, 6bit:2, 8bit:3, 9bit:4, 10bit:3, 11bit:4, 12bit:3, 14bit:3, 15bit:1, 16bit:26)
+  ~|>:  2  (1bit:2)
+  |> :  1  (3bit:1)
+  INCR:  2  (2bit:1, 3bit:1)
+  DECR:  2  (3bit:2)
+  Data transfer : 448
 
  === array / memory ===
-  read  :  6
-  write :  7
+  read  : 21
+  write :  3
 I_BT4382: Generate functional unit library files / functional unit constraint files.
-	decimation-auto.FLIB
-	decimation-auto.FCNT
-	decimation-amacro-auto.FLIB
-	decimation-amacro-auto.FCNT
-10 / 10 step assignment done
+	interpolation-auto.FLIB
+	interpolation-auto.FCNT
+	interpolation-amacro-auto.FLIB
+	interpolation-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 9 / 9 / 9.00
-F_BT4625: Pipeline latency (1) less than DII (2).
- [Action] Reduce pipeline DII less than the latency using "-ZZpipeline" option or "folding"  attribute.
-	[Source Lines]
-	221(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE3-1; x > 0; x--) {
+[Performance index max/min/ave] 6 / 5 / 5.50
+
+  Module Name         : interpolation
+  Basic Library Name  : CWBSTDBLIB
+
+  Total Area          :     16,093
+    Sequential        :      1,260
+    Combinational     :     14,833
+
+  Latency Index       :         20
+  Total States        :          6
+
+  Clock Period        :       10ns
+  Critical Path Delay :      9.6ns
+
+  Net                 :     12,285
+  Pin Pair            :     26,893
+
+  Port                :         44
+    In                :         27
+    Out               :         17
+
+TOTAL AREA 16,093 (FU: 13,634 + REG: 1,260 + MUX: 1,154 + DEC: 10 + MISC: 35) + pin pair 26,893(net 12,285) + 1FSM of 6state
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	 1 fatal error  exist
-	51 warning      exist
-	41 information  exist
-	 1 tips         exist
-	---> SEE decimation.err FILE and decimation.tips FILE for DETAILS
-
-!!!!!!!!  CyberII ABNORMAL finish [decimation] (pos=661)  !!!!!!!!
+	 1 warning      exist
+	47 information  exist
+	 3 tips         exist
+	---> SEE interpolation.err FILE and interpolation.tips FILE for DETAILS
+##### CyberII Normal finish (automatic scheduling mode) [interpolation] #####
 

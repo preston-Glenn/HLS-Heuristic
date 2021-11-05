@@ -1,0 +1,469 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : interpolation
+  Basic Library Name  : CWBSTDBLIB
+
+  Total Area          :     16,093
+    Sequential        :      1,260
+    Combinational     :     14,833
+
+  Latency Index       :         20
+  Total States        :          6
+
+  Clock Period        :       10ns
+  Critical Path Delay :      9.6ns
+
+  Net                 :     12,285
+  Pin Pair            :     26,893
+
+  Port                :         44
+    In                :         27
+    Out               :         17
+
+========
+; Area ;
+========
+
+  Total :
+    Total           :     16,093
+      Sequential    : 
+        REG         :      1,260 ( 7%)
+      Combinational :     14,833 (92%)
+        FU          :     13,634 (84%)
+        MUX         :      1,154 ( 7%)
+        DEC         :         10 ( <1%)
+        MISC        :         35 ( <1%)
+      Memory        :          -
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name                Area    Reg  Delay  Pipeline  Count
+                                         (ns)    Stage
+    ----------------------------------------------------------
+    add1u                     4      0   0.09         -      2
+    add2s                     9      0   0.18         -      1
+    add3s                    23      0   0.27         -      1
+    add4u                    25      0   0.29         -      1
+    add8s_6                  49      0   0.30         -      1
+    addsub12s                97      0   0.78         -      1
+    addsub12s_10             97      0   0.78         -      2
+    addsub12s_11             97      0   0.78         -      2
+    addsub12s_9              97      0   0.78         -      4
+    addsub12u                98      0   0.74         -      4
+    addsub12u_11             98      0   0.74         -      5
+    addsub12u_9              98      0   0.74         -      1
+    addsub16s               129      0   0.94         -      5
+    addsub16s_14            129      0   0.94         -      3
+    addsub16u               131      0   0.90         -     19
+    addsub16u_14            131      0   0.90         -      5
+    addsub3u                 31      0   0.40         -      1
+    addsub8u                 66      0   0.58         -      3
+    addsub8u_5               66      0   0.58         -      4
+    addsub8u_6               66      0   0.58         -      1
+    decr3u                    6      0   0.12         -      2
+    incr2u                    3      0   0.10         -      1
+    incr3u                    5      0   0.13         -      1
+    mul12u                  760      0   1.96         -      2
+    mul16u                1,230      0   2.65         -      4
+    mul16u_16             1,230      0   2.65         -      2
+    sub2u                    10      0   0.18         -      3
+    sub8s                    51      0   0.45         -      1
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+        3             3          1                  3
+    -------------------------------------------------
+        6             6          1                  6
+    -------------------------------------------------
+        9             9          1                  9
+    -------------------------------------------------
+       16            16         12                192
+    -------------------------------------------------
+    Total                                         210
+
+===============
+; Multiplexer ;
+===============
+
+   2 bit: (1way: 3),  2way:12 ,  3way: 2 
+   3 bit:  2way: 2 ,  4way: 1 ,  7way: 1 
+   4 bit:  2way: 1 
+   5 bit:  2way: 2 
+   6 bit:  2way: 3 
+   7 bit:  2way: 1 
+   8 bit:  2way: 5 
+   9 bit:  2way: 3 
+  10 bit:  2way: 2 
+  11 bit:  2way: 3 
+  12 bit:  2way: 2 
+  14 bit:  2way: 2 ,  4way: 1 
+  16 bit: (1way: 2),  2way:21 ,  3way:14 ,  4way: 3 ,  8way: 1 
+   Total : 2,247 (# of Fanins)
+
+===========
+; Decoder ;
+===========
+
+    2to4: 2
+
+==========
+; Memory ;
+==========
+
+    None
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 2 + L1 + 1 + L2 + L3
+        Latency Index : 20
+        State No.     : 1, 2, 3, 4, 5, 6
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1, L2, L3
+        Line          : ../benchmarks/interpolation_filter/interpolation.c:29
+    L1:
+        Type          : S
+        Latency       : 1 * 5
+        Latency Index : 5
+        State No.     : 3
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/interpolation_filter/interpolation.c:93
+    L2:
+        Type          : S
+        Latency       : 1 * 8
+        Latency Index : 8
+        State No.     : 5
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/interpolation_filter/interpolation.c:107
+    L3:
+        Type          : S
+        Latency       : 1 * 4
+        Latency Index : 4
+        State No.     : 6
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/interpolation_filter/interpolation.c:119
+
+=======
+; FSM ;
+=======
+
+  Total States      :          6
+  #FSM              :          1
+  States/FSM        :          6
+  FSM Decoder Delay :     0.13ns
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       10ns
+  Critical Path Delay :      9.6ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           8.43     87%
+      MUX          1.12     11%
+      DEC          0.00      0%
+      MISC         0.05     <1%
+      MEM          0.00      0%
+      -------------------------
+      Total        9.60
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      RG_n                 / dout [                    ]      -    0.00     0
+      decr3u@1             / o1   [decr3u1ot           ]   0.12    0.12     2
+      _AND_3711            / o1   [                    ]   0.05    0.17     3
+      _NMUX_1483           / o1   [buffer_1_ad00       ]   0.07    0.25     5
+      _DMUX_1317           / o1   [buffer_1_rd00       ]   0.25    0.50    10
+      _DMUX_1356           / o1   [M_07_t              ]   0.20    0.70    13
+      _NMUX_1410           / o1   [mul16u4i1           ]   0.07    0.77    15
+      mul16u@4             / o1   [mul16u4ot           ]   2.65    3.42    71
+      _NMUX_1443           / o1   [addsub16u17i2       ]   0.07    3.49    73
+      addsub16u@17         / o1   [addsub16u17ot       ]   0.00    3.49    73
+      _NMUX_1433           / o1   [addsub16u14i1       ]   0.07    3.57    75
+      addsub16u@14         / o1   [addsub16u14ot       ]   0.41    3.98    81
+      mul16u@3             / o1   [mul16u3ot           ]   2.40    6.38   131
+      _NMUX_1431           / o1   [addsub16u11i2       ]   0.07    6.45   133
+      addsub16u@11         / o1   [addsub16u11ot       ]   0.00    6.45   133
+      _NMUX_1439           / o1   [addsub16u16i1       ]   0.07    6.52   135
+      addsub16u@16         / o1   [addsub16u16ot       ]   0.41    6.93   141
+      addsub16s@4          / o1   [addsub16s4ot        ]   0.41    7.34   146
+      _NMUX_1449           / o1   [addsub16u19i2       ]   0.07    7.42   148
+      addsub16u@19         / o1   [addsub16u19ot       ]   0.37    7.79   154
+      _NMUX_1470           / o1   [addsub12s_102i2     ]   0.07    7.86   156
+      addsub12s_10@2       / o1   [addsub12s_102ot     ]   0.25    8.11   159
+      addsub16u@7          / o1   [addsub16u7ot        ]   0.59    8.69   168
+      addsub16u@8          / o1   [addsub16u8ot        ]   0.41    9.10   174
+      addsub16u@4          / o1   [addsub16u4ot        ]   0.41    9.51   180
+      _NMUX_1390           / o1   [RG_SoP1             ]   0.09    9.60   182
+      RG_SoP1              / din  [                    ]      -    9.60   182
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :   12,285
+  Total Pin Pair Count :   26,893
+  Const Fanout         :      720
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+           1        50         50
+           2        23         46
+           3        19         57
+           4         5         20
+           5         6         30
+           6         6         36
+           7         1          7
+           8         9         72
+           9        10         90
+          10         4         40
+          11        10        110
+          12         7         84
+          14        11        154
+          16        87      1,392
+     ----------------------------
+       Total                2,188
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+          60      1        1         60
+          52      1        1         52
+          16      1        1         16
+          15      1        2         30
+          14      2        3         84
+          14      1        1         14
+          13      1        5         65
+          12      2        3         72
+          12      1        1         12
+          11      4        1         44
+          11      3        1         33
+          11      2        2         44
+          11      1        1         11
+          10      3        1         30
+          10      2        3         60
+          10      1        4         40
+           9      4        1         36
+           9      3        1         27
+           9      2        4         72
+           9      1        4         36
+           8     16        1        128
+           8      4        1         32
+           8      3        1         24
+           8      2        2         32
+           8      1        4         32
+           7      4        1         28
+           7      2        2         28
+           7      1        7         49
+           6      9        1         54
+           6      3        2         36
+           6      2        7         84
+           6      1        3         18
+           5      7        1         35
+           5      4        1         20
+           5      3        1         15
+           5      2        2         20
+           5      1        5         25
+           4      3        1         12
+           4      2        7         56
+           4      1        4         16
+           3     16        7        336
+           3     15        1         45
+           3     10        1         30
+           3      3        2         18
+           3      2        2         12
+           3      1        4         12
+           2     16        4        128
+           2     15        1         30
+           2     14        1         28
+           2     13        2         52
+           2     11        1         22
+           2     10        1         20
+           2      9        4         72
+           2      7        1         14
+           2      6        4         48
+           2      5        2         20
+           2      4        1          8
+           2      3        3         18
+           2      2        5         20
+           2      1        8         16
+           1     16       62        992
+           1     14        7         98
+           1     12        7         84
+           1     11        7         77
+           1     10        2         20
+           1      9        7         63
+           1      8        7         56
+           1      7        1          7
+           1      6        3         18
+           1      5        4         20
+           1      4        7         28
+           1      3       17         51
+           1      2       24         48
+           1      1       37         37
+    -----------------------------------
+       Total                      4,130
+
+  Fanout for Consts:
+      Value    Fanout
+          0       515
+          1       205
+    ------------------
+      Total       720
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0..0)                     15
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0..0)                      9
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      RG_indata_read_SoP2(15..0)                        18
+      RG_n(5..0)                                        17
+      RG_SoP1(15..0)                                    17
+      RG_SoP3(15..0)                                    17
+      buffer_0_rg00(15..0)                              12
+      RG_SoP4(15..0)                                    12
+      buffer_0_rg01(15..0)                              11
+      buffer_0_rg02(15..0)                              11
+      buffer_0_rg03(15..0)                              11
+      buffer_1_rg00(15..0)                              11
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      B01_streg(2..0)                                   17
+      RG_n(5..0)                                        16
+      buffer_0_rg00(15..0)                              14
+      buffer_0_rg01(15..0)                              14
+      buffer_0_rg02(15..0)                              14
+      buffer_0_rg03(15..0)                              14
+      buffer_1_rg00(15..0)                              14
+      buffer_1_rg01(15..0)                              14
+      buffer_1_rg02(15..0)                              14
+      buffer_1_rg03(15..0)                              14
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      buffer_0_rg02(15..0)                          153       15 ( 1bit)
+      buffer_1_rg03(15..0)                          149       14 ( 2bit)
+      buffer_0_rg03(15..0)                          143       14 ( 2bit)
+      buffer_1_rg02(15..0)                          131       11 ( 4bit)
+      M_11_t(15..0)                                 128        8 (16bit)
+      buffer_1_rg01(15..0)                          122       13 ( 1bit)
+      buffer_0_rg01(15..0)                          115       12 ( 1bit)
+      RG_indata_read_SoP2(15..0)                    112        9 ( 4bit)
+      buffer_1_rg00(15..0)                          109       10 ( 2bit)
+      buffer_0_rg00(15..0)                           78        7 ( 2bit)
+      ST1_04d(0..0)                                  60       60 ( 1bit)
+      RG_infactor_read(8..0)                         54        6 ( 9bit)
+      U_10(0..0)                                     52       52 ( 1bit)
+      addsub16u11ot(15..0)                           48        3 (16bit)
+      addsub16u14ot(15..0)                           48        3 (16bit)
+      addsub16u17ot(15..0)                           48        3 (16bit)
+      addsub16u18ot(15..0)                           48        3 (16bit)
+      addsub16u19ot(15..0)                           48        3 (16bit)
+      buffer_0_rd00(15..0)                           48        3 (16bit)
+      buffer_1_rd00(15..0)                           48        3 (16bit)
+      addsub16u5ot(15..0)                            47        3 (15bit)
+      RG_SoP1(15..0)                                 42        3 (10bit)
+      RG_n(5..0)                                     40       14 ( 2bit)
+      RG_SoP3(15..0)                                 32        2 (16bit)
+      mul16u4ot(15..0)                               32        2 (16bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      ST1_04d(0..0)                                  60       60 ( 1bit)
+      U_10(0..0)                                     52       52 ( 1bit)
+      ST1_06d(0..0)                                  16       16 ( 1bit)
+      buffer_0_rg02(15..0)                          153       15 ( 1bit)
+      CLOCK(0..0)                                    15       15 ( 1bit)
+      buffer_1_rg03(15..0)                          149       14 ( 2bit)
+      buffer_0_rg03(15..0)                          143       14 ( 2bit)
+      RG_n(5..0)                                     40       14 ( 2bit)
+      buffer_1_rg01(15..0)                          122       13 ( 1bit)
+      ST1_05d(0..0)                                  13       13 ( 1bit)
+      buffer_0_rg01(15..0)                          115       12 ( 1bit)
+      buffer_1_rg02(15..0)                          131       11 ( 4bit)
+      buffer_1_rg00(15..0)                          109       10 ( 2bit)
+      U_16(0..0)                                     10       10 ( 1bit)
+      RG_indata_read_SoP2(15..0)                    112        9 ( 4bit)
+      RESET(0..0)                                     9        9 ( 1bit)
+      M_11_t(15..0)                                 128        8 (16bit)
+      ST1_03d(0..0)                                   8        8 ( 1bit)
+      buffer_0_rg00(15..0)                           78        7 ( 2bit)
+      addsub8u_53ot(4..0)                            19        7 ( 1bit)
+      addsub12s_101ot(9..0)                          16        7 ( 1bit)
+      U_02(0..0)                                      7        7 ( 1bit)
+      RG_infactor_read(8..0)                         54        6 ( 9bit)
+      B01_streg(2..0)                                18        6 ( 3bit)
+      M_271(1..0)                                    12        6 ( 2bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+      indata            in     16
+      infactor          in      9
+      odata_en          out     1
+      odata             out    16
+

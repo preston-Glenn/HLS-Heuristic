@@ -1,0 +1,12 @@
+H_BT9008: The bitwidth of value assigned to variable M_2171 (bitwidth 2) is 1 or below.
+ [Tips] Reduce the bitwidth for the variable.
+	[Source Lines]
+	114(../benchmarks/interpolation_filter/interpolation.c): 	SoP3 = SoP3 + buffer[n] * coeff3[n];
+H_BT9008: The bitwidth of value assigned to variable M_253 (bitwidth 2) is 1 or below.
+ [Tips] Reduce the bitwidth for the variable.
+	[Source Lines]
+	102(../benchmarks/interpolation_filter/interpolation.c): 	SoP1 = SoP1 + buffer[n] * coeff1[n];
+H_BT9008: The bitwidth of value assigned to variable M_254 (bitwidth 2) is 1 or below.
+ [Tips] Reduce the bitwidth for the variable.
+	[Source Lines]
+	114(../benchmarks/interpolation_filter/interpolation.c): 	SoP3 = SoP3 + buffer[n] * coeff3[n];

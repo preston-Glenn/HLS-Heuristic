@@ -1,0 +1,39 @@
+#@VERSION{3.00}
+#@LIB{interpolation}
+#@LIBTYPE{GENERATED}
+#@KIND{BASIC_OPERATOR}
+#@SYN_TOOL{DC}
+#@CLK 100000
+#@UNIT 1/10ps
+@FLIB{
+	NAME	coeff2
+	KIND	@coeff2
+	BITWIDTH	(3),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff4_0
+	KIND	@coeff4_0
+	BITWIDTH	(2),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff4_1
+	KIND	@coeff4_1
+	BITWIDTH	(2),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+#@HASH{2f2b62ae0d7ad68d5b45dfe5d0172ac9}
+#@END{interpolation}

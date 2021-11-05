@@ -1,0 +1,112 @@
+#@VERSION{3.00}
+#@CNT{interpolation}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@FCNT{
+	NAME	add1u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	add2s
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	add3s
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	add4u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	add8s
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	sub2u
+	LIMIT	3  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	sub8s
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	mul12u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	mul16u
+	LIMIT	6  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	incr2u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	incr3u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	decr3u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub3u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub8u
+	LIMIT	8  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub12s
+	LIMIT	6  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub12u
+	LIMIT	10  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub16s
+	LIMIT	6  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub16u
+	LIMIT	19  AUTO
+#	COMMENT
+}
+#@HASH{c469ef6cd7bdc64038842e9d770d2942}
+#@END{interpolation}
