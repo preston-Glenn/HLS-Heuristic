@@ -6,9 +6,99 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FLIB{
-	NAME	coeff2
-	KIND	@coeff2
-	BITWIDTH	(3),16
+	NAME	coeff1_0
+	KIND	@coeff1_0
+	BITWIDTH	(2),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff1_1
+	KIND	@coeff1_1
+	BITWIDTH	(2),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff2_0
+	KIND	@coeff2_0
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff2_1
+	KIND	@coeff2_1
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff2_2
+	KIND	@coeff2_2
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff2_3
+	KIND	@coeff2_3
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff3_0
+	KIND	@coeff3_0
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff3_1
+	KIND	@coeff3_1
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff3_2
+	KIND	@coeff3_2
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff3_3
+	KIND	@coeff3_3
+	BITWIDTH	(1),16
 	DELAY	1t
 #	SIGN
 #	AREA
@@ -18,7 +108,7 @@
 @FLIB{
 	NAME	coeff4_0
 	KIND	@coeff4_0
-	BITWIDTH	(2),16
+	BITWIDTH	(1),16
 	DELAY	1t
 #	SIGN
 #	AREA
@@ -28,12 +118,32 @@
 @FLIB{
 	NAME	coeff4_1
 	KIND	@coeff4_1
-	BITWIDTH	(2),16
+	BITWIDTH	(1),16
 	DELAY	1t
 #	SIGN
 #	AREA
 #	AREA_REG
 #	COMMENT
 }
-#@HASH{2f2b62ae0d7ad68d5b45dfe5d0172ac9}
+@FLIB{
+	NAME	coeff4_2
+	KIND	@coeff4_2
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff4_3
+	KIND	@coeff4_3
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+#@HASH{afd473f3cbdf59b2c3bd74c88782a33a}
 #@END{interpolation}

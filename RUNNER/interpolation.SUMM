@@ -29,42 +29,39 @@ bdlpars  ../benchmarks/interpolation_filter/interpolation.c
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  -  : 43  (2bit:4, 3bit:1, 5bit:3, 6bit:2, 8bit:2, 9bit:5, 11bit:4, 12bit:2, 13bit:1, 14bit:7, 15bit:2, 16bit:10)
-  *  :  9  (9bit:2, 16bit:7)
-  +  : 59  (1bit:2, 2bit:2, 3bit:2, 4bit:1, 5bit:3, 6bit:2, 8bit:3, 9bit:4, 10bit:3, 11bit:4, 12bit:3, 14bit:3, 15bit:1, 16bit:26)
+  *  : 20  (9bit:2, 16bit:18)
+  +  : 18  (3bit:1, 16bit:17)
   ~|>:  2  (1bit:2)
-  |> :  1  (3bit:1)
-  INCR:  2  (2bit:1, 3bit:1)
-  DECR:  2  (3bit:2)
-  Data transfer : 448
+  INCR:  2  (1bit:1, 3bit:1)
+  Data transfer : 176
 
  === array / memory ===
-  read  : 21
-  write :  3
+  read  : 17
+  write :  6
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 6 / 5 / 5.50
+[Performance index max/min/ave] 4 / 4 / 4.00
 
   Module Name         : interpolation
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :     16,093
-    Sequential        :      1,260
-    Combinational     :     14,833
+  Total Area          :     23,883
+    Sequential        :      1,032
+    Combinational     :     22,851
 
-  Latency Index       :         20
-  Total States        :          6
+  Latency Index       :          8
+  Total States        :          4
 
   Clock Period        :       10ns
-  Critical Path Delay :      9.6ns
+  Critical Path Delay :     7.74ns
 
-  Net                 :     12,285
-  Pin Pair            :     26,893
+  Net                 :     17,421
+  Pin Pair            :     36,658
 
   Port                :         44
     In                :         27
     Out               :         17
 
-TOTAL AREA 16,093 (FU: 13,634 + REG: 1,260 + MUX: 1,154 + DEC: 10 + MISC: 35) + pin pair 26,893(net 12,285) + 1FSM of 6state
+TOTAL AREA 23,883 (FU: 22,096 + REG: 1,032 + MUX: 739 + DEC: 0 + MISC: 16) + pin pair 36,658(net 17,421) + 1FSM of 4state
 ##### CyberII Normal finish (automatic scheduling mode) [interpolation] #####
 

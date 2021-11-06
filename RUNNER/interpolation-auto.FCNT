@@ -4,38 +4,13 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FCNT{
-	NAME	add1u
-	LIMIT	2  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	add2s
+	NAME	add3u
 	LIMIT	1  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	add3s
-	LIMIT	1  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	add4u
-	LIMIT	1  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	add8s
-	LIMIT	1  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	sub2u
-	LIMIT	3  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	sub8s
-	LIMIT	1  AUTO
+	NAME	add16u
+	LIMIT	15  AUTO
 #	COMMENT
 }
 @FCNT{
@@ -45,7 +20,7 @@
 }
 @FCNT{
 	NAME	mul16u
-	LIMIT	6  AUTO
+	LIMIT	16  AUTO
 #	COMMENT
 }
 @FCNT{
@@ -59,12 +34,52 @@
 #	COMMENT
 }
 @FCNT{
-	NAME	decr3u
+	NAME	coeff1_0
 	LIMIT	2  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	coeff2
+	NAME	coeff1_1
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_3
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_3
 	LIMIT	1  AUTO
 #	COMMENT
 }
@@ -79,34 +94,14 @@
 #	COMMENT
 }
 @FCNT{
-	NAME	addsub3u
+	NAME	coeff4_2
 	LIMIT	1  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	addsub8u
-	LIMIT	8  AUTO
+	NAME	coeff4_3
+	LIMIT	1  AUTO
 #	COMMENT
 }
-@FCNT{
-	NAME	addsub12s
-	LIMIT	6  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	addsub12u
-	LIMIT	10  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	addsub16s
-	LIMIT	6  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	addsub16u
-	LIMIT	19  AUTO
-#	COMMENT
-}
-#@HASH{c469ef6cd7bdc64038842e9d770d2942}
+#@HASH{05cb05f05d04faa00c1e4f9ba649463f}
 #@END{interpolation}
