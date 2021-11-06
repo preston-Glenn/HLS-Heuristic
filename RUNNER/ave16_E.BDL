@@ -2,35 +2,345 @@
 * ave16_E.BDL
 # Design Name        ave16
 # FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
-# MEM  Limit File    ?????.MLMT
+# MEM  Limit File    %AUTO%.MLMT
 # Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
 # PORT Limit File    %AUTO%.PLMT
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  1 / 1 / 1.00
-# Data-path info.    REG: 0(area),0(FFs), MUX: 0(area),0(fanins)
-# CSV info.          0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
+# Performance index  max/min/ave  10 / 10 / 10.00
+# Data-path info.    REG: 282(area),47(FFs), MUX: 402(area),433(fanins)
+# CSV info.          930,10,291,282,314,0,2164,995,10,10,10.00,43,-,1.8051ns,-,-,-,-,32,-,-
 # Bp-Option  ../benchmarks/ave16/ave16.c
 # Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
 */
+defmod MEMB32W4 {
+    in    unsigned ter(0:2)  RA1/* Cyber mem_id = MEMB32W4@4, other = DC */;
+    out   signed   ter(0:32)  RD1/* Cyber mem_id = MEMB32W4@4 */;
+    in    unsigned ter(0:1)  RE1/* Cyber mem_id = MEMB32W4@4 */;
+    in    unsigned ter(0:1)  RCLK1/* Cyber clock_edge = pos, mem_id = MEMB32W4@4 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    in    unsigned ter(0:2)  WA2/* Cyber mem_id = MEMB32W4@4, other = DC */;
+    in    signed   ter(0:32)  WD2/* Cyber mem_id = MEMB32W4@4, other = DC */;
+    in    unsigned ter(0:1)  WE2/* Cyber mem_id = MEMB32W4@4 */;
+    in    unsigned ter(0:1)  WCLK2/* Cyber clock_edge = pos, mem_id = MEMB32W4@4 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+} data_3 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_2 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_1 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_0 	/* line# ../benchmarks/ave16/ave16.c:23 */;
+
 
 in   unsigned ter(0:8)  in0 /* line# ../benchmarks/ave16/ave16.c:21 */;
 out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
+clock         CLOCK/* Cyber clock_edge = pos */;
+reset         RESET/* Cyber reset_mode = async, reset_active = high */;
     
+unsigned const ter(0:4)  ST1_01 = 0;
+unsigned const ter(0:4)  ST1_02 = 1;
+unsigned const ter(0:4)  ST1_03 = 2;
+unsigned const ter(0:4)  ST1_04 = 3;
+unsigned const ter(0:4)  ST1_05 = 4;
+unsigned const ter(0:4)  ST1_06 = 5;
+unsigned const ter(0:4)  ST1_07 = 6;
+unsigned const ter(0:4)  ST1_08 = 7;
+unsigned const ter(0:4)  ST1_09 = 8;
+unsigned const ter(0:4)  ST1_10 = 9;
 
 /* Cyber default_bit_order = up */
 process
 ave16()
 {
+    signed   ter(0:32)  TR_07;
+    unsigned ter(0:1)  M_48;
+    unsigned ter(0:1)  M_47;
+    unsigned ter(0:1)  M_46;
+    unsigned ter(0:1)  M_45;
+    unsigned ter(0:1)  M_44;
+    unsigned ter(0:1)  M_43;
+    unsigned ter(0:2)  TR_06/* Cyber FSM = ter, other = DC */;
+    unsigned ter(0:3)  TR_04/* Cyber FSM = ter */;
+    unsigned ter(0:2)  TR_03/* Cyber FSM = ter */;
+    unsigned ter(0:2)  TR_01/* Cyber other = DC */;
+    unsigned reg(0:4)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0:1)  U_14;
+    unsigned ter(0:1)  U_12;
+    unsigned ter(0:1)  U_11;
+    unsigned ter(0:1)  U_10;
+    unsigned ter(0:1)  U_09;
+    unsigned ter(0:1)  U_08;
+    unsigned ter(0:1)  U_07;
+    unsigned ter(0:1)  U_06;
+    unsigned ter(0:1)  U_05;
+    unsigned ter(0:1)  ST1_10d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_09d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_08d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_07d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_06d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_05d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_04d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_03d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_02d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_01d/* Cyber FSM = dec */;
+    signed   ter(0:2)  decr2s1i1/* Cyber other = DC */;
+    signed   ter(0:2)  decr2s1ot;
+    unsigned ter(0:2)  decr2u1i1/* Cyber other = DC */;
+    unsigned ter(0:2)  decr2u1ot;
+    unsigned ter(0:4)  incr4u1i1/* Cyber other = DC */;
+    unsigned ter(0:4)  incr4u1ot;
+    signed   ter(0:32)  add32s1i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s1i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s1ot;
+    signed   ter(0:2)  add8s1i2/* Cyber other = DC */;
+    signed   ter(0:8)  add8s1i1/* Cyber other = DC */;
+    signed   ter(0:8)  add8s1ot;
+    unsigned ter(0:2)  add4u1i2/* Cyber other = DC */;
+    unsigned ter(0:4)  add4u1i1/* Cyber other = DC */;
+    unsigned ter(0:5)  add4u1ot;
+    unsigned ter(0:1)  CT_04/* Cyber other = DC */;
+    unsigned ter(0:1)  JF_01/* Cyber other = DC */;
+    unsigned reg(0:2)  RG_i/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned reg(0:5)  RG_i_1/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned reg(0:4)  RG_i_2/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    signed   reg(0:32)  RG_sum/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+
 
 ST1_01 :
-    out0(0:8) ::= 0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:43 */
+    decr2s1ot(0:2) ::= decr2s@1(decr2s1i1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    decr2u1ot(0:2) ::= decr2u@1(decr2u1i1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    incr4u1ot(0:4) ::= incr4u@1(incr4u1i1(0:4));
+    add32s1ot(0:32) ::= add32s@1(add32s1i1(0:32), add32s1i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add8s1ot(0:8) ::= add8s@1(add8s1i1(0:8), add8s1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
+    add4u1ot(0:5) ::= add4u@1(add4u1i1(0:4), add4u1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    data_3.RCLK1(0:1) ::= CLOCK;
+    data_3.WCLK2(0:1) ::= CLOCK;
+    data_2.RCLK1(0:1) ::= CLOCK;
+    data_2.WCLK2(0:1) ::= CLOCK;
+    data_1.RCLK1(0:1) ::= CLOCK;
+    data_1.WCLK2(0:1) ::= CLOCK;
+    data_0.RCLK1(0:1) ::= CLOCK;
+    data_0.WCLK2(0:1) ::= CLOCK;
+    TR_07(0:32) ::= dmux (RG_i(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        case 0 :  data_0.RD1(0:32);
+        case 1 :  data_1.RD1(0:32);
+        case 2 :  data_2.RD1(0:32);
+        case 3 :  data_3.RD1(0:32);
+    };
+    CT_04(0:1) ::= ~RG_i_1(0:1) & ~&>RG_i_1(1:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    add4u1i1(0:4) ::= RG_i_2(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    add4u1i2(0:2) ::= 2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    add8s1i1(0:8) ::= add32s1ot(20:8); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
+    add8s1i2(0:2) ::= 0(0:1) :: (add32s1ot(0:1) & |>add32s1ot(28:4)); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
+    incr4u1i1(0:4) ::= RG_i_2(0:4);
+    decr2u1i1(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    decr2s1i1(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.WA2(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.WD2(0:32) ::= data_3.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_05(0:1) ::= (unsigned ter(0:1))(ST1_07d(0:1) & M_43(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_06(0:1) ::= (unsigned ter(0:1))(ST1_07d(0:1) & M_44(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_07(0:1) ::= (unsigned ter(0:1))(ST1_07d(0:1) & M_46(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_08(0:1) ::= (unsigned ter(0:1))(ST1_07d(0:1) & M_45(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_43(0:1) ::= ~|>RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_09(0:1) ::= (unsigned ter(0:1))(ST1_08d(0:1) & M_43(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_44(0:1) ::= ~|>(RG_i_2(2:2) ^ 1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_10(0:1) ::= (unsigned ter(0:1))(ST1_08d(0:1) & M_44(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_46(0:1) ::= ~|>(RG_i_2(2:2) ^ 2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_11(0:1) ::= (unsigned ter(0:1))(ST1_08d(0:1) & M_46(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_45(0:1) ::= ~|>(RG_i_2(2:2) ^ 3(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_12(0:1) ::= (unsigned ter(0:1))(ST1_08d(0:1) & M_45(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    U_14(0:1) ::= (unsigned ter(0:1))(ST1_09d(0:1) & ~CT_04(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    RG_i(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+        when ((unsigned ter(0:1))((unsigned ter(0:1))(ST1_04d(0:1) | ST1_07d(0:1)) | ST1_08d(0:1))) :  RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:32,40 */
+        default :  RG_i(0:2);
+    };
+    RG_i_1(0:5) ::= nmux {
+        when (ST1_03d(0:1)) :  0(0:3) :: decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_07d(0:1)) :  add4u1ot(0:5); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+        default :  RG_i_1(0:5);
+    };
+    TR_01(0:2) ::= nmux {
+        when (ST1_03d(0:1)) :  decr2u1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+        when (ST1_06d(0:1)) :  1(0:2); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    };
+    RG_i_2(0:4) ::= nmux {
+        when ((unsigned ter(0:1))(ST1_03d(0:1) | ST1_06d(0:1))) :  (unsigned ter(0:4))(0(0:2) :: TR_01(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:32,39 */
+        when (ST1_07d(0:1)) :  incr4u1ot(0:4);
+        when (ST1_09d(0:1)) :  RG_i_1(1:4);
+    };
+    RG_sum(0:32) ::= nmux {
+        when (ST1_06d(0:1)) :  data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36 */
+        when (ST1_08d(0:1) | ST1_09d(0:1)) :  add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        default :  RG_sum(0:32);
+    };
+    out0(0:8) ::= nmux {
+        when (ST1_10d(0:1)) :  add8s1ot(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
+        default :  0(0:8);
+    };
+    JF_01(0:1) ::= |>RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    add32s1i1(0:32) ::= RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s1i2(0:32) ::= nmux {
+        when (ST1_08d(0:1)) :  TR_07(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_09d(0:1)) :  TR_07(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_10d(0:1)) :  data_3.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    };
+    data_3.RA1(0:2) ::= nmux {
+        when (ST1_03d(0:1)) :  decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (U_08(0:1) | U_12(0:1)) :  RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_14(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    };
+    data_3.RE1(0:1) ::= ST1_03d(0:1) | U_08(0:1) | U_12(0:1) | U_14(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_3.WA2(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_04d(0:1)) :  RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_3.WD2(0:32) ::= data_2.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_3.WE2(0:1) ::= M_48(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_2.RA1(0:2) ::= nmux {
+        when (ST1_01d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_03d(0:1)) :  decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (U_07(0:1) | U_11(0:1)) :  RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    };
+    data_2.RE1(0:1) ::= M_47(0:1) | U_07(0:1) | U_11(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_2.WA2(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_04d(0:1)) :  RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_2.WD2(0:32) ::= data_1.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    M_48(0:1) ::= ST1_02d(0:1) | ST1_04d(0:1);
+    data_2.WE2(0:1) ::= M_48(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_1.RA1(0:2) ::= nmux {
+        when (ST1_01d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_03d(0:1)) :  decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (U_06(0:1) | U_10(0:1)) :  RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    };
+    M_47(0:1) ::= ST1_01d(0:1) | ST1_03d(0:1);
+    data_1.RE1(0:1) ::= M_47(0:1) | U_06(0:1) | U_10(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_1.WA2(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_04d(0:1)) :  RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_1.WD2(0:32) ::= data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_1.WE2(0:1) ::= M_48(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.RA1(0:2) ::= nmux {
+        when (ST1_01d(0:1)) :  3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_03d(0:1)) :  decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        when (ST1_05d(0:1)) :  0(0:2); 	/* line# ../benchmarks/ave16/ave16.c:36 */
+        when (U_05(0:1) | U_09(0:1)) :  RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    };
+    data_0.RE1(0:1) ::= M_47(0:1) | ST1_05d(0:1) | U_05(0:1) | U_09(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,36,40 */
+    data_0.WE2(0:1) ::= ST1_04d(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    ST1_01d(0:1) ::= (unsigned ter(0:1))(~|>B01_streg(0:4));
+    ST1_02d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_02(0:4)));
+    ST1_03d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_03(0:4)));
+    ST1_04d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_04(0:4)));
+    ST1_05d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_05(0:4)));
+    ST1_06d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_06(0:4)));
+    ST1_07d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_07(0:4)));
+    ST1_08d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_08(0:4)));
+    ST1_09d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_09(0:4)));
+    ST1_10d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:4) ^ ST1_10(0:4)));
+    TR_03(0:2) ::= nmux {
+        when ((unsigned ter(0:1))(ST1_02d(0:1) | ST1_03d(0:1))) :  (unsigned ter(0:2))(1(0:1) :: ST1_03d(0:1));
+        default :  (unsigned ter(0:2))(0(0:1) :: ST1_01d(0:1));
+    };
+    TR_06(0:2) ::= nmux {
+        when (ST1_05d(0:1)) :  1(0:2);
+        when (ST1_06d(0:1)) :  2(0:2);
+        when (ST1_07d(0:1)) :  3(0:2);
+    };
+    TR_04(0:3) ::= nmux {
+        when ((unsigned ter(0:1))((unsigned ter(0:1))(ST1_05d(0:1) | ST1_06d(0:1)) | ST1_07d(0:1))) :  (unsigned ter(0:3))(1(0:1) :: TR_06(0:2));
+        default :  (unsigned ter(0:3))(0(0:1) :: TR_03(0:2));
+    };
+    B01_streg(0:4) ::= nmux {
+        when (ST1_04d(0:1)) : 
+            nmux {
+                when (JF_01(0:1)) :  ST1_03(0:4);
+                when (!JF_01(0:1)) :  ST1_05(0:4);
+                default :  ST1_01(0:4);
+            };
+        when (ST1_08d(0:1)) :  ST1_09(0:4);
+        when (ST1_09d(0:1)) : 
+            nmux { 	/* line# ../benchmarks/ave16/ave16.c:39 */
+                when (CT_04(0:1)) :  ST1_07(0:4);
+                when (!CT_04(0:1)) :  ST1_10(0:4);
+                default :  ST1_01(0:4);
+            };
+        default :  (unsigned ter(0:4))(0(0:1) :: TR_04(0:3));
+    };
     goto ST1_01;
 }
 
 /*
+#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
+#@LMT %AUTO%.LMT
+##@CLK  100000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  add4u      1  (u)+              4,5    2900     25
+#  2  add8s      1  (s)+              8,8    3000     49
+#  3  add32s     1  (s)+              32,32  10600   208
+#  4  incr4u     1  (u)INCR           4,4    1300     10
+#  5  decr2u     1  (u)DECR           2,2    1000      2
+#  6  decr2s     1  (s)DECR           2,2    900       5
+#  7  delay_funit_1    1  @delay_funit_1    (32),32  1         0
+#  8  delay_funit_2    1  @delay_funit_2    (32),32  1         0
+#  9  delay_funit_3    1  @delay_funit_3    (32),32  1         0
+# 10  delay_funit_4    1  @delay_funit_4    (32),32  1         0
+# 11  delay_funit_5    1  @delay_funit_5    (32),32  1         0
+# 12  delay_funit_6    1  @delay_funit_6    (32),32  1         0
+# 13  delay_funit_7    1  @delay_funit_7    (32),32  1         0
+# 14  delay_funit_8    1  @delay_funit_8    (32),32  1         0
+# 15  delay_funit_9    1  @delay_funit_9    (32),32  1         0
+# 16  delay_funit_10    1  @delay_funit_10   (32),32  1         0
+# 17  delay_funit_11    1  @delay_funit_11   (32),32  1         0
+# 18  delay_funit_12    1  @delay_funit_12   (32),32  1         0
+# 19  delay_funit_13    1  @delay_funit_13   (32),32  1         0
+# 20  delay_funit_14    1  @delay_funit_14   (32),32  1         0
+# 21  delay_funit_15    1  @delay_funit_15   (32),32  1         0
+# 22  delay_funit_16    1  @delay_funit_16   (32),32  1         0
+# 23  delay_funit_17    1  @delay_funit_17   (32),32  1         0
+#@END
+
+#@MLIB %AUTO%.MLIB
+##@VERSION { 3.00 }
+##@LIB { ave16 }
+##@UNIT  1/10ps 
+#@MLIB {
+#    NAME	MEMB32W4
+#    KIND	R1,W1
+#    BITWIDTH	32
+#    DELAY	x2
+#    WORD	4
+#    WRITE_SYNC	YES
+#    DEFMOD {
+#        in             ter (0:2)      RA1              /* ra:1 */;
+#        out            ter (0:32)     RD1              /* rd:1 */;
+#        in             ter (0:1)      RE1              /* re:1 */;
+#        in             ter (0:1)      RCLK1            /* rclk:1 */;
+#        in             ter (0:2)      WA2              /* wa:2 */;
+#        in             ter (0:32)     WD2              /* wd:2 */;
+#        in             ter (0:1)      WE2              /* we:2 */;
+#        in             ter (0:1)      WCLK2            /* wclk:2 */;
+#    }
+#}
+##@END { ave16 }
+
+#@MCNT %AUTO%.MCNT
+##@VERSION { 3.00 }
+##@CNT { ave16 }
+#@MCNT {
+#    NAME	MEMB32W4
+#    LIMIT	4
+#}
+##@END { ave16 }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  MEMB32W4    4  R1,W1            32x4   1x2                 	
+#@END
+
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
 ##@VERSION{2.00}
 ##@LIB{CWBSTDBLIB}

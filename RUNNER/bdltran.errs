@@ -1,5 +1,5 @@
-option -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
-I_BT1173: LOG file is generated. (sobel.LOG.gz)
+option -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+I_BT1173: LOG file is generated. (ave16.LOG.gz)
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
 [Datapath delay]   90,000 (1/10ps)
@@ -10,78 +10,71 @@ I_BT6773: The BLIB and FLIB files are loaded.
 
 ******* Initial # of operations in the input behavior description *******
  === Operators ===
-  -  :  6  (8bit:1, 32bit:5)
-  >  :  4  (32bit:4)
+  -  :  1  (32bit:1)
+  >  :  1  (32bit:1)
   -- :  1  (32bit:1)
-  <  :  3  (32bit:3)
-  ++ :  3  (32bit:3)
-  <= :  2  (32bit:2)
-  +  :  9  (32bit:9)
-  *  :  2  (8bit:2)
-  Data transfer : 78
+  <  :  1  (32bit:1)
+  ++ :  1  (32bit:1)
+  += :  1  (32bit:1)
+  /  :  1  (32bit:1)
+  Data transfer : 21
 
  === array / memory ===
-  read  :  5
-  write :  4
-I_BT4441: Memory array 'Gx' is expanded at 1-th dimension from right.
-	[Source Lines]
-	52(../benchmarks/sobel/sobel.c):   char Gx[3][3] /* ATTR2 */={{1 ,0 ,-1},
+  read  :  3
+  write :  1
 I_BT4383: Generate memory library file / memory constraint file.
-	sobel-auto.MLIB
-	sobel-auto.MCNT
+	ave16-auto.MLIB
+	ave16-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  -  :  2  (32bit:2)
-  +  :  7  (10bit:1, 16bit:1, 32bit:5)
-  *  :  6  (9bit:6)
-  ~  :  1  (8bit:1)
-  &> :  2  (1bit:2)
-  ~&>:  3  (1bit:3)
-  |> :  3  (23bit:3)
-  &  :  3  (1bit:3)
+  +  :  5  (4bit:1, 8bit:1, 32bit:3)
+  &  :  2  (1bit:2)
+  |> :  2  (2bit:1, 4bit:1)
   ~|>:  1  (1bit:1)
-  INCR:  2  (2bit:2)
-  Data transfer : 105
+  ~&>:  1  (4bit:1)
+  INCR:  1  (4bit:1)
+  DECR:  2  (2bit:2)
+  Data transfer : 71
 
  === array / memory ===
-  read  :  9
-  write :  9
+  read  : 17
+  write :  7
 I_BT4382: Generate functional unit library files / functional unit constraint files.
-	sobel-auto.FLIB
-	sobel-auto.FCNT
-	sobel-amacro-auto.FLIB
-	sobel-amacro-auto.FCNT
+	ave16-auto.FLIB
+	ave16-auto.FCNT
+	ave16-amacro-auto.FLIB
+	ave16-amacro-auto.FCNT
+10 / 11 step assignment done
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 3 / 3 / 3.00
+[Performance index max/min/ave] 10 / 10 / 10.00
 
-  Module Name         : sobel
+  Module Name         : ave16
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :      3,691
-    Sequential        :        846
-    Combinational     :      2,845
+  Total Area          :        930
+    Sequential        :        282
+    Combinational     :        648
 
-  Latency Index       :          7
-  Total States        :          3
+  Latency Index       :         32
+  Total States        :         10
 
   Clock Period        :       10ns
-  Critical Path Delay :   7.5685ns
+  Critical Path Delay :   1.8051ns
 
-  Net                 :      3,113
-  Pin Pair            :      6,653
+  Net                 :        995
+  Pin Pair            :      2,164
 
-  Port                :         34
-    In                :         26
+  Port                :         18
+    In                :         10
     Out               :          8
 
-TOTAL AREA 3,691 (FU: 2,390 + REG: 846 + MUX: 413 + DEC: 0 + MISC: 42) + pin pair 6,653(net 3,113) + 1FSM of 3state
+TOTAL AREA 930 (FU: 291 + REG: 282 + MUX: 314 + DEC: 0 + MISC: 43) + pin pair 2,164(net 995) + 1FSM of 10state
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	 1 warning      exist
-	28 information  exist
-	 1 tips         exist
-	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS
-##### CyberII Normal finish (automatic scheduling mode) [sobel] #####
+	 4 warning      exist
+	16 information  exist
+	---> SEE ave16.err FILE for DETAILS
+##### CyberII Normal finish (automatic scheduling mode) [ave16] #####
 
