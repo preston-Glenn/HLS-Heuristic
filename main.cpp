@@ -127,8 +127,8 @@ int main(int argc, char** argv){
 		cout << RESULTS_DIRECTORY << endl;
 
 		} else {
-
-		  RESULTS_DIRECTORY = resultsFileArg.getValue();
+		  	RESULTS_DIRECTORY = resultsFileArg.getValue();
+			if(!file_exists(RESULTS_DIRECTORY)) setHeadersCSV();
 		}
 
 
@@ -174,7 +174,7 @@ int main(int argc, char** argv){
 		string parse_file = DIRECTORY + "lib_" + FILE_NAME + ".info";
 
 
-		bool headerSuccess = setHeadersCSV();
+		
 
 		logger.log("Directory: "+DIRECTORY);
 		logger.log("FILE_W/O E: "+FILE_NAME);

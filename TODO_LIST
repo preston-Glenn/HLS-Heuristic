@@ -23,12 +23,10 @@ MAJOR FIX:
 - fix scaling issue of cost function latency at 1 is overpowered by
 
 -------------------------------------------------------------------------------
-
 - add label tag to csv file
+- if results file already exists just append to it and dont readd header
 
 Todo:
-- if results file already exists just append to it and dont readd header
-- 
 
 - failed count vs successful synthesis
 
