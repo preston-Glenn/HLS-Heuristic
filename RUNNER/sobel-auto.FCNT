@@ -4,19 +4,44 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FCNT{
-	NAME	addsub8u
-	LIMIT	4  AUTO
+	NAME	add12s
+	LIMIT	1  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	addsub12s
-	LIMIT	5  AUTO
+	NAME	add16s
+	LIMIT	1  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	addsub12u
+	NAME	mul12s
+	LIMIT	3  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	incr2s
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	Gy_a_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	Gy_a_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	Gy_a_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub32s
 	LIMIT	4  AUTO
 #	COMMENT
 }
-#@HASH{9e454db3fc2acc4be2a192597f0a811a}
+#@HASH{f5a8419ecf2508e8e8aa789425be6b07}
 #@END{sobel}
