@@ -109,7 +109,7 @@ void addFileResults(string results, vector<int> index_list){
   file.open(RESULTS_DIRECTORY.c_str(),ios::app);
   if(file.is_open()){
 
-    string modified_results = "Exhaustive Search,1," + indexes  + "," + results;
+    string modified_results = LABEL + ",1," + indexes  + "," + results;
     file << modified_results << endl;
     file.close();
 

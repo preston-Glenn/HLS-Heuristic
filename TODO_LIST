@@ -19,17 +19,22 @@ Done:
 - TCLAP choose results file_name else iterate on results
 - TCLAP to choose csv_class_name
 
--------------------------------------------------------------------------------
 MAJOR FIX:
 - fix scaling issue of cost function latency at 1 is overpowered by
 
+-------------------------------------------------------------------------------
+
+- add label tag to csv file
+
 Todo:
 - if results file already exists just append to it and dont readd header
-- add label tag to csv file
-- prep and check CSV file over multiple different AREA/LATENCY weights
-- validate Heuristic --create prgoram to randomly simulate exploration
-- Powerpoint
+- 
+
 - failed count vs successful synthesis
+
+- validate Heuristic --create prgoram to randomly simulate exploration and  that heuristic does explore for multiple weights correctly
+
+- Powerpoint
 
 
 
@@ -38,8 +43,3 @@ BONUS
 1. implement signal handlers
    - hard kill
    - exit after run finishes
-
-
-2. implement random search heuristic to compare against heuristics
-
-3. Ability to change mutation rate in cmdLine
