@@ -87,7 +87,7 @@ int main(int argc, char** argv){
 		SwitchArg exhaustive("e","exhaustive","Run exhaustive search",cmd,false);
 		SwitchArg heuristic("m","meta-heuristic","Run program as meta-heuristic",cmd,false);
 		SwitchArg verbose("v","verbose","The program will be more verbose",cmd,false);
-		UnlabeledValueArg<string> file_name_arg("f","The config file name", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
+		UnlabeledValueArg<string> file_name_arg("f","The c or bdl input file to be synthesized.", false,"/benchmarks/sobel/sobel.c","c or bdl file to be run", false);
 
 		ValueArg<float>  mutationRateArg("r","rate","The rate at which the allels mutate.",false,0.1,"mutation rate");
 		ValueArg<float>  weightArg("w","weight","The weight for the AREA in the cost function. This will overide the program from running at multiple different weight values.",false,-1,"AREA weight");
