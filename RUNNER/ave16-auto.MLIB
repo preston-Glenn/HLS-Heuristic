@@ -3,22 +3,4 @@
 #@LIB { ave16 }
 #@UNIT 1/10ps
 #@SYN_TOOL{DC}
-@MLIB {
-     NAME	MEMB32W4
-     KIND	R1,W1
-     BITWIDTH	32
-     DELAY	x2
-     WORD	4
-     WRITE_SYNC	YES
-     DEFMOD {
-         in             ter (0:2)      RA1              /* ra:1 */;
-         out            ter (0:32)     RD1              /* rd:1 */;
-         in             ter (0:1)      RE1              /* re:1 */;
-         in             ter (0:1)      RCLK1            /* rclk:1 */;
-         in             ter (0:2)      WA2              /* wa:2 */;
-         in             ter (0:32)     WD2              /* wd:2 */;
-         in             ter (0:1)      WE2              /* we:2 */;
-         in             ter (0:1)      WCLK2            /* wclk:2 */;
-     }
-}
 #@END { ave16 }

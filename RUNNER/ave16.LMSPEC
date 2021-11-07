@@ -9,23 +9,22 @@
 #	LIMIT
 #	BITWIDTH
 #	DELAY
-	AREA	930
-	AREA_REG	282
-	AREA_COMB	648
-	AREA_FU	291
-	AREA_MUX	314
+	AREA	0
+	AREA_REG	0
+	AREA_COMB	0
+	AREA_FU	0
+	AREA_MUX	0
 	AREA_DEC	0
-	AREA_MISC	43
-	NET	995
-	PIN_PAIR	2164
+	AREA_MISC	0
+	AREA_MEM	0
+	NET	1
+	PIN_PAIR	9
 #	SPECULATION
 #	COMMENT
 	DEFMOD {
 		in    unsigned ter(0:8)  in0              /* glo, in0 */;
-		out   unsigned ter(0:8)  out0             /* glo, out0 */;
-		clock                    CLOCK            /* c, CLOCK, @clock_period = 10ns, @auto_gen_sig = YES, clock_edge = \pos */;
-		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
+		out   unsigned ter(0:8)  out0             /* glo, out0, always = 0 */;
 	}
 }
-#@HASH{92ffcbfcfda36afecde3bd10debde728}
+#@HASH{2c90627f5727fdb25320f747f17c11a1}
 #@END{ave16}

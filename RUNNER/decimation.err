@@ -20,27 +20,27 @@ I_BT4607: for loop is unrolled
 I_BT4607: for loop is unrolled
 	[Source Lines]
 	129(../benchmarks/decimation_filter/decimation.c):      for (x = 0; x < TAPS_STAGE5; x++) {
-I_BT4607: for loop is unrolled
-	[Source Lines]
-	144(../benchmarks/decimation_filter/decimation.c):   for( x = BUFFER_SIZE_STAGE1-1; x > 0; x--) {
-I_BT4607: for loop is unrolled
-	[Source Lines]
-	153(../benchmarks/decimation_filter/decimation.c):   for (x = 0; x < TAPS_STAGE1; x++) {
-I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
-	[Source Lines]
-	160(../benchmarks/decimation_filter/decimation.c):    SoP1 = SoP1 + (bufferline_1[x]+buffer_1 )*incoef1_var[x];
 I_BT4874: for loop is unrolled at every 4 iterations
 	[Source Lines]
+	144(../benchmarks/decimation_filter/decimation.c):   for( x = BUFFER_SIZE_STAGE1-1; x > 0; x--) {
+I_BT4874: for loop is unrolled at every 2 iterations
+	[Source Lines]
 	181(../benchmarks/decimation_filter/decimation.c):   for(x =  BUFFER_SIZE_STAGE2-1; x > 0; x--) {
-I_BT4607: for loop is unrolled
+I_BT4874: for loop is unrolled at every 2 iterations
 	[Source Lines]
 	221(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE3-1; x > 0; x--) {
-I_BT4607: for loop is unrolled
+I_BT4874: for loop is unrolled at every 2 iterations
 	[Source Lines]
 	259(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE4-1; x > 0; x--) {
-I_BT4607: for loop is unrolled
+I_BT4874: for loop is unrolled at every 4 iterations
 	[Source Lines]
 	298(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE5-1; x > 0; x--) {
+W_BT4865: The synthesis will not be a good result because the divided array (bufferline_1) is accessed by variable.
+ [Action] Change all access of array to constant, or add 'array_div=NO' attribute to the array, or use '-Zarray_div=NO' option to disable synthesis function of array dividing.
+I_BT4945: The loop of the same structure was merged.
+	[Source Lines]
+	181(../benchmarks/decimation_filter/decimation.c):   for(x =  BUFFER_SIZE_STAGE2-1; x > 0; x--) {
+	221(../benchmarks/decimation_filter/decimation.c):   for(x = BUFFER_SIZE_STAGE3-1; x > 0; x--) {
 W_BT8105: Possible reference to signal 'in_stage_2' before assignment.
  [Action] Initialize signal 'in_stage_2'.
 	[Source Lines]
@@ -77,23 +77,63 @@ W_BT4127: Change the physical type of signal(incoef4) to var.
 I_BT4679: Array incoef4 was expanded.
 W_BT4127: Change the physical type of signal(incoef5) to var.
 I_BT4679: Array incoef5 was expanded.
-I_BT4679: Array incoef1_var was expanded.
 I_BT4679: Array incoef2_var was expanded.
 I_BT4679: Array incoef3_var was expanded.
 I_BT4679: Array incoef4_var was expanded.
 I_BT4679: Array incoef5_var was expanded.
-I_BT4679: Array bufferline_1 was expanded.
-I_BT4679: Array bufferline_3 was expanded.
-I_BT4679: Array bufferline_4 was expanded.
-I_BT4679: Array bufferline_5 was expanded.
-I_BT4679: Array bufferline_2_0 was expanded.
-I_BT4679: Array bufferline_2_1 was expanded.
-I_BT4679: Array bufferline_2_2 was expanded.
-I_BT4679: Array bufferline_2_3 was expanded.
 W_BT1323: out variable odata is not used in assignment destination.
  [Action] Rewrite the correct description so that out variable is used in assignment destination.
 W_BT1323: out variable odata is not used in assignment destination.
  [Action] Rewrite the correct description so that out variable is used in assignment destination.
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'incoef1_var'.
+	[Source Lines]
+	88(../benchmarks/decimation_filter/decimation.c):  var(16..0) incoef1_var[TAPS_STAGE1] ;
+I_BT5514: 5 address decoders (R4,W1) to access to array signal 'bufferline_1_0'.
+	[Source Lines]
+	100(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_1[7];
+I_BT5514: 5 address decoders (R4,W1) to access to array signal 'bufferline_1_1'.
+	[Source Lines]
+	100(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_1[7];
+I_BT5514: 4 address decoders (R3,W1) to access to array signal 'bufferline_1_2'.
+	[Source Lines]
+	100(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_1[7];
+I_BT5514: 4 address decoders (R3,W1) to access to array signal 'bufferline_1_3'.
+	[Source Lines]
+	100(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_1[7];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_2_0'.
+	[Source Lines]
+	101(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_2[7];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_2_1'.
+	[Source Lines]
+	101(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_2[7];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_3_0'.
+	[Source Lines]
+	102(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_3[7];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_3_1'.
+	[Source Lines]
+	102(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_3[7];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_4_0'.
+	[Source Lines]
+	103(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_4[11];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_4_1'.
+	[Source Lines]
+	103(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_4[11];
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'bufferline_5_0'.
+	[Source Lines]
+	104(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_5[24];
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'bufferline_5_1'.
+	[Source Lines]
+	104(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_5[24];
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'bufferline_5_2'.
+	[Source Lines]
+	104(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_5[24];
+I_BT5514: 2 address decoders (R1,W1) to access to array signal 'bufferline_5_3'.
+	[Source Lines]
+	104(../benchmarks/decimation_filter/decimation.c):  var(18..0) bufferline_5[24];
+W_BT8766: Removed unreferenced assignment to variable 'x'.
+ [Action] Remove the assignment.
+	[Source Lines]
+	86(../benchmarks/decimation_filter/decimation.c):  unsigned int x=0;
 W_BT8766: Removed unreferenced assignment to variable 'incoef2_var_a00'.
  [Action] Remove the assignment.
 	[Source Lines]
@@ -198,244 +238,39 @@ W_BT8766: Removed unreferenced assignment to variable 'incoef5_var_a11'.
  [Action] Remove the assignment.
 	[Source Lines]
 	130(../benchmarks/decimation_filter/decimation.c):        incoef5_var[x] = incoef5[x];
-W_BT8766: Removed unreferenced assignment to variable 'stage_1'.
+W_BT8766: Removed unreferenced assignment to variable 'SoP1'.
  [Action] Remove the assignment.
 	[Source Lines]
-	163(../benchmarks/decimation_filter/decimation.c):   stage_1 = SoP1;
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_2_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_1_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_0_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_3_a00'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_2_a00'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_2_1_a00'.
- [Action] Remove the assignment.
-	[Source Lines]
-	182(../benchmarks/decimation_filter/decimation.c):     bufferline_2[x] = bufferline_2[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a06'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a05'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a04'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a03'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a02'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_3_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	222(../benchmarks/decimation_filter/decimation.c):     bufferline_3[x] = bufferline_3[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a10'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a09'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a08'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a07'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a06'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a05'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a04'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a03'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a02'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_4_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	260(../benchmarks/decimation_filter/decimation.c):    bufferline_4[x] = bufferline_4[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a23'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a22'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a21'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a20'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a19'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a18'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a17'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a16'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a15'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a14'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a13'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a12'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a11'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a10'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a09'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a08'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a07'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a06'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a05'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a04'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a03'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a02'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_5_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	299(../benchmarks/decimation_filter/decimation.c):    bufferline_5[x] = bufferline_5[x-1];
+	149(../benchmarks/decimation_filter/decimation.c):   SoP1 = 0;
 W_BT8766: Removed unreferenced assignment to variable 'SoP1'.
  [Action] Remove the assignment.
 	[Source Lines]
 	160(../benchmarks/decimation_filter/decimation.c):    SoP1 = SoP1 + (bufferline_1[x]+buffer_1 )*incoef1_var[x];
-W_BT8766: Removed unreferenced assignment to variable 'incoef1_var_a03'.
+W_BT8766: Removed unreferenced assignment to variable 'stage_1'.
  [Action] Remove the assignment.
+	[Source Lines]
+	163(../benchmarks/decimation_filter/decimation.c):   stage_1 = SoP1;
+W_BT8766: Removed unreferenced assignment to variable 'buffer_1'.
+ [Action] Remove the assignment.
+	[Source Lines]
+	155(../benchmarks/decimation_filter/decimation.c):       buffer_1 = 0;
+W_BT8766: Removed unreferenced assignment to variable 'buffer_1'.
+ [Action] Remove the assignment.
+	[Source Lines]
+	157(../benchmarks/decimation_filter/decimation.c):       buffer_1 = bufferline_1[ BUFFER_SIZE_STAGE1-1 - x];
+W_BT8775: Unusable input signal(incoef1_a02) exists.
 	[Source Lines]
 	114(../benchmarks/decimation_filter/decimation.c):        incoef1_var[x] = incoef1[x];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a03'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'incoef1_var_a00'.
- [Action] Remove the assignment.
+W_BT8775: Unusable input signal(incoef1_a00) exists.
 	[Source Lines]
 	114(../benchmarks/decimation_filter/decimation.c):        incoef1_var[x] = incoef1[x];
-W_BT8766: Removed unreferenced assignment to variable 'incoef1_var_a01'.
- [Action] Remove the assignment.
+W_BT8775: Unusable input signal(incoef1_a01) exists.
 	[Source Lines]
 	114(../benchmarks/decimation_filter/decimation.c):        incoef1_var[x] = incoef1[x];
-W_BT8766: Removed unreferenced assignment to variable 'incoef1_var_a02'.
- [Action] Remove the assignment.
+W_BT8775: Unusable input signal(incoef1_a03) exists.
 	[Source Lines]
 	114(../benchmarks/decimation_filter/decimation.c):        incoef1_var[x] = incoef1[x];
-W_BT8766: Removed unreferenced assignment to variable 'in_stage_1'.
- [Action] Remove the assignment.
-	[Source Lines]
-	136(../benchmarks/decimation_filter/decimation.c):    in_stage_1 = indata;
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a06'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a05'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a04'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a02'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8766: Removed unreferenced assignment to variable 'bufferline_1_a01'.
- [Action] Remove the assignment.
-	[Source Lines]
-	145(../benchmarks/decimation_filter/decimation.c):    bufferline_1[x] = bufferline_1[x-1];
-W_BT8767: Below-mentioned non-referencing operations (|>) need to be deleted (ID:12).
- [Action] If possible, rewrite as description not having non-referencing operation.
-	[Source Lines]
-	110(../benchmarks/decimation_filter/decimation.c):    if(load_coeff_in){
-W_BT8766: Removed unreferenced assignment to variable 'load_coeff_in'.
- [Action] Remove the assignment.
+W_BT8775: Unusable input signal(load_coeff) exists.
 	[Source Lines]
 	107(../benchmarks/decimation_filter/decimation.c):  load_coeff_in = load_coeff;
 I_BT4393: No memory required. Empty memory library file (decimation-auto.MLIB) generated.
@@ -449,8 +284,6 @@ I_BT4383: Generate memory library file / memory constraint file.
 	decimation-auto.MCNT
 I_BT4392: No arithmetic macro functional unit required.
 I_BT4398: The empty FLIB file generated since additional functional units are not required.
-I_BT4318: Empty FCNT file (decimation-auto.FCNT) generated. No functional units required.
- [Action] If required, confirm the description.
 I_BT4319: Empty FLIB file (decimation-amacro-auto.FLIB) generated. No functional units required.
  [Action] If required, confirm the description.
 I_BT4318: Empty FCNT file (decimation-amacro-auto.FCNT) generated. No functional units required.
@@ -461,8 +294,10 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	decimation-amacro-auto.FLIB
 	decimation-amacro-auto.FCNT
 I_BT4392: No arithmetic macro functional unit required.
-I_BT5721: Clock not generated because the description is synthesized as a combinational circuit.
-I_BT5706: Reset not generated because the description is synthesized as a combinational circuit.
+W_BT5668: Loop is not folded because the latency (1) is equal to DII (1).
+ [Action] Remove 'folding = #' attribute if possible.
+	[Source Lines]
+	153(../benchmarks/decimation_filter/decimation.c):   for (x = 0; x < TAPS_STAGE1; x++) {
 I_BT5712: Port load_coeff is not used, but do not delete it.
 I_BT5712: Port indata is not used, but do not delete it.
 I_BT5712: Port incoef1_a00 is not used, but do not delete it.
@@ -496,6 +331,7 @@ I_BT5712: Port incoef5_a09 is not used, but do not delete it.
 I_BT5712: Port incoef5_a10 is not used, but do not delete it.
 I_BT5712: Port incoef5_a11 is not used, but do not delete it.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	98 warning      exist
-	79 information  exist
-	---> SEE decimation.err FILE for DETAILS
+	51 warning      exist
+	81 information  exist
+	 1 tips         exist
+	---> SEE decimation.err FILE and decimation.tips FILE for DETAILS

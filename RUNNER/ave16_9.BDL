@@ -2,444 +2,74 @@
 * ave16_9.BDL
 # Design Name        ave16
 # FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
-# MEM  Limit File    %AUTO%.MLMT
+# MEM  Limit File    ?????.MLMT
 # Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
 # PORT Limit File    %AUTO%.PLMT
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  10 / 10 / 10.00
+# Performance index  max/min/ave  1 / 1 / 1.00
 # Data-path info.    
 # Bp-Option  ../benchmarks/ave16/ave16.c
 # Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
 */
-defmod MEMB32W4 {
-    in    unsigned ter(0:2)  RA1/* Cyber mem_id = MEMB32W4@4, other = DC */;
-    out   signed   ter(0:32)  RD1/* Cyber mem_id = MEMB32W4@4 */;
-    in    unsigned ter(0:1)  RE1/* Cyber mem_id = MEMB32W4@4 */;
-    in    unsigned ter(0:1)  RCLK1/* Cyber clock_edge = pos, mem_id = MEMB32W4@4 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    in    unsigned ter(0:2)  WA2/* Cyber mem_id = MEMB32W4@4, other = DC */;
-    in    signed   ter(0:32)  WD2/* Cyber mem_id = MEMB32W4@4, other = DC */;
-    in    unsigned ter(0:1)  WE2/* Cyber mem_id = MEMB32W4@4 */;
-    in    unsigned ter(0:1)  WCLK2/* Cyber clock_edge = pos, mem_id = MEMB32W4@4 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-} data_3 	/* line# ../benchmarks/ave16/ave16.c:23 */,
-  data_2 	/* line# ../benchmarks/ave16/ave16.c:23 */,
-  data_1 	/* line# ../benchmarks/ave16/ave16.c:23 */,
-  data_0 	/* line# ../benchmarks/ave16/ave16.c:23 */;
-
 
 /* Cyber default_bit_order = up */
 process
 ave16(
     in   unsigned ter(0:8)  in0 /* line# ../benchmarks/ave16/ave16.c:21 */,
-    out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */,
-    clock         CLOCK/* Cyber clock_edge = pos */,
-    reset         RESET/* Cyber reset_mode = async, reset_active = high */
+    out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */
     )
 {
-    signed   ter(0:2)  decr2s1i1/* Cyber other = DC */;
-    signed   ter(0:2)  decr2s1ot;
-    unsigned ter(0:2)  decr2u1i1/* Cyber other = DC */;
-    unsigned ter(0:2)  decr2u1ot;
-    unsigned ter(0:4)  incr4u1i1/* Cyber other = DC */;
-    unsigned ter(0:4)  incr4u1ot;
-    signed   ter(0:32)  add32s1i2/* Cyber other = DC */;
-    signed   ter(0:32)  add32s1i1/* Cyber other = DC */;
-    signed   ter(0:32)  add32s1ot;
-    signed   ter(0:2)  add8s1i2/* Cyber other = DC */;
-    signed   ter(0:8)  add8s1i1/* Cyber other = DC */;
-    signed   ter(0:8)  add8s1ot;
-    unsigned ter(0:2)  add4u1i2/* Cyber other = DC */;
-    unsigned ter(0:4)  add4u1i1/* Cyber other = DC */;
-    unsigned ter(0:5)  add4u1ot;
-    signed   ter(0:32)  M_41/* Cyber other = DC */;
-    signed   ter(0:32)  M_40/* Cyber other = DC */;
-    signed   ter(0:32)  M_39/* Cyber other = DC */;
-    signed   ter(0:32)  M_38/* Cyber other = DC */;
-    signed   ter(0:32)  M_37/* Cyber other = DC */;
-    signed   ter(0:32)  M_36/* Cyber other = DC */;
-    signed   ter(0:32)  M_35/* Cyber other = DC */;
-    signed   ter(0:32)  M_34/* Cyber other = DC */;
-    signed   ter(0:32)  M_33/* Cyber other = DC */;
-    signed   ter(0:32)  M_32/* Cyber other = DC */;
-    signed   ter(0:8)  out0_v1_t/* Cyber other = DC */;
-    signed   ter(0:8)  M_221_t/* Cyber other = DC */;
-    signed   ter(0:32)  sum_t1/* Cyber other = DC */;
-    unsigned ter(0:1)  JF_02/* Cyber other = DC */;
-    unsigned ter(0:1)  CT_04/* Cyber other = DC */;
-    unsigned ter(0:1)  M_29_t/* Cyber other = DC */;
-    unsigned ter(0:5)  M_26_t/* Cyber other = DC */;
-    signed   ter(0:32)  sum_t/* Cyber other = DC */;
-    signed   ter(0:32)  M_10_t/* Cyber other = DC */;
-    unsigned ter(0:2)  CT_03/* Cyber other = DC */;
-    unsigned ter(0:2)  M_30_t/* Cyber other = DC */;
-    signed   ter(0:32)  M_06_t/* Cyber other = DC */;
-    unsigned ter(0:2)  CT_02/* Cyber other = DC */;
-    unsigned ter(0:2)  M_31_t/* Cyber other = DC */;
-    unsigned ter(0:1)  JF_01/* Cyber other = DC */;
-    unsigned ter(0:1)  CT_01/* Cyber other = DC */;
-    unsigned ter(0:1)  M_28_t/* Cyber other = DC */;
-    unsigned ter(0:2)  M_23_t/* Cyber other = DC */;
-    unsigned var(0:2)  M_31;
-    unsigned var(0:2)  M_30;
-    unsigned var(0:1)  M_29;
-    unsigned var(0:1)  M_28;
-    unsigned var(0:2)  M_27;
-    unsigned var(0:5)  M_26;
-    signed   var(0:8)  M_221;
-    unsigned var(0:4)  M_051;
-    unsigned var(0:2)  i3 /* line# ../benchmarks/ave16/ave16.c:29 */;
-    unsigned var(0:4)  i2 /* line# ../benchmarks/ave16/ave16.c:29 */;
-    unsigned var(0:5)  i1 /* line# ../benchmarks/ave16/ave16.c:29 */;
-    signed   var(0:8)  out0_v1 /* line# ../benchmarks/ave16/ave16.c:29 */;
-    signed   var(0:32)  M_25;
     signed   var(0:32)  M_24;
-    unsigned var(0:2)  M_23;
+    signed   var(0:32)  M_23;
     signed   var(0:32)  M_22;
     signed   var(0:32)  M_21;
-    unsigned var(0:2)  M_20;
-    unsigned var(0:2)  M_19;
-    unsigned var(0:2)  M_18;
-    unsigned var(0:2)  M_17;
-    unsigned var(0:2)  M_16;
-    unsigned var(0:2)  M_15;
-    unsigned var(0:2)  M_14;
-    unsigned var(0:2)  M_13;
-    unsigned var(0:2)  M_12;
-    unsigned var(0:4)  M_11;
+    signed   var(0:32)  M_20;
+    signed   var(0:32)  M_19;
+    signed   var(0:32)  M_18;
+    signed   var(0:32)  M_17;
+    signed   var(0:32)  M_16;
+    signed   var(0:32)  M_15;
+    signed   var(0:32)  M_14;
+    signed   var(0:32)  M_13;
+    signed   var(0:32)  M_12;
+    signed   var(0:32)  M_11;
     signed   var(0:32)  M_10;
-    unsigned var(0:2)  M_09;
-    unsigned var(0:2)  M_08;
-    unsigned var(0:4)  M_07;
+    signed   var(0:32)  M_09;
+    signed   var(0:32)  M_08;
+    signed   var(0:32)  M_07;
     signed   var(0:32)  M_06;
     signed   var(0:32)  M_05;
     signed   var(0:32)  M_04;
     signed   var(0:32)  M_03;
     signed   var(0:32)  M_02;
     signed   var(0:32)  M_01;
+    signed   var(0:32)  data_0_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_0_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_1_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_1_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_2_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_2_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_3_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_3_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_4_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_4_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_5_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_5_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_6_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_6_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_7_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    signed   var(0:32)  data_7_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
     unsigned var(0:8)  out0_1 /* line# ../benchmarks/ave16/ave16.c:22 */;
-    signed   var(0:32)  data_3_pio0/* Cyber sig2reg_ex_force = data_3_pio, pipemem_io */;
-    signed   var(0:32)  data_3_pio10/* Cyber sig2reg_ex_force = data_3_pio1, pipemem_io */;
-    signed   var(0:32)  data_3_pio2/* Cyber sig2reg_ex_force = data_3_pio2, pipemem_io */;
-    signed   var(0:32)  data_3_pio30/* Cyber sig2reg_ex_force = data_3_pio3, pipemem_io */;
-    signed   var(0:32)  data_2_pio0/* Cyber sig2reg_ex_force = data_2_pio, pipemem_io */;
-    signed   var(0:32)  data_2_pio1/* Cyber sig2reg_ex_force = data_2_pio1, pipemem_io */;
-    signed   var(0:32)  data_2_pio2/* Cyber sig2reg_ex_force = data_2_pio2, pipemem_io */;
-    signed   var(0:32)  data_2_pio30/* Cyber sig2reg_ex_force = data_2_pio3, pipemem_io */;
-    signed   var(0:32)  data_1_pio0/* Cyber sig2reg_ex_force = data_1_pio, pipemem_io */;
-    signed   var(0:32)  data_1_pio1/* Cyber sig2reg_ex_force = data_1_pio1, pipemem_io */;
-    signed   var(0:32)  data_1_pio2/* Cyber sig2reg_ex_force = data_1_pio2, pipemem_io */;
-    signed   var(0:32)  data_1_pio30/* Cyber sig2reg_ex_force = data_1_pio3, pipemem_io */;
-    signed   var(0:32)  data_0_pio0/* Cyber sig2reg_ex_force = data_0_pio, pipemem_io */;
-    signed   var(0:32)  data_0_pio1/* Cyber sig2reg_ex_force = data_0_pio1, pipemem_io */;
-    signed   var(0:32)  data_0_pio2/* Cyber sig2reg_ex_force = data_0_pio2, pipemem_io */;
-    signed   var(0:32)  data_0_pio3/* Cyber sig2reg_ex_force = data_0_pio3, pipemem_io */;
-    signed   var(0:32)  data_0_pio40/* Cyber sig2reg_ex_force = data_0_pio4, pipemem_io */;
-    signed   reg(0:32)  data_0_pio4/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_0_pio4 */;
-    signed   reg(0:32)  data_0_pio30/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_0_pio3 */;
-    signed   reg(0:32)  data_0_pio20/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_0_pio2 */;
-    signed   reg(0:32)  data_0_pio10/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_0_pio1 */;
-    signed   reg(0:32)  data_0_pio/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_0_pio */;
-    signed   reg(0:32)  data_1_pio3/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_1_pio3 */;
-    signed   reg(0:32)  data_1_pio20/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_1_pio2 */;
-    signed   reg(0:32)  data_1_pio10/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_1_pio1 */;
-    signed   reg(0:32)  data_1_pio/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_1_pio */;
-    signed   reg(0:32)  data_2_pio3/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_2_pio3 */;
-    signed   reg(0:32)  data_2_pio20/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_2_pio2 */;
-    signed   reg(0:32)  data_2_pio10/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_2_pio1 */;
-    signed   reg(0:32)  data_2_pio/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_2_pio */;
-    signed   reg(0:32)  data_3_pio3/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_3_pio3 */;
-    signed   reg(0:32)  data_3_pio20/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_3_pio2 */;
-    signed   reg(0:32)  data_3_pio1/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_3_pio1 */;
-    signed   reg(0:32)  data_3_pio/* Cyber reset_sig = void, other = DC, pipemem_io, sig2reg_ex_force = data_3_pio */;
-    unsigned reg(0:2)  RG_i/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
-    unsigned reg(0:1)  RG_01/* Cyber reset_sig = void */;
-    unsigned reg(0:5)  RG_i_1/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
-    unsigned reg(0:4)  RG_i_2/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
-    signed   reg(0:32)  RG_sum/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
-
 
 ST1_01 :
-    decr2s1ot(0:2) ::= decr2s@1(decr2s1i1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    decr2u1ot(0:2) ::= decr2u@1(decr2u1i1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    incr4u1ot(0:4) ::= incr4u@1(incr4u1i1(0:4));
-    add32s1ot(0:32) ::= add32s@1(add32s1i1(0:32), add32s1i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add8s1ot(0:8) ::= add8s@1(add8s1i1(0:8), add8s1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
-    add4u1ot(0:5) ::= add4u@1(add4u1i1(0:4), add4u1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    data_3.RCLK1(0:1) ::= 0(0:1);
-    data_3.WCLK2(0:1) ::= 0(0:1);
-    data_2.RCLK1(0:1) ::= 0(0:1);
-    data_2.WCLK2(0:1) ::= 0(0:1);
-    data_1.RCLK1(0:1) ::= 0(0:1);
-    data_1.WCLK2(0:1) ::= 0(0:1);
-    data_0.RCLK1(0:1) ::= 0(0:1);
-    data_0.WCLK2(0:1) ::= 0(0:1);
-    data_2.RA1(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_0.RA1(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_0.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.RA1(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    goto ST1_02;
-    $
-
-ST1_02 :
-    RG_i(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    data_3.WD2(0:32) = data_2.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.WA2(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WD2(0:32) = data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WA2(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WD2(0:32) = data_1.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WA2(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    goto ST1_03;
-    $
-
-ST1_03 :
-    decr2s1i1(0:2) = RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    M_23_t(0:2) = decr2s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    decr2u1i1(0:2) = RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    RG_i_2(0:4) = 0(0:2) :: decr2u1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    data_0.RA1(0:2) = M_23_t(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_0.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.RA1(0:2) = M_23_t(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.RA1(0:2) = M_23_t(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.RA1(0:2) = M_23_t(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    RG_i_1(0:5) = 0(0:3) :: M_23_t(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    goto ST1_04;
-    $
-
-ST1_04 :
-    RG_i(0:2) = RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    if (CT_01(0:1)) { 	/* line# ../benchmarks/ave16/ave16.c:32 */
-        JF_01(0:1) = 1(0:1);
-    }
-    else {
-        JF_01(0:1) = 0(0:1);
-    }
-    CT_01(0:1) = |>RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    data_0.WD2(0:32) = data_3.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_0.WA2(0:2) = RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_0.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WD2(0:32) = data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WA2(0:2) = RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_1.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WD2(0:32) = data_1.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WA2(0:2) = RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_2.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.WD2(0:32) = data_2.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.WA2(0:2) = RG_i_1(3:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_3.WE2(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    RG_01(0:1) = CT_01(0:1); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    /* Cyber sfdl_jump = exclusive */
-    if (JF_01(0:1)) {
-        goto ST1_03;
-    }
-    else {
-        goto ST1_05;
-    }
-    $
-
-ST1_05 :
-    data_0.RA1(0:2) = 0(0:2); 	/* line# ../benchmarks/ave16/ave16.c:36 */
-    data_0.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:36 */
-    goto ST1_06;
-    $
-
-ST1_06 :
-    RG_sum(0:32) = data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36 */
-    RG_i_2(0:4) = 1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    goto ST1_07;
-    $
-
-ST1_07 :
-    data_0_pio4(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_1_pio3(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_2_pio3(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_3_pio3(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    switch (CT_02(0:2)) {	/* CAB */ 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    case 0 : 
-        data_0.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_0.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 1 : 
-        data_1.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_1.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 2 : 
-        data_2.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_2.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 3 : 
-        data_3.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_3.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    }
-    CT_02(0:2) = RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add4u1i1(0:4) = RG_i_2(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    add4u1i2(0:2) = 2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    RG_i_1(0:5) = add4u1ot(0:5); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    incr4u1i1(0:4) = RG_i_2(0:4);
-    RG_i_2(0:4) = incr4u1ot(0:4);
-    RG_i(0:2) = CT_02(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    goto ST1_08;
-    $
-
-ST1_08 :
-    data_0_pio(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_1_pio(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_2_pio(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_3_pio1(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    switch (CT_03(0:2)) {	/* CAB */ 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    case 0 : 
-        data_0.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_0.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 1 : 
-        data_1.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_1.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 2 : 
-        data_2.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_2.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    case 3 : 
-        data_3.RA1(0:2) = RG_i_2(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_3.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        break;
-    }
-    M_06_t(0:32) = dmux (RG_i(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        case 0 :  data_0.RD1(0:32);
-        case 1 :  data_1.RD1(0:32);
-        case 2 :  data_2.RD1(0:32);
-        case 3 :  data_3.RD1(0:32);
-    };
-    CT_03(0:2) = RG_i_2(2:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i1(0:32) = RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i2(0:32) = M_06_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    RG_sum(0:32) = add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    RG_i(0:2) = CT_03(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    goto ST1_09;
-    $
-
-ST1_09 :
-    data_3_pio(0:32) = 0(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    RG_i_2(0:4) = RG_i_1(1:4);
-    RG_sum(0:32) = add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    if (CT_04(0:1)) { 	/* line# ../benchmarks/ave16/ave16.c:39 */
-        JF_02(0:1) = 1(0:1);
-    }
-    else {
-        data_3.RA1(0:2) = 3(0:2); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        data_3.RE1(0:1) = 1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        JF_02(0:1) = 0(0:1);
-    }
-    M_10_t(0:32) = dmux (RG_i(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        case 0 :  data_0.RD1(0:32);
-        case 1 :  data_1.RD1(0:32);
-        case 2 :  data_2.RD1(0:32);
-        case 3 :  data_3.RD1(0:32);
-    };
-    CT_04(0:1) = ~M_26_t(0:1) & ~&>M_26_t(1:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    RG_01(0:1) = CT_04(0:1); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    add32s1i1(0:32) = RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i2(0:32) = M_10_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    M_26_t(0:5) = RG_i_1(0:5); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    /* Cyber sfdl_jump = exclusive */
-    if (JF_02(0:1)) {
-        goto ST1_07;
-    }
-    else {
-        goto ST1_10;
-    }
-    $
-
-ST1_10 :
-    add8s1i1(0:8) = sum_t1(20:8); 	/* line# ../benchmarks/ave16/ave16.c:42 */
-    add8s1i2(0:2) = 0(0:1) :: (sum_t1(0:1) & |>sum_t1(28:4)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
-    out0(0:8) = add8s1ot(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
-    add32s1i1(0:32) = RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i2(0:32) = data_3.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    sum_t1(0:32) = add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    out0(0:8) = 0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:43 */
     goto ST1_01;
 }
 
 /*
-#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
-#@LMT %AUTO%.LMT
-##@CLK  100000
-##@UNIT 1/10ps
-##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  add4u      1  (u)+              4,5    2900     25
-#  2  add8s      1  (s)+              8,8    3000     49
-#  3  add32s     1  (s)+              32,32  10600   208
-#  4  incr4u     1  (u)INCR           4,4    1300     10
-#  5  decr2u     1  (u)DECR           2,2    1000      2
-#  6  decr2s     1  (s)DECR           2,2    900       5
-#  7  delay_funit_1    1  @delay_funit_1    (32),32  1         0
-#  8  delay_funit_2    1  @delay_funit_2    (32),32  1         0
-#  9  delay_funit_3    1  @delay_funit_3    (32),32  1         0
-# 10  delay_funit_4    1  @delay_funit_4    (32),32  1         0
-# 11  delay_funit_5    1  @delay_funit_5    (32),32  1         0
-# 12  delay_funit_6    1  @delay_funit_6    (32),32  1         0
-# 13  delay_funit_7    1  @delay_funit_7    (32),32  1         0
-# 14  delay_funit_8    1  @delay_funit_8    (32),32  1         0
-# 15  delay_funit_9    1  @delay_funit_9    (32),32  1         0
-# 16  delay_funit_10    1  @delay_funit_10   (32),32  1         0
-# 17  delay_funit_11    1  @delay_funit_11   (32),32  1         0
-# 18  delay_funit_12    1  @delay_funit_12   (32),32  1         0
-# 19  delay_funit_13    1  @delay_funit_13   (32),32  1         0
-# 20  delay_funit_14    1  @delay_funit_14   (32),32  1         0
-# 21  delay_funit_15    1  @delay_funit_15   (32),32  1         0
-# 22  delay_funit_16    1  @delay_funit_16   (32),32  1         0
-# 23  delay_funit_17    1  @delay_funit_17   (32),32  1         0
-#@END
-
-#@MLIB %AUTO%.MLIB
-##@VERSION { 3.00 }
-##@LIB { ave16 }
-##@UNIT  1/10ps 
-#@MLIB {
-#    NAME	MEMB32W4
-#    KIND	R1,W1
-#    BITWIDTH	32
-#    DELAY	x2
-#    WORD	4
-#    WRITE_SYNC	YES
-#    DEFMOD {
-#        in             ter (0:2)      RA1              /* ra:1 */;
-#        out            ter (0:32)     RD1              /* rd:1 */;
-#        in             ter (0:1)      RE1              /* re:1 */;
-#        in             ter (0:1)      RCLK1            /* rclk:1 */;
-#        in             ter (0:2)      WA2              /* wa:2 */;
-#        in             ter (0:32)     WD2              /* wd:2 */;
-#        in             ter (0:1)      WE2              /* we:2 */;
-#        in             ter (0:1)      WCLK2            /* wclk:2 */;
-#    }
-#}
-##@END { ave16 }
-
-#@MCNT %AUTO%.MCNT
-##@VERSION { 3.00 }
-##@CNT { ave16 }
-#@MCNT {
-#    NAME	MEMB32W4
-#    LIMIT	4
-#}
-##@END { ave16 }
-
-#@MLMT %AUTO%.MLMT
-##@UNIT 1/10ps
-##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  MEMB32W4    4  R1,W1            32x4   1x2                 	
-#@END
-
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
 ##@VERSION{2.00}
 ##@LIB{CWBSTDBLIB}

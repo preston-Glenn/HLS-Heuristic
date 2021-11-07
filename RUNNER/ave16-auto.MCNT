@@ -1,8 +1,4 @@
 
 #@VERSION { 3.00 }
 #@CNT { ave16 }
-@MCNT {
-     NAME	MEMB32W4
-     LIMIT	4
-}
 #@END { ave16 }

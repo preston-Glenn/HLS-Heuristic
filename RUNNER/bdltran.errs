@@ -1,5 +1,5 @@
-option -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
-I_BT1173: LOG file is generated. (decimation.LOG.gz)
+option -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+I_BT1173: LOG file is generated. (ave16.LOG.gz)
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
 [Datapath delay]   90,000 (1/10ps)
@@ -10,36 +10,35 @@ I_BT6773: The BLIB and FLIB files are loaded.
 
 ******* Initial # of operations in the input behavior description *******
  === Operators ===
-  -  : 10  (32bit:10)
-  <  : 10  (32bit:10)
-  ++ : 15  (32bit:15)
-  >  :  5  (32bit:5)
-  -- :  5  (32bit:5)
-  == : 10  (1bit:1, 32bit:9)
-  +  : 10  (19bit:5, 37bit:5)
-  *  :  5  (20bit:5)
-  Data transfer : 227
+  -  :  1  (32bit:1)
+  >  :  1  (32bit:1)
+  -- :  1  (32bit:1)
+  <  :  1  (32bit:1)
+  ++ :  1  (32bit:1)
+  += :  1  (32bit:1)
+  /  :  1  (32bit:1)
+  Data transfer : 21
 
  === array / memory ===
-  read  : 25
-  write : 15
+  read  :  3
+  write :  1
 I_BT4383: Generate memory library file / memory constraint file.
-	decimation-auto.MLIB
-	decimation-auto.MCNT
+	ave16-auto.MLIB
+	ave16-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  Data transfer :  0
+  Data transfer : 17
 I_BT4382: Generate functional unit library files / functional unit constraint files.
-	decimation-auto.FLIB
-	decimation-auto.FCNT
-	decimation-amacro-auto.FLIB
-	decimation-amacro-auto.FCNT
+	ave16-auto.FLIB
+	ave16-auto.FCNT
+	ave16-amacro-auto.FLIB
+	ave16-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 0 / 0 / 0.00
+[Performance index max/min/ave] 1 / 1 / 1.00
 
-  Module Name         : decimation
+  Module Name         : ave16
   Basic Library Name  : CWBSTDBLIB
 
   Total Area          :          0
@@ -53,17 +52,17 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
   Critical Path Delay :        0ns
 
   Net                 :          1
-  Pin Pair            :         20
+  Pin Pair            :          9
 
-  Port                :        549
-    In                :        530
-    Out               :         19
+  Port                :         16
+    In                :          8
+    Out               :          8
 
-TOTAL AREA 0 (FU: 0 + REG: 0 + MUX: 0 + DEC: 0 + MISC: 0) + pin pair 20(net 1) + 0FSM of 1state
+TOTAL AREA 0 (FU: 0 + REG: 0 + MUX: 0 + DEC: 0 + MISC: 0) + pin pair 9(net 1) + 0FSM of 1state
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	98 warning      exist
-	79 information  exist
-	---> SEE decimation.err FILE for DETAILS
-##### CyberII Normal finish (automatic scheduling mode) [decimation] #####
+	 6 warning      exist
+	29 information  exist
+	---> SEE ave16.err FILE for DETAILS
+##### CyberII Normal finish (automatic scheduling mode) [ave16] #####
 

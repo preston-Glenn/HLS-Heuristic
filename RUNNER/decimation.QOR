@@ -8,21 +8,21 @@ Cyber Synthesis Report
   Module Name         : decimation
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :          0
-    Sequential        :          0
-    Combinational     :          0
+  Total Area          :        658
+    Sequential        :        348
+    Combinational     :        310
 
-  Latency Index       :          1
-  Total States        :          1
+  Latency Index       :         19
+  Total States        :          6
 
   Clock Period        :       10ns
-  Critical Path Delay :        0ns
+  Critical Path Delay :     0.47ns
 
-  Net                 :          1
-  Pin Pair            :         20
+  Net                 :        539
+  Pin Pair            :      1,192
 
-  Port                :        549
-    In                :        530
+  Port                :        551
+    In                :        532
     Out               :         19
 
 ========
@@ -30,14 +30,14 @@ Cyber Synthesis Report
 ========
 
   Total :
-    Total           :          0
+    Total           :        658
       Sequential    : 
-        REG         :          0 ( 0%)
-      Combinational :          0 ( 0%)
-        FU          :          0 ( 0%)
-        MUX         :          0 ( 0%)
-        DEC         :          0 ( 0%)
-        MISC        :          0 ( 0%)
+        REG         :        348 (52%)
+      Combinational :        310 (47%)
+        FU          :         26 ( 3%)
+        MUX         :        145 (22%)
+        DEC         :         74 (11%)
+        MISC        :         65 ( 9%)
       Memory        :          -
 
 ===================
@@ -47,7 +47,10 @@ Cyber Synthesis Report
     FU Name                Area    Reg  Delay  Pipeline  Count
                                          (ns)    Stage
     ----------------------------------------------------------
-    None
+    decr2u                    2      0   0.10         -      2
+    decr3u                    6      0   0.12         -      2
+    incr2u                    3      0   0.10         -      1
+    sub2s                    10      0   0.23         -      1
 
   Unused Functional Units :
     ---------------------------------------------------
@@ -60,21 +63,27 @@ Cyber Synthesis Report
      Used      Declared                 Used
       Bit           Bit      Count       Bit  * Count
     -------------------------------------------------
-       None
+        1             1         52                 52
     -------------------------------------------------
-    Total                                           0
+        3             3          2                  6
+    -------------------------------------------------
+    Total                                          58
 
 ===============
 ; Multiplexer ;
 ===============
 
-    None
+   1 bit:  2way:49 ,  3way: 3 ,  4way: 4 ,  6way: 6 
+   2 bit:  2way: 2 
+   3 bit:  4way: 1 ,  8way: 1 
+   Total : 203 (# of Fanins)
 
 ===========
 ; Decoder ;
 ===========
 
-    None
+    2to4: 4
+    3to6: 6
 
 ==========
 ; Memory ;
@@ -88,50 +97,93 @@ Cyber Synthesis Report
 
     Total:
         Type          : S
-        Latency       : 1
-        Latency Index : 1
-        State No.     : 1
+        Latency       : 1 + L1 + 1 + L2 + L3 + L4
+        Latency Index : 19
+        State No.     : 1, 2, 3, 4, 5, 6
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1, L2, L3, L4
+        Line          : ../benchmarks/decimation_filter/decimation.c:47
+    L1:
+        Type          : S
+        Latency       : 1 * 4
+        Latency Index : 4
+        State No.     : 2
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
         Sub Loops     : -
-        Line          : ../benchmarks/decimation_filter/decimation.c:47
+        Line          : ../benchmarks/decimation_filter/decimation.c:153
+    L2:
+        Type          : S
+        Latency       : 1 * 3
+        Latency Index : 3
+        State No.     : 4
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/decimation_filter/decimation.c:181
+    L3:
+        Type          : S
+        Latency       : 1 * 5
+        Latency Index : 5
+        State No.     : 5
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/decimation_filter/decimation.c:259
+    L4:
+        Type          : S
+        Latency       : 1 * 5
+        Latency Index : 5
+        State No.     : 6
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/decimation_filter/decimation.c:298
 
 =======
 ; FSM ;
 =======
 
-  Total States      :          1
-  #FSM              :          0
-  States/FSM        :          -
-  FSM Decoder Delay :          -
+  Total States      :          6
+  #FSM              :          1
+  States/FSM        :          6
+  FSM Decoder Delay :     0.13ns
 
 =========
 ; Delay ;
 =========
 
   Clock Period        :       10ns
-  Critical Path Delay :        0ns
+  Critical Path Delay :     0.47ns
 
               Subtotal
       Class       (ns)    Ratio
       -------------------------
       IN           0.00      0%
-      FU           0.00      0%
-      MUX          0.00      0%
+      FU           0.12     25%
+      MUX          0.35     74%
       DEC          0.00      0%
       MISC         0.00      0%
       MEM          0.00      0%
       -------------------------
-      Total        0.00
+      Total        0.47
 
     Path: #1
                                                                 Arrival
                                                           Delay    Time Logic
       Name                 / Port [Signal              ]   (ns)   (ns)  Stage
       -----------------------------------------------------------------------
-      0                    / CNST [                    ]      -    0.00     0
-      odata                / i1   [                    ]      -    0.00     0
+      RG_x_01              / dout [                    ]      -    0.00     0
+      decr3u@2             / o1   [decr3u2ot           ]   0.12    0.12     2
+      _DMUX_645            / o1   [bufferline_5_01_rd00]   0.28    0.40     6
+      _NMUX_696            / o1   [bufferline_5_11_rg05]   0.07    0.47     8
+      bufferline_5_11_rg05 / din  [                    ]      -    0.47     8
 
   False Path                    :  Unchecked
   Multi Cycle Path              :  Unchecked
@@ -142,41 +194,94 @@ Cyber Synthesis Report
 ; Wire ;
 ========
 
-  Total Net Count      :        1
-  Total Pin Pair Count :       20
-  Const Fanout         :       19
+  Total Net Count      :      539
+  Total Pin Pair Count :    1,192
+  Const Fanout         :       81
 
   Net Count :
          Bit       Net    Bit*Net
      ----------------------------
+           1       196        196
+           2         6         12
+           3        17         51
+           4         4         16
+           6         6         36
      ----------------------------
-       Total                    0
+       Total                  311
 
   Pin Pair Count :
       Fanout    Bit    Count   Subtotal
     -----------------------------------
-        None
+          54      1        1         54
+          53      1        1         53
+          26      1        1         26
+          19      1        1         19
+          15      1        1         15
+          10      3        1         30
+          10      2        1         20
+           6      3        1         18
+           6      2        1         12
+           6      1        6         36
+           5      1        2         10
+           4      1        6         24
+           3      1        5         15
+           2      3        1          6
+           2      2        1          4
+           2      1       52        104
+           1      6        6         36
+           1      4        4         16
+           1      3       13         39
+           1      2        4          8
+           1      1      121        121
     -----------------------------------
-       Total                          0
+       Total                        666
 
   Fanout for Consts:
       Value    Fanout
-          0        19
-          1         0
+          0        57
+          1        24
     ------------------
-      Total        19
+      Total        81
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0..0)                     54
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0..0)                     53
 
   Register Fanin/Fanout Cone Size:
 
     Fanin: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-          None
+      bufferline_4_01_rg00(0..0)                        10
+      bufferline_4_01_rg01(0..0)                        10
+      bufferline_4_01_rg02(0..0)                        10
+      bufferline_4_01_rg03(0..0)                        10
+      bufferline_4_01_rg04(0..0)                        10
+      bufferline_4_01_rg05(0..0)                        10
+      bufferline_4_11_rg00(0..0)                        10
+      bufferline_4_11_rg01(0..0)                        10
+      bufferline_4_11_rg02(0..0)                        10
+      bufferline_4_11_rg03(0..0)                        10
 
     Fanout: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-          None
+      RG_x_01(2..0)                                     54
+      B01_streg(2..0)                                   54
+      bufferline_4_01_rg00(0..0)                         7
+      bufferline_4_01_rg01(0..0)                         7
+      bufferline_4_01_rg02(0..0)                         7
+      bufferline_4_01_rg03(0..0)                         7
+      bufferline_4_01_rg04(0..0)                         7
+      bufferline_4_01_rg05(0..0)                         7
+      bufferline_4_11_rg00(0..0)                         7
+      bufferline_4_11_rg01(0..0)                         7
 
   Routability:
 
@@ -184,61 +289,61 @@ Cyber Synthesis Report
     sorted by "Total" (Total Pin Pair)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      load_coeff(0..0)                                0        0 ( 1bit)
-      indata(18..0)                                   0        0 (19bit)
-      incoef1_a00(16..0)                              0        0 (17bit)
-      incoef1_a01(16..0)                              0        0 (17bit)
-      incoef1_a02(16..0)                              0        0 (17bit)
-      incoef1_a03(16..0)                              0        0 (17bit)
-      incoef2_a00(16..0)                              0        0 (17bit)
-      incoef2_a01(16..0)                              0        0 (17bit)
-      incoef2_a02(16..0)                              0        0 (17bit)
-      incoef2_a03(16..0)                              0        0 (17bit)
-      incoef3_a00(16..0)                              0        0 (17bit)
-      incoef3_a01(16..0)                              0        0 (17bit)
-      incoef3_a02(16..0)                              0        0 (17bit)
-      incoef3_a03(16..0)                              0        0 (17bit)
-      incoef4_a00(16..0)                              0        0 (17bit)
-      incoef4_a01(16..0)                              0        0 (17bit)
-      incoef4_a02(16..0)                              0        0 (17bit)
-      incoef4_a03(16..0)                              0        0 (17bit)
-      incoef4_a04(16..0)                              0        0 (17bit)
-      incoef4_a05(16..0)                              0        0 (17bit)
-      incoef5_a00(16..0)                              0        0 (17bit)
-      incoef5_a01(16..0)                              0        0 (17bit)
-      incoef5_a02(16..0)                              0        0 (17bit)
-      incoef5_a03(16..0)                              0        0 (17bit)
-      incoef5_a04(16..0)                              0        0 (17bit)
+      CLOCK(0..0)                                    54       54 ( 1bit)
+      RESET(0..0)                                    53       53 ( 1bit)
+      decr3u2ot(2..0)                                30       10 ( 3bit)
+      ST1_06d(0..0)                                  26       26 ( 1bit)
+      RG_x_01(2..0)                                  25       10 ( 2bit)
+      ST1_04d(0..0)                                  19       19 ( 1bit)
+      B01_streg(2..0)                                18        6 ( 3bit)
+      ST1_05d(0..0)                                  15       15 ( 1bit)
+      decr2u2ot(1..0)                                12        6 ( 2bit)
+      bufferline_4_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_4_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_21_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_31_rd00(0..0)                      6        6 ( 1bit)
+      decr3u1ot(2..0)                                 6        2 ( 3bit)
+      bufferline_4_01_d01(5..0)                       6        1 ( 6bit)
+      bufferline_4_11_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_01_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_11_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_21_d01(5..0)                       6        1 ( 6bit)
+      bufferline_5_31_d01(5..0)                       6        1 ( 6bit)
+      C_05(0..0)                                      5        5 ( 1bit)
+      bufferline_2_01_rd00(0..0)                      4        4 ( 1bit)
+      bufferline_2_11_rd00(0..0)                      4        4 ( 1bit)
 
     Top 25 Nets
     sorted by "Max" (Maximum Fanout)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      load_coeff(0..0)                                0        0 ( 1bit)
-      indata(18..0)                                   0        0 (19bit)
-      incoef1_a00(16..0)                              0        0 (17bit)
-      incoef1_a01(16..0)                              0        0 (17bit)
-      incoef1_a02(16..0)                              0        0 (17bit)
-      incoef1_a03(16..0)                              0        0 (17bit)
-      incoef2_a00(16..0)                              0        0 (17bit)
-      incoef2_a01(16..0)                              0        0 (17bit)
-      incoef2_a02(16..0)                              0        0 (17bit)
-      incoef2_a03(16..0)                              0        0 (17bit)
-      incoef3_a00(16..0)                              0        0 (17bit)
-      incoef3_a01(16..0)                              0        0 (17bit)
-      incoef3_a02(16..0)                              0        0 (17bit)
-      incoef3_a03(16..0)                              0        0 (17bit)
-      incoef4_a00(16..0)                              0        0 (17bit)
-      incoef4_a01(16..0)                              0        0 (17bit)
-      incoef4_a02(16..0)                              0        0 (17bit)
-      incoef4_a03(16..0)                              0        0 (17bit)
-      incoef4_a04(16..0)                              0        0 (17bit)
-      incoef4_a05(16..0)                              0        0 (17bit)
-      incoef5_a00(16..0)                              0        0 (17bit)
-      incoef5_a01(16..0)                              0        0 (17bit)
-      incoef5_a02(16..0)                              0        0 (17bit)
-      incoef5_a03(16..0)                              0        0 (17bit)
-      incoef5_a04(16..0)                              0        0 (17bit)
+      CLOCK(0..0)                                    54       54 ( 1bit)
+      RESET(0..0)                                    53       53 ( 1bit)
+      ST1_06d(0..0)                                  26       26 ( 1bit)
+      ST1_04d(0..0)                                  19       19 ( 1bit)
+      ST1_05d(0..0)                                  15       15 ( 1bit)
+      decr3u2ot(2..0)                                30       10 ( 3bit)
+      RG_x_01(2..0)                                  25       10 ( 2bit)
+      B01_streg(2..0)                                18        6 ( 3bit)
+      decr2u2ot(1..0)                                12        6 ( 2bit)
+      bufferline_4_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_4_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_01_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_11_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_21_rd00(0..0)                      6        6 ( 1bit)
+      bufferline_5_31_rd00(0..0)                      6        6 ( 1bit)
+      C_05(0..0)                                      5        5 ( 1bit)
+      bufferline_2_01_rd00(0..0)                      4        4 ( 1bit)
+      bufferline_2_11_rd00(0..0)                      4        4 ( 1bit)
+      bufferline_3_01_rd00(0..0)                      4        4 ( 1bit)
+      bufferline_3_11_rd00(0..0)                      4        4 ( 1bit)
+      C_03(0..0)                                      4        4 ( 1bit)
+      U_11(0..0)                                      4        4 ( 1bit)
+      bufferline_5_01_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_11_rg05(0..0)                      3        3 ( 1bit)
+      bufferline_5_21_rg05(0..0)                      3        3 ( 1bit)
 
 ================
 ; Primary Port ;
@@ -247,7 +352,6 @@ Cyber Synthesis Report
     Name               Type   Bitw
     ------------------------------
       load_coeff        in      1
-      indata            in     19
       odata             out    19
       incoef1_a00       in     17
       incoef1_a01       in     17
@@ -279,4 +383,5 @@ Cyber Synthesis Report
       incoef5_a09       in     17
       incoef5_a10       in     17
       incoef5_a11       in     17
+      indata            in     19
 
