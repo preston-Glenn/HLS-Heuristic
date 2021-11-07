@@ -9,16 +9,16 @@
 #	LIMIT
 #	BITWIDTH
 #	DELAY
-	AREA	565
-	AREA_REG	312
-	AREA_COMB	253
-	AREA_FU	19
-	AREA_MUX	108
-	AREA_DEC	69
-	AREA_MISC	57
+	AREA	0
+	AREA_REG	0
+	AREA_COMB	0
+	AREA_FU	0
+	AREA_MUX	0
+	AREA_DEC	0
+	AREA_MISC	0
 	AREA_MEM	0
-	NET	483
-	PIN_PAIR	1002
+	NET	1
+	PIN_PAIR	20
 #	SPECULATION
 #	COMMENT
 	DEFMOD {
@@ -55,9 +55,7 @@
 		in    unsigned ter(16..0) incoef5_a10      /* glo, incoef5[10] */;
 		in    unsigned ter(16..0) incoef5_a11      /* glo, incoef5[11] */;
 		out   unsigned ter(18..0) odata            /* glo, odata, always = 0 */;
-		clock                    CLOCK            /* c, CLOCK, @clock_period = 10ns, @auto_gen_sig = YES, clock_edge = \pos */;
-		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
 	}
 }
-#@HASH{4fd57cf16633d425166b550661d7bac3}
+#@HASH{d0e14447e0c4d47ed23714151c0779cb}
 #@END{decimation}
