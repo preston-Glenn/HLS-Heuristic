@@ -65,7 +65,6 @@ string getResultsFromCSV(vector<int> list){
   if(file.is_open()){
     string results = "";
     getline(file,results);
-    cout << results << endl;
     getline(file,results);
     cout << "Results: " << results <<  endl;
     logger.log("\tRESULTS: "+results);
@@ -84,9 +83,6 @@ string getResultsFromCSV(vector<int> list){
       return "";
     }
     
-
-    cout << "LATENCY: " << LATENCY << " AREA: " << AREA << endl;		
-
     return results;
 
   }

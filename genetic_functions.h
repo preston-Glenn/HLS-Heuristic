@@ -7,13 +7,11 @@ double cost_function(){
   if(AREA > MAX_AREA) MAX_AREA = AREA;
   if(LATENCY > MAX_LATENCY) MAX_LATENCY = LATENCY;
 
-  cout << (float)AREA/MAX_AREA << endl;
-  cout << MAX_AREA << endl;
   double areaValue, latencyValue;
   areaValue = (double)AREA/MAX_AREA;
   latencyValue = (double)LATENCY/MAX_LATENCY;
   double result = areaValue * AREA_WEIGHT + latencyValue * (1 - AREA_WEIGHT);
-  cout << result << endl;
+
   return result;
 }
 

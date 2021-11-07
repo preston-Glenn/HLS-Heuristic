@@ -36,7 +36,7 @@ CXXFLAGS = -Wall
 PROJECTNAME = CS3377.Assignment6
 
 # Enter the name for the executable to be created
-EXEC = RUNNER/hls.out
+EXEC = RUNNER/dse.out
 #
 # ======================================================
 #   Traditionally, we don't need to modify much below here.
