@@ -12,13 +12,11 @@
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
-#include <chrono>
 
 #include "fileSystem.h"
 #include "loggingHandler.h"
 #include "functions.h"
 
-using namespace std::chrono;
 using namespace TCLAP;
 using namespace std;
 
@@ -73,7 +71,7 @@ int NUMBER_OF_ITERATIONS = 0;
 #include "genetic_functions.h"
 
 int main(int argc, char** argv){
-	time_point<std::chrono::system_clock> start, end;
+	time_t now, end;
   
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
@@ -190,7 +188,7 @@ int main(int argc, char** argv){
 		logger.log("Finished: Parsing");
 
 
-		start = high_resolution_clock::now();
+		now = time(NULL);
 
 		// MAIN FUNCTIONALITY
 		if(exhaustive_value){
@@ -236,10 +234,10 @@ int main(int argc, char** argv){
 				logger.log("Finished Meta Heuristic");
 			}
 		}
-		stop = high_resolution_clock::now();
-		duration<double> duration = duration_cast<seconds>(stop - start);
-		logger.log("The program labeled: "+ LABEL + " took "+duration.count()+" seconds.");
-		cout << "The program labeled: " << LABEL << " took "<< duration.count() << " seconds." << endl;
+		end = time(NULL);
+		double duration = difftime(now,end);
+		logger.log("The program labeled: " + LABEL + " took " + double_to_string(duration) + " seconds.");
+		cout << "The program labeled: " << LABEL << " took "<< duration << " seconds." << endl;
 	}
 	catch (ArgException& e)  // catch any exceptions
 	{
