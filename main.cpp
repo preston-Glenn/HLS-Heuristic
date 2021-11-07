@@ -12,11 +12,13 @@
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
+#include <chrono>
 
 #include "fileSystem.h"
 #include "loggingHandler.h"
 #include "functions.h"
 
+using namespace std::chrono;
 using namespace TCLAP;
 using namespace std;
 
@@ -71,6 +73,7 @@ int NUMBER_OF_ITERATIONS = 0;
 #include "genetic_functions.h"
 
 int main(int argc, char** argv){
+	time_point<std::chrono::system_clock> start, end;
   
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
@@ -186,57 +189,57 @@ int main(int argc, char** argv){
 		parseFile(parse_file);
 		logger.log("Finished: Parsing");
 
+
+		start = high_resolution_clock::now();
+
 		// MAIN FUNCTIONALITY
 		if(exhaustive_value){
 		  vector<int> blank_list;
 		  logger.log("Started: Brute Force");
 		  bruteForce(blank_list,1);
 		  logger.log("Finished: Brute Force");
+		}else if(heuristic_value){
+			if(AREA_WEIGHT == -1){
+
+				AREA_WEIGHT = 0;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(NUMBER_OF_ITERATIONS/6);
+				logger.log("Finished first Meta Heuristic");
+
+				AREA_WEIGHT = .25;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(2*NUMBER_OF_ITERATIONS/6);
+				logger.log("Finished second Meta Heuristic");
+
+				AREA_WEIGHT = .5;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(3*NUMBER_OF_ITERATIONS/6);
+				logger.log("Finished third Meta Heuristic");
+
+				AREA_WEIGHT = .75;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(4*NUMBER_OF_ITERATIONS/6);
+				logger.log("Finished fourth Meta Heuristic");
+
+				AREA_WEIGHT = 1;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(5*NUMBER_OF_ITERATIONS/6);
+				logger.log("Finished fifth Meta Heuristic");
+
+				AREA_WEIGHT = 0;
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(NUMBER_OF_ITERATIONS);
+				logger.log("Finished last Meta Heuristic");
+			} else {
+				logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
+				meta_heuristic(NUMBER_OF_ITERATIONS);
+				logger.log("Finished Meta Heuristic");
+			}
 		}
-
-		// TODO RESET attributeMap
-		if(heuristic_value){
-		  if(AREA_WEIGHT == -1){
-
-			AREA_WEIGHT = 0;
-		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-		    meta_heuristic(NUMBER_OF_ITERATIONS/6);
-		    logger.log("Finished first Meta Heuristic");
-
-		    AREA_WEIGHT = .25;
-		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-		    meta_heuristic(2*NUMBER_OF_ITERATIONS/6);
-		    logger.log("Finished first Meta Heuristic");
-
-		    AREA_WEIGHT = .5;
-			logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-			meta_heuristic(3*NUMBER_OF_ITERATIONS/6);
-			logger.log("Finished second Meta Heuristic");
-
-		    AREA_WEIGHT = .75;
-			logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-			meta_heuristic(4*NUMBER_OF_ITERATIONS/6);
-			logger.log("Finished third Meta Heuristic");
-
-			AREA_WEIGHT = 1;
-		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-		    meta_heuristic(5*NUMBER_OF_ITERATIONS/6);
-		    logger.log("Finished first Meta Heuristic");
-
-			AREA_WEIGHT = 0;
-		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-		    meta_heuristic(NUMBER_OF_ITERATIONS);
-		    logger.log("Finished first Meta Heuristic");
-
-
-
-		  } else {
-		    logger.log("Started Meta Heuristic with area weight at: " + double_to_string(AREA_WEIGHT));
-			meta_heuristic(NUMBER_OF_ITERATIONS);
-			logger.log("Finished Meta Heuristic");
-
-		  }
-		}
+		stop = high_resolution_clock::now();
+		duration<double> duration = duration_cast<seconds>(stop - start);
+		logger.log("The program labeled: "+ LABEL + " took "+duration.count()+" seconds.");
+		cout << "The program labeled: " << LABEL << " took "<< duration.count() << " seconds." << endl;
 	}
 	catch (ArgException& e)  // catch any exceptions
 	{
