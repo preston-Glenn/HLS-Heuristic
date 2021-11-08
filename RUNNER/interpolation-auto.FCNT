@@ -4,11 +4,6 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FCNT{
-	NAME	add3u
-	LIMIT	1  AUTO
-#	COMMENT
-}
-@FCNT{
 	NAME	add16u
 	LIMIT	15  AUTO
 #	COMMENT
@@ -34,13 +29,8 @@
 #	COMMENT
 }
 @FCNT{
-	NAME	coeff1_0
-	LIMIT	2  AUTO
-#	COMMENT
-}
-@FCNT{
-	NAME	coeff1_1
-	LIMIT	2  AUTO
+	NAME	coeff1
+	LIMIT	1  AUTO
 #	COMMENT
 }
 @FCNT{
@@ -103,5 +93,5 @@
 	LIMIT	1  AUTO
 #	COMMENT
 }
-#@HASH{05cb05f05d04faa00c1e4f9ba649463f}
+#@HASH{c5400cd3f293426e24e71f00337fb612}
 #@END{interpolation}

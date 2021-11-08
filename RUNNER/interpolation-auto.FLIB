@@ -6,19 +6,9 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FLIB{
-	NAME	coeff1_0
-	KIND	@coeff1_0
-	BITWIDTH	(2),16
-	DELAY	1t
-#	SIGN
-#	AREA
-#	AREA_REG
-#	COMMENT
-}
-@FLIB{
-	NAME	coeff1_1
-	KIND	@coeff1_1
-	BITWIDTH	(2),16
+	NAME	coeff1
+	KIND	@coeff1
+	BITWIDTH	(3),16
 	DELAY	1t
 #	SIGN
 #	AREA
@@ -145,5 +135,5 @@
 #	AREA_REG
 #	COMMENT
 }
-#@HASH{afd473f3cbdf59b2c3bd74c88782a33a}
+#@HASH{f328717d6f8a3009b825eef68c11320a}
 #@END{interpolation}

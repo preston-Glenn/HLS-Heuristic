@@ -8,18 +8,18 @@ Cyber Synthesis Report
   Module Name         : interpolation
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :     23,883
+  Total Area          :     23,559
     Sequential        :      1,032
-    Combinational     :     22,851
+    Combinational     :     22,527
 
-  Latency Index       :          8
+  Latency Index       :         12
   Total States        :          4
 
   Clock Period        :       10ns
-  Critical Path Delay :     7.74ns
+  Critical Path Delay :      7.3ns
 
-  Net                 :     17,421
-  Pin Pair            :     36,658
+  Net                 :     17,035
+  Pin Pair            :     35,716
 
   Port                :         44
     In                :         27
@@ -30,12 +30,12 @@ Cyber Synthesis Report
 ========
 
   Total :
-    Total           :     23,883
+    Total           :     23,559
       Sequential    : 
         REG         :      1,032 ( 4%)
-      Combinational :     22,851 (95%)
-        FU          :     22,096 (92%)
-        MUX         :        739 ( 3%)
+      Combinational :     22,527 (95%)
+        FU          :     22,085 (93%)
+        MUX         :        426 ( 1%)
         DEC         :          0 ( 0%)
         MISC        :         16 ( <1%)
       Memory        :          -
@@ -48,7 +48,6 @@ Cyber Synthesis Report
                                          (ns)    Stage
     ----------------------------------------------------------
     add16u                  101      0   0.54         -     15
-    add3u                    17      0   0.23         -      1
     incr2u                    3      0   0.10         -      1
     incr3u                    5      0   0.13         -      1
     mul12u                  760      0   1.96         -      2
@@ -90,9 +89,9 @@ Cyber Synthesis Report
    8 bit:  2way: 2 
    9 bit:  2way: 6 
   10 bit:  2way: 2 
-  13 bit:  4way: 4 
-  16 bit: (1way: 3),  2way:24 ,  4way: 2 
-   Total : 1,326 (# of Fanins)
+  15 bit:  8way: 1 
+  16 bit: (1way: 3),  2way:15 ,  4way: 1 
+   Total : 886 (# of Fanins)
 
 ===========
 ; Decoder ;
@@ -113,7 +112,7 @@ Cyber Synthesis Report
     Total:
         Type          : S
         Latency       : 2 + L1 + L2
-        Latency Index : 8
+        Latency Index : 12
         State No.     : 1, 2, 3, 4
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
@@ -122,8 +121,8 @@ Cyber Synthesis Report
         Line          : ../benchmarks/interpolation_filter/interpolation.c:29
     L1:
         Type          : S
-        Latency       : 1 * 4
-        Latency Index : 4
+        Latency       : 1 * 8
+        Latency Index : 8
         State No.     : 3
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
@@ -155,44 +154,43 @@ Cyber Synthesis Report
 =========
 
   Clock Period        :       10ns
-  Critical Path Delay :     7.74ns
+  Critical Path Delay :      7.3ns
 
               Subtotal
       Class       (ns)    Ratio
       -------------------------
       IN           0.00      0%
-      FU           7.23     93%
-      MUX          0.41      5%
+      FU           6.61     90%
+      MUX          0.59      8%
       DEC          0.00      0%
       MISC         0.10      1%
       MEM          0.00      0%
       -------------------------
-      Total        7.74
+      Total        7.30
 
     Path: #1
                                                                 Arrival
                                                           Delay    Time Logic
       Name                 / Port [Signal              ]   (ns)   (ns)  Stage
       -----------------------------------------------------------------------
-      RG_n_SoP4            / dout [                    ]      -    0.00     0
-      incr3u@1             / o1   [incr3u1ot           ]   0.13    0.13     2
-      _XOR_2560            / o1   [                    ]   0.00    0.13     2
-      _RNOR_1744           / o1   [                    ]   0.05    0.18     3
-      _AND_1747            / o1   [                    ]   0.05    0.23     4
-      _NMUX_876            / o1   [buffer_2_ad00       ]   0.07    0.30     6
-      _DMUX_745            / o1   [buffer_2_rd00       ]   0.20    0.50     9
-      mul16u@2             / o1   [mul16u2ot           ]   2.65    3.15    65
-      _NMUX_857            / o1   [add16u1i2           ]   0.07    3.22    67
-      add16u@1             / o1   [add16u1ot           ]   0.00    3.22    67
-      _NMUX_858            / o1   [add16u2i1           ]   0.07    3.29    69
-      add16u@2             / o1   [add16u2ot           ]   0.49    3.78    78
-      add16u@5             / o1   [add16u5ot           ]   0.49    4.27    87
-      add16u@9             / o1   [add16u9ot           ]   0.49    4.76    96
-      mul16u@12            / o1   [mul16u12ot          ]   2.49    7.25   148
-      add16u@14            / o1   [add16u14ot          ]   0.00    7.25   148
-      add16u@15            / o1   [add16u15ot          ]   0.49    7.74   157
-      _NMUX_852            / o1   [odata               ]   0.00    7.74   157
-      odata                / i1   [                    ]      -    7.74   157
+      B01_streg            / dout [                    ]      -    0.00     0
+      _XOR_2063            / o1   [                    ]   0.00    0.00     0
+      _RNOR_1521           / o1   [ST1_03d             ]   0.05    0.05     1
+      ST1_03d              / o1   [                    ]   0.00    0.05     1
+      _AND_1422            / o1   [                    ]   0.05    0.10     2
+      _NMUX_691            / o1   [buffer_0_ad00       ]   0.07    0.17     4
+      _DMUX_596            / o1   [buffer_0_rd00       ]   0.20    0.37     7
+      _DMUX_646            / o1   [M_17_t              ]   0.25    0.62    12
+      _NMUX_685            / o1   [mul16u14i1          ]   0.07    0.69    14
+      mul16u@14            / o1   [mul16u14ot          ]   2.65    3.34    70
+      add16u@1             / o1   [add16u1ot           ]   0.00    3.34    70
+      add16u@6             / o1   [add16u6ot           ]   0.49    3.83    79
+      add16u@7             / o1   [add16u7ot           ]   0.49    4.32    88
+      mul16u_16@1          / o1   [mul16u_161ot        ]   2.49    6.81   140
+      add16u@13            / o1   [add16u13ot          ]   0.00    6.81   140
+      add16u@15            / o1   [add16u15ot          ]   0.49    7.30   149
+      _NMUX_679            / o1   [odata               ]   0.00    7.30   149
+      odata                / i1   [                    ]      -    7.30   149
 
   False Path                    :  Unchecked
   Multi Cycle Path              :  Unchecked
@@ -203,48 +201,48 @@ Cyber Synthesis Report
 ; Wire ;
 ========
 
-  Total Net Count      :   17,421
-  Total Pin Pair Count :   36,658
-  Const Fanout         :      613
+  Total Net Count      :   17,035
+  Total Pin Pair Count :   35,716
+  Const Fanout         :      512
 
   Net Count :
          Bit       Net    Bit*Net
      ----------------------------
            1        31         31
            2        13         26
-           3         2          6
+           3         1          3
            4         2          8
            6         1          6
            8         2         16
            9         8         72
           10         2         20
-          13         4         52
-          16        75      1,200
+          15         1         15
+          16        65      1,040
      ----------------------------
-       Total                1,437
+       Total                1,237
 
   Pin Pair Count :
       Fanout    Bit    Count   Subtotal
     -----------------------------------
-          17      1        2         34
-          16      1        1         16
+          17      1        1         17
           15      1        1         15
-           9      1        2         18
+          14      1        1         14
+          13      1        1         13
+           9      1        1          9
+           8      2        1         16
            7      1        2         14
            6      9        1         54
-           6      2        1         12
-           6      1        1          6
-           5      1        1          5
-           4     16        9        576
+           4     16        4        256
            4      2        1          8
            4      1        1          4
-           3     16        2         96
+           3     16        6        288
            3      1        1          3
-           2     16        7        224
+           2     16        5        160
            2      9        1         18
            2      1        5         10
-           1     16       56        896
-           1     13        5         65
+           1     16       49        784
+           1     15        1         15
+           1     13        1         13
            1     10        2         20
            1      9        6         54
            1      8        2         16
@@ -254,14 +252,14 @@ Cyber Synthesis Report
            1      2       11         22
            1      1       21         21
     -----------------------------------
-       Total                      2,223
+       Total                      1,860
 
   Fanout for Consts:
       Value    Fanout
-          0       333
-          1       280
+          0       285
+          1       227
     ------------------
-      Total       613
+      Total       512
 
   Clock Fanout:
       Name                         Count
@@ -279,9 +277,9 @@ Cyber Synthesis Report
       Register Name                              Cone Size
       ----------------------------------------------------
       RG_SoP2(15..0)                                    14
-      RG_n_SoP4(15..0)                                  13
       RG_SoP1(15..0)                                    13
       RG_SoP3(15..0)                                    13
+      RG_n_SoP4(15..0)                                  12
       B01_streg(1..0)                                    4
       RG_infactor_read(8..0)                             4
       FF_n(0..0)                                         3
@@ -309,61 +307,61 @@ Cyber Synthesis Report
     sorted by "Total" (Total Pin Pair)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      buffer_0_rg00(15..0)                           64        4 (16bit)
-      buffer_0_rg01(15..0)                           64        4 (16bit)
       buffer_0_rd00(15..0)                           64        4 (16bit)
-      buffer_1_rg00(15..0)                           64        4 (16bit)
       buffer_1_rd00(15..0)                           64        4 (16bit)
-      buffer_2_rg00(15..0)                           64        4 (16bit)
       buffer_2_rd00(15..0)                           64        4 (16bit)
-      buffer_3_rg00(15..0)                           64        4 (16bit)
       buffer_3_rd00(15..0)                           64        4 (16bit)
       RG_infactor_read(8..0)                         54        6 ( 9bit)
       RG_SoP1(15..0)                                 48        3 (16bit)
-      buffer_1_rg01(15..0)                           48        3 (16bit)
-      RG_n_SoP4(15..0)                               33        9 ( 1bit)
+      buffer_0_rg00(15..0)                           48        3 (16bit)
+      buffer_0_rg01(15..0)                           48        3 (16bit)
+      buffer_1_rg00(15..0)                           48        3 (16bit)
+      buffer_2_rg00(15..0)                           48        3 (16bit)
+      buffer_3_rg00(15..0)                           48        3 (16bit)
+      RG_n_SoP4(15..0)                               36        8 ( 2bit)
       add16u1ot(15..0)                               32        2 (16bit)
-      add16u2ot(15..0)                               32        2 (16bit)
       add16u7ot(15..0)                               32        2 (16bit)
       add16u9ot(15..0)                               32        2 (16bit)
       add16u12ot(15..0)                              32        2 (16bit)
-      buffer_2_rg01(15..0)                           32        2 (16bit)
-      buffer_3_rg01(15..0)                           32        2 (16bit)
-      incr3u1ot(2..0)                                19        7 ( 1bit)
+      buffer_1_rg01(15..0)                           32        2 (16bit)
       infactor(8..0)                                 18        2 ( 9bit)
       FF_n(0..0)                                     17       17 ( 1bit)
-      ST1_03d(0..0)                                  17       17 ( 1bit)
-      ST1_04d(0..0)                                  16       16 ( 1bit)
+      RG_SoP2(15..0)                                 16        1 (16bit)
+      RG_SoP3(15..0)                                 16        1 (16bit)
+      indata(15..0)                                  16        1 (16bit)
+      M_17_t(15..0)                                  16        1 (16bit)
+      add16u1i2(15..0)                               16        1 (16bit)
+      add16u2ot(15..0)                               16        1 (16bit)
 
     Top 25 Nets
     sorted by "Max" (Maximum Fanout)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
       FF_n(0..0)                                     17       17 ( 1bit)
-      ST1_03d(0..0)                                  17       17 ( 1bit)
-      ST1_04d(0..0)                                  16       16 ( 1bit)
       CLOCK(0..0)                                    15       15 ( 1bit)
-      RG_n_SoP4(15..0)                               33        9 ( 1bit)
+      ST1_03d(0..0)                                  14       14 ( 1bit)
+      ST1_04d(0..0)                                  13       13 ( 1bit)
       RESET(0..0)                                     9        9 ( 1bit)
-      incr3u1ot(2..0)                                19        7 ( 1bit)
+      RG_n_SoP4(15..0)                               36        8 ( 2bit)
       ST1_01d(0..0)                                   7        7 ( 1bit)
       RG_infactor_read(8..0)                         54        6 ( 9bit)
-      buffer_0_rg00(15..0)                           64        4 (16bit)
-      buffer_0_rg01(15..0)                           64        4 (16bit)
       buffer_0_rd00(15..0)                           64        4 (16bit)
-      buffer_1_rg00(15..0)                           64        4 (16bit)
       buffer_1_rd00(15..0)                           64        4 (16bit)
-      buffer_2_rg00(15..0)                           64        4 (16bit)
       buffer_2_rd00(15..0)                           64        4 (16bit)
-      buffer_3_rg00(15..0)                           64        4 (16bit)
       buffer_3_rd00(15..0)                           64        4 (16bit)
       B01_streg(1..0)                                 8        4 ( 2bit)
       ST1_02d(0..0)                                   4        4 ( 1bit)
       RG_SoP1(15..0)                                 48        3 (16bit)
-      buffer_1_rg01(15..0)                           48        3 (16bit)
-      add3u1ot(3..0)                                  6        3 ( 1bit)
+      buffer_0_rg00(15..0)                           48        3 (16bit)
+      buffer_0_rg01(15..0)                           48        3 (16bit)
+      buffer_1_rg00(15..0)                           48        3 (16bit)
+      buffer_2_rg00(15..0)                           48        3 (16bit)
+      buffer_3_rg00(15..0)                           48        3 (16bit)
+      incr3u1ot(3..0)                                 6        3 ( 1bit)
       add16u1ot(15..0)                               32        2 (16bit)
-      add16u2ot(15..0)                               32        2 (16bit)
+      add16u7ot(15..0)                               32        2 (16bit)
+      add16u9ot(15..0)                               32        2 (16bit)
+      add16u12ot(15..0)                              32        2 (16bit)
 
 ================
 ; Primary Port ;
