@@ -1,8 +1,0 @@
-H_BT9009: Bitwidths of right and left operands are different.
- [Tips] Casting can reduce area when the maximum value is known.
-        example)
-         var(1..0) a,b,c;
-         var(2..0) x; 
-         x = a+b+c;   ->  (var (1..0))x =a+b+c;
-	[Source Lines]
-	154(../benchmarks/decimation_filter/decimation.c):     if( x == TAPS_STAGE1-1 )
