@@ -1,0 +1,27 @@
+#@VERSION{3.00}
+#@CNT{sobel}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@FCNT{
+	NAME	add8u
+	LIMIT	4  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	decr2u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub12s
+	LIMIT	3  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	addsub12u
+	LIMIT	4  AUTO
+#	COMMENT
+}
+#@HASH{ceb6991eed5851d8a73480463dd94c27}
+#@END{sobel}

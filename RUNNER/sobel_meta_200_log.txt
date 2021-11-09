@@ -1,0 +1,1735 @@
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Directory: ../benchmarks/sobel/
+FILE_W/O E: sobel
+FILE_NameE: sobel.c
+PARSE_FILE: ../benchmarks/sobel/lib_sobel.info
+Started: Parsing
+CLASS_COUNT: 6
+Finished: Parsing
+Started Meta Heuristic with area weight at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		2
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 2 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 1 to 0
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Crossover ocurred at: 3
+	Mutated @ index: 0 from 1 to 2
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 4 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 2
+	Mutated @ index: 2 from 1 to 3
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 5 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 6 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 1 to 0
+	Mutated @ index: 3 from 1 to 0
+	Mutated @ index: 4 from 1 to 0
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 6 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 1 to 3
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGarrayROMarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 6 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 0
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		7
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayREGarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 7 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		8
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+		Score: 1
+Finished first Meta Heuristic
+Started Meta Heuristic with area weight at: 0.25
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,-
+	Added :2348,3,1123,816,360,0,4318,1928,3,3,3.00,49,-,6.1425ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		10
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 10 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayLOGICunroll_timesallunroll_times0unroll_times0
+		Score: 0.768588
+	Parent_1:
+		arrayREGarrayLOGICarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 1 to 0
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+############################### ITERATION 11 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayLOGICunroll_timesallunroll_times0unroll_times0
+		Score: 0.768588
+	Parent_1:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 0
+	Mutated @ index: 2 from 3 to 1
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		12
+		arrayRAMarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayREGarrayEXPANDunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+############################### ITERATION 12 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayLOGICunroll_timesallunroll_times0unroll_times0
+		Score: 0.768588
+	Parent_1:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+	Crossover ocurred at: 5
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.43672
+############################### ITERATION 13 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.43672
+	Parent_1:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+	Crossover ocurred at: 5
+	Mutated @ index: 0 from 1 to 2
+	Mutated @ index: 1 from 2 to 0
+	Mutated @ index: 2 from 3 to 0
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 0.691466
+############################### ITERATION 14 #################################
+
+	Parent_0:
+		arrayREGarrayROMarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.43672
+	Parent_1:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0908054
+############################### ITERATION 15 #################################
+
+	Parent_0:
+		arrayREGarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0908054
+	Parent_1:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.365385
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 1 to 2
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,-
+	Added :2662,7,1127,972,474,19,5010,2171,7,7,7.00,70,-,6.2125ns,-,-,-,-,26,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayLOGICunroll_times0unroll_times0unroll_times0
+		Score: 0.919338
+Finished second Meta Heuristic
+Started Meta Heuristic with area weight at: 0.5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,-
+	Added :2907,4,1829,744,293,0,5113,2403,4,4,4.00,41,0,5.7483ns,-,-,-,-,10,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 18 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayRAMarrayREGarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.562155
+	Crossover ocurred at: 5
+	Mutated @ index: 0 from 2 to 0
+	Mutated @ index: 1 from 0 to 2
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Mutated @ index: 4 from 1 to 0
+	Mutated @ index: 5 from 0 to 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,-
+	Added :4225,7,2532,1056,555,19,7525,3446,7,7,7.00,63,-,7.8515ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayROMarrayLOGICunroll_times0unroll_times0unroll_timesall
+		Score: 0.769231
+############################### ITERATION 19 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayRAMarrayREGarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.562155
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 2 to 1
+	Mutated @ index: 1 from 0 to 2
+	Mutated @ index: 2 from 0 to 1
+	Mutated @ index: 3 from 1 to 0
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		20
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 20 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayRAMarrayREGarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.562155
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayROMunroll_times0unroll_timesallunroll_times0
+		Score: 0.731834
+############################### ITERATION 21 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayRAMarrayREGarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 0.562155
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 0 to 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+############################### ITERATION 22 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 0 to 1
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.542012
+############################### ITERATION 23 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+	Crossover ocurred at: 5
+	Mutated @ index: 0 from 2 to 1
+	Mutated @ index: 1 from 0 to 2
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+############################### ITERATION 24 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.143149
+	Parent_1:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 3
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.270533
+Finished third Meta Heuristic
+Started Meta Heuristic with area weight at: 0.75
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		26
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Already synthesised
+############################### ITERATION 26 #################################
+
+	Parent_0:
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 0
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		27
+		arrayEXPANDarrayEXPANDarrayREGunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayEXPANDarrayREGunroll_timesallunroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 27 #################################
+
+	Parent_0:
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		arrayEXPANDarrayEXPANDarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 1
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 3
+	Mutated @ index: 0 from 2 to 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 1
+	Mutated @ index: 3 from 1 to 0
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		29
+		arrayRAMarrayREGarrayEXPANDunroll_times0unroll_times0unroll_timesall
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayREGarrayEXPANDunroll_times0unroll_times0unroll_timesall
+		Score: 1
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 0
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayEXPANDarrayREGarrayREGunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 2 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,-
+	Added :3930,2,2960,738,199,0,6600,3175,2,2,2.00,33,0,5.9085ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayREGarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.736095
+############################### ITERATION 30 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 1
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayEXPANDunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 5
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 2
+	Mutated @ index: 3 from 0 to 1
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayREGarrayROMunroll_timesallunroll_times0unroll_timesall
+		Score: 0.704763
+############################### ITERATION 32 #################################
+
+	Parent_0:
+		arrayEXPANDarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.328876
+	Parent_1:
+		arrayEXPANDarrayREGarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 0 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayLOGICarrayLOGICunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.182515
+Finished fourth Meta Heuristic
+Started Meta Heuristic with area weight at: 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,-
+	Added :3591,3,2386,846,316,0,6252,2945,3,3,3.00,43,-,6.1218ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 35 #################################
+
+	Parent_0:
+		arrayREGarrayREGarrayROMunroll_timesallunroll_times0unroll_timesall
+		Score: 0.849941
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 2
+	Mutated @ index: 3 from 0 to 1
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		37
+		arrayREGarrayEXPANDarrayROMunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayEXPANDarrayROMunroll_times0unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayREGarrayROMunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+############################### ITERATION 38 #################################
+
+	Parent_0:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 1 to 0
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayREGarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 4
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+############################### ITERATION 40 #################################
+
+	Parent_0:
+		arrayRAMarrayREGarrayROMunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.230533
+	Parent_1:
+		arrayREGarrayEXPANDarrayLOGICunroll_times0unroll_timesallunroll_timesall
+		Score: 0.387219
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,-
+	Added :2609,9,1087,954,496,9,4990,2155,9,9,9.00,63,-,6.1125ns,-,-,-,-,22,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayREGarrayROMunroll_times0unroll_timesallunroll_times0
+		Score: 0.617515
+Finished fifth Meta Heuristic
+Started Meta Heuristic with area weight at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		42
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Already synthesised
+############################### ITERATION 42 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 0 to 1
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		43
+		arrayRAMarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayROMarrayEXPANDunroll_timesallunroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 43 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 43 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Crossover ocurred at: 3
+	Mutated @ index: 0 from 0 to 2
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 
+	Synthesis Failed at: 
+		44
+		arrayEXPANDarrayROMarrayEXPANDunroll_times0unroll_timesallunroll_times0
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayROMarrayEXPANDunroll_times0unroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 44 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Crossover ocurred at: 3
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+############################### ITERATION 44 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 0 to 1
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 0 to 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.269231
+############################### ITERATION 45 #################################
+
+	Parent_0:
+		arrayRAMarrayROMarrayEXPANDunroll_times0unroll_times0unroll_times0
+		Score: 1
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.269231
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 3
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 46 #################################
+
+	Parent_0:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.269231
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Mutated @ index: 3 from 1 to 0
+	Didn't mutate @ index: 4
+	Mutated @ index: 5 from 1 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,-
+	Added :3161,6,1703,960,419,19,5715,2555,6,5,5.50,60,0,5.6625ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayLOGICarrayREGunroll_times0unroll_times0unroll_times0
+		Score: 0.653846
+############################### ITERATION 47 #################################
+
+	Parent_0:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Parent_1:
+		arrayREGarrayROMarrayREGunroll_timesallunroll_times0unroll_timesall
+		Score: 0.269231
+	Crossover ocurred at: 3
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 2
+	Mutated @ index: 2 from 0 to 2
+	Mutated @ index: 3 from 1 to 0
+	Mutated @ index: 4 from 0 to 1
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,-
+	Added :1636,3,624,708,280,9,2978,1372,3,2,2.50,15,0,2.66ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayROMarrayROMunroll_times0unroll_timesallunroll_timesall
+		Score: 0.153846
+############################### ITERATION 48 #################################
+
+	Parent_0:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Parent_1:
+		arrayREGarrayROMarrayROMunroll_times0unroll_timesallunroll_timesall
+		Score: 0.153846
+	Crossover ocurred at: 4
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+############################### ITERATION 48 #################################
+
+	Parent_0:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Parent_1:
+		arrayREGarrayROMarrayROMunroll_times0unroll_timesallunroll_timesall
+		Score: 0.153846
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 1 to 2
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 3
+	Mutated @ index: 3 from 0 to 1
+	Mutated @ index: 4 from 1 to 0
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,-
+	Added :3691,3,2390,846,413,0,6653,3113,3,3,3.00,42,-,7.5685ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayEXPANDarrayROMarrayLOGICunroll_timesallunroll_times0unroll_timesall
+		Score: 0.269231
+############################### ITERATION 49 #################################
+
+	Parent_0:
+		arrayREGarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+	Parent_1:
+		arrayREGarrayROMarrayROMunroll_times0unroll_timesallunroll_timesall
+		Score: 0.153846
+	Crossover ocurred at: 5
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+	Didn't mutate @ index: 3
+	Didn't mutate @ index: 4
+	Didn't mutate @ index: 5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/sobel/sobel.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s sobel.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,-
+	Added :974,1,736,192,44,0,1593,752,1,1,1.00,2,0,2.614ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayLOGICarrayREGunroll_timesallunroll_timesallunroll_timesall
+		Score: 0.0384615
+Finished last Meta Heuristic
+The program labeled: sobel_meta_200 took -34 seconds.
