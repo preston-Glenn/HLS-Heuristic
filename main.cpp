@@ -131,7 +131,8 @@ int main(int argc, char** argv){
 
 		LABEL = resultLabelArg.getValue();
 
-		logger.setFileName(LABEL+"_log.txt");
+		string file_name = LABEL+"_log.txt" 
+		logger.setFileName(file_name);
 		logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
 	
