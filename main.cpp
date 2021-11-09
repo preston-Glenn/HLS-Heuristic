@@ -104,6 +104,16 @@ int main(int argc, char** argv){
 		
 		// Parse the args.
 		cmd.parse(argc, argv);
+
+		LABEL = resultLabelArg.getValue();
+
+		string file_name = LABEL+"_log.txt";
+		logger.setFileName(file_name);
+		logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
+
+	
+		logger.log("Seed:" + int_to_string(SEED));
+
 		
 		NUMBER_OF_ITERATIONS = numberOfRunArg.getValue();
 
@@ -121,7 +131,6 @@ int main(int argc, char** argv){
 		  }
 		  results_count++;
 		}
-		cout << RESULTS_DIRECTORY << endl;
 
 		} else {
 		  	RESULTS_DIRECTORY = resultsFileArg.getValue();
@@ -129,14 +138,7 @@ int main(int argc, char** argv){
 		}
 
 
-		LABEL = resultLabelArg.getValue();
 
-		string file_name = LABEL+"_log.txt" 
-		logger.setFileName(file_name);
-		logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
-
-	
-		logger.log("Seed:" + int_to_string(SEED));
 
 		// Store values
 		SEED = seedArg.getValue();
