@@ -1,0 +1,31 @@
+#@VERSION{3.00}
+#@CNT{ave16}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@PROCESS{
+	NAME	ave16
+#	KIND
+#	LIMIT
+#	BITWIDTH
+#	DELAY
+	AREA	2334
+	AREA_REG	276
+	AREA_COMB	2058
+	AREA_FU	1731
+	AREA_MUX	276
+	AREA_DEC	0
+	AREA_MISC	51
+	NET	2545
+	PIN_PAIR	5064
+#	SPECULATION
+#	COMMENT
+	DEFMOD {
+		in    unsigned ter(0:8)  in0              /* glo, in0 */;
+		out   unsigned ter(0:8)  out0             /* glo, out0 */;
+		clock                    CLOCK            /* c, CLOCK, @clock_period = 10ns, @auto_gen_sig = YES, clock_edge = \pos */;
+		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
+	}
+}
+#@HASH{3e2fec4dbb95bf29c2c9b82524089dca}
+#@END{ave16}

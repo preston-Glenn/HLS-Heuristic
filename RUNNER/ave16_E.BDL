@@ -1,0 +1,1610 @@
+/*
+* ave16_E.BDL
+# Design Name        ave16
+# FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
+# MEM  Limit File    %AUTO%.MLMT
+# Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
+# PORT Limit File    %AUTO%.PLMT
+# PORT relation File %AUTO%.PREL
+# Clock Cycle        100000 (1/10ps).
+# Clock Uncertainty  0-->10000 (1/10ps)
+# Performance index  max/min/ave  6 / 6 / 6.00
+# Data-path info.    REG: 276(area),46(FFs), MUX: 268(area),300(fanins)
+# CSV info.          2334,6,1731,276,276,0,5064,2545,6,6,6.00,51,-,3.3401ns,-,-,-,-,34,-,-
+# Bp-Option  ../benchmarks/ave16/ave16.c
+# Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
+# Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
+*/
+defmod MEMB32W2 {
+    in    unsigned ter(0:1)  RA1/* Cyber mem_id = MEMB32W2@8, other = DC */;
+    out   signed   ter(0:32)  RD1/* Cyber mem_id = MEMB32W2@8 */;
+    in    unsigned ter(0:1)  RE1/* Cyber mem_id = MEMB32W2@8 */;
+    in    unsigned ter(0:1)  RCLK1/* Cyber clock_edge = pos, mem_id = MEMB32W2@8 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    in    unsigned ter(0:1)  WA2/* Cyber mem_id = MEMB32W2@8, other = DC */;
+    in    signed   ter(0:32)  WD2/* Cyber mem_id = MEMB32W2@8, other = DC */;
+    in    unsigned ter(0:1)  WE2/* Cyber mem_id = MEMB32W2@8 */;
+    in    unsigned ter(0:1)  WCLK2/* Cyber clock_edge = pos, mem_id = MEMB32W2@8 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+} data_7 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_6 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_5 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_4 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_3 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_2 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_1 	/* line# ../benchmarks/ave16/ave16.c:23 */,
+  data_0 	/* line# ../benchmarks/ave16/ave16.c:23 */;
+
+
+in   unsigned ter(0:8)  in0 /* line# ../benchmarks/ave16/ave16.c:21 */;
+out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
+clock         CLOCK/* Cyber clock_edge = pos */;
+reset         RESET/* Cyber reset_mode = async, reset_active = high */;
+    
+unsigned const ter(0:3)  ST1_01 = 0;
+unsigned const ter(0:3)  ST1_02 = 1;
+unsigned const ter(0:3)  ST1_03 = 2;
+unsigned const ter(0:3)  ST1_04 = 3;
+unsigned const ter(0:3)  ST1_05 = 4;
+unsigned const ter(0:3)  ST1_06 = 5;
+
+/* Cyber default_bit_order = up */
+process
+ave16()
+{
+    unsigned ter(0:1)  M_91;
+    unsigned ter(0:2)  TR_02/* Cyber FSM = ter */;
+    unsigned reg(0:3)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0:1)  U_08;
+    unsigned ter(0:1)  U_07;
+    unsigned ter(0:1)  U_06;
+    unsigned ter(0:1)  U_05;
+    unsigned ter(0:1)  U_04;
+    unsigned ter(0:1)  U_03;
+    unsigned ter(0:1)  U_02;
+    unsigned ter(0:1)  U_01;
+    unsigned ter(0:1)  ST1_06d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_05d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_04d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_03d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_02d/* Cyber FSM = dec */;
+    unsigned ter(0:1)  ST1_01d/* Cyber FSM = dec */;
+    signed   ter(0:4)  decr4s2i1/* Cyber other = DC */;
+    signed   ter(0:4)  decr4s2ot;
+    signed   ter(0:4)  decr4s1i1/* Cyber other = DC */;
+    signed   ter(0:4)  decr4s1ot;
+    signed   ter(0:32)  add32s8i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s8i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s8ot;
+    signed   ter(0:32)  add32s7i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s7i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s7ot;
+    signed   ter(0:32)  add32s6i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s6i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s6ot;
+    signed   ter(0:32)  add32s5i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s5i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s5ot;
+    signed   ter(0:32)  add32s4i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s4i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s4ot;
+    signed   ter(0:32)  add32s3i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s3i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s3ot;
+    signed   ter(0:32)  add32s2i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s2i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s2ot;
+    signed   ter(0:32)  add32s1i2/* Cyber other = DC */;
+    signed   ter(0:32)  add32s1i1/* Cyber other = DC */;
+    signed   ter(0:32)  add32s1ot;
+    signed   ter(0:2)  add8s1i2/* Cyber other = DC */;
+    signed   ter(0:8)  add8s1i1/* Cyber other = DC */;
+    signed   ter(0:8)  add8s1ot;
+    unsigned ter(0:1)  JF_01/* Cyber other = DC */;
+    signed   ter(0:32)  M_13_t/* Cyber other = DC */;
+    unsigned reg(0:4)  RG_i/* Cyber reset_sig = void */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned reg(0:4)  RG_i_1/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned reg(0:3)  RG_03/* Cyber reset_sig = void, other = DC */;
+    signed   reg(0:32)  RG_04/* Cyber reset_sig = void, other = DC */;
+
+
+ST1_01 :
+    decr4s1ot(0:4) ::= decr4s@1(decr4s1i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    decr4s2ot(0:4) ::= decr4s@2(decr4s2i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    add32s1ot(0:32) ::= add32s@1(add32s1i1(0:32), add32s1i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s2ot(0:32) ::= add32s@2(add32s2i1(0:32), add32s2i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s3ot(0:32) ::= add32s@3(add32s3i1(0:32), add32s3i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s4ot(0:32) ::= add32s@4(add32s4i1(0:32), add32s4i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s5ot(0:32) ::= add32s@5(add32s5i1(0:32), add32s5i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s6ot(0:32) ::= add32s@6(add32s6i1(0:32), add32s6i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s7ot(0:32) ::= add32s@7(add32s7i1(0:32), add32s7i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s8ot(0:32) ::= add32s@8(add32s8i1(0:32), add32s8i2(0:32)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add8s1ot(0:8) ::= add8s@1(add8s1i1(0:8), add8s1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
+    data_7.RCLK1(0:1) ::= CLOCK;
+    data_7.WCLK2(0:1) ::= CLOCK;
+    data_6.RCLK1(0:1) ::= CLOCK;
+    data_6.WCLK2(0:1) ::= CLOCK;
+    data_5.RCLK1(0:1) ::= CLOCK;
+    data_5.WCLK2(0:1) ::= CLOCK;
+    data_4.RCLK1(0:1) ::= CLOCK;
+    data_4.WCLK2(0:1) ::= CLOCK;
+    data_3.RCLK1(0:1) ::= CLOCK;
+    data_3.WCLK2(0:1) ::= CLOCK;
+    data_2.RCLK1(0:1) ::= CLOCK;
+    data_2.WCLK2(0:1) ::= CLOCK;
+    data_1.RCLK1(0:1) ::= CLOCK;
+    data_1.WCLK2(0:1) ::= CLOCK;
+    data_0.RCLK1(0:1) ::= CLOCK;
+    data_0.WCLK2(0:1) ::= CLOCK;
+    RG_i_1(0:4) ::= decr4s1ot(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    RG_03(0:3) ::= decr4s2ot(1:3); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    RG_04(0:32) ::= add32s7ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    M_13_t(0:32) ::= dmux (RG_03(0:3)) { 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        case 0 :  data_0.RD1(0:32);
+        case 1 :  data_1.RD1(0:32);
+        case 2 :  data_2.RD1(0:32);
+        case 3 :  data_3.RD1(0:32);
+        case 4 :  data_4.RD1(0:32);
+        case 5 :  data_5.RD1(0:32);
+        case 6 :  data_6.RD1(0:32);
+        case 7 :  data_7.RD1(0:32);
+    };
+    add8s1i1(0:8) ::= add32s8ot(20:8); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
+    add8s1i2(0:2) ::= 0(0:1) :: (add32s8ot(0:1) & |>add32s8ot(28:4)); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
+    add32s8i1(0:32) ::= RG_04(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s8i2(0:32) ::= add32s7ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    decr4s1i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    decr4s2i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_7.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_7.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_6.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_6.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_5.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_5.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_4.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_4.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_3.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_3.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_2.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_2.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_1.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_1.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.WA2(0:1) ::= RG_i(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.WD2(0:32) ::= M_13_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_01(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>decr4s2ot(1:3)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_02(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 1(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_03(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 2(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_04(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 3(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_05(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 4(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_06(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 5(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_07(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 6(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    U_08(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s2ot(1:3) ^ 7(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    RG_i(0:4) ::= nmux {
+        when (ST1_01d(0:1)) :  -1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+        when (ST1_03d(0:1)) :  RG_i_1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+        default :  RG_i(0:4);
+    };
+    out0(0:8) ::= nmux {
+        when (ST1_06d(0:1)) :  add8s1ot(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
+        default :  0(0:8);
+    };
+    JF_01(0:1) ::= |>RG_i_1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    add32s1i1(0:32) ::= data_6.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s1i2(0:32) ::= data_7.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s2i1(0:32) ::= data_4.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s2i2(0:32) ::= data_5.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s3i1(0:32) ::= data_2.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s3i2(0:32) ::= data_3.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s4i1(0:32) ::= data_0.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s4i2(0:32) ::= data_1.RD1(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s5i1(0:32) ::= add32s4ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s5i2(0:32) ::= add32s3ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s6i1(0:32) ::= add32s2ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s6i2(0:32) ::= add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s7i1(0:32) ::= add32s5ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    add32s7i2(0:32) ::= add32s6ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
+    data_7.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_08(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_7.RE1(0:1) ::= M_91(0:1) | U_08(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_7.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 7(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_6.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_07(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    M_91(0:1) ::= ST1_04d(0:1) | ST1_05d(0:1);
+    data_6.RE1(0:1) ::= M_91(0:1) | U_07(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_6.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 6(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_5.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_06(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_5.RE1(0:1) ::= M_91(0:1) | U_06(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_5.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 5(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_4.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_05(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_4.RE1(0:1) ::= M_91(0:1) | U_05(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_4.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 4(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_3.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_04(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_3.RE1(0:1) ::= M_91(0:1) | U_04(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_3.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 3(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_2.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_03(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_2.RE1(0:1) ::= M_91(0:1) | U_03(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_2.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 2(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_1.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_02(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_1.RE1(0:1) ::= M_91(0:1) | U_02(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,40 */
+    data_1.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>(RG_i(1:3) ^ 1(0:3))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data_0.RA1(0:1) ::= nmux {
+        when (ST1_04d(0:1)) :  0(0:1); 	/* line# ../benchmarks/ave16/ave16.c:36 */
+        when (ST1_05d(0:1)) :  1(0:1); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (U_01(0:1)) :  decr4s2ot(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    };
+    data_0.RE1(0:1) ::= M_91(0:1) | U_01(0:1); 	/* line# ../benchmarks/ave16/ave16.c:33,36,40 */
+    data_0.WE2(0:1) ::= (unsigned ter(0:1))(ST1_03d(0:1) & ~|>RG_i(1:3)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    ST1_01d(0:1) ::= (unsigned ter(0:1))(~|>B01_streg(0:3));
+    ST1_02d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:3) ^ ST1_02(0:3)));
+    ST1_03d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:3) ^ ST1_03(0:3)));
+    ST1_04d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:3) ^ ST1_04(0:3)));
+    ST1_05d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:3) ^ ST1_05(0:3)));
+    ST1_06d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:3) ^ ST1_06(0:3)));
+    TR_02(0:2) ::= nmux {
+        when (ST1_02d(0:1)) :  2(0:2);
+        default :  (unsigned ter(0:2))(0(0:1) :: ST1_01d(0:1));
+    };
+    B01_streg(0:3) ::= nmux {
+        when (ST1_03d(0:1)) : 
+            nmux {
+                when (JF_01(0:1)) :  ST1_02(0:3);
+                when (!JF_01(0:1)) :  ST1_04(0:3);
+                default :  ST1_01(0:3);
+            };
+        when ((unsigned ter(0:1))(ST1_04d(0:1) | ST1_05d(0:1))) :  (unsigned ter(0:3))(2(0:2) :: ST1_05d(0:1));
+        default :  (unsigned ter(0:3))(0(0:1) :: TR_02(0:2));
+    };
+    goto ST1_01;
+}
+
+/*
+#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
+#@LMT %AUTO%.LMT
+##@CLK  100000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  add8s      1  (s)+              8,8    3000     49
+#  2  add32s     8  (s)+              32,32  10600   208
+#  3  decr4s     2  (s)DECR           4,4    1500      9
+#  4  delay_funit_1    1  @delay_funit_1    (32),32  1         0
+#  5  delay_funit_2    1  @delay_funit_2    (32),32  1         0
+#  6  delay_funit_3    1  @delay_funit_3    (32),32  1         0
+#  7  delay_funit_4    1  @delay_funit_4    (32),32  1         0
+#  8  delay_funit_5    1  @delay_funit_5    (32),32  1         0
+#  9  delay_funit_6    1  @delay_funit_6    (32),32  1         0
+# 10  delay_funit_7    1  @delay_funit_7    (32),32  1         0
+# 11  delay_funit_8    1  @delay_funit_8    (32),32  1         0
+# 12  delay_funit_9    1  @delay_funit_9    (32),32  1         0
+# 13  delay_funit_10    1  @delay_funit_10   (32),32  1         0
+# 14  delay_funit_11    1  @delay_funit_11   (32),32  1         0
+# 15  delay_funit_12    1  @delay_funit_12   (32),32  1         0
+# 16  delay_funit_13    1  @delay_funit_13   (32),32  1         0
+# 17  delay_funit_14    1  @delay_funit_14   (32),32  1         0
+# 18  delay_funit_15    1  @delay_funit_15   (32),32  1         0
+# 19  delay_funit_16    1  @delay_funit_16   (32),32  1         0
+# 20  delay_funit_17    1  @delay_funit_17   (32),32  1         0
+# 21  delay_funit_18    1  @delay_funit_18   (32),32  1         0
+# 22  delay_funit_19    1  @delay_funit_19   (32),32  1         0
+# 23  delay_funit_20    1  @delay_funit_20   (32),32  1         0
+# 24  delay_funit_21    1  @delay_funit_21   (32),32  1         0
+# 25  delay_funit_22    1  @delay_funit_22   (32),32  1         0
+# 26  delay_funit_23    1  @delay_funit_23   (32),32  1         0
+# 27  delay_funit_24    1  @delay_funit_24   (32),32  1         0
+#@END
+
+#@MLIB %AUTO%.MLIB
+##@VERSION { 3.00 }
+##@LIB { ave16 }
+##@UNIT  1/10ps 
+#@MLIB {
+#    NAME	MEMB32W2
+#    KIND	R1,W1
+#    BITWIDTH	32
+#    DELAY	x2
+#    WORD	2
+#    WRITE_SYNC	YES
+#    DEFMOD {
+#        in             ter (0:1)      RA1              /* ra:1 */;
+#        out            ter (0:32)     RD1              /* rd:1 */;
+#        in             ter (0:1)      RE1              /* re:1 */;
+#        in             ter (0:1)      RCLK1            /* rclk:1 */;
+#        in             ter (0:1)      WA2              /* wa:2 */;
+#        in             ter (0:32)     WD2              /* wd:2 */;
+#        in             ter (0:1)      WE2              /* we:2 */;
+#        in             ter (0:1)      WCLK2            /* wclk:2 */;
+#    }
+#}
+##@END { ave16 }
+
+#@MCNT %AUTO%.MCNT
+##@VERSION { 3.00 }
+##@CNT { ave16 }
+#@MCNT {
+#    NAME	MEMB32W2
+#    LIMIT	8
+#}
+##@END { ave16 }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  MEMB32W2    8  R1,W1            32x2   1x2                 	
+#@END
+
+#@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
+##@VERSION{2.00}
+##@LIB{CWBSTDBLIB}
+##@UNIT 1/10ps
+#@BLIB {
+#    NAME	nmux2_1
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	6
+#    PIN_PAIR	6
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux2_2
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	2
+#    DELAY	900
+#    AREA	3
+#    NET	10
+#    PIN_PAIR	12
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux2_4
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	4
+#    DELAY	1100
+#    AREA	9
+#    NET	20
+#    PIN_PAIR	26
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_8
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	8
+#    DELAY	1400
+#    AREA	16
+#    NET	36
+#    PIN_PAIR	50
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_16
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	1600
+#    AREA	32
+#    NET	70
+#    PIN_PAIR	100
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_32
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	32
+#    DELAY	1700
+#    AREA	64
+#    NET	140
+#    PIN_PAIR	202
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux2_64
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	64
+#    DELAY	1500
+#    AREA	128
+#    NET	275
+#    PIN_PAIR	401
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux4_1
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_2
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	2
+#    DELAY	1000
+#    AREA	6
+#    NET	18
+#    PIN_PAIR	22
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_4
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	4
+#    DELAY	1200
+#    AREA	17
+#    NET	36
+#    PIN_PAIR	48
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_8
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	8
+#    DELAY	1500
+#    AREA	30
+#    NET	64
+#    PIN_PAIR	92
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_16
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	1700
+#    AREA	61
+#    NET	124
+#    PIN_PAIR	184
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_32
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	32
+#    DELAY	1900
+#    AREA	121
+#    NET	248
+#    PIN_PAIR	372
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_64
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	64
+#    DELAY	1600
+#    AREA	242
+#    NET	490
+#    PIN_PAIR	742
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_1
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	1000
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_2
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	2
+#    DELAY	1300
+#    AREA	13
+#    NET	34
+#    PIN_PAIR	42
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_4
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	4
+#    DELAY	1600
+#    AREA	31
+#    NET	66
+#    PIN_PAIR	90
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_8
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	8
+#    DELAY	1700
+#    AREA	59
+#    NET	120
+#    PIN_PAIR	176
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_16
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	2000
+#    AREA	119
+#    NET	232
+#    PIN_PAIR	352
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_32
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	32
+#    DELAY	2200
+#    AREA	233
+#    NET	463
+#    PIN_PAIR	711
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux8_64
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	64
+#    DELAY	1800
+#    AREA	460
+#    NET	906
+#    PIN_PAIR	1410
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_1
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	1500
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux16_2
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	2
+#    DELAY	1700
+#    AREA	33
+#    NET	80
+#    PIN_PAIR	96
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_4
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	4
+#    DELAY	1900
+#    AREA	76
+#    NET	155
+#    PIN_PAIR	203
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_8
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	8
+#    DELAY	2200
+#    AREA	127
+#    NET	248
+#    PIN_PAIR	360
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_16
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	2400
+#    AREA	255
+#    NET	480
+#    PIN_PAIR	720
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_32
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	32
+#    DELAY	2700
+#    AREA	506
+#    NET	967
+#    PIN_PAIR	1463
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_64
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	64
+#    DELAY	2300
+#    AREA	995
+#    NET	1878
+#    PIN_PAIR	2886
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux32_1
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_2
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	2
+#    DELAY	1900
+#    AREA	56
+#    NET	138
+#    PIN_PAIR	170
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_4
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	4
+#    DELAY	2300
+#    AREA	115
+#    NET	248
+#    PIN_PAIR	344
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_8
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	8
+#    DELAY	2400
+#    AREA	251
+#    NET	488
+#    PIN_PAIR	712
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux32_16
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	16
+#    DELAY	2600
+#    AREA	502
+#    NET	944
+#    PIN_PAIR	1424
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux32_32
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	32
+#    DELAY	2900
+#    AREA	982
+#    NET	1877
+#    PIN_PAIR	2869
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux32_64
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	64
+#    DELAY	2700
+#    AREA	1946
+#    NET	3660
+#    PIN_PAIR	5676
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_1
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	56
+#    NET	171
+#    PIN_PAIR	171
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_2
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	2
+#    DELAY	2000
+#    AREA	113
+#    NET	278
+#    PIN_PAIR	342
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_4
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	4
+#    DELAY	2500
+#    AREA	228
+#    NET	494
+#    PIN_PAIR	686
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_8
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	8
+#    DELAY	2500
+#    AREA	504
+#    NET	984
+#    PIN_PAIR	1432
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_16
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	2600
+#    AREA	1008
+#    NET	1904
+#    PIN_PAIR	2864
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_32
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	32
+#    DELAY	3100
+#    AREA	1955
+#    NET	3755
+#    PIN_PAIR	5739
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux64_64
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	64
+#    DELAY	2800
+#    AREA	3917
+#    NET	7434
+#    PIN_PAIR	11466
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	reg1
+#    KIND	reg
+#    BITWIDTH	1
+#    AREA	6
+#    NET	5
+#    PIN_PAIR	5
+#}
+#@BLIB {
+#    NAME	reg4
+#    KIND	reg
+#    BITWIDTH	4
+#    AREA	24
+#    NET	14
+#    PIN_PAIR	20
+#}
+#@BLIB {
+#    NAME	reg8
+#    KIND	reg
+#    BITWIDTH	8
+#    AREA	48
+#    NET	26
+#    PIN_PAIR	40
+#}
+#@BLIB {
+#    NAME	dec2
+#    KIND	dec
+#    BITWIDTH	2
+#    DELAY	200
+#    AREA	1
+#    NET	2
+#    PIN_PAIR	3
+#}
+#@BLIB {
+#    NAME	dec4
+#    KIND	dec
+#    BITWIDTH	4
+#    DELAY	900
+#    AREA	5
+#    NET	10
+#    PIN_PAIR	16
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec8
+#    KIND	dec
+#    BITWIDTH	8
+#    DELAY	1300
+#    AREA	14
+#    NET	18
+#    PIN_PAIR	39
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dec16
+#    KIND	dec
+#    BITWIDTH	16
+#    DELAY	1300
+#    AREA	25
+#    NET	37
+#    PIN_PAIR	74
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec32
+#    KIND	dec
+#    BITWIDTH	32
+#    DELAY	1800
+#    AREA	42
+#    NET	58
+#    PIN_PAIR	138
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec64
+#    KIND	dec
+#    BITWIDTH	64
+#    DELAY	2000
+#    AREA	78
+#    NET	100
+#    PIN_PAIR	258
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dec128
+#    KIND	dec
+#    BITWIDTH	128
+#    DELAY	2500
+#    AREA	149
+#    NET	194
+#    PIN_PAIR	483
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux2_1
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	4
+#    PIN_PAIR	4
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux2_16
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	2000
+#    AREA	32
+#    NET	69
+#    PIN_PAIR	100
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dmux4_1
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	5
+#    NET	11
+#    PIN_PAIR	15
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux4_16
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	2500
+#    AREA	64
+#    NET	128
+#    PIN_PAIR	194
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux8_1
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	2800
+#    AREA	11
+#    NET	22
+#    PIN_PAIR	33
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	dmux8_16
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	3400
+#    AREA	127
+#    NET	240
+#    PIN_PAIR	381
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux16_1
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	3000
+#    AREA	23
+#    NET	43
+#    PIN_PAIR	65
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	dmux16_16
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	3800
+#    AREA	275
+#    NET	499
+#    PIN_PAIR	787
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	dmux64_1
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	4300
+#    AREA	87
+#    NET	146
+#    PIN_PAIR	234
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	dmux64_16
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	4800
+#    AREA	1075
+#    NET	1971
+#    PIN_PAIR	3081
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	dmux256_1
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	1
+#    DELAY	5300
+#    AREA	286
+#    NET	519
+#    PIN_PAIR	819
+#    LSTAGE	11
+#}
+#@BLIB {
+#    NAME	dmux256_16
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	16
+#    DELAY	5900
+#    AREA	4243
+#    NET	7774
+#    PIN_PAIR	12168
+#    LSTAGE	16
+#}
+#@BLIB {
+#    NAME	inv
+#    KIND	inv
+#    BITWIDTH	1
+#    DELAY	300
+#    AREA	1
+#    NET	2
+#    PIN_PAIR	2
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and2
+#    KIND	and
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and4
+#    KIND	and
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and8
+#    KIND	and
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	900
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and16
+#    KIND	and
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1300
+#    AREA	7
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and32
+#    KIND	and
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1400
+#    AREA	16
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	and64
+#    KIND	and
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	2000
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	and256
+#    KIND	and
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2700
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	or2
+#    KIND	or
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or4
+#    KIND	or
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or8
+#    KIND	or
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or16
+#    KIND	or
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1100
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or32
+#    KIND	or
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1500
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	or64
+#    KIND	or
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	or256
+#    KIND	or
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2000
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xor2
+#    KIND	xor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	7
+#    PIN_PAIR	9
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xor4
+#    KIND	xor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	6
+#    NET	11
+#    PIN_PAIR	13
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xor8
+#    KIND	xor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	2400
+#    AREA	11
+#    NET	15
+#    PIN_PAIR	15
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xor16
+#    KIND	xor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	4800
+#    AREA	32
+#    NET	48
+#    PIN_PAIR	56
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	xor32
+#    KIND	xor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	4500
+#    AREA	49
+#    NET	63
+#    PIN_PAIR	63
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	xor64
+#    KIND	xor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	5400
+#    AREA	100
+#    NET	127
+#    PIN_PAIR	127
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	xor256
+#    KIND	xor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	7200
+#    AREA	406
+#    NET	511
+#    PIN_PAIR	511
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	nand2
+#    KIND	nand
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	400
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand4
+#    KIND	nand
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	600
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand8
+#    KIND	nand
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	1100
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand16
+#    KIND	nand
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand32
+#    KIND	nand
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nand64
+#    KIND	nand
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	27
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nand256
+#    KIND	nand
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	3000
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nor2
+#    KIND	nor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor4
+#    KIND	nor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1000
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor8
+#    KIND	nor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	1400
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor16
+#    KIND	nor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor32
+#    KIND	nor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nor64
+#    KIND	nor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	2300
+#    AREA	27
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nor256
+#    KIND	nor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2900
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xnor2
+#    KIND	xnor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	7
+#    PIN_PAIR	9
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor4
+#    KIND	xnor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	4
+#    NET	7
+#    PIN_PAIR	7
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor8
+#    KIND	xnor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	2600
+#    AREA	11
+#    NET	15
+#    PIN_PAIR	15
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xnor16
+#    KIND	xnor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	4200
+#    AREA	42
+#    NET	58
+#    PIN_PAIR	75
+#    LSTAGE	13
+#}
+#@BLIB {
+#    NAME	xnor32
+#    KIND	xnor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	4500
+#    AREA	49
+#    NET	63
+#    PIN_PAIR	63
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	xnor64
+#    KIND	xnor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	5400
+#    AREA	100
+#    NET	127
+#    PIN_PAIR	127
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	xnor256
+#    KIND	xnor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	7200
+#    AREA	406
+#    NET	511
+#    PIN_PAIR	511
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	consttable2_8
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	8
+#    DELAY	200
+#    AREA	1
+#    NET	4
+#    PIN_PAIR	9
+#}
+#@BLIB {
+#    NAME	consttable2_32
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	32
+#    DELAY	600
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	34
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable16_8
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	8
+#    DELAY	3000
+#    AREA	50
+#    NET	53
+#    PIN_PAIR	122
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	consttable16_32
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	32
+#    DELAY	3400
+#    AREA	120
+#    NET	130
+#    PIN_PAIR	317
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	consttable64_8
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	8
+#    DELAY	4900
+#    AREA	146
+#    NET	162
+#    PIN_PAIR	387
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	consttable64_32
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	32
+#    DELAY	5000
+#    AREA	392
+#    NET	434
+#    PIN_PAIR	1020
+#    LSTAGE	13
+#}
+#@BLIB {
+#    NAME	consttable256_8
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	8
+#    DELAY	6100
+#    AREA	476
+#    NET	482
+#    PIN_PAIR	1203
+#    LSTAGE	14
+#}
+#@BLIB {
+#    NAME	consttable256_32
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	32
+#    DELAY	5800
+#    AREA	1350
+#    NET	1466
+#    PIN_PAIR	3523
+#    LSTAGE	12
+#}
+##@END{CWBSTDBLIB}
+#@END
+*/

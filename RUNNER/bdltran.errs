@@ -1,0 +1,76 @@
+option -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
+I_BT1173: LOG file is generated. (ave16.LOG.gz)
+############## CyberII started (automatic scheduling mode) ##############
+[Clock period]    100,000 (1/10ps) [define]
+[Datapath delay]   90,000 (1/10ps)
+[Clock uncertainty] 10,000 (1/10ps)
+I_BT6773: The BLIB and FLIB files are loaded.
+	/proj/cad/cwb-6.1/packages/asic_45.BLIB
+	/proj/cad/cwb-6.1/packages/asic_45.FLIB
+
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  -  :  1  (32bit:1)
+  >  :  1  (32bit:1)
+  -- :  1  (32bit:1)
+  <  :  1  (32bit:1)
+  ++ :  1  (32bit:1)
+  += :  1  (32bit:1)
+  /  :  1  (32bit:1)
+  Data transfer : 21
+
+ === array / memory ===
+  read  :  3
+  write :  1
+I_BT4383: Generate memory library file / memory constraint file.
+	ave16-auto.MLIB
+	ave16-auto.MCNT
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  +  : 16  (8bit:1, 32bit:15)
+  &  :  1  (1bit:1)
+  |> :  2  (4bit:2)
+  DECR:  2  (4bit:2)
+  Data transfer : 116
+
+ === array / memory ===
+  read  : 24
+  write :  8
+I_BT4382: Generate functional unit library files / functional unit constraint files.
+	ave16-auto.FLIB
+	ave16-auto.FCNT
+	ave16-amacro-auto.FLIB
+	ave16-amacro-auto.FCNT
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 6 / 6 / 6.00
+
+  Module Name         : ave16
+  Basic Library Name  : CWBSTDBLIB
+
+  Total Area          :      2,334
+    Sequential        :        276
+    Combinational     :      2,058
+
+  Latency Index       :         34
+  Total States        :          6
+
+  Clock Period        :       10ns
+  Critical Path Delay :   3.3401ns
+
+  Net                 :      2,545
+  Pin Pair            :      5,064
+
+  Port                :         18
+    In                :         10
+    Out               :          8
+
+TOTAL AREA 2,334 (FU: 1,731 + REG: 276 + MUX: 276 + DEC: 0 + MISC: 51) + pin pair 5,064(net 2,545) + 1FSM of 6state
+
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	 4 warning      exist
+	15 information  exist
+	---> SEE ave16.err FILE for DETAILS
+##### CyberII Normal finish (automatic scheduling mode) [ave16] #####
+
