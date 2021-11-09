@@ -8,7 +8,7 @@ I_BT4146: All signals are synthesized as descending bit-order because all declar
 I_BT4874: for loop is unrolled at every 4 iterations
 	[Source Lines]
 	93(../benchmarks/interpolation_filter/interpolation.c):     for ( n = 5; n>0; n--)
-I_BT4874: for loop is unrolled at every 2 iterations
+I_BT4874: for loop is unrolled at every 4 iterations
 	[Source Lines]
 	101(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
 I_BT4874: for loop is unrolled at every 4 iterations
@@ -20,10 +20,6 @@ I_BT4874: for loop is unrolled at every 4 iterations
 I_BT4874: for loop is unrolled at every 4 iterations
 	[Source Lines]
 	119(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
-W_BT4865: The synthesis will not be a good result because the divided array (buffer) is accessed by variable.
- [Action] Change all access of array to constant, or add 'array_div=NO' attribute to the array, or use '-Zarray_div=NO' option to disable synthesis function of array dividing.
-W_BT4865: The synthesis will not be a good result because the divided array (coeff1) is accessed by variable.
- [Action] Change all access of array to constant, or add 'array_div=NO' attribute to the array, or use '-Zarray_div=NO' option to disable synthesis function of array dividing.
 I_BT4945: The loop of the same structure was merged.
 	[Source Lines]
 	113(../benchmarks/interpolation_filter/interpolation.c):       for ( n = 0; n < TAPS; n++ ) 
@@ -33,8 +29,16 @@ I_BT4945: The loop of the same structure was merged.
 	107(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
 	113(../benchmarks/interpolation_filter/interpolation.c):       for ( n = 0; n < TAPS; n++ ) 
 	119(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
+I_BT4945: The loop of the same structure was merged.
+	[Source Lines]
+	101(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
+	107(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
+	113(../benchmarks/interpolation_filter/interpolation.c):       for ( n = 0; n < TAPS; n++ ) 
+	119(../benchmarks/interpolation_filter/interpolation.c):       for (n = 0; n < TAPS; n++ ) 
 I_BT4121: Array coeff1_0 is synthesized as a combinational circuit.
 I_BT4121: Array coeff1_1 is synthesized as a combinational circuit.
+I_BT4121: Array coeff1_2 is synthesized as a combinational circuit.
+I_BT4121: Array coeff1_3 is synthesized as a combinational circuit.
 I_BT4121: Array coeff2_0 is synthesized as a combinational circuit.
 I_BT4121: Array coeff2_1 is synthesized as a combinational circuit.
 I_BT4121: Array coeff2_2 is synthesized as a combinational circuit.
@@ -47,30 +51,30 @@ I_BT4121: Array coeff4_0 is synthesized as a combinational circuit.
 I_BT4121: Array coeff4_1 is synthesized as a combinational circuit.
 I_BT4121: Array coeff4_2 is synthesized as a combinational circuit.
 I_BT4121: Array coeff4_3 is synthesized as a combinational circuit.
-I_BT5514: 6 address decoders (R5,W1) to access to array signal 'buffer_0'.
+I_BT5514: 4 address decoders (R3,W1) to access to array signal 'buffer_0'.
 	[Source Lines]
 	32(../benchmarks/interpolation_filter/interpolation.c):   var(15..0) buffer[TAPS] ;
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'buffer_1'.
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'buffer_1'.
 	[Source Lines]
 	32(../benchmarks/interpolation_filter/interpolation.c):   var(15..0) buffer[TAPS] ;
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'buffer_2'.
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'buffer_2'.
 	[Source Lines]
 	32(../benchmarks/interpolation_filter/interpolation.c):   var(15..0) buffer[TAPS] ;
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'buffer_3'.
+I_BT5514: 3 address decoders (R2,W1) to access to array signal 'buffer_3'.
 	[Source Lines]
 	32(../benchmarks/interpolation_filter/interpolation.c):   var(15..0) buffer[TAPS] ;
-I_BT8371: Height of operation tree has been reduced.
-	[Source Lines]
-	102(../benchmarks/interpolation_filter/interpolation.c): 	SoP1 = SoP1 + buffer[n] * coeff1[n];
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
 	114(../benchmarks/interpolation_filter/interpolation.c): 	SoP3 = SoP3 + buffer[n] * coeff3[n];
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
+	108(../benchmarks/interpolation_filter/interpolation.c): 	SoP2 =SoP2 + buffer[n] * coeff2[n];
+I_BT8371: Height of operation tree has been reduced.
+	[Source Lines]
 	120(../benchmarks/interpolation_filter/interpolation.c): 	SoP4 = SoP4 + buffer[n] * coeff4[n];
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
-	108(../benchmarks/interpolation_filter/interpolation.c): 	SoP2 =SoP2 + buffer[n] * coeff2[n];
+	102(../benchmarks/interpolation_filter/interpolation.c): 	SoP1 = SoP1 + buffer[n] * coeff1[n];
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
 	124(../benchmarks/interpolation_filter/interpolation.c):    odata_write = SoP1 +
@@ -98,7 +102,7 @@ I_BT4394: No memory required. Empty memory constraint file (interpolation-auto.M
 I_BT4383: Generate memory library file / memory constraint file.
 	interpolation-auto.MLIB
 	interpolation-auto.MCNT
-I_BT4395: 14 functional units templates are generated.
+I_BT4395: 16 functional units templates are generated.
 I_BT4392: No arithmetic macro functional unit required.
 I_BT4319: Empty FLIB file (interpolation-amacro-auto.FLIB) generated. No functional units required.
  [Action] If required, confirm the description.
@@ -111,6 +115,5 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	interpolation-amacro-auto.FCNT
 I_BT4392: No arithmetic macro functional unit required.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	 2 warning      exist
-	46 information  exist
+	49 information  exist
 	---> SEE interpolation.err FILE for DETAILS

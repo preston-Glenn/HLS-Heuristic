@@ -8,9 +8,9 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  5 / 4 / 4.50
-# Data-path info.    REG: 996(area),166(FFs), MUX: 653(area),686(fanins)
-# CSV info.          2255,4,854,996,343,20,3958,1916,5,4,4.50,42,0,3.2473ns,-,-,-,-,20,-,-
+# Performance index  max/min/ave  3 / 3 / 3.00
+# Data-path info.    REG: 990(area),165(FFs), MUX: 569(area),586(fanins)
+# CSV info.          1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,-
 # Bp-Option  ../benchmarks/ave16/ave16.c
 # Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
@@ -21,285 +21,157 @@ out  unsigned ter(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
 clock         CLOCK/* Cyber clock_edge = pos */;
 reset         RESET/* Cyber reset_mode = async, reset_active = high */;
     
-unsigned const ter(0:2)  ST1_01 = 0;
-unsigned const ter(0:2)  ST1_02 = 1;
-unsigned const ter(0:2)  ST1_03 = 2;
-unsigned const ter(0:2)  ST1_04 = 3;
+unsigned const ter(0:1)  ST1_01 = 0;
+unsigned const ter(0:1)  ST1_02 = 1;
 
 /* Cyber default_bit_order = up */
 process
 ave16()
 {
-    unsigned ter(0:3)  TR_01/* Cyber other = DC */;
-    unsigned reg(0:2)  B01_streg/* Cyber FSM = reg */;
-    unsigned ter(0:1)  ST1_04d/* Cyber FSM = dec */;
-    unsigned ter(0:1)  ST1_03d/* Cyber FSM = dec */;
+    unsigned reg(0:1)  B01_streg/* Cyber FSM = reg */;
     unsigned ter(0:1)  ST1_02d/* Cyber FSM = dec */;
     unsigned ter(0:1)  ST1_01d/* Cyber FSM = dec */;
-    unsigned ter(0:1)  data_31_we01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:8)  data_31_rd00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:4)  data_31_d01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_31_ad01/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_31_ad00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_31_rg03/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_31_rg02/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_31_rg01/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_31_rg00/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:1)  data_21_we01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:8)  data_21_rd00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:4)  data_21_d01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_21_ad01/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_21_ad00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_21_rg03/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_21_rg02/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_21_rg01/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_21_rg00/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:1)  data_11_we01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:8)  data_11_rd00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:4)  data_11_d01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_11_ad01/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_11_ad00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_11_rg03/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_11_rg02/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_11_rg01/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_11_rg00/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:1)  data_01_we01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:8)  data_01_rd00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:4)  data_01_d01 /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_01_ad01/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned ter(0:2)  data_01_ad00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_01_rg03/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_01_rg02/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_01_rg01/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    unsigned reg(0:8)  data_01_rg00/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
-    signed   ter(0:9)  add32s_322i2/* Cyber other = DC */;
-    signed   ter(0:32)  add32s_322i1/* Cyber other = DC */;
-    signed   ter(0:32)  add32s_322ot;
-    signed   ter(0:9)  add32s_321i2/* Cyber other = DC */;
-    signed   ter(0:32)  add32s_321i1/* Cyber other = DC */;
-    signed   ter(0:32)  add32s_321ot;
-    unsigned ter(0:10)  add12u_10_101i2/* Cyber other = DC */;
-    unsigned ter(0:8)  add12u_10_101i1/* Cyber other = DC */;
-    unsigned ter(0:10)  add12u_10_101ot;
-    signed   ter(0:4)  decr4s1i1/* Cyber other = DC */;
-    signed   ter(0:4)  decr4s1ot;
-    unsigned ter(0:4)  decr4u1i1/* Cyber other = DC */;
-    unsigned ter(0:5)  decr4u1ot;
-    unsigned ter(0:2)  incr2u1i1/* Cyber other = DC */;
-    unsigned ter(0:3)  incr2u1ot;
-    signed   ter(0:10)  add32s1i2/* Cyber other = DC */;
+    unsigned ter(0:8)  data1_rd00/* Cyber other = DC */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg15/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg14/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg13/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg12/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg11/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg10/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg09/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg08/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg07/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg06/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg05/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg04/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg03/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg02/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg01/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned reg(0:8)  data1_rg00/* Cyber reg_init_val = 0 */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+    unsigned ter(0:4)  incr4u1i1/* Cyber other = DC */;
+    unsigned ter(0:5)  incr4u1ot;
+    signed   ter(0:9)  add32s1i2/* Cyber other = DC */;
     signed   ter(0:32)  add32s1i1/* Cyber other = DC */;
     signed   ter(0:32)  add32s1ot;
-    unsigned ter(0:8)  add12u_101i2/* Cyber other = DC */;
-    unsigned ter(0:9)  add12u_101i1/* Cyber other = DC */;
-    unsigned ter(0:10)  add12u_101ot;
     signed   ter(0:2)  add8s1i2/* Cyber other = DC */;
     signed   ter(0:8)  add8s1i1/* Cyber other = DC */;
     signed   ter(0:8)  add8s1ot;
-    unsigned ter(0:8)  add8u1i2/* Cyber other = DC */;
-    unsigned ter(0:8)  add8u1i1/* Cyber other = DC */;
-    unsigned ter(0:9)  add8u1ot;
-    unsigned ter(0:1)  JF_01/* Cyber other = DC */;
-    unsigned ter(0:8)  M_091_t/* Cyber other = DC */;
-    unsigned reg(0:4)  RG_i/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
     signed   reg(0:32)  RG_sum/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned reg(0:4)  RG_i/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
 
 ST1_01 :
-    add32s_321ot(0:32) ::= add32s_32@1(add32s_321i1(0:32), add32s_321i2(0:9)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s_322ot(0:32) ::= add32s_32@2(add32s_322i1(0:32), add32s_322i2(0:9)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add12u_10_101ot(0:10) ::= add12u_10_10@1(add12u_10_101i1(0:8), add12u_10_101i2(0:10)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    decr4s1ot(0:4) ::= decr4s@1(decr4s1i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    decr4u1ot(0:5) ::= decr4u@1(decr4u1i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    incr2u1ot(0:3) ::= incr2u@1(incr2u1i1(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    add32s1ot(0:32) ::= add32s@1(add32s1i1(0:32), add32s1i2(0:10)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add12u_101ot(0:10) ::= add12u_10@1(add12u_101i1(0:9), add12u_101i2(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    incr4u1ot(0:5) ::= incr4u@1(incr4u1i1(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    add32s1ot(0:32) ::= add32s@1(add32s1i1(0:32), add32s1i2(0:9)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
     add8s1ot(0:8) ::= add8s@1(add8s1i1(0:8), add8s1i2(0:2)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
-    add8u1ot(0:9) ::= add8u@1(add8u1i1(0:8), add8u1i2(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_01_d01(0:4) ::= (unsigned ter(0:4))(decoder(data_01_ad01(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:23 */
-    data_01_rd00(0:8) ::= dmux (data_01_ad00(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        case 0 :  data_01_rg00(0:8);
-        case 1 :  data_01_rg01(0:8);
-        case 2 :  data_01_rg02(0:8);
-        case 3 :  data_01_rg03(0:8);
-    };
-    data_01_rg00(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_01_we01(0:1) & data_01_d01(0:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default : 
-            nmux {
-                when (ST1_03d(0:1)) :  in0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35 */
-                default :  data_01_rg00(0:8);
-            };
-    };
-    data_01_rg01(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_01_we01(0:1) & data_01_d01(1:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_01_rg01(0:8);
-    };
-    data_01_rg02(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_01_we01(0:1) & data_01_d01(2:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_01_rg02(0:8);
-    };
-    data_01_rg03(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_01_we01(0:1) & data_01_d01(3:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_01_rg03(0:8);
-    };
-    data_11_d01(0:4) ::= (unsigned ter(0:4))(decoder(data_11_ad01(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:23 */
-    data_11_rd00(0:8) ::= dmux (data_11_ad00(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        case 0 :  data_11_rg00(0:8);
-        case 1 :  data_11_rg01(0:8);
-        case 2 :  data_11_rg02(0:8);
-        case 3 :  data_11_rg03(0:8);
-    };
-    data_11_rg00(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_11_we01(0:1) & data_11_d01(0:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_11_rg00(0:8);
-    };
-    data_11_rg01(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_11_we01(0:1) & data_11_d01(1:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_11_rg01(0:8);
-    };
-    data_11_rg02(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_11_we01(0:1) & data_11_d01(2:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_11_rg02(0:8);
-    };
-    data_11_rg03(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_11_we01(0:1) & data_11_d01(3:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_11_rg03(0:8);
-    };
-    data_21_d01(0:4) ::= (unsigned ter(0:4))(decoder(data_21_ad01(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:23 */
-    data_21_rd00(0:8) ::= dmux (data_21_ad00(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        case 0 :  data_21_rg00(0:8);
-        case 1 :  data_21_rg01(0:8);
-        case 2 :  data_21_rg02(0:8);
-        case 3 :  data_21_rg03(0:8);
-    };
-    data_21_rg00(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_21_we01(0:1) & data_21_d01(0:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_21_rg00(0:8);
-    };
-    data_21_rg01(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_21_we01(0:1) & data_21_d01(1:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_21_rg01(0:8);
-    };
-    data_21_rg02(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_21_we01(0:1) & data_21_d01(2:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_21_rg02(0:8);
-    };
-    data_21_rg03(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_21_we01(0:1) & data_21_d01(3:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_21_rg03(0:8);
-    };
-    data_31_d01(0:4) ::= (unsigned ter(0:4))(decoder(data_31_ad01(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:23 */
-    data_31_rd00(0:8) ::= dmux (data_31_ad00(0:2)) { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        case 0 :  data_31_rg00(0:8);
-        case 1 :  data_31_rg01(0:8);
-        case 2 :  data_31_rg02(0:8);
-        case 3 :  data_31_rg03(0:8);
-    };
-    data_31_rg00(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_31_we01(0:1) & data_31_d01(0:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_31_rg00(0:8);
-    };
-    data_31_rg01(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_31_we01(0:1) & data_31_d01(1:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_31_rg01(0:8);
-    };
-    data_31_rg02(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_31_we01(0:1) & data_31_d01(2:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_31_rg02(0:8);
-    };
-    data_31_rg03(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:23 */
-        when ((unsigned ter(0:1))(data_31_we01(0:1) & data_31_d01(3:1))) :  M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        default :  data_31_rg03(0:8);
-    };
-    M_091_t(0:8) ::= dmux (decr4s1ot(2:2)) { 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        case 0 :  data_01_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        case 1 :  data_11_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        case 2 :  data_21_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        case 3 :  data_31_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    data1_rd00(0:8) ::= dmux (RG_i(0:4)) { 	/* line# ../benchmarks/ave16/ave16.c:23 */
+        case 0 :  data1_rg00(0:8);
+        case 1 :  data1_rg01(0:8);
+        case 2 :  data1_rg02(0:8);
+        case 3 :  data1_rg03(0:8);
+        case 4 :  data1_rg04(0:8);
+        case 5 :  data1_rg05(0:8);
+        case 6 :  data1_rg06(0:8);
+        case 7 :  data1_rg07(0:8);
+        case 8 :  data1_rg08(0:8);
+        case 9 :  data1_rg09(0:8);
+        case 10 :  data1_rg10(0:8);
+        case 11 :  data1_rg11(0:8);
+        case 12 :  data1_rg12(0:8);
+        case 13 :  data1_rg13(0:8);
+        case 14 :  data1_rg14(0:8);
+        case 15 :  data1_rg15(0:8);
     };
     add8s1i1(0:8) ::= add32s1ot(20:8); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
     add8s1i2(0:2) ::= 0(0:1) :: (add32s1ot(0:1) & |>add32s1ot(28:4)); 	/* line# ../benchmarks/ave16/ave16.c:40,42 */
-    add12u_101i1(0:9) ::= add8u1ot(0:9); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add12u_101i2(0:8) ::= data_31_rg00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i1(0:32) ::= add32s_322ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s1i2(0:10) ::= 0(0:1) :: add8u1ot(0:9); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    incr2u1i1(0:2) ::= RG_i(2:2); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    decr4u1i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    decr4s1i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    add12u_10_101i1(0:8) ::= in0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35,40 */
-    add12u_10_101i2(0:10) ::= add12u_101ot(0:10); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s_321i1(0:32) ::= RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s_321i2(0:9) ::= 0(0:1) :: data_01_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s_322i1(0:32) ::= add32s_321ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    add32s_322i2(0:9) ::= 0(0:1) :: data_31_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    data_01_ad01(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11_ad01(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21_ad01(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_31_ad01(0:2) ::= RG_i(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    TR_01(0:3) ::= nmux {
-        when (ST1_01d(0:1)) :  7(0:3); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-        when (ST1_03d(0:1)) :  0(0:3); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    add32s1i1(0:32) ::= RG_sum(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    add32s1i2(0:9) ::= 0(0:1) :: data1_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    incr4u1i1(0:4) ::= RG_i(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    RG_sum(0:32) ::= nmux {
+        when (ST1_01d(0:1)) :  0(0:24) :: in0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35,36 */
+        when (ST1_02d(0:1)) :  add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
     };
     RG_i(0:4) ::= nmux {
-        when ((unsigned ter(0:1))(ST1_01d(0:1) | ST1_03d(0:1))) :  (unsigned ter(0:4))(TR_01(0:3) :: 1(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:32,39 */
-        when (ST1_02d(0:1)) :  decr4u1ot(1:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-        when (ST1_04d(0:1)) :  0(0:2) :: incr2u1ot(1:2); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    };
-    RG_sum(0:32) ::= nmux {
-        when (ST1_03d(0:1)) :  0(0:22) :: add12u_10_101ot(0:10); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        when (ST1_04d(0:1)) :  add32s1ot(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+        when (ST1_01d(0:1)) :  1(0:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+        when (ST1_02d(0:1)) :  incr4u1ot(1:4); 	/* line# ../benchmarks/ave16/ave16.c:39 */
     };
     out0(0:8) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:39 */
-        when ((unsigned ter(0:1))(ST1_04d(0:1) & incr2u1ot(0:1))) :  add8s1ot(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
+        when ((unsigned ter(0:1))(ST1_02d(0:1) & incr4u1ot(0:1))) :  add8s1ot(0:8); 	/* line# ../benchmarks/ave16/ave16.c:42,43 */
         default :  0(0:8);
     };
-    JF_01(0:1) ::= ~decr4u1ot(0:1) & |>decr4u1ot(1:4); 	/* line# ../benchmarks/ave16/ave16.c:32 */
-    add8u1i1(0:8) ::= nmux {
-        when (ST1_04d(0:1)) :  data_11_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        when (ST1_03d(0:1)) :  data_11_rg00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    data1_rg00(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  in0(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35 */
+        default :  data1_rg00(0:8);
     };
-    add8u1i2(0:8) ::= nmux {
-        when (ST1_04d(0:1)) :  data_21_rd00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-        when (ST1_03d(0:1)) :  data_21_rg00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    data1_rg01(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg00(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg01(0:8);
     };
-    data_01_ad00(0:2) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when ((unsigned ter(0:1))(ST1_02d(0:1) & ~|>decr4s1ot(2:2))) :  decr4s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when (ST1_04d(0:1)) :  RG_i(2:2);
+    data1_rg02(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg01(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg02(0:8);
     };
-    data_01_we01(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>RG_i(2:2)); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11_ad00(0:2) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when ((unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s1ot(2:2) ^ 1(0:2)))) :  decr4s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when (ST1_04d(0:1)) :  RG_i(2:2);
+    data1_rg03(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg02(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg03(0:8);
     };
-    data_11_we01(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(RG_i(2:2) ^ 1(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21_ad00(0:2) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when ((unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s1ot(2:2) ^ 2(0:2)))) :  decr4s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when (ST1_04d(0:1)) :  RG_i(2:2);
+    data1_rg04(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg03(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg04(0:8);
     };
-    data_21_we01(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(RG_i(2:2) ^ 2(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_31_ad00(0:2) ::= nmux { 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when ((unsigned ter(0:1))(ST1_02d(0:1) & ~|>(decr4s1ot(2:2) ^ 3(0:2)))) :  decr4s1ot(0:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-        when (ST1_04d(0:1)) :  RG_i(2:2);
+    data1_rg05(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg04(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg05(0:8);
     };
-    data_31_we01(0:1) ::= (unsigned ter(0:1))(ST1_02d(0:1) & ~|>(RG_i(2:2) ^ 3(0:2))); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    ST1_01d(0:1) ::= (unsigned ter(0:1))(~|>B01_streg(0:2));
-    ST1_02d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:2) ^ ST1_02(0:2)));
-    ST1_03d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:2) ^ ST1_03(0:2)));
-    ST1_04d(0:1) ::= (unsigned ter(0:1))(~|>(B01_streg(0:2) ^ ST1_04(0:2)));
-    B01_streg(0:2) ::= nmux {
+    data1_rg06(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg05(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg06(0:8);
+    };
+    data1_rg07(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg06(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg07(0:8);
+    };
+    data1_rg08(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg07(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg08(0:8);
+    };
+    data1_rg09(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg08(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg09(0:8);
+    };
+    data1_rg10(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg09(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg10(0:8);
+    };
+    data1_rg11(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg10(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg11(0:8);
+    };
+    data1_rg12(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg11(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg12(0:8);
+    };
+    data1_rg13(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg12(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg13(0:8);
+    };
+    data1_rg14(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg13(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg14(0:8);
+    };
+    data1_rg15(0:8) ::= nmux {
+        when (ST1_01d(0:1)) :  data1_rg14(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        default :  data1_rg15(0:8);
+    };
+    ST1_01d(0:1) ::= (unsigned ter(0:1))(~B01_streg(0:1));
+    ST1_02d(0:1) ::= B01_streg(0:1);
+    B01_streg(0:1) ::= nmux {
+        when (ST1_01d(0:1)) :  ST1_02(0:1);
         when (ST1_02d(0:1)) : 
-            nmux {
-                when (JF_01(0:1)) :  ST1_02(0:2);
-                when (!JF_01(0:1)) :  ST1_03(0:2);
-                default :  ST1_01(0:2);
-            };
-        when (ST1_03d(0:1)) :  ST1_04(0:2);
-        when (ST1_04d(0:1)) : 
             nmux { 	/* line# ../benchmarks/ave16/ave16.c:39 */
-                when (!incr2u1ot(0:1)) :  ST1_04(0:2);
-                default :  ST1_01(0:2);
+                when (!incr4u1ot(0:1)) :  ST1_02(0:1);
+                default :  ST1_01(0:1);
             };
-        default :  (unsigned ter(0:2))(0(0:1) :: ST1_01d(0:1));
+        default :  ST1_01(0:1);
     };
     goto ST1_01;
 }
@@ -310,15 +182,9 @@ ST1_01 :
 ##@CLK  100000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  add8u      1  (u)+              8,9    3000     47
-#  2  add8s      1  (s)+              8,8    3000     49
-#  3  add12u_10    1  (u)+              9,10   3900     74
-#  4  add32s     1  (s)+              32,32  10600   208
-#  5  incr2u     1  (u)INCR           2,3    1000      3
-#  6  decr4u     1  (u)DECR           4,5    1600      9
-#  7  decr4s     1  (s)DECR           4,4    1500      9
-#  8  add12u_10_10    1  (u)+              10,10  3900     74
-#  9  add32s_32    2  (s)+              32,32  10600   208
+#  1  add8s      1  (s)+              8,8    3000     49
+#  2  add32s     1  (s)+              32,32  10600   208
+#  3  incr4u     1  (u)INCR           4,5    1300     10
 #@END
 
 #@MCNT %AUTO%.MCNT
@@ -329,49 +195,13 @@ ST1_01 :
 #    KIND	R1,W1
 #    BITWIDTH	32
 #    DELAY	0
-#    ARRAY_DIV	4
-#    ARRAY_DIV_INDEX	0
-#    ARRAY_DIV_NAME	data_0
-#}
-#@MCNT {
-#    NAME	data[]
-#    LIMIT	1
-#    KIND	R1,W1
-#    BITWIDTH	32
-#    DELAY	0
-#    ARRAY_DIV	4
-#    ARRAY_DIV_INDEX	1
-#    ARRAY_DIV_NAME	data_1
-#}
-#@MCNT {
-#    NAME	data[]
-#    LIMIT	1
-#    KIND	R1,W1
-#    BITWIDTH	32
-#    DELAY	0
-#    ARRAY_DIV	4
-#    ARRAY_DIV_INDEX	2
-#    ARRAY_DIV_NAME	data_2
-#}
-#@MCNT {
-#    NAME	data[]
-#    LIMIT	1
-#    KIND	R1,W1
-#    BITWIDTH	32
-#    DELAY	0
-#    ARRAY_DIV	4
-#    ARRAY_DIV_INDEX	3
-#    ARRAY_DIV_NAME	data_3
 #}
 ##@END { test }
 
 #@MLMT %AUTO%.MLMT
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  data[]     1  R1,W1            32x4     0  data_0         	
-#  2  data[]     1  R1,W1            32x4     0  data_1         	
-#  3  data[]     1  R1,W1            32x4     0  data_2         	
-#  4  data[]     1  R1,W1            32x4     0  data_3         	
+#  1  data[]     1  R1              32x16     0                 	
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB

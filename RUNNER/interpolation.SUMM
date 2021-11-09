@@ -29,39 +29,39 @@ bdlpars  ../benchmarks/interpolation_filter/interpolation.c
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  *  : 20  (9bit:2, 16bit:18)
-  +  : 18  (3bit:1, 16bit:17)
-  ~|>:  2  (1bit:2)
-  INCR:  2  (1bit:1, 3bit:1)
-  Data transfer : 176
+  *  : 22  (9bit:2, 16bit:20)
+  +  : 19  (16bit:19)
+  ~|>:  1  (1bit:1)
+  INCR:  1  (1bit:1)
+  Data transfer : 171
 
  === array / memory ===
-  read  : 17
+  read  :  9
   write :  6
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 4 / 4 / 4.00
+[Performance index max/min/ave] 3 / 3 / 3.00
 
   Module Name         : interpolation
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :     23,883
+  Total Area          :     28,711
     Sequential        :      1,032
-    Combinational     :     22,851
+    Combinational     :     27,679
 
-  Latency Index       :          8
-  Total States        :          4
+  Latency Index       :          4
+  Total States        :          3
 
   Clock Period        :       10ns
-  Critical Path Delay :     7.74ns
+  Critical Path Delay :     6.81ns
 
-  Net                 :     17,421
-  Pin Pair            :     36,658
+  Net                 :     20,676
+  Pin Pair            :     43,205
 
   Port                :         44
     In                :         27
     Out               :         17
 
-TOTAL AREA 23,883 (FU: 22,096 + REG: 1,032 + MUX: 739 + DEC: 0 + MISC: 16) + pin pair 36,658(net 17,421) + 1FSM of 4state
+TOTAL AREA 28,711 (FU: 27,404 + REG: 1,032 + MUX: 271 + DEC: 0 + MISC: 4) + pin pair 43,205(net 20,676) + 1FSM of 3state
 ##### CyberII Normal finish (automatic scheduling mode) [interpolation] #####
 

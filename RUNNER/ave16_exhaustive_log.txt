@@ -11,1271 +11,28 @@ FILE_W/O E: ave16
 FILE_NameE: ave16.c
 PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
 Started: Parsing
-CLASS_COUNT: 3
+CLASS_COUNT: 7
 Finished: Parsing
 Started: Brute Force
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
-	Added :704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 1
-	
-	
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,-
-	Added :2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 2
-	
-	
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,-
-	Added :1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 3
-	
-	
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,-
-	Added :2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 4
-	
-	
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 5
-	
-	
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 681,7,288,270,108,0,1289,623,7,7,7.00,15,-,1.4801ns,-,-,-,-,63,-,-
-	Added :681,7,288,270,108,0,1289,623,7,7,7.00,15,-,1.4801ns,-,-,-,-,63,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 6
-	
-
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2322,20,899,846,507,0,4671,2070,20,20,20.00,70,-,3.64ns,-,-,-,-,48,-,-
-	Added :2322,20,899,846,507,0,4671,2070,20,20,20.00,70,-,3.64ns,-,-,-,-,48,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 7
-	
-
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 978,7,488,270,198,0,2062,998,7,7,7.00,22,-,2.27ns,-,-,-,-,47,-,-
-	Added :978,7,488,270,198,0,2062,998,7,7,7.00,22,-,2.27ns,-,-,-,-,47,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 8
-	
-
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1536,7,902,276,323,0,3535,1702,7,7,7.00,35,-,2.96ns,-,-,-,-,39,-,-
-	Added :1536,7,902,276,323,0,3535,1702,7,7,7.00,35,-,2.96ns,-,-,-,-,39,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 9
-	
-
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2334,6,1731,276,276,0,5064,2545,6,6,6.00,51,-,3.3401ns,-,-,-,-,34,-,-
-	Added :2334,6,1731,276,276,0,5064,2545,6,6,6.00,51,-,3.3401ns,-,-,-,-,34,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 10
-	
-
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
-	Added :704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 11
-	
-CLASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,-
-	Added :2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 12
-	
-CLASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,-
-	Added :1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 13
-	
-CLASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,-
-	Added :2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 14
-	
-CLASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 15
-	
-CLASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 761,8,278,282,180,0,1527,741,8,8,8.00,21,-,1.6801ns,-,-,-,-,48,-,-
-	Added :761,8,278,282,180,0,1527,741,8,8,8.00,21,-,1.6801ns,-,-,-,-,48,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 16
-	
-LASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1924,13,891,654,336,0,3818,1755,13,13,13.00,43,-,3.4101ns,-,-,-,-,25,-,-
-	Added :1924,13,891,654,336,0,3818,1755,13,13,13.00,43,-,3.4101ns,-,-,-,-,25,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 17
-	
-LASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 905,8,481,270,137,0,1891,924,8,8,8.00,17,-,2.27ns,-,-,-,-,32,-,-
-	Added :905,8,481,270,137,0,1891,924,8,8,8.00,17,-,2.27ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 18
-	
-LASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1950,8,935,318,642,0,4888,2214,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,-
-	Added :1950,8,935,318,642,0,4888,2214,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 19
-	
-LASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3542,8,2164,876,408,0,7062,3493,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,-
-	Added :3542,8,2164,876,408,0,7062,3493,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 20
-	
-LASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 812,8,274,264,243,0,1790,859,8,8,8.00,31,-,1.7301ns,-,-,-,-,40,-,-
-	Added :812,8,274,264,243,0,1790,859,8,8,8.00,31,-,1.7301ns,-,-,-,-,40,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 21
-	
-ASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1682,9,1094,432,133,0,3352,1693,9,9,9.00,23,-,3.4101ns,-,-,-,-,13,-,-
-	Added :1682,9,1094,432,133,0,3352,1693,9,9,9.00,23,-,3.4101ns,-,-,-,-,13,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 22
-	
-ASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 930,10,291,282,314,0,2164,995,10,10,10.00,43,-,1.8051ns,-,-,-,-,32,-,-
-	Added :930,10,291,282,314,0,2164,995,10,10,10.00,43,-,1.8051ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 23
-	
-ASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1365,8,891,252,205,0,3123,1542,8,8,8.00,17,-,2.96ns,-,-,-,-,16,-,-
-	Added :1365,8,891,252,205,0,3123,1542,8,8,8.00,17,-,2.96ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 24
-	
-ASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 4680,12,2022,786,1707,0,11415,4783,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,-
-	Added :4680,12,2022,786,1707,0,11415,4783,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 25
-	
-ASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1389,6,267,642,438,0,2958,1361,6,6,6.00,42,-,1.8201ns,-,-,-,-,34,-,-
-	Added :1389,6,267,642,438,0,2958,1361,6,6,6.00,42,-,1.8201ns,-,-,-,-,34,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 26
-	
-SS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 27
-	
-SS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1772,8,285,660,766,0,4101,1742,8,8,8.00,61,-,1.8951ns,-,-,-,-,26,-,-
-	Added :1772,8,285,660,766,0,4101,1742,8,8,8.00,61,-,1.8951ns,-,-,-,-,26,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 28
-	
-SS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3086,10,741,720,1526,0,7717,3085,10,10,10.00,99,-,3.1401ns,-,-,-,-,20,-,-
-	Added :3086,10,741,720,1526,0,7717,3085,10,10,10.00,99,-,3.1401ns,-,-,-,-,20,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 29
-	
-SS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 30
-	
-SS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 31
-
-	
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 32
-
-	
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
-	Added :31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 33
-
-	
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,-
-	Added :23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 34
-
-	
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 35
-
-	
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 269,3,31,138,52,25,467,218,4,4,4.00,23,0,0.52ns,-,-,-,-,31,-,-
-	Added :269,3,31,138,52,25,467,218,4,4,4.00,23,0,0.52ns,-,-,-,-,31,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 36
-
-
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 230,2,18,126,44,25,385,181,3,3,3.00,17,0,0.52ns,-,-,-,-,16,-,-
-	Added :230,2,18,126,44,25,385,181,3,3,3.00,17,0,0.52ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 37
-
-
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 79,3,23,36,12,0,152,74,4,4,4.00,8,0,0.4ns,-,-,-,-,23,-,-
-	Added :79,3,23,36,12,0,152,74,4,4,4.00,8,0,0.4ns,-,-,-,-,23,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 38
-
-
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 76,3,21,36,11,0,145,71,4,4,4.00,8,0,0.4ns,-,-,-,-,19,-,-
-	Added :76,3,21,36,11,0,145,71,4,4,4.00,8,0,0.4ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 39
-
-
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 54,2,18,30,5,0,91,45,3,3,3.00,1,0,0.26ns,-,-,-,-,16,-,-
-	Added :54,2,18,30,5,0,91,45,3,3,3.00,1,0,0.26ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 40
-
-
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 41
-
-CLASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 42
-
-CLASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
-	Added :31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 43
-
-CLASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,-
-	Added :23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 44
-
-CLASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 45
-
-CLASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 254,3,21,132,50,28,441,199,4,4,4.00,23,0,0.47ns,-,-,-,-,23,-,-
-	Added :254,3,21,132,50,28,441,199,4,4,4.00,23,0,0.47ns,-,-,-,-,23,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 46
-
-LASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 218,2,10,120,43,28,369,166,3,3,3.00,17,0,0.47ns,-,-,-,-,8,-,-
-	Added :218,2,10,120,43,28,369,166,3,3,3.00,17,0,0.47ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 47
-
-LASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 243,3,16,126,50,28,429,194,4,4,4.00,23,0,0.47ns,-,-,-,-,15,-,-
-	Added :243,3,16,126,50,28,429,194,4,4,4.00,23,0,0.47ns,-,-,-,-,15,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 48
-
-LASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 137,5,54,54,22,0,287,149,6,5,5.50,7,0,0.4ns,-,-,-,-,19,-,-
-	Added :137,5,54,54,22,0,287,149,6,5,5.50,7,0,0.4ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 49
-
-LASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 97,4,35,42,15,0,196,105,5,4,4.50,5,0,0.412ns,-,-,-,-,16,-,-
-	Added :97,4,35,42,15,0,196,105,5,4,4.50,5,0,0.412ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 50
-
-LASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 239,3,17,132,48,20,415,196,4,4,4.00,22,0,0.33ns,-,-,-,-,19,-,-
-	Added :239,3,17,132,48,20,415,196,4,4,4.00,22,0,0.33ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 51
-
-ASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 198,2,5,114,42,20,337,161,3,3,3.00,17,0,0.33ns,-,-,-,-,4,-,-
-	Added :198,2,5,114,42,20,337,161,3,3,3.00,17,0,0.33ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 52
-
-ASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 258,3,34,132,48,20,468,219,4,4,4.00,24,0,0.451ns,-,-,-,-,11,-,-
-	Added :258,3,34,132,48,20,468,219,4,4,4.00,24,0,0.451ns,-,-,-,-,11,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 53
-
-ASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 220,3,10,120,48,20,394,189,4,4,4.00,22,0,0.33ns,-,-,-,-,7,-,-
-	Added :220,3,10,120,48,20,394,189,4,4,4.00,22,0,0.33ns,-,-,-,-,7,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 54
-
-ASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 175,6,101,48,18,0,409,212,7,6,6.50,8,0,0.402ns,-,-,-,-,14,-,-
-	Added :175,6,101,48,18,0,409,212,7,6,6.50,8,0,0.402ns,-,-,-,-,14,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 55
-
-ASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 56
-
-SS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 57
-
-SS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 61,2,28,30,2,0,92,47,3,3,3.00,1,0,0.388ns,-,-,-,-,8,-,-
-	Added :61,2,28,30,2,0,92,47,3,3,3.00,1,0,0.388ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 58
-
-SS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 100,2,68,30,2,0,198,97,3,3,3.00,0,0,0.496ns,-,-,-,-,4,-,-
-	Added :100,2,68,30,2,0,198,97,3,3,3.00,0,0,0.496ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 59
-
-SS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 60
-
-SS_COUNT: 
-ASS_COUNT: 
 Finished: Brute Force
-The program labeled: ave16_exhaustive took -46 seconds.
+The program labeled: ave16_exhaustive took 0 seconds.
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Directory: ../benchmarks/ave16/
+FILE_W/O E: ave16
+FILE_NameE: ave16.c
+PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
+Started: Parsing
+CLASS_COUNT: 7
+Finished: Parsing
+Started: Brute Force
+Finished: Brute Force
+The program labeled: ave16_exhaustive took 0 seconds.
 
 
 
@@ -1291,1389 +48,6 @@ Started: Parsing
 CLASS_COUNT: 3
 Finished: Parsing
 Started: Brute Force
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
-	Added :704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 1
-	
-	
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,-
-	Added :2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 2
-	
-	
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,-
-	Added :1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 3
-	
-	
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,-
-	Added :2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 4
-	
-	
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 5
-	
-	
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 681,7,288,270,108,0,1289,623,7,7,7.00,15,-,1.4801ns,-,-,-,-,63,-,-
-	Added :681,7,288,270,108,0,1289,623,7,7,7.00,15,-,1.4801ns,-,-,-,-,63,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 6
-	
-
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2322,20,899,846,507,0,4671,2070,20,20,20.00,70,-,3.64ns,-,-,-,-,48,-,-
-	Added :2322,20,899,846,507,0,4671,2070,20,20,20.00,70,-,3.64ns,-,-,-,-,48,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 7
-	
-
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 978,7,488,270,198,0,2062,998,7,7,7.00,22,-,2.27ns,-,-,-,-,47,-,-
-	Added :978,7,488,270,198,0,2062,998,7,7,7.00,22,-,2.27ns,-,-,-,-,47,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 8
-	
-
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1536,7,902,276,323,0,3535,1702,7,7,7.00,35,-,2.96ns,-,-,-,-,39,-,-
-	Added :1536,7,902,276,323,0,3535,1702,7,7,7.00,35,-,2.96ns,-,-,-,-,39,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 9
-	
-
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2334,6,1731,276,276,0,5064,2545,6,6,6.00,51,-,3.3401ns,-,-,-,-,34,-,-
-	Added :2334,6,1731,276,276,0,5064,2545,6,6,6.00,51,-,3.3401ns,-,-,-,-,34,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 10
-	
-
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,-
-	Added :704,18,267,252,131,0,1618,775,18,18,18.00,54,-,1.4801ns,-,-,-,-,46,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 11
-	
-CLASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,-
-	Added :2394,17,465,1182,707,0,4620,1856,17,17,17.00,40,-,2.4ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 12
-	
-CLASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,-
-	Added :1217,12,470,432,272,0,2719,1251,12,12,12.00,43,-,2.27ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 13
-	
-CLASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,-
-	Added :2657,8,884,1188,551,0,5090,2294,8,8,8.00,34,-,2.7201ns,-,-,-,-,12,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 14
-	
-CLASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 15
-	
-CLASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 761,8,278,282,180,0,1527,741,8,8,8.00,21,-,1.6801ns,-,-,-,-,48,-,-
-	Added :761,8,278,282,180,0,1527,741,8,8,8.00,21,-,1.6801ns,-,-,-,-,48,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 16
-	
-LASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1924,13,891,654,336,0,3818,1755,13,13,13.00,43,-,3.4101ns,-,-,-,-,25,-,-
-	Added :1924,13,891,654,336,0,3818,1755,13,13,13.00,43,-,3.4101ns,-,-,-,-,25,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 17
-	
-LASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 905,8,481,270,137,0,1891,924,8,8,8.00,17,-,2.27ns,-,-,-,-,32,-,-
-	Added :905,8,481,270,137,0,1891,924,8,8,8.00,17,-,2.27ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 18
-	
-LASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1950,8,935,318,642,0,4888,2214,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,-
-	Added :1950,8,935,318,642,0,4888,2214,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 19
-	
-LASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3542,8,2164,876,408,0,7062,3493,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,-
-	Added :3542,8,2164,876,408,0,7062,3493,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 20
-	
-LASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 812,8,274,264,243,0,1790,859,8,8,8.00,31,-,1.7301ns,-,-,-,-,40,-,-
-	Added :812,8,274,264,243,0,1790,859,8,8,8.00,31,-,1.7301ns,-,-,-,-,40,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 21
-	
-ASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1682,9,1094,432,133,0,3352,1693,9,9,9.00,23,-,3.4101ns,-,-,-,-,13,-,-
-	Added :1682,9,1094,432,133,0,3352,1693,9,9,9.00,23,-,3.4101ns,-,-,-,-,13,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 22
-	
-ASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 930,10,291,282,314,0,2164,995,10,10,10.00,43,-,1.8051ns,-,-,-,-,32,-,-
-	Added :930,10,291,282,314,0,2164,995,10,10,10.00,43,-,1.8051ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 23
-	
-ASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1365,8,891,252,205,0,3123,1542,8,8,8.00,17,-,2.96ns,-,-,-,-,16,-,-
-	Added :1365,8,891,252,205,0,3123,1542,8,8,8.00,17,-,2.96ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 24
-	
-ASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 4680,12,2022,786,1707,0,11415,4783,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,-
-	Added :4680,12,2022,786,1707,0,11415,4783,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 25
-	
-ASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1389,6,267,642,438,0,2958,1361,6,6,6.00,42,-,1.8201ns,-,-,-,-,34,-,-
-	Added :1389,6,267,642,438,0,2958,1361,6,6,6.00,42,-,1.8201ns,-,-,-,-,34,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 26
-	
-SS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 27
-	
-SS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1772,8,285,660,766,0,4101,1742,8,8,8.00,61,-,1.8951ns,-,-,-,-,26,-,-
-	Added :1772,8,285,660,766,0,4101,1742,8,8,8.00,61,-,1.8951ns,-,-,-,-,26,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 28
-	
-SS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3086,10,741,720,1526,0,7717,3085,10,10,10.00,99,-,3.1401ns,-,-,-,-,20,-,-
-	Added :3086,10,741,720,1526,0,7717,3085,10,10,10.00,99,-,3.1401ns,-,-,-,-,20,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 29
-	
-SS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,-
-	Added :3401,4,2129,972,290,0,6824,3426,4,4,4.00,10,-,3.46ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 30
-	
-SS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 31
-
-	
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 32
-
-	
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
-	Added :31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 33
-
-	
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,-
-	Added :23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 34
-
-	
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 35
-
-	
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 269,3,31,138,52,25,467,218,4,4,4.00,23,0,0.52ns,-,-,-,-,31,-,-
-	Added :269,3,31,138,52,25,467,218,4,4,4.00,23,0,0.52ns,-,-,-,-,31,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 36
-
-
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 230,2,18,126,44,25,385,181,3,3,3.00,17,0,0.52ns,-,-,-,-,16,-,-
-	Added :230,2,18,126,44,25,385,181,3,3,3.00,17,0,0.52ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 37
-
-
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 79,3,23,36,12,0,152,74,4,4,4.00,8,0,0.4ns,-,-,-,-,23,-,-
-	Added :79,3,23,36,12,0,152,74,4,4,4.00,8,0,0.4ns,-,-,-,-,23,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 38
-
-
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 76,3,21,36,11,0,145,71,4,4,4.00,8,0,0.4ns,-,-,-,-,19,-,-
-	Added :76,3,21,36,11,0,145,71,4,4,4.00,8,0,0.4ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 39
-
-
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 54,2,18,30,5,0,91,45,3,3,3.00,1,0,0.26ns,-,-,-,-,16,-,-
-	Added :54,2,18,30,5,0,91,45,3,3,3.00,1,0,0.26ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 40
-
-
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 41
-
-CLASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 42
-
-CLASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,-
-	Added :31,2,5,24,2,0,41,22,3,3,3.00,0,0,0.17ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 43
-
-CLASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,-
-	Added :23,2,3,18,2,0,32,18,3,3,3.00,0,0,0.14ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 44
-
-CLASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 45
-
-CLASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 254,3,21,132,50,28,441,199,4,4,4.00,23,0,0.47ns,-,-,-,-,23,-,-
-	Added :254,3,21,132,50,28,441,199,4,4,4.00,23,0,0.47ns,-,-,-,-,23,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 46
-
-LASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 218,2,10,120,43,28,369,166,3,3,3.00,17,0,0.47ns,-,-,-,-,8,-,-
-	Added :218,2,10,120,43,28,369,166,3,3,3.00,17,0,0.47ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 47
-
-LASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 243,3,16,126,50,28,429,194,4,4,4.00,23,0,0.47ns,-,-,-,-,15,-,-
-	Added :243,3,16,126,50,28,429,194,4,4,4.00,23,0,0.47ns,-,-,-,-,15,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 48
-
-LASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 137,5,54,54,22,0,287,149,6,5,5.50,7,0,0.4ns,-,-,-,-,19,-,-
-	Added :137,5,54,54,22,0,287,149,6,5,5.50,7,0,0.4ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 49
-
-LASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 97,4,35,42,15,0,196,105,5,4,4.50,5,0,0.412ns,-,-,-,-,16,-,-
-	Added :97,4,35,42,15,0,196,105,5,4,4.50,5,0,0.412ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 50
-
-LASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 239,3,17,132,48,20,415,196,4,4,4.00,22,0,0.33ns,-,-,-,-,19,-,-
-	Added :239,3,17,132,48,20,415,196,4,4,4.00,22,0,0.33ns,-,-,-,-,19,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 51
-
-ASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 198,2,5,114,42,20,337,161,3,3,3.00,17,0,0.33ns,-,-,-,-,4,-,-
-	Added :198,2,5,114,42,20,337,161,3,3,3.00,17,0,0.33ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 52
-
-ASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 258,3,34,132,48,20,468,219,4,4,4.00,24,0,0.451ns,-,-,-,-,11,-,-
-	Added :258,3,34,132,48,20,468,219,4,4,4.00,24,0,0.451ns,-,-,-,-,11,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 53
-
-ASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 220,3,10,120,48,20,394,189,4,4,4.00,22,0,0.33ns,-,-,-,-,7,-,-
-	Added :220,3,10,120,48,20,394,189,4,4,4.00,22,0,0.33ns,-,-,-,-,7,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 54
-
-ASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 175,6,101,48,18,0,409,212,7,6,6.50,8,0,0.402ns,-,-,-,-,14,-,-
-	Added :175,6,101,48,18,0,409,212,7,6,6.50,8,0,0.402ns,-,-,-,-,14,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 55
-
-ASS_COUNT: 
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,-
-	Added :42,2,10,30,2,0,53,29,3,3,3.00,0,0,0.17ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 56
-
-SS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 57
-
-SS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 61,2,28,30,2,0,92,47,3,3,3.00,1,0,0.388ns,-,-,-,-,8,-,-
-	Added :61,2,28,30,2,0,92,47,3,3,3.00,1,0,0.388ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 58
-
-SS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 100,2,68,30,2,0,198,97,3,3,3.00,0,0,0.496ns,-,-,-,-,4,-,-
-	Added :100,2,68,30,2,0,198,97,3,3,3.00,0,0,0.496ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 59
-
-SS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 0,1,0,0,0,0,9,1,1,1,1.00,0,0,0ns,-,-,-,-,1,-,-
-	RESULTS set to 10000000
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 60
-
-SS_COUNT: 
-ASS_COUNT: 
-Finished: Brute Force
-The program labeled: ave16_exhaustive took -45 seconds.
-
-
-
-
-
-NEW EXECUTION:::::::::::
-Seed:1
-Added CSV header
-Directory: ../benchmarks/ave16/
-FILE_W/O E: ave16
-FILE_NameE: ave16.c
-PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
-Started: Parsing
-CLASS_COUNT: 3
-Finished: Parsing
-Started: Brute Force
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,-
-	Added :783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 1
-	
-	
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,-
-	Added :1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 2
-	
-	
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,-
-	Added :1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 3
-	
-	
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,-
-	Added :2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 4
-	
-	
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
-	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 5
-	
-	
-ASS_COUNT: 
 Trying to call synthesis
 
 
@@ -2691,9 +65,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 6
+Success: 1
 	
-
+	
 	
 Trying to call synthesis
 
@@ -2712,6 +86,111 @@ Starting Synthesis
 Finished Synthesis
 
 
+Success: 2
+	
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,-
+	Added :956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 3
+	
+	
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,-
+	Added :1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 4
+	
+	
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,-
+	Added :2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 5
+	
+	
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,-
+	Added :783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 6
+	
+
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,-
+	Added :1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
 Success: 7
 	
 
@@ -2727,8 +206,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,-
-	Added :956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,- to results directory file
+	RESULTS: 1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,-
+	Added :1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2748,8 +227,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,-
-	Added :1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,- to results directory file
+	RESULTS: 2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,-
+	Added :2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2769,8 +248,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,-
-	Added :2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,- to results directory file
+	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
+	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2790,8 +269,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,-
-	Added :783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,- to results directory file
+	RESULTS: 741,7,278,282,160,0,1501,708,7,7,7.00,21,-,1.6801ns,-,-,-,-,47,-,-
+	Added :741,7,278,282,160,0,1501,708,7,7,7.00,21,-,1.6801ns,-,-,-,-,47,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2811,8 +290,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,-
-	Added :1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,- to results directory file
+	RESULTS: 2017,13,891,684,396,0,4039,1774,13,13,13.00,46,-,3.665ns,-,-,-,-,25,-,-
+	Added :2017,13,891,684,396,0,4039,1774,13,13,13.00,46,-,3.665ns,-,-,-,-,25,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2832,8 +311,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,-
-	Added :1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,- to results directory file
+	RESULTS: 887,8,481,294,92,0,1785,864,8,8,8.00,20,-,2.1701ns,-,-,-,-,32,-,-
+	Added :887,8,481,294,92,0,1785,864,8,8,8.00,20,-,2.1701ns,-,-,-,-,32,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2853,8 +332,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,-
-	Added :2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,- to results directory file
+	RESULTS: 1934,8,935,318,626,0,4785,2125,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,-
+	Added :1934,8,935,318,626,0,4785,2125,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2874,8 +353,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
-	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
+	RESULTS: 3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,-
+	Added :3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2895,8 +374,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 741,7,278,282,160,0,1501,708,7,7,7.00,21,-,1.6801ns,-,-,-,-,47,-,-
-	Added :741,7,278,282,160,0,1501,708,7,7,7.00,21,-,1.6801ns,-,-,-,-,47,-,- to results directory file
+	RESULTS: 794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,-
+	Added :794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2916,8 +395,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2017,13,891,684,396,0,4039,1774,13,13,13.00,46,-,3.665ns,-,-,-,-,25,-,-
-	Added :2017,13,891,684,396,0,4039,1774,13,13,13.00,46,-,3.665ns,-,-,-,-,25,-,- to results directory file
+	RESULTS: 1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,-
+	Added :1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2937,8 +416,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 887,8,481,294,92,0,1785,864,8,8,8.00,20,-,2.1701ns,-,-,-,-,32,-,-
-	Added :887,8,481,294,92,0,1785,864,8,8,8.00,20,-,2.1701ns,-,-,-,-,32,-,- to results directory file
+	RESULTS: 913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,-
+	Added :913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2958,8 +437,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1934,8,935,318,626,0,4785,2125,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,-
-	Added :1934,8,935,318,626,0,4785,2125,8,8,8.00,55,-,2.96ns,-,-,-,-,30,-,- to results directory file
+	RESULTS: 1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,-
+	Added :1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -2979,8 +458,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,-
-	Added :3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,- to results directory file
+	RESULTS: 5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,-
+	Added :5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3000,8 +479,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,-
-	Added :794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,- to results directory file
+	RESULTS: 886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,-
+	Added :886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3021,8 +500,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,-
-	Added :1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,- to results directory file
+	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
+	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3042,8 +521,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,-
-	Added :913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,- to results directory file
+	RESULTS: 1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,-
+	Added :1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3063,8 +542,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,-
-	Added :1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,- to results directory file
+	RESULTS: 2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,-
+	Added :2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3084,8 +563,8 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,-
-	Added :5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,- to results directory file
+	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
+	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
@@ -3105,15 +584,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,-
-	Added :886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,- to results directory file
+	RESULTS: 1643,4,288,1002,303,25,2580,1164,5,4,4.50,25,0,2.0373ns,-,-,-,-,32,-,-
+	Added :1643,4,288,1002,303,25,2580,1164,5,4,4.50,25,0,2.0373ns,-,-,-,-,32,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 26
+
 	
-SS_COUNT: 
 	
 Trying to call synthesis
 
@@ -3126,15 +605,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
-	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
+	RESULTS: 1924,3,793,804,282,25,3470,1609,4,3,3.50,20,0,1.335ns,-,-,-,-,17,-,-
+	Added :1924,3,793,804,282,25,3470,1609,4,3,3.50,20,0,1.335ns,-,-,-,-,17,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 27
+
 	
-SS_COUNT: 
 
 Trying to call synthesis
 
@@ -3147,15 +626,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,-
-	Added :1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,- to results directory file
+	RESULTS: 1899,4,535,996,310,28,3137,1462,5,4,4.50,30,0,2.668ns,-,-,-,-,24,-,-
+	Added :1899,4,535,996,310,28,3137,1462,5,4,4.50,30,0,2.668ns,-,-,-,-,24,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 28
+
 	
-SS_COUNT: 
 CLASS_COUNT: 
 Trying to call synthesis
 
@@ -3168,15 +647,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,-
-	Added :2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,- to results directory file
+	RESULTS: 2255,4,854,996,343,20,3958,1916,5,4,4.50,42,0,3.2473ns,-,-,-,-,20,-,-
+	Added :2255,4,854,996,343,20,3958,1916,5,4,4.50,42,0,3.2473ns,-,-,-,-,20,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 29
+
 	
-SS_COUNT: 
 LASS_COUNT: 
 Trying to call synthesis
 
@@ -3189,15 +668,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
-	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
+	RESULTS: 1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,-
+	Added :1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 30
+
 	
-SS_COUNT: 
 ASS_COUNT: 
 Trying to call synthesis
 
@@ -3218,7 +697,7 @@ Finished Synthesis
 
 Success: 31
 
-	
+
 	
 Trying to call synthesis
 
@@ -3239,7 +718,7 @@ Finished Synthesis
 
 Success: 32
 
-	
+
 
 Trying to call synthesis
 
@@ -3260,7 +739,7 @@ Finished Synthesis
 
 Success: 33
 
-	
+
 CLASS_COUNT: 
 Trying to call synthesis
 
@@ -3281,7 +760,7 @@ Finished Synthesis
 
 Success: 34
 
-	
+
 LASS_COUNT: 
 Trying to call synthesis
 
@@ -3302,217 +781,7 @@ Finished Synthesis
 
 Success: 35
 
-	
-ASS_COUNT: 
-Trying to call synthesis
 
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1643,4,288,1002,303,25,2580,1164,5,4,4.50,25,0,2.0373ns,-,-,-,-,32,-,-
-	Added :1643,4,288,1002,303,25,2580,1164,5,4,4.50,25,0,2.0373ns,-,-,-,-,32,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 36
-
-
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1924,3,793,804,282,25,3470,1609,4,3,3.50,20,0,1.335ns,-,-,-,-,17,-,-
-	Added :1924,3,793,804,282,25,3470,1609,4,3,3.50,20,0,1.335ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 37
-
-
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1899,4,535,996,310,28,3137,1462,5,4,4.50,30,0,2.668ns,-,-,-,-,24,-,-
-	Added :1899,4,535,996,310,28,3137,1462,5,4,4.50,30,0,2.668ns,-,-,-,-,24,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 38
-
-
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2255,4,854,996,343,20,3958,1916,5,4,4.50,42,0,3.2473ns,-,-,-,-,20,-,-
-	Added :2255,4,854,996,343,20,3958,1916,5,4,4.50,42,0,3.2473ns,-,-,-,-,20,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 39
-
-
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,-
-	Added :1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 40
-
-
-ASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,-
-	Added :1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 41
-
-CLASS_COUNT: 
-	
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
-	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 42
-
-CLASS_COUNT: 
-
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1773,2,517,984,269,0,2812,1310,3,3,3.00,3,0,2.408ns,-,-,-,-,8,-,-
-	Added :1773,2,517,984,269,0,2812,1310,3,3,3.00,3,0,2.408ns,-,-,-,-,8,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 43
-
-CLASS_COUNT: 
-CLASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 2088,2,823,978,284,0,3520,1702,3,3,3.00,3,0,2.9273ns,-,-,-,-,4,-,-
-	Added :2088,2,823,978,284,0,3520,1702,3,3,3.00,3,0,2.9273ns,-,-,-,-,4,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 44
-
-CLASS_COUNT: 
-LASS_COUNT: 
-Trying to call synthesis
-
-
-Starting Synthesis
-	Successfully created attrs.h file.
-	Started: C_Pars
-	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
-	Started: BDL_TRAN
-	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
-
-	Finished BDL_TRAN
-	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
-	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
-	Added attribute string to attr, AREA, and Latency map.
-Finished Synthesis
-
-
-Success: 45
-
-CLASS_COUNT: 
 ASS_COUNT: 
 Trying to call synthesis
 
@@ -3531,9 +800,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 46
+Success: 36
 
-LASS_COUNT: 
+CLASS_COUNT: 
 	
 Trying to call synthesis
 
@@ -3552,9 +821,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 47
+Success: 37
 
-LASS_COUNT: 
+CLASS_COUNT: 
 
 Trying to call synthesis
 
@@ -3573,9 +842,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 48
+Success: 38
 
-LASS_COUNT: 
+CLASS_COUNT: 
 CLASS_COUNT: 
 Trying to call synthesis
 
@@ -3594,9 +863,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 49
+Success: 39
 
-LASS_COUNT: 
+CLASS_COUNT: 
 LASS_COUNT: 
 Trying to call synthesis
 
@@ -3615,9 +884,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 50
+Success: 40
 
-LASS_COUNT: 
+CLASS_COUNT: 
 ASS_COUNT: 
 Trying to call synthesis
 
@@ -3636,9 +905,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 51
+Success: 41
 
-ASS_COUNT: 
+LASS_COUNT: 
 	
 Trying to call synthesis
 
@@ -3657,9 +926,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 52
+Success: 42
 
-ASS_COUNT: 
+LASS_COUNT: 
 
 Trying to call synthesis
 
@@ -3678,9 +947,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 53
+Success: 43
 
-ASS_COUNT: 
+LASS_COUNT: 
 CLASS_COUNT: 
 Trying to call synthesis
 
@@ -3699,9 +968,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 54
+Success: 44
 
-ASS_COUNT: 
+LASS_COUNT: 
 LASS_COUNT: 
 Trying to call synthesis
 
@@ -3720,9 +989,9 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 55
+Success: 45
 
-ASS_COUNT: 
+LASS_COUNT: 
 ASS_COUNT: 
 Trying to call synthesis
 
@@ -3741,9 +1010,219 @@ Starting Synthesis
 Finished Synthesis
 
 
-Success: 56
+Success: 46
 
-SS_COUNT: 
+ASS_COUNT: 
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 47
+
+ASS_COUNT: 
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,-
+	Added :2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 48
+
+ASS_COUNT: 
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,-
+	Added :2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 49
+
+ASS_COUNT: 
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 50
+
+ASS_COUNT: 
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3978,3,288,1002,2678,0,9124,3180,4,4,4.00,10,0,1.8173ns,-,-,-,-,31,-,-
+	Added :3978,3,288,1002,2678,0,9124,3180,4,4,4.00,10,0,1.8173ns,-,-,-,-,31,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 51
+CLASS_COUNT: 
+	
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3816,2,793,798,2223,0,8838,3241,3,3,3.00,2,0,2.1596ns,-,-,-,-,16,-,-
+	Added :3816,2,793,798,2223,0,8838,3241,3,3,3.00,2,0,2.1596ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 52
+CLASS_COUNT: 
+	
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3601,3,743,996,1843,0,8022,3040,4,4,4.00,19,0,2.63ns,-,-,-,-,23,-,-
+	Added :3601,3,743,996,1843,0,8022,3040,4,4,4.00,19,0,2.63ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 53
+CLASS_COUNT: 
+	
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3790,3,1478,996,1290,0,7912,3516,4,4,4.00,26,0,3.59ns,-,-,-,-,19,-,-
+	Added :3790,3,1478,996,1290,0,7912,3516,4,4,4.00,26,0,3.59ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 54
+CLASS_COUNT: 
+	
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2296,2,793,798,670,0,4807,2174,3,3,3.00,35,0,1.9162ns,-,-,-,-,16,-,-
+	Added :2296,2,793,798,670,0,4807,2174,3,3,3.00,35,0,1.9162ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 55
+CLASS_COUNT: 
+	
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1538,2,267,990,278,0,2308,1034,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,-
+	Added :1538,2,267,990,278,0,2308,1034,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 56
+CLASS_COUNT: 
+
 	
 Trying to call synthesis
 
@@ -3763,8 +1242,8 @@ Finished Synthesis
 
 
 Success: 57
+CLASS_COUNT: 
 
-SS_COUNT: 
 
 Trying to call synthesis
 
@@ -3777,15 +1256,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,-
-	Added :2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,- to results directory file
+	RESULTS: 2164,2,725,984,446,0,3812,1736,3,3,3.00,9,0,2.63ns,-,-,-,-,8,-,-
+	Added :2164,2,725,984,446,0,3812,1736,3,3,3.00,9,0,2.63ns,-,-,-,-,8,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 58
+CLASS_COUNT: 
 
-SS_COUNT: 
 CLASS_COUNT: 
 Trying to call synthesis
 
@@ -3798,15 +1277,15 @@ Starting Synthesis
 	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
 
 	Finished BDL_TRAN
-	RESULTS: 2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,-
-	Added :2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,- to results directory file
+	RESULTS: 2736,2,1447,978,308,0,4821,2437,3,3,3.00,3,0,3.59ns,-,-,-,-,4,-,-
+	Added :2736,2,1447,978,308,0,4821,2437,3,3,3.00,3,0,3.59ns,-,-,-,-,4,-,- to results directory file
 	Added attribute string to attr, AREA, and Latency map.
 Finished Synthesis
 
 
 Success: 59
+CLASS_COUNT: 
 
-SS_COUNT: 
 LASS_COUNT: 
 Trying to call synthesis
 
@@ -3826,8 +1305,323 @@ Finished Synthesis
 
 
 Success: 60
+CLASS_COUNT: 
 
-SS_COUNT: 
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2756,3,278,996,1472,0,5785,2084,4,4,4.00,10,0,1.858ns,-,-,-,-,23,-,-
+	Added :2756,3,278,996,1472,0,5785,2084,4,4,4.00,10,0,1.858ns,-,-,-,-,23,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 61
+CLASS_COUNT: 
+CLASS_COUNT: 
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2772,2,785,792,1192,0,5944,2313,3,3,3.00,3,0,2.687ns,-,-,-,-,8,-,-
+	Added :2772,2,785,792,1192,0,5944,2313,3,3,3.00,3,0,2.687ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 62
+CLASS_COUNT: 
+CLASS_COUNT: 
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3384,3,736,990,1642,0,7268,2783,4,4,4.00,16,0,2.63ns,-,-,-,-,15,-,-
+	Added :3384,3,736,990,1642,0,7268,2783,4,4,4.00,16,0,2.63ns,-,-,-,-,15,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 63
+CLASS_COUNT: 
+CLASS_COUNT: 
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 4647,3,1498,996,2109,0,10604,4478,4,4,4.00,44,0,3.59ns,-,-,-,-,11,-,-
+	Added :4647,3,1498,996,2109,0,10604,4478,4,4,4.00,44,0,3.59ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 64
+CLASS_COUNT: 
+CLASS_COUNT: 
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2904,2,810,798,1223,0,6799,2988,3,3,3.00,73,0,2.3474ns,-,-,-,-,8,-,-
+	Added :2904,2,810,798,1223,0,6799,2988,3,3,3.00,73,0,2.3474ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 65
+CLASS_COUNT: 
+CLASS_COUNT: 
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2201,3,274,996,917,0,4148,1676,4,4,4.00,14,0,1.7673ns,-,-,-,-,19,-,-
+	Added :2201,3,274,996,917,0,4148,1676,4,4,4.00,14,0,1.7673ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 66
+CLASS_COUNT: 
+LASS_COUNT: 
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2385,2,780,786,816,0,4777,2023,3,3,3.00,3,0,2.2542ns,-,-,-,-,4,-,-
+	Added :2385,2,780,786,816,0,4777,2023,3,3,3.00,3,0,2.2542ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 67
+CLASS_COUNT: 
+LASS_COUNT: 
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2792,3,707,996,1069,0,5507,2339,4,4,4.00,20,0,3.0073ns,-,-,-,-,11,-,-
+	Added :2792,3,707,996,1069,0,5507,2339,4,4,4.00,20,0,3.0073ns,-,-,-,-,11,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 68
+CLASS_COUNT: 
+LASS_COUNT: 
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3396,3,1467,984,935,0,6629,3065,4,4,4.00,10,0,3.59ns,-,-,-,-,7,-,-
+	Added :3396,3,1467,984,935,0,6629,3065,4,4,4.00,10,0,3.59ns,-,-,-,-,7,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 69
+CLASS_COUNT: 
+LASS_COUNT: 
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 4124,2,876,798,2313,0,10784,4628,3,3,3.00,137,0,3.2098ns,-,-,-,-,4,-,-
+	Added :4124,2,876,798,2313,0,10784,4628,3,3,3.00,137,0,3.2098ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 70
+CLASS_COUNT: 
+LASS_COUNT: 
+ASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1574,2,267,990,306,0,2440,1116,3,3,3.00,11,0,1.7106ns,-,-,-,-,16,-,-
+	Added :1574,2,267,990,306,0,2440,1116,3,3,3.00,11,0,1.7106ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 71
+CLASS_COUNT: 
+ASS_COUNT: 
+	
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 72
+CLASS_COUNT: 
+ASS_COUNT: 
+
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2185,2,701,990,474,0,3856,1821,3,3,3.00,20,0,2.9506ns,-,-,-,-,8,-,-
+	Added :2185,2,701,990,474,0,3856,1821,3,3,3.00,20,0,2.9506ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 73
+CLASS_COUNT: 
+ASS_COUNT: 
+CLASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2931,2,1096,990,810,0,5752,2680,3,3,3.00,35,0,3.5706ns,-,-,-,-,4,-,-
+	Added :2931,2,1096,990,810,0,5752,2680,3,3,3.00,35,0,3.5706ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 74
+CLASS_COUNT: 
+ASS_COUNT: 
+LASS_COUNT: 
+Trying to call synthesis
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+Success: 75
+CLASS_COUNT: 
+ASS_COUNT: 
 ASS_COUNT: 
 Finished: Brute Force
-The program labeled: ave16_exhaustive took -47 seconds.
+The program labeled: ave16_exhaustive took -65 seconds.

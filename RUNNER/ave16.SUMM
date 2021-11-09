@@ -29,42 +29,40 @@ bdlpars  ../benchmarks/ave16/ave16.c
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  +  :  8  (8bit:3, 9bit:1, 10bit:1, 32bit:3)
-  &  :  2  (1bit:2)
-  |> :  2  (4bit:2)
+  +  :  2  (8bit:1, 32bit:1)
+  &  :  1  (1bit:1)
+  |> :  1  (4bit:1)
   ~|>:  1  (1bit:1)
-  ~&>:  1  (1bit:1)
-  INCR:  1  (2bit:1)
-  DECR:  2  (4bit:2)
-  Data transfer : 80
+  INCR:  1  (4bit:1)
+  Data transfer : 52
 
  === array / memory ===
-  read  : 11
-  write : 21
+  read  : 16
+  write : 32
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 5 / 4 / 4.50
+[Performance index max/min/ave] 3 / 3 / 3.00
 
   Module Name         : ave16
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :      2,255
-    Sequential        :        996
-    Combinational     :      1,259
+  Total Area          :      1,538
+    Sequential        :        990
+    Combinational     :        548
 
-  Latency Index       :         20
-  Total States        :          4
+  Latency Index       :         16
+  Total States        :          2
 
   Clock Period        :       10ns
-  Critical Path Delay :   3.2473ns
+  Critical Path Delay :   1.8173ns
 
-  Net                 :      1,916
-  Pin Pair            :      3,958
+  Net                 :      1,033
+  Pin Pair            :      2,308
 
   Port                :         18
     In                :         10
     Out               :          8
 
-TOTAL AREA 2,255 (FU: 854 + REG: 996 + MUX: 343 + DEC: 20 + MISC: 42) + pin pair 3,958(net 1,916) + 1FSM of 4state
+TOTAL AREA 1,538 (FU: 267 + REG: 990 + MUX: 278 + DEC: 0 + MISC: 3) + pin pair 2,308(net 1,033) + 1FSM of 2state
 ##### CyberII Normal finish (automatic scheduling mode) [ave16] #####
 

@@ -8,7 +8,7 @@
 @FLIB{
 	NAME	coeff1_0
 	KIND	@coeff1_0
-	BITWIDTH	(2),16
+	BITWIDTH	(1),16
 	DELAY	1t
 #	SIGN
 #	AREA
@@ -18,7 +18,27 @@
 @FLIB{
 	NAME	coeff1_1
 	KIND	@coeff1_1
-	BITWIDTH	(2),16
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff1_2
+	KIND	@coeff1_2
+	BITWIDTH	(1),16
+	DELAY	1t
+#	SIGN
+#	AREA
+#	AREA_REG
+#	COMMENT
+}
+@FLIB{
+	NAME	coeff1_3
+	KIND	@coeff1_3
+	BITWIDTH	(1),16
 	DELAY	1t
 #	SIGN
 #	AREA
@@ -145,5 +165,5 @@
 #	AREA_REG
 #	COMMENT
 }
-#@HASH{afd473f3cbdf59b2c3bd74c88782a33a}
+#@HASH{2771dea7050c8aa5e7908bef1b1cd357}
 #@END{interpolation}

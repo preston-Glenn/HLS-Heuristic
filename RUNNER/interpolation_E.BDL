@@ -8,9 +8,9 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  4 / 4 / 4.00
-# Data-path info.    REG: 1032(area),172(FFs), MUX: 1301(area),1326(fanins)
-# CSV info.          23883,4,22096,1032,739,0,36658,17421,4,4,4.00,16,0,7.74ns,-,-,-,-,8,-,-
+# Performance index  max/min/ave  3 / 3 / 3.00
+# Data-path info.    REG: 1032(area),172(FFs), MUX: 590(area),592(fanins)
+# CSV info.          28711,3,27404,1032,271,0,43205,20676,3,3,3.00,4,0,6.81ns,-,-,-,-,4,-,-
 # Bp-Option  ../benchmarks/interpolation_filter/interpolation.c
 # Option  -c1000 -s interpolation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
@@ -26,55 +26,42 @@ reset         RESET/* Cyber reset_mode = async, reset_active = high */;
 unsigned const ter(1..0)  ST1_01 = 0;
 unsigned const ter(1..0)  ST1_02 = 1;
 unsigned const ter(1..0)  ST1_03 = 2;
-unsigned const ter(1..0)  ST1_04 = 3;
 
 /* Cyber default_bit_order = down */
 process
 interpolation()
 {
-    unsigned ter(3..0)  M_138;
-    unsigned ter(8..0)  M_137;
-    unsigned ter(8..0)  M_136;
-    unsigned ter(7..0)  M_135;
-    unsigned ter(5..0)  M_134;
-    unsigned ter(9..0)  M_133;
-    unsigned ter(1..0)  M_132;
+    unsigned ter(3..0)  M_136;
+    unsigned ter(8..0)  M_135;
+    unsigned ter(8..0)  M_134;
+    unsigned ter(7..0)  M_133;
+    unsigned ter(5..0)  M_132;
     unsigned ter(9..0)  M_131;
-    unsigned ter(8..0)  M_130;
-    unsigned ter(8..0)  M_129;
+    unsigned ter(1..0)  M_130;
+    unsigned ter(9..0)  M_129;
     unsigned ter(8..0)  M_128;
-    unsigned ter(7..0)  M_127;
-    unsigned ter(12..0)  M_126;
-    unsigned ter(12..0)  M_125;
-    unsigned ter(12..0)  M_124;
-    unsigned ter(12..0)  M_123;
-    unsigned ter(0..0)  M_122;
-    unsigned ter(2..0)  TR_01/* Cyber other = DC */;
+    unsigned ter(8..0)  M_127;
+    unsigned ter(8..0)  M_126;
+    unsigned ter(7..0)  M_125;
+    unsigned ter(6..0)  M_124;
+    unsigned ter(8..0)  M_123;
+    unsigned ter(7..0)  M_122;
+    unsigned ter(6..0)  M_121;
     unsigned reg(1..0)  B01_streg/* Cyber FSM = reg */;
-    unsigned ter(0..0)  U_18;
-    unsigned ter(0..0)  U_01;
-    unsigned ter(0..0)  ST1_04d/* Cyber FSM = dec */;
+    unsigned ter(0..0)  U_02;
     unsigned ter(0..0)  ST1_03d/* Cyber FSM = dec */;
     unsigned ter(0..0)  ST1_02d/* Cyber FSM = dec */;
     unsigned ter(0..0)  ST1_01d/* Cyber FSM = dec */;
-    unsigned ter(15..0)  buffer_3_rd01/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned ter(15..0)  buffer_3_rd00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(0..0)  buffer_3_ad00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_3_rg01 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_3_rg00 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(15..0)  buffer_2_rd01/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned ter(15..0)  buffer_2_rd00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(0..0)  buffer_2_ad00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_2_rg01 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_2_rg00 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(15..0)  buffer_1_rd01/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned ter(15..0)  buffer_1_rd00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(0..0)  buffer_1_ad00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_1_rg01 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_1_rg00 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(15..0)  buffer_0_rd01/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned ter(15..0)  buffer_0_rd00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
-    unsigned ter(0..0)  buffer_0_ad00/* Cyber other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_0_rg01 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned reg(15..0)  buffer_0_rg00 /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
     unsigned ter(8..0)  mul16u_162i2/* Cyber other = DC */;
@@ -107,18 +94,28 @@ interpolation()
     unsigned ter(15..0)  coeff2_11ot;
     unsigned ter(0..0)  coeff2_01i1/* Cyber other = DC */;
     unsigned ter(15..0)  coeff2_01ot;
-    unsigned ter(1..0)  coeff1_12i1/* Cyber other = DC */;
-    unsigned ter(15..0)  coeff1_12ot;
-    unsigned ter(1..0)  coeff1_11i1/* Cyber other = DC */;
+    unsigned ter(0..0)  coeff1_31i1/* Cyber other = DC */;
+    unsigned ter(15..0)  coeff1_31ot;
+    unsigned ter(0..0)  coeff1_21i1/* Cyber other = DC */;
+    unsigned ter(15..0)  coeff1_21ot;
+    unsigned ter(0..0)  coeff1_11i1/* Cyber other = DC */;
     unsigned ter(15..0)  coeff1_11ot;
-    unsigned ter(1..0)  coeff1_02i1/* Cyber other = DC */;
-    unsigned ter(15..0)  coeff1_02ot;
-    unsigned ter(1..0)  coeff1_01i1/* Cyber other = DC */;
+    unsigned ter(0..0)  coeff1_01i1/* Cyber other = DC */;
     unsigned ter(15..0)  coeff1_01ot;
-    unsigned ter(2..0)  incr3u1i1/* Cyber other = DC */;
-    unsigned ter(2..0)  incr3u1ot;
     unsigned ter(0..0)  incr2u1i1/* Cyber other = DC */;
     unsigned ter(1..0)  incr2u1ot;
+    unsigned ter(15..0)  mul16u18i2/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u18i1/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u18ot;
+    unsigned ter(15..0)  mul16u17i2/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u17i1/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u17ot;
+    unsigned ter(15..0)  mul16u16i2/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u16i1/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u16ot;
+    unsigned ter(15..0)  mul16u15i2/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u15i1/* Cyber other = DC */;
+    unsigned ter(15..0)  mul16u15ot;
     unsigned ter(15..0)  mul16u14i2/* Cyber other = DC */;
     unsigned ter(15..0)  mul16u14i1/* Cyber other = DC */;
     unsigned ter(15..0)  mul16u14ot;
@@ -167,6 +164,18 @@ interpolation()
     unsigned ter(8..0)  mul12u1i2/* Cyber other = DC */;
     unsigned ter(8..0)  mul12u1i1/* Cyber other = DC */;
     unsigned ter(15..0)  mul12u1ot;
+    unsigned ter(15..0)  add16u19i2/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u19i1/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u19ot;
+    unsigned ter(15..0)  add16u18i2/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u18i1/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u18ot;
+    unsigned ter(15..0)  add16u17i2/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u17i1/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u17ot;
+    unsigned ter(15..0)  add16u16i2/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u16i1/* Cyber other = DC */;
+    unsigned ter(15..0)  add16u16ot;
     unsigned ter(15..0)  add16u15i2/* Cyber other = DC */;
     unsigned ter(15..0)  add16u15i1/* Cyber other = DC */;
     unsigned ter(15..0)  add16u15ot;
@@ -212,132 +221,119 @@ interpolation()
     unsigned ter(15..0)  add16u1i2/* Cyber other = DC */;
     unsigned ter(15..0)  add16u1i1/* Cyber other = DC */;
     unsigned ter(15..0)  add16u1ot;
-    unsigned ter(1..0)  add3u1i2/* Cyber other = DC */;
-    unsigned ter(2..0)  add3u1i1/* Cyber other = DC */;
-    unsigned ter(3..0)  add3u1ot;
-    unsigned ter(0..0)  JF_01/* Cyber other = DC */;
-    unsigned ter(15..0)  M_301_t/* Cyber other = DC */;
-    unsigned ter(15..0)  M_22_t/* Cyber other = DC */;
-    unsigned ter(15..0)  M_261_t/* Cyber other = DC */;
-    unsigned ter(15..0)  M_18_t/* Cyber other = DC */;
-    unsigned reg(15..0)  RG_SoP1/* Cyber reset_sig = void */ /* line# ../benchmarks/interpolation_filter/interpolation.c:38 */;
-    unsigned reg(8..0)  RG_infactor_read/* Cyber reset_sig = void */ /* line# ../benchmarks/interpolation_filter/interpolation.c:35 */;
-    unsigned reg(15..0)  RG_n_SoP4/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:41,43 */;
+    unsigned reg(15..0)  RG_SoP1/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:38 */;
     unsigned reg(15..0)  RG_SoP2/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:39 */;
     unsigned reg(15..0)  RG_SoP3/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:40 */;
+    unsigned reg(15..0)  RG_SoP4/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:41 */;
+    unsigned reg(8..0)  RG_infactor_read/* Cyber reset_sig = void */ /* line# ../benchmarks/interpolation_filter/interpolation.c:35 */;
     unsigned reg(0..0)  FF_n/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
 
 ST1_01 :
     mul16u_161ot(15..0) ::= mul16u_16@1(mul16u_161i1(15..0), mul16u_161i2(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul16u_162ot(15..0) ::= mul16u_16@2(mul16u_162i1(15..0), mul16u_162i2(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    M_138(3..0) ::= dmux (coeff4_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_136(3..0) ::= dmux (coeff4_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
         case 0 :  (unsigned ter(0:4))(14(3..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
         case 1 :  (unsigned ter(0:4))(1(3..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
     };
-    coeff4_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:13))((unsigned ter(0:10))((unsigned ter(0:5))(3(3..0) :: M_138(3..3)) :: 24(4..0)) :: M_138(2..0)) :: 7(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    M_137(8..0) ::= dmux (coeff4_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    coeff4_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:13))((unsigned ter(0:10))((unsigned ter(0:5))(3(3..0) :: M_136(3..3)) :: 24(4..0)) :: M_136(2..0)) :: 7(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_135(8..0) ::= dmux (coeff4_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
         case 0 :  (unsigned ter(0:9))(441(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
         case 1 :  (unsigned ter(0:9))(70(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
     };
-    coeff4_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:3))(M_137(8..7) :: 1(0..0)) :: M_137(6..3)) :: 1(0..0)) :: M_137(2..2)) :: 7(2..0)) :: M_137(1..1)) :: 1(1..0)) :: M_137(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    M_136(8..0) ::= dmux (coeff4_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    coeff4_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:3))(M_135(8..7) :: 1(0..0)) :: M_135(6..3)) :: 1(0..0)) :: M_135(2..2)) :: 7(2..0)) :: M_135(1..1)) :: 1(1..0)) :: M_135(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_134(8..0) ::= dmux (coeff4_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
         case 0 :  (unsigned ter(0:9))(504(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
         case 1 :  (unsigned ter(0:9))(7(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
     };
-    coeff4_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:11))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:6))((unsigned ter(0:5))((unsigned ter(0:3))(M_136(8..7) :: 0(0..0)) :: M_136(6..5)) :: 0(0..0)) :: M_136(4..4)) :: 1(0..0)) :: M_136(3..1)) :: 1(0..0)) :: M_136(0..0)) :: 5(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    M_135(7..0) ::= dmux (coeff4_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    coeff4_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:11))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:6))((unsigned ter(0:5))((unsigned ter(0:3))(M_134(8..7) :: 0(0..0)) :: M_134(6..5)) :: 0(0..0)) :: M_134(4..4)) :: 1(0..0)) :: M_134(3..1)) :: 1(0..0)) :: M_134(0..0)) :: 5(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_133(7..0) ::= dmux (coeff4_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
         case 0 :  (unsigned ter(0:8))(37(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
         case 1 :  (unsigned ter(0:8))(218(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:72 */
     };
-    coeff4_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:11))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:5))((unsigned ter(0:3))(0(0..0) :: M_135(7..6)) :: 2(1..0)) :: M_135(5..4)) :: 0(0..0)) :: M_135(3..1)) :: 6(3..0)) :: M_135(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    M_134(5..0) ::= dmux (coeff3_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    coeff4_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:11))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:5))((unsigned ter(0:3))(0(0..0) :: M_133(7..6)) :: 2(1..0)) :: M_133(5..4)) :: 0(0..0)) :: M_133(3..1)) :: 6(3..0)) :: M_133(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_132(5..0) ::= dmux (coeff3_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
         case 0 :  (unsigned ter(0:6))(38(5..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
         case 1 :  (unsigned ter(0:6))(25(5..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
     };
-    coeff3_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:6))((unsigned ter(0:5))(M_134(5..4) :: 4(2..0)) :: M_134(3..3)) :: 2(1..0)) :: M_134(2..2)) :: 1(2..0)) :: M_134(1..0)) :: 3(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    M_133(9..0) ::= dmux (coeff3_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    coeff3_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:6))((unsigned ter(0:5))(M_132(5..4) :: 4(2..0)) :: M_132(3..3)) :: 2(1..0)) :: M_132(2..2)) :: 1(2..0)) :: M_132(1..0)) :: 3(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_131(9..0) ::= dmux (coeff3_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
         case 0 :  (unsigned ter(0:10))(488(9..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
         case 1 :  (unsigned ter(0:10))(535(9..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
     };
-    coeff3_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:5))((unsigned ter(0:4))((unsigned ter(0:3))((unsigned ter(0:2))(1(0..0) :: M_133(9..9)) :: 0(0..0)) :: M_133(8..8)) :: 1(0..0)) :: M_133(7..5)) :: 1(0..0)) :: M_133(4..4)) :: 0(0..0)) :: M_133(3..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    M_132(1..0) ::= dmux (coeff3_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    coeff3_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:5))((unsigned ter(0:4))((unsigned ter(0:3))((unsigned ter(0:2))(1(0..0) :: M_131(9..9)) :: 0(0..0)) :: M_131(8..8)) :: 1(0..0)) :: M_131(7..5)) :: 1(0..0)) :: M_131(4..4)) :: 0(0..0)) :: M_131(3..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_130(1..0) ::= dmux (coeff3_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
         case 0 :  (unsigned ter(0:2))(2(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
         case 1 :  (unsigned ter(0:2))(1(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
     };
-    coeff3_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))(47(5..0) :: M_132(1..1)) :: 0(0..0)) :: M_132(0..0)) :: 25(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    M_131(9..0) ::= dmux (coeff3_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    coeff3_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))(47(5..0) :: M_130(1..1)) :: 0(0..0)) :: M_130(0..0)) :: 25(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_129(9..0) ::= dmux (coeff3_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
         case 0 :  (unsigned ter(0:10))(194(9..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
         case 1 :  (unsigned ter(0:10))(829(9..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:63 */
     };
-    coeff3_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:8))((unsigned ter(0:7))(M_131(9..4) :: 0(0..0)) :: M_131(3..3)) :: 0(1..0)) :: M_131(2..2)) :: 1(0..0)) :: M_131(1..1)) :: 0(0..0)) :: M_131(0..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    M_130(8..0) ::= dmux (coeff2_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    coeff3_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:8))((unsigned ter(0:7))(M_129(9..4) :: 0(0..0)) :: M_129(3..3)) :: 0(1..0)) :: M_129(2..2)) :: 1(0..0)) :: M_129(1..1)) :: 0(0..0)) :: M_129(0..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_128(8..0) ::= dmux (coeff2_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
         case 0 :  (unsigned ter(0:9))(465(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
         case 1 :  (unsigned ter(0:9))(46(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
     };
-    coeff2_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:10))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:4))(M_130(8..8) :: 5(2..0)) :: M_130(7..5)) :: 0(0..0)) :: M_130(4..4)) :: 1(0..0)) :: M_130(3..1)) :: 1(0..0)) :: M_130(0..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    M_129(8..0) ::= dmux (coeff2_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    coeff2_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:10))((unsigned ter(0:9))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:4))(M_128(8..8) :: 5(2..0)) :: M_128(7..5)) :: 0(0..0)) :: M_128(4..4)) :: 1(0..0)) :: M_128(3..1)) :: 1(0..0)) :: M_128(0..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_127(8..0) ::= dmux (coeff2_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
         case 0 :  (unsigned ter(0:9))(193(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
         case 1 :  (unsigned ter(0:9))(318(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
     };
-    coeff2_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:10))((unsigned ter(0:6))((unsigned ter(0:4))((unsigned ter(0:3))(0(0..0) :: M_129(8..7)) :: 1(0..0)) :: M_129(6..5)) :: 4(3..0)) :: M_129(4..1)) :: 0(0..0)) :: M_129(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    M_128(8..0) ::= dmux (coeff2_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    coeff2_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:10))((unsigned ter(0:6))((unsigned ter(0:4))((unsigned ter(0:3))(0(0..0) :: M_127(8..7)) :: 1(0..0)) :: M_127(6..5)) :: 4(3..0)) :: M_127(4..1)) :: 0(0..0)) :: M_127(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_126(8..0) ::= dmux (coeff2_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
         case 0 :  (unsigned ter(0:9))(90(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
         case 1 :  (unsigned ter(0:9))(421(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
     };
-    coeff2_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:6))((unsigned ter(0:4))(2(1..0) :: M_128(8..7)) :: 1(1..0)) :: M_128(6..6)) :: 0(0..0)) :: M_128(5..2)) :: 1(0..0)) :: M_128(1..0)) :: 0(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    M_127(7..0) ::= dmux (coeff2_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    coeff2_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:8))((unsigned ter(0:7))((unsigned ter(0:6))((unsigned ter(0:4))(2(1..0) :: M_126(8..7)) :: 1(1..0)) :: M_126(6..6)) :: 0(0..0)) :: M_126(5..2)) :: 1(0..0)) :: M_126(1..0)) :: 0(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_125(7..0) ::= dmux (coeff2_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
         case 0 :  (unsigned ter(0:8))(85(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
         case 1 :  (unsigned ter(0:8))(170(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:54 */
     };
-    coeff2_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))(M_127(7..4) :: 10(3..0)) :: M_127(3..3)) :: 4(2..0)) :: M_127(2..1)) :: 0(0..0)) :: M_127(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    M_126(12..0) ::= dmux (coeff1_11i1(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  (unsigned ter(0:13))(6702(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 1 :  (unsigned ter(0:13))(3709(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 2 :  (unsigned ter(0:13))(6337(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 3 :  (unsigned ter(0:13))(5449(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+    coeff2_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:12))((unsigned ter(0:9))((unsigned ter(0:8))(M_125(7..4) :: 10(3..0)) :: M_125(3..3)) :: 4(2..0)) :: M_125(2..1)) :: 0(0..0)) :: M_125(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_124(6..0) ::= dmux (coeff1_31i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        case 0 :  (unsigned ter(0:7))(55(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+        case 1 :  (unsigned ter(0:7))(72(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
     };
-    coeff1_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:5))(M_126(12..9) :: 1(0..0)) :: M_126(8..4)) :: 1(0..0)) :: M_126(3..2)) :: 1(0..0)) :: M_126(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    M_125(12..0) ::= dmux (coeff1_12i1(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  (unsigned ter(0:13))(6702(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 1 :  (unsigned ter(0:13))(3709(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 2 :  (unsigned ter(0:13))(6337(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 3 :  (unsigned ter(0:13))(5449(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+    coeff1_31ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:13))((unsigned ter(0:12))((unsigned ter(0:10))((unsigned ter(0:8))((unsigned ter(0:6))((unsigned ter(0:5))((unsigned ter(0:4))((unsigned ter(0:3))(M_124(6..5) :: 1(0..0)) :: M_124(4..4)) :: 1(0..0)) :: M_124(3..3)) :: 1(1..0)) :: M_124(2..1)) :: 3(1..0)) :: M_124(0..0)) :: 5(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    M_123(8..0) ::= dmux (coeff1_21i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        case 0 :  (unsigned ter(0:9))(462(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+        case 1 :  (unsigned ter(0:9))(49(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
     };
-    coeff1_12ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:11))((unsigned ter(0:10))((unsigned ter(0:5))(M_125(12..9) :: 1(0..0)) :: M_125(8..4)) :: 1(0..0)) :: M_125(3..2)) :: 1(0..0)) :: M_125(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    M_124(12..0) ::= dmux (coeff1_01i1(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  (unsigned ter(0:13))(551(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 1 :  (unsigned ter(0:13))(6094(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 2 :  (unsigned ter(0:13))(3501(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 3 :  (unsigned ter(0:13))(945(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+    coeff1_21ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:8))((unsigned ter(0:3))((unsigned ter(0:2))(M_123(8..8) :: 0(0..0)) :: M_123(7..7)) :: 23(4..0)) :: M_123(6..2)) :: 1(0..0)) :: M_123(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    M_122(7..0) ::= dmux (coeff1_11i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        case 0 :  (unsigned ter(0:8))(158(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+        case 1 :  (unsigned ter(0:8))(97(7..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
     };
-    coeff1_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:6))(M_124(12..9) :: 1(1..0)) :: M_124(8..2)) :: 1(0..0)) :: M_124(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    M_123(12..0) ::= dmux (coeff1_02i1(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  (unsigned ter(0:13))(551(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 1 :  (unsigned ter(0:13))(6094(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 2 :  (unsigned ter(0:13))(3501(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
-        case 3 :  (unsigned ter(0:13))(945(12..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+    coeff1_11ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:11))((unsigned ter(0:9))((unsigned ter(0:6))((unsigned ter(0:4))(6(2..0) :: M_122(7..7)) :: 2(1..0)) :: M_122(6..4)) :: 1(1..0)) :: M_122(3..2)) :: 1(0..0)) :: M_122(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    M_121(6..0) ::= dmux (coeff1_01i1(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        case 0 :  (unsigned ter(0:7))(17(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
+        case 1 :  (unsigned ter(0:7))(110(6..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:45 */
     };
-    coeff1_02ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:14))((unsigned ter(0:13))((unsigned ter(0:6))(M_123(12..9) :: 1(1..0)) :: M_123(8..2)) :: 1(0..0)) :: M_123(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    incr3u1ot(2..0) ::= incr3u@1(incr3u1i1(2..0));
+    coeff1_01ot(15..0) ::= (unsigned ter(0:16))((unsigned ter(0:15))((unsigned ter(0:14))((unsigned ter(0:12))((unsigned ter(0:11))((unsigned ter(0:8))((unsigned ter(0:6))((unsigned ter(0:4))(0(0..0) :: M_121(6..4)) :: 1(1..0)) :: M_121(3..2)) :: 2(2..0)) :: M_121(1..1)) :: 3(1..0)) :: M_121(0..0)) :: 1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
     incr2u1ot(1..0) ::= incr2u@1(incr2u1i1(0..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
-    mul16u1ot(15..0) ::= mul16u@1(mul16u1i1(15..0), mul16u1i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u2ot(15..0) ::= mul16u@2(mul16u2i1(15..0), mul16u2i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u3ot(15..0) ::= mul16u@3(mul16u3i1(15..0), mul16u3i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u4ot(15..0) ::= mul16u@4(mul16u4i1(15..0), mul16u4i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u5ot(15..0) ::= mul16u@5(mul16u5i1(15..0), mul16u5i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u6ot(15..0) ::= mul16u@6(mul16u6i1(15..0), mul16u6i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u7ot(15..0) ::= mul16u@7(mul16u7i1(15..0), mul16u7i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u8ot(15..0) ::= mul16u@8(mul16u8i1(15..0), mul16u8i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u9ot(15..0) ::= mul16u@9(mul16u9i1(15..0), mul16u9i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u10ot(15..0) ::= mul16u@10(mul16u10i1(15..0), mul16u10i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u11ot(15..0) ::= mul16u@11(mul16u11i1(15..0), mul16u11i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    mul16u12ot(15..0) ::= mul16u@12(mul16u12i1(15..0), mul16u12i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    mul16u13ot(15..0) ::= mul16u@13(mul16u13i1(15..0), mul16u13i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
-    mul16u14ot(15..0) ::= mul16u@14(mul16u14i1(15..0), mul16u14i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    mul16u1ot(15..0) ::= mul16u@1(mul16u1i1(15..0), mul16u1i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u2ot(15..0) ::= mul16u@2(mul16u2i1(15..0), mul16u2i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u3ot(15..0) ::= mul16u@3(mul16u3i1(15..0), mul16u3i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u4ot(15..0) ::= mul16u@4(mul16u4i1(15..0), mul16u4i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u5ot(15..0) ::= mul16u@5(mul16u5i1(15..0), mul16u5i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u6ot(15..0) ::= mul16u@6(mul16u6i1(15..0), mul16u6i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u7ot(15..0) ::= mul16u@7(mul16u7i1(15..0), mul16u7i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u8ot(15..0) ::= mul16u@8(mul16u8i1(15..0), mul16u8i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u9ot(15..0) ::= mul16u@9(mul16u9i1(15..0), mul16u9i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u10ot(15..0) ::= mul16u@10(mul16u10i1(15..0), mul16u10i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u11ot(15..0) ::= mul16u@11(mul16u11i1(15..0), mul16u11i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u12ot(15..0) ::= mul16u@12(mul16u12i1(15..0), mul16u12i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u13ot(15..0) ::= mul16u@13(mul16u13i1(15..0), mul16u13i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u14ot(15..0) ::= mul16u@14(mul16u14i1(15..0), mul16u14i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u15ot(15..0) ::= mul16u@15(mul16u15i1(15..0), mul16u15i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u16ot(15..0) ::= mul16u@16(mul16u16i1(15..0), mul16u16i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u17ot(15..0) ::= mul16u@17(mul16u17i1(15..0), mul16u17i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    mul16u18ot(15..0) ::= mul16u@18(mul16u18i1(15..0), mul16u18i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u1ot(15..0) ::= mul12u@1(mul12u1i1(8..0), mul12u1i2(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u2ot(15..0) ::= mul12u@2(mul12u2i1(8..0), mul12u2i2(8..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u1ot(15..0) ::= add16u@1(add16u1i1(15..0), add16u1i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
-    add16u2ot(15..0) ::= add16u@2(add16u2i1(15..0), add16u2i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    add16u1ot(15..0) ::= add16u@1(add16u1i1(15..0), add16u1i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    add16u2ot(15..0) ::= add16u@2(add16u2i1(15..0), add16u2i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     add16u3ot(15..0) ::= add16u@3(add16u3i1(15..0), add16u3i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u4ot(15..0) ::= add16u@4(add16u4i1(15..0), add16u4i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     add16u5ot(15..0) ::= add16u@5(add16u5i1(15..0), add16u5i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
@@ -349,123 +345,111 @@ ST1_01 :
     add16u11ot(15..0) ::= add16u@11(add16u11i1(15..0), add16u11i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u12ot(15..0) ::= add16u@12(add16u12i1(15..0), add16u12i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u13ot(15..0) ::= add16u@13(add16u13i1(15..0), add16u13i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u14ot(15..0) ::= add16u@14(add16u14i1(15..0), add16u14i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u15ot(15..0) ::= add16u@15(add16u15i1(15..0), add16u15i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add3u1ot(3..0) ::= add3u@1(add3u1i1(2..0), add3u1i2(1..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    buffer_0_rd00(15..0) ::= dmux (buffer_0_ad00(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
+    add16u14ot(15..0) ::= add16u@14(add16u14i1(15..0), add16u14i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u15ot(15..0) ::= add16u@15(add16u15i1(15..0), add16u15i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u16ot(15..0) ::= add16u@16(add16u16i1(15..0), add16u16i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u17ot(15..0) ::= add16u@17(add16u17i1(15..0), add16u17i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u18ot(15..0) ::= add16u@18(add16u18i1(15..0), add16u18i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u19ot(15..0) ::= add16u@19(add16u19i1(15..0), add16u19i2(15..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    buffer_0_rd00(15..0) ::= dmux (FF_n(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
         case 0 :  buffer_0_rg00(15..0);
         case 1 :  buffer_0_rg01(15..0);
     };
-    buffer_0_rd01(15..0) ::= dmux (RG_n_SoP4(2..2)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
-        case 0 :  buffer_0_rg00(15..0);
-        case 1 :  buffer_0_rg01(15..0);
-    };
-    buffer_1_rd00(15..0) ::= dmux (buffer_1_ad00(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
+    buffer_1_rd00(15..0) ::= dmux (FF_n(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
         case 0 :  buffer_1_rg00(15..0);
         case 1 :  buffer_1_rg01(15..0);
     };
-    buffer_1_rd01(15..0) ::= dmux (RG_n_SoP4(2..2)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
-        case 0 :  buffer_1_rg00(15..0);
-        case 1 :  buffer_1_rg01(15..0);
-    };
-    buffer_2_rd00(15..0) ::= dmux (buffer_2_ad00(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
+    buffer_2_rd00(15..0) ::= dmux (FF_n(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
         case 0 :  buffer_2_rg00(15..0);
         case 1 :  buffer_2_rg01(15..0);
     };
-    buffer_2_rd01(15..0) ::= dmux (RG_n_SoP4(2..2)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
-        case 0 :  buffer_2_rg00(15..0);
-        case 1 :  buffer_2_rg01(15..0);
-    };
-    buffer_3_rd00(15..0) ::= dmux (buffer_3_ad00(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
+    buffer_3_rd00(15..0) ::= dmux (FF_n(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
         case 0 :  buffer_3_rg00(15..0);
         case 1 :  buffer_3_rg01(15..0);
     };
-    buffer_3_rd01(15..0) ::= dmux (RG_n_SoP4(2..2)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:32 */
-        case 0 :  buffer_3_rg00(15..0);
-        case 1 :  buffer_3_rg01(15..0);
-    };
-    M_18_t(15..0) ::= dmux (RG_n_SoP4(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  buffer_0_rd01(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 1 :  buffer_1_rd01(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 2 :  buffer_2_rd01(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 3 :  buffer_3_rd01(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    };
-    M_261_t(15..0) ::= dmux (RG_n_SoP4(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  coeff1_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 1 :  coeff1_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    };
-    M_22_t(15..0) ::= dmux (incr3u1ot(1..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 1 :  buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 2 :  buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 3 :  buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    };
-    M_301_t(15..0) ::= dmux (incr3u1ot(0..0)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 0 :  coeff1_02ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        case 1 :  coeff1_12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    };
-    add3u1i1(2..0) ::= RG_n_SoP4(2..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    add3u1i2(1..0) ::= 2(1..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    add16u3i1(15..0) ::= mul16u5ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    add16u3i2(15..0) ::= mul16u6ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    add16u1i1(15..0) ::= mul16u6ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    add16u1i2(15..0) ::= mul16u7ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    add16u2i1(15..0) ::= mul16u14ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    add16u2i2(15..0) ::= mul16u15ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    add16u3i1(15..0) ::= mul16u10ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    add16u3i2(15..0) ::= mul16u11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u4i1(15..0) ::= RG_SoP2(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    add16u4i2(15..0) ::= mul16u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    add16u4i2(15..0) ::= mul16u5ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     add16u5i1(15..0) ::= add16u2ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    add16u5i2(15..0) ::= mul16u10ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    add16u5i2(15..0) ::= mul16u16ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     add16u6i1(15..0) ::= add16u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    add16u6i2(15..0) ::= mul16u3ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    add16u6i2(15..0) ::= mul16u8ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     add16u7i1(15..0) ::= add16u4ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     add16u7i2(15..0) ::= add16u6ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    add16u8i1(15..0) ::= RG_n_SoP4(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    add16u8i2(15..0) ::= mul16u8ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    add16u8i1(15..0) ::= RG_SoP4(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    add16u8i2(15..0) ::= mul16u13ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     add16u9i1(15..0) ::= add16u8ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     add16u9i2(15..0) ::= add16u5ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     add16u10i1(15..0) ::= RG_SoP3(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    add16u10i2(15..0) ::= mul16u4ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    add16u10i2(15..0) ::= mul16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u11i1(15..0) ::= add16u3ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    add16u11i2(15..0) ::= mul16u7ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    add16u11i2(15..0) ::= mul16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u12i1(15..0) ::= add16u10ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
     add16u12i2(15..0) ::= add16u11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    add16u13i1(15..0) ::= RG_SoP1(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u13i2(15..0) ::= mul16u_161ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u14i1(15..0) ::= mul16u11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u14i2(15..0) ::= mul16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u15i1(15..0) ::= add16u13ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    add16u15i2(15..0) ::= add16u14ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u13i1(15..0) ::= mul16u17ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u13i2(15..0) ::= mul16u18ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u14i1(15..0) ::= mul16u2ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u14i2(15..0) ::= mul16u3ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u15i1(15..0) ::= RG_SoP1(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u15i2(15..0) ::= mul16u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u16i1(15..0) ::= add16u14ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u16i2(15..0) ::= mul16u4ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u17i1(15..0) ::= add16u15ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u17i2(15..0) ::= add16u16ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    add16u18i1(15..0) ::= add16u17ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,124,125,126,127 */
+    add16u18i2(15..0) ::= mul16u_161ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u19i1(15..0) ::= add16u18ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    add16u19i2(15..0) ::= add16u13ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u1i1(8..0) ::= RG_infactor_read(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u1i2(8..0) ::= RG_infactor_read(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u2i1(8..0) ::= RG_infactor_read(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul12u2i2(8..0) ::= RG_infactor_read(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    mul16u1i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u1i2(15..0) ::= coeff2_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u2i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u2i2(15..0) ::= coeff2_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u3i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u3i2(15..0) ::= coeff2_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    mul16u4i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,114 */
-    mul16u4i2(15..0) ::= coeff3_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u5i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,114 */
-    mul16u5i2(15..0) ::= coeff3_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u6i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,114 */
-    mul16u6i2(15..0) ::= coeff3_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u7i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,114 */
-    mul16u7i2(15..0) ::= coeff3_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    mul16u8i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,120 */
-    mul16u8i2(15..0) ::= coeff4_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u9i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,120 */
-    mul16u9i2(15..0) ::= coeff4_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u10i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,120 */
-    mul16u10i2(15..0) ::= coeff4_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    mul16u11i1(15..0) ::= add16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114,124,125,126,127 */
-    mul16u11i2(15..0) ::= mul12u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    mul16u12i1(15..0) ::= add16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120,124,125,126,127 */
-    mul16u12i2(15..0) ::= mul16u_162ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    mul16u1i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u1i2(15..0) ::= coeff1_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u2i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u2i2(15..0) ::= coeff1_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u3i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u3i2(15..0) ::= coeff1_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u4i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u4i2(15..0) ::= coeff1_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    mul16u5i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
+    mul16u5i2(15..0) ::= coeff2_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u6i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
+    mul16u6i2(15..0) ::= coeff2_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u7i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
+    mul16u7i2(15..0) ::= coeff2_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u8i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
+    mul16u8i2(15..0) ::= coeff2_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    mul16u9i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,114 */
+    mul16u9i2(15..0) ::= coeff3_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u10i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,114 */
+    mul16u10i2(15..0) ::= coeff3_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u11i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,114 */
+    mul16u11i2(15..0) ::= coeff3_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u12i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,114 */
+    mul16u12i2(15..0) ::= coeff3_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    mul16u13i1(15..0) ::= buffer_0_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    mul16u13i2(15..0) ::= coeff4_01ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u14i1(15..0) ::= buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    mul16u14i2(15..0) ::= coeff4_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u15i1(15..0) ::= buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    mul16u15i2(15..0) ::= coeff4_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u16i1(15..0) ::= buffer_3_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
+    mul16u16i2(15..0) ::= coeff4_31ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    mul16u17i1(15..0) ::= add16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114,124,125,126,127 */
+    mul16u17i2(15..0) ::= mul12u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    mul16u18i1(15..0) ::= add16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120,124,125,126,127 */
+    mul16u18i2(15..0) ::= mul16u_162ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     incr2u1i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
-    incr3u1i1(2..0) ::= RG_n_SoP4(2..0);
-    coeff1_01i1(1..0) ::= RG_n_SoP4(2..1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    coeff1_02i1(1..0) ::= incr3u1ot(2..1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    coeff1_11i1(1..0) ::= RG_n_SoP4(2..1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-    coeff1_12i1(1..0) ::= incr3u1ot(2..1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    coeff1_01i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    coeff1_11i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    coeff1_21i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    coeff1_31i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
     coeff2_01i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     coeff2_11i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
     coeff2_21i1(0..0) ::= FF_n(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
@@ -482,69 +466,35 @@ ST1_01 :
     mul16u_161i2(8..0) ::= RG_infactor_read(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul16u_162i1(15..0) ::= mul12u2ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
     mul16u_162i2(8..0) ::= infactor(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
-    U_01(0..0) ::= (unsigned ter(0:1))(ST1_03d(0..0) & (unsigned ter(0:1))(~add3u1ot(3..3))); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    U_18(0..0) ::= (unsigned ter(0:1))(ST1_04d(0..0) & incr2u1ot(1..1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:107,113,119 */
+    U_02(0..0) ::= (unsigned ter(0:1))(ST1_03d(0..0) & incr2u1ot(1..1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101,107,113,119 */
     RG_SoP1(15..0) ::= nmux {
         when (ST1_02d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:99 */
-        when (ST1_03d(0..0)) :  add16u2ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        default :  RG_SoP1(15..0);
+        when (ST1_03d(0..0)) :  add16u17ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    };
+    RG_SoP2(15..0) ::= nmux {
+        when (ST1_02d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:105 */
+        when (ST1_03d(0..0)) :  add16u7ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    };
+    RG_SoP3(15..0) ::= nmux {
+        when (ST1_02d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:111 */
+        when (ST1_03d(0..0)) :  add16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    };
+    RG_SoP4(15..0) ::= nmux {
+        when (ST1_02d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:117 */
+        when (ST1_03d(0..0)) :  add16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     };
     RG_infactor_read(8..0) ::= nmux {
         when (ST1_02d(0..0)) :  infactor(8..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:86 */
         default :  RG_infactor_read(8..0);
     };
-    M_122(0..0) ::= ST1_02d(0..0) | (unsigned ter(0:1))(ST1_03d(0..0) & add3u1ot(3..3)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    TR_01(2..0) ::= nmux {
-        when (M_122(0..0)) :  0(2..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101,117 */
-        when (U_01(0..0)) :  add3u1ot(2..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
-    };
-    RG_n_SoP4(15..0) ::= nmux {
-        when ((unsigned ter(0:1))(M_122(0..0) | U_01(0..0))) :  (unsigned ter(0:16))(0(12..0) :: TR_01(2..0)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101,117 */
-        when (ST1_04d(0..0)) :  add16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    };
-    RG_SoP2(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:105 */
-        when (ST1_04d(0..0)) :  add16u7ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    };
-    RG_SoP3(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:111 */
-        when (ST1_04d(0..0)) :  add16u12ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
-    };
     FF_n(0..0) ::= nmux {
-        when (ST1_03d(0..0)) :  0(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
-        when (ST1_04d(0..0)) :  incr2u1ot(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
+        when (ST1_02d(0..0)) :  0(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
+        when (ST1_03d(0..0)) :  incr2u1ot(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
     };
-    odata_en(0..0) ::= U_18(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:80,89,136 */
+    odata_en(0..0) ::= U_02(0..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:80,89,136 */
     odata(15..0) ::= nmux {
-        when (U_18(0..0)) :  add16u15ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127,137 */
+        when (U_02(0..0)) :  add16u19ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127,137 */
         default :  0(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:81 */
-    };
-    JF_01(0..0) ::= (unsigned ter(0:1))(~add3u1ot(3..3));
-    add16u1i1(15..0) ::= mul16u13ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,108 */
-    add16u1i2(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  RG_SoP1(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  mul16u2ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    };
-    add16u2i1(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  add16u1ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  mul16u9ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
-    };
-    add16u2i2(15..0) ::= mul16u14ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102,120 */
-    mul16u13i1(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  M_18_t(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  buffer_1_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    };
-    mul16u13i2(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  M_261_t(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  coeff2_11ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
-    };
-    mul16u14i1(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  M_22_t(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  buffer_2_rd00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108,120 */
-    };
-    mul16u14i2(15..0) ::= nmux {
-        when (ST1_03d(0..0)) :  M_301_t(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when (ST1_04d(0..0)) :  coeff4_21ot(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
     };
     buffer_0_rg00(15..0) ::= nmux {
         when (ST1_01d(0..0)) :  indata(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:85,95 */
@@ -554,10 +504,6 @@ ST1_01 :
         when (ST1_01d(0..0)) :  buffer_3_rg00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
         default :  buffer_0_rg01(15..0);
     };
-    buffer_0_ad00(0..0) ::= nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when ((unsigned ter(0:1))(ST1_03d(0..0) & ~|>incr3u1ot(1..0))) :  incr3u1ot(2..2);
-        when (ST1_04d(0..0)) :  FF_n(0..0);
-    };
     buffer_1_rg00(15..0) ::= nmux {
         when (ST1_01d(0..0)) :  buffer_0_rg00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
         default :  buffer_1_rg00(15..0);
@@ -566,41 +512,22 @@ ST1_01 :
         when (ST1_01d(0..0)) :  buffer_0_rg01(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
         default :  buffer_1_rg01(15..0);
     };
-    buffer_1_ad00(0..0) ::= nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when ((unsigned ter(0:1))(ST1_03d(0..0) & ~|>(incr3u1ot(1..0) ^ 1(1..0)))) :  incr3u1ot(2..2);
-        when (ST1_04d(0..0)) :  FF_n(0..0);
-    };
     buffer_2_rg00(15..0) ::= nmux {
         when (ST1_01d(0..0)) :  buffer_1_rg00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
         default :  buffer_2_rg00(15..0);
-    };
-    buffer_2_ad00(0..0) ::= nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when ((unsigned ter(0:1))(ST1_03d(0..0) & ~|>(incr3u1ot(1..0) ^ 2(1..0)))) :  incr3u1ot(2..2);
-        when (ST1_04d(0..0)) :  FF_n(0..0);
     };
     buffer_3_rg00(15..0) ::= nmux {
         when (ST1_01d(0..0)) :  buffer_2_rg00(15..0); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
         default :  buffer_3_rg00(15..0);
     };
-    buffer_3_ad00(0..0) ::= nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
-        when ((unsigned ter(0:1))(ST1_03d(0..0) & ~|>(incr3u1ot(1..0) ^ 3(1..0)))) :  incr3u1ot(2..2);
-        when (ST1_04d(0..0)) :  FF_n(0..0);
-    };
     ST1_01d(0..0) ::= (unsigned ter(0:1))(~|>B01_streg(1..0));
     ST1_02d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(1..0) ^ ST1_02(1..0)));
     ST1_03d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(1..0) ^ ST1_03(1..0)));
-    ST1_04d(0..0) ::= (unsigned ter(0:1))(~|>(B01_streg(1..0) ^ ST1_04(1..0)));
     B01_streg(1..0) ::= nmux {
         when (ST1_02d(0..0)) :  ST1_03(1..0);
         when (ST1_03d(0..0)) : 
-            nmux {
-                when (JF_01(0..0)) :  ST1_03(1..0);
-                when (!JF_01(0..0)) :  ST1_04(1..0);
-                default :  ST1_01(1..0);
-            };
-        when (ST1_04d(0..0)) : 
-            nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:107,113,119 */
-                when (!incr2u1ot(1..1)) :  ST1_04(1..0);
+            nmux { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101,107,113,119 */
+                when (!incr2u1ot(1..1)) :  ST1_03(1..0);
                 default :  ST1_01(1..0);
             };
         default :  (unsigned ter(0:2))(0(0..0) :: ST1_01d(0..0));
@@ -614,14 +541,14 @@ ST1_01 :
 ##@CLK  100000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  add3u      1  (u)+              3,4    2300     17
-#  2  add16u    15  (u)+              16,16  5400    101
-#  3  mul12u     2  (u)*              9,16   19600   760
-#  4  mul16u    14  (u)*              16,16  26500  1230
-#  5  incr2u     1  (u)INCR           1,2    1000      3
-#  6  incr3u     1  (u)INCR           3,3    1300      5
-#  7  coeff1_0    2  @coeff1_0         (2),16  750      11
-#  8  coeff1_1    2  @coeff1_1         (2),16  750      11
+#  1  add16u    19  (u)+              16,16  5400    101
+#  2  mul12u     2  (u)*              9,16   19600   760
+#  3  mul16u    18  (u)*              16,16  26500  1230
+#  4  incr2u     1  (u)INCR           1,2    1000      3
+#  5  coeff1_0    1  @coeff1_0         (1),16  350       1
+#  6  coeff1_1    1  @coeff1_1         (1),16  350       1
+#  7  coeff1_2    1  @coeff1_2         (1),16  350       1
+#  8  coeff1_3    1  @coeff1_3         (1),16  350       1
 #  9  coeff2_0    1  @coeff2_0         (1),16  350       1
 # 10  coeff2_1    1  @coeff2_1         (1),16  350       1
 # 11  coeff2_2    1  @coeff2_2         (1),16  350       1
@@ -642,7 +569,7 @@ ST1_01 :
 #@MCNT {
 #    NAME	buffer[]
 #    LIMIT	1
-#    KIND	R2,W1
+#    KIND	R1,W1
 #    BITWIDTH	16
 #    DELAY	0
 #    ARRAY_DIV	4
@@ -652,7 +579,7 @@ ST1_01 :
 #@MCNT {
 #    NAME	buffer[]
 #    LIMIT	1
-#    KIND	R2,W1
+#    KIND	R1,W1
 #    BITWIDTH	16
 #    DELAY	0
 #    ARRAY_DIV	4
@@ -662,7 +589,7 @@ ST1_01 :
 #@MCNT {
 #    NAME	buffer[]
 #    LIMIT	1
-#    KIND	R2,W1
+#    KIND	R1,W1
 #    BITWIDTH	16
 #    DELAY	0
 #    ARRAY_DIV	4
@@ -672,7 +599,7 @@ ST1_01 :
 #@MCNT {
 #    NAME	buffer[]
 #    LIMIT	1
-#    KIND	R2,W1
+#    KIND	R1,W1
 #    BITWIDTH	16
 #    DELAY	0
 #    ARRAY_DIV	4
@@ -684,10 +611,10 @@ ST1_01 :
 #@MLMT %AUTO%.MLMT
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  buffer[]    1  R2               16x2     0  buffer_0       	
-#  2  buffer[]    1  R2               16x2     0  buffer_1       	
-#  3  buffer[]    1  R2               16x2     0  buffer_2       	
-#  4  buffer[]    1  R2               16x2     0  buffer_3       	
+#  1  buffer[]    1  R1               16x2     0  buffer_0       	
+#  2  buffer[]    1  R1               16x2     0  buffer_1       	
+#  3  buffer[]    1  R1               16x2     0  buffer_2       	
+#  4  buffer[]    1  R1               16x2     0  buffer_3       	
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
