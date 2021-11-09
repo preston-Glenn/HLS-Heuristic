@@ -1,3 +1,0 @@
-option -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
-I_BT1173: LOG file is generated. (decimation.LOG.gz)
-############## CyberII started (automatic scheduling mode) ##############

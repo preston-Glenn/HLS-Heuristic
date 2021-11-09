@@ -1,6 +1,0 @@
-
-#@VERSION { 3.00 }
-#@LIB { interpolation }
-#@UNIT 1/10ps
-#@SYN_TOOL{DC}
-#@END { interpolation }
