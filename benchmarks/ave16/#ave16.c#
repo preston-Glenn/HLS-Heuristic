@@ -32,7 +32,14 @@ process ave16(){
         for (i = SIZE-1; i > 0; i--) { 	
             data[i] = data[i- 1];
         }
-	data[0] = in0;
+	LABEL = resultLabelArg.getValue();
+
+	string file_name = LABEL+"_log.txt";
+	logger.setFileName(file_name);
+	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
+
+	
+	logger.log("Seed:" + int_to_string(SEED));
      sum= data[0]; 	
         
       /* ATTR3 */

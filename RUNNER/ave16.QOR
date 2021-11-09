@@ -8,21 +8,21 @@ Cyber Synthesis Report
   Module Name         : ave16
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :          0
-    Sequential        :          0
-    Combinational     :          0
+  Total Area          :      2,088
+    Sequential        :        978
+    Combinational     :      1,110
 
-  Latency Index       :          1
-  Total States        :          1
+  Latency Index       :          4
+  Total States        :          2
 
   Clock Period        :       10ns
-  Critical Path Delay :        0ns
+  Critical Path Delay :   2.9273ns
 
-  Net                 :          1
-  Pin Pair            :          9
+  Net                 :      1,702
+  Pin Pair            :      3,520
 
-  Port                :         16
-    In                :          8
+  Port                :         18
+    In                :         10
     Out               :          8
 
 ========
@@ -30,14 +30,14 @@ Cyber Synthesis Report
 ========
 
   Total :
-    Total           :          0
+    Total           :      2,088
       Sequential    : 
-        REG         :          0 ( 0%)
-      Combinational :          0 ( 0%)
-        FU          :          0 ( 0%)
-        MUX         :          0 ( 0%)
+        REG         :        978 (46%)
+      Combinational :      1,110 (53%)
+        FU          :        823 (39%)
+        MUX         :        284 (13%)
         DEC         :          0 ( 0%)
-        MISC        :          0 ( 0%)
+        MISC        :          3 ( <1%)
       Memory        :          -
 
 ===================
@@ -47,7 +47,12 @@ Cyber Synthesis Report
     FU Name                Area    Reg  Delay  Pipeline  Count
                                          (ns)    Stage
     ----------------------------------------------------------
-    None
+    add12u_10                74      0   0.39         -      1
+    add32s                  208      0   1.06         -      1
+    add32s_32               208      0   1.06         -      2
+    add8s                    49      0   0.30         -      1
+    add8u                    47      0   0.30         -      2
+    incr2u                    3      0   0.10         -      1
 
   Unused Functional Units :
     ---------------------------------------------------
@@ -60,15 +65,25 @@ Cyber Synthesis Report
      Used      Declared                 Used
       Bit           Bit      Count       Bit  * Count
     -------------------------------------------------
-       None
+        1             1          1                  1
     -------------------------------------------------
-    Total                                           0
+        2             2          1                  2
+    -------------------------------------------------
+        8             8         16                128
+    -------------------------------------------------
+       32            32          1                 32
+    -------------------------------------------------
+    Total                                         163
 
 ===============
 ; Multiplexer ;
 ===============
 
-    None
+   1 bit:  2way: 1 
+   2 bit:  2way: 1 
+   8 bit: (1way: 1),  2way: 2 ,  3way:16 ,  4way: 4 
+  32 bit:  2way: 1 
+   Total : 614 (# of Fanins)
 
 ===========
 ; Decoder ;
@@ -88,50 +103,68 @@ Cyber Synthesis Report
 
     Total:
         Type          : S
-        Latency       : 1
-        Latency Index : 1
-        State No.     : 1
+        Latency       : 1 + L1
+        Latency Index : 4
+        State No.     : 1, 2
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1
+        Line          : ../benchmarks/ave16/ave16.c:26
+    L1:
+        Type          : S
+        Latency       : 1 * 3
+        Latency Index : 3
+        State No.     : 2
         Folding Loop  : -
         Folding Stages: - , Total Folding States: - , Hazard: -
         User Operator : -
         Sub Loops     : -
-        Line          : ../benchmarks/ave16/ave16.c:26
+        Line          : ../benchmarks/ave16/ave16.c:39
 
 =======
 ; FSM ;
 =======
 
-  Total States      :          1
-  #FSM              :          0
-  States/FSM        :          -
-  FSM Decoder Delay :          -
+  Total States      :          2
+  #FSM              :          1
+  States/FSM        :          2
+  FSM Decoder Delay :     0.09ns
 
 =========
 ; Delay ;
 =========
 
   Clock Period        :       10ns
-  Critical Path Delay :        0ns
+  Critical Path Delay :   2.9273ns
 
               Subtotal
       Class       (ns)    Ratio
       -------------------------
       IN           0.00      0%
-      FU           0.00      0%
-      MUX          0.00      0%
+      FU           2.60     88%
+      MUX          0.21      7%
       DEC          0.00      0%
-      MISC         0.00      0%
+      MISC         0.12      4%
       MEM          0.00      0%
       -------------------------
-      Total        0.00
+      Total        2.93
 
     Path: #1
                                                                 Arrival
                                                           Delay    Time Logic
       Name                 / Port [Signal              ]   (ns)   (ns)  Stage
       -----------------------------------------------------------------------
-      0                    / CNST [                    ]      -    0.00     0
-      out0                 / i1   [                    ]      -    0.00     0
+      data_01_rg03         / dout [                    ]      -    0.00     0
+      _DMUX_212            / o1   [data_01_rd00        ]   0.21    0.21     3
+      add32s_32@1          / o1   [add32s_321ot        ]   1.06    1.27    20
+      add32s_32@2          / o1   [add32s_322ot        ]   0.62    1.89    29
+      add32s@1             / o1   [add32s1ot           ]   0.62    2.51    38
+      _ROR_751             / o1   [                    ]   0.07    2.58    39
+      _AND_749             / o1   [                    ]   0.05    2.63    40
+      add8s@1              / o1   [add8s1ot            ]   0.30    2.93    46
+      _NMUX_244            / o1   [out0                ]   0.00    2.93    46
+      out0                 / i1   [                    ]      -    2.93    46
 
   False Path                    :  Unchecked
   Multi Cycle Path              :  Unchecked
@@ -142,41 +175,93 @@ Cyber Synthesis Report
 ; Wire ;
 ========
 
-  Total Net Count      :        1
-  Total Pin Pair Count :        9
-  Const Fanout         :        8
+  Total Net Count      :    1,702
+  Total Pin Pair Count :    3,520
+  Const Fanout         :       40
 
   Net Count :
          Bit       Net    Bit*Net
      ----------------------------
+           1        12         12
+           2         2          4
+           3         1          3
+           8        41        328
+           9         2         18
+          10         1         10
+          32         5        160
      ----------------------------
-       Total                    0
+       Total                  535
 
   Pin Pair Count :
       Fanout    Bit    Count   Subtotal
     -----------------------------------
-        None
+          21      1        1         21
+          19      1        1         19
+          17      1        1         17
+           6      1        1          6
+           5      2        1         10
+           4      8        3         96
+           3      8       12        288
+           2     13        1         26
+           2      9        1         18
+           2      8        2         32
+           2      1        2          4
+           1     32        4        128
+           1     19        1         19
+           1     10        1         10
+           1      9        1          9
+           1      8       24        192
+           1      2        2          4
+           1      1        7          7
     -----------------------------------
-       Total                          0
+       Total                        906
 
   Fanout for Consts:
       Value    Fanout
-          0         8
-          1         0
+          0        37
+          1         3
     ------------------
-      Total         8
+      Total        40
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0:1)                      19
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0:1)                      17
 
   Register Fanin/Fanout Cone Size:
 
     Fanin: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-          None
+      RG_sum(0:32)                                      21
+      B01_streg(0:1)                                     3
+      RG_i(0:2)                                          3
+      data_01_rg00(0:8)                                  3
+      data_01_rg01(0:8)                                  3
+      data_01_rg02(0:8)                                  3
+      data_01_rg03(0:8)                                  3
+      data_11_rg00(0:8)                                  3
+      data_11_rg01(0:8)                                  3
+      data_11_rg02(0:8)                                  3
 
     Fanout: (Top 10 Registers)
       Register Name                              Cone Size
       ----------------------------------------------------
-          None
+      B01_streg(0:1)                                    20
+      RG_i(0:2)                                          4
+      data_01_rg00(0:8)                                  4
+      data_01_rg01(0:8)                                  4
+      data_01_rg02(0:8)                                  4
+      data_01_rg03(0:8)                                  4
+      data_11_rg00(0:8)                                  4
+      data_11_rg01(0:8)                                  4
+      data_11_rg02(0:8)                                  4
+      data_11_rg03(0:8)                                  4
 
   Routability:
 
@@ -184,13 +269,61 @@ Cyber Synthesis Report
     sorted by "Total" (Total Pin Pair)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      in0(0:8)                                        0        0 ( 8bit)
+      add32s1ot(0:32)                                45        2 (13bit)
+      data_01_rg00(0:8)                              32        4 ( 8bit)
+      data_11_rg00(0:8)                              32        4 ( 8bit)
+      data_21_rg00(0:8)                              32        4 ( 8bit)
+      RG_sum(0:32)                                   32        1 (32bit)
+      add32s_321ot(0:32)                             32        1 (32bit)
+      add32s_322ot(0:32)                             32        1 (32bit)
+      _NMUX_242(0:32)                                32        1 (32bit)
+      data_01_rg01(0:8)                              24        3 ( 8bit)
+      data_01_rg02(0:8)                              24        3 ( 8bit)
+      data_01_rg03(0:8)                              24        3 ( 8bit)
+      data_11_rg01(0:8)                              24        3 ( 8bit)
+      data_11_rg02(0:8)                              24        3 ( 8bit)
+      data_11_rg03(0:8)                              24        3 ( 8bit)
+      data_21_rg01(0:8)                              24        3 ( 8bit)
+      data_21_rg02(0:8)                              24        3 ( 8bit)
+      data_21_rg03(0:8)                              24        3 ( 8bit)
+      data_31_rg00(0:8)                              24        3 ( 8bit)
+      data_31_rg01(0:8)                              24        3 ( 8bit)
+      data_31_rg02(0:8)                              24        3 ( 8bit)
+      ST1_01d(0:1)                                   21       21 ( 1bit)
+      CLOCK(0:1)                                     19       19 ( 1bit)
+      add8u1ot(0:9)                                  18        2 ( 9bit)
+      RESET(0:1)                                     17       17 ( 1bit)
+      in0(0:8)                                       16        2 ( 8bit)
 
     Top 25 Nets
     sorted by "Max" (Maximum Fanout)
       Net Name                                    Total      Max
       -----------------------------------------------------------------
-      in0(0:8)                                        0        0 ( 8bit)
+      ST1_01d(0:1)                                   21       21 ( 1bit)
+      CLOCK(0:1)                                     19       19 ( 1bit)
+      RESET(0:1)                                     17       17 ( 1bit)
+      ST1_02d(0:1)                                    6        6 ( 1bit)
+      RG_i(0:2)                                      10        5 ( 2bit)
+      data_01_rg00(0:8)                              32        4 ( 8bit)
+      data_11_rg00(0:8)                              32        4 ( 8bit)
+      data_21_rg00(0:8)                              32        4 ( 8bit)
+      data_01_rg01(0:8)                              24        3 ( 8bit)
+      data_01_rg02(0:8)                              24        3 ( 8bit)
+      data_01_rg03(0:8)                              24        3 ( 8bit)
+      data_11_rg01(0:8)                              24        3 ( 8bit)
+      data_11_rg02(0:8)                              24        3 ( 8bit)
+      data_11_rg03(0:8)                              24        3 ( 8bit)
+      data_21_rg01(0:8)                              24        3 ( 8bit)
+      data_21_rg02(0:8)                              24        3 ( 8bit)
+      data_21_rg03(0:8)                              24        3 ( 8bit)
+      data_31_rg00(0:8)                              24        3 ( 8bit)
+      data_31_rg01(0:8)                              24        3 ( 8bit)
+      data_31_rg02(0:8)                              24        3 ( 8bit)
+      add32s1ot(0:32)                                45        2 (13bit)
+      add8u1ot(0:9)                                  18        2 ( 9bit)
+      in0(0:8)                                       16        2 ( 8bit)
+      data_31_rg03(0:8)                              16        2 ( 8bit)
+      incr2u1ot(0:3)                                  4        2 ( 1bit)
 
 ================
 ; Primary Port ;

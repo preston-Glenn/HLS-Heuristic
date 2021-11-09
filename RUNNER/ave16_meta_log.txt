@@ -3161,3 +3161,1926 @@ Finished Synthesis
 		Score: 0.73913
 Finished last Meta Heuristic
 The program labeled: ave16_meta took -30 seconds.
+
+
+
+
+
+NEW EXECUTION:::::::::::
+Seed:1
+Directory: ../benchmarks/ave16/
+FILE_W/O E: ave16
+FILE_NameE: ave16.c
+PARSE_FILE: ../benchmarks/ave16/lib_ave16.info
+Started: Parsing
+CLASS_COUNT: 3
+Finished: Parsing
+Started Meta Heuristic with area weight at: 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2266,4,707,996,507,20,4102,1907,5,4,4.50,36,0,3.3046ns,-,-,-,-,12,-,-
+	Added :2266,4,707,996,507,20,4102,1907,5,4,4.50,36,0,3.3046ns,-,-,-,-,12,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1583,2,267,990,323,0,2422,1102,3,3,3.00,3,0,1.9186ns,-,-,-,-,16,-,-
+	Added :1583,2,267,990,323,0,2422,1102,3,3,3.00,3,0,1.9186ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 2 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 1
+	Parent_1:
+		arrayREGunroll_times8unroll_times0
+		Score: 1
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,-
+	Added :2203,2,701,990,508,0,3820,1794,3,3,3.00,4,0,3.1586ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 1
+	Parent_1:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 1
+	Parent_1:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 4
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_times2
+		Score: 0.75
+############################### ITERATION 3 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 0.75
+	Parent_1:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1671,4,274,996,347,20,2747,1247,5,4,4.50,34,0,2.0646ns,-,-,-,-,20,-,-
+	Added :1671,4,274,996,347,20,2747,1247,5,4,4.50,34,0,2.0646ns,-,-,-,-,20,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times4unroll_times0
+		Score: 1
+############################### ITERATION 4 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 0.75
+	Parent_1:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 4 to 0
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,-
+	Added :1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMarrayEXPAND,array_index=constunroll_times2
+		Score: 1
+############################### ITERATION 5 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_times2
+		Score: 0.75
+	Parent_1:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.5
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 2 to 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.0416667
+Finished first Meta Heuristic
+Started Meta Heuristic with area weight at: 0.25
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2219,4,810,828,488,8,4458,2061,5,4,4.50,85,0,1.335ns,-,-,-,-,16,-,-
+	Added :2219,4,810,828,488,8,4458,2061,5,4,4.50,85,0,1.335ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,-
+	Added :1483,7,902,294,250,0,3284,1587,7,7,7.00,37,-,2.7901ns,-,-,-,-,39,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 8 #################################
+
+	Parent_0:
+		arrayREGunroll_times2unroll_times8
+		Score: 0.744815
+	Parent_1:
+		arrayRAMunroll_times0unroll_times4
+		Score: 0.913614
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 3 to 4
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,-
+	Added :1322,8,891,282,127,0,2860,1419,8,8,8.00,22,-,2.7901ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+############################### ITERATION 9 #################################
+
+	Parent_0:
+		arrayREGunroll_times2unroll_times8
+		Score: 0.744815
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2446,5,874,1050,440,20,4485,2146,6,5,5.50,62,0,3.2523ns,-,-,-,-,19,-,-
+	Added :2446,5,874,1050,440,20,4485,2146,6,5,5.50,62,0,3.2523ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times2unroll_times4
+		Score: 0.615385
+############################### ITERATION 10 #################################
+
+	Parent_0:
+		arrayREGunroll_times2unroll_times4
+		Score: 0.615385
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1646,4,278,996,316,28,2633,1178,5,4,4.50,28,0,2.1086ns,-,-,-,-,24,-,-
+	Added :1646,4,278,996,316,28,2633,1178,5,4,4.50,28,0,2.1086ns,-,-,-,-,24,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times2unroll_times0
+		Score: 0.629772
+############################### ITERATION 11 #################################
+
+	Parent_0:
+		arrayREGunroll_times2unroll_times4
+		Score: 0.615385
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 3 to 4
+	Mutated @ index: 2 from 3 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,-
+	Added :913,9,291,282,297,0,2145,964,9,9,9.00,43,-,1.8051ns,-,-,-,-,31,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.689469
+############################### ITERATION 12 #################################
+
+	Parent_0:
+		arrayREGunroll_times2unroll_times4
+		Score: 0.615385
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.442811
+############################### ITERATION 12 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.442811
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.442811
+############################### ITERATION 12 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.442811
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.453544
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,-
+	Added :1749,9,1094,468,160,0,3512,1715,9,9,9.00,27,-,3.65ns,-,-,-,-,13,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.428761
+Finished second Meta Heuristic
+Started Meta Heuristic with area weight at: 0.5
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
+	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Already synthesised
+############################### ITERATION 14 #################################
+
+	Parent_0:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.435027
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,-
+	Added :1940,3,1713,204,16,0,4081,2138,3,3,3.00,7,-,3.46ns,-,-,-,-,3,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times8unroll_times8
+		Score: 0.435027
+############################### ITERATION 15 #################################
+
+	Parent_0:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.435027
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 4
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2775,6,876,930,809,8,5893,2600,7,6,6.50,152,0,1.335ns,-,-,-,-,14,-,-
+	Added :2775,6,876,930,809,8,5893,2600,7,6,6.50,152,0,1.335ns,-,-,-,-,14,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times4unroll_times8
+		Score: 0.679487
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.435027
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times2
+		Score: 0.499501
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times8unroll_times8
+		Score: 0.388011
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times0
+		Score: 0.490353
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 3
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times2unroll_times8
+		Score: 0.604948
+############################### ITERATION 16 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,-
+	Added :1968,3,793,804,327,8,3595,1690,4,3,3.50,36,0,1.335ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times0unroll_times8
+		Score: 0.572543
+############################### ITERATION 17 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+############################### ITERATION 17 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 5 to 3
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,-
+	Added :3958,8,2372,1068,424,0,7675,3751,8,8,8.00,94,-,3.51ns,-,-,-,-,32,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times2unroll_times8
+		Score: 0.910256
+############################### ITERATION 18 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,-
+	Added :886,5,267,258,324,0,2192,1004,5,5,5.00,37,-,1.8201ns,-,-,-,-,33,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.535002
+############################### ITERATION 19 #################################
+
+	Parent_0:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.28219
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.318421
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,-
+	Added :2967,2,1096,990,878,0,5680,2627,3,3,3.00,3,0,3.7786ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times8unroll_times4
+		Score: 0.426093
+Finished third Meta Heuristic
+Started Meta Heuristic with area weight at: 0.75
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+
+
+Starting Synthesis
+	Already synthesised
+############################### ITERATION 21 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times0unroll_times8
+		Score: 0.48189
+############################### ITERATION 21 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,-
+	Added :1270,7,285,276,653,0,3335,1381,7,7,7.00,56,-,1.8951ns,-,-,-,-,25,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times8unroll_times2
+		Score: 0.400908
+############################### ITERATION 22 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,-
+	Added :1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_timesallunroll_times0
+		Score: 0.393999
+############################### ITERATION 23 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+############################### ITERATION 23 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 2 to 1
+	Mutated @ index: 2 from 4 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,-
+	Added :956,7,488,288,157,0,1970,946,7,7,7.00,23,-,2.1701ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times0unroll_times2
+		Score: 0.431152
+############################### ITERATION 24 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_times8unroll_times8
+		Score: 0.289697
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 2
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.288606
+############################### ITERATION 25 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.289697
+	Parent_1:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.288606
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 2 to 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,-
+	Added :2389,6,1731,300,305,0,5215,2563,6,6,6.00,53,-,3.51ns,-,-,-,-,34,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times0unroll_times8
+		Score: 0.633542
+Finished fourth Meta Heuristic
+Started Meta Heuristic with area weight at: 1
+
+
+Starting Synthesis
+	Already synthesised
+
+
+Starting Synthesis
+	Already synthesised
+############################### ITERATION 26 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_timeall
+		Score: 0.377716
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.334007
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+############################### ITERATION 26 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.334007
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2199,4,843,984,327,20,3873,1874,5,4,4.50,25,0,3.0873ns,-,-,-,-,8,-,-
+	Added :2199,4,843,984,327,20,3873,1874,5,4,4.50,25,0,3.0873ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times4unroll_times4
+		Score: 0.555584
+############################### ITERATION 27 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.334007
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 3 to 4
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,-
+	Added :5424,12,2438,1170,1651,0,12264,5196,12,12,12.00,165,-,3.51ns,-,-,-,-,28,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times4unroll_times8
+		Score: 1
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.334007
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_times4
+		Score: 0.40542
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.334007
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.243732
+############################### ITERATION 28 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.243732
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 0 to 1
+	Mutated @ index: 1 from 4 to 2
+	Mutated @ index: 2 from 3 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1773,2,517,984,269,0,2812,1310,3,3,3.00,3,0,2.408ns,-,-,-,-,8,-,-
+	Added :1773,2,517,984,269,0,2812,1310,3,3,3.00,3,0,2.408ns,-,-,-,-,8,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_timesallunroll_times2
+		Score: 0.326881
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.243732
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.243732
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times4unroll_times4
+		Score: 0.243732
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 4 to 5
+	Mutated @ index: 2 from 3 to 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 5 to 4
+	Mutated @ index: 2 from 0 to 1
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.322456
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 0 to 1
+	Mutated @ index: 1 from 5 to 4
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_times0
+		Score: 0.308075
+############################### ITERATION 29 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 1
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1904,3,780,792,292,20,3502,1635,4,3,3.50,20,0,1.335ns,-,-,-,-,5,-,-
+	Added :1904,3,780,792,292,20,3502,1635,4,3,3.50,20,0,1.335ns,-,-,-,-,5,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times4unroll_timeall
+		Score: 0.351032
+############################### ITERATION 30 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times2
+		Score: 0.230672
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,-
+	Added :794,7,274,264,225,0,1769,829,7,7,7.00,31,-,1.7301ns,-,-,-,-,39,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times8unroll_times0
+		Score: 0.291851
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+############################### ITERATION 31 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 0 to 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,-
+	Added :2887,9,949,528,1315,0,7130,2917,9,9,9.00,95,-,3.1401ns,-,-,-,-,19,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_times8unroll_times4
+		Score: 0.532264
+############################### ITERATION 32 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times0
+		Score: 0.146386
+	Parent_1:
+		arrayRAMunroll_times8unroll_times0
+		Score: 0.163348
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 4 to 2
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,-
+	Added :783,19,267,270,188,0,1893,840,19,19,19.00,58,-,1.4801ns,-,-,-,-,47,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times0
+		Score: 0.144358
+Finished fifth Meta Heuristic
+Started Meta Heuristic with area weight at: 0
+
+
+Starting Synthesis
+	Already synthesised
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,-
+	Added :1926,17,465,798,619,0,4079,1591,17,17,17.00,44,-,2.475ns,-,-,-,-,17,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+############################### ITERATION 34 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times8
+		Score: 0.595745
+	Parent_1:
+		arrayRAMarrayEXPAND,array_index=constunroll_timeall
+		Score: 0.361702
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMarrayEXPAND,array_index=constunroll_timeall
+		Score: 0.361702
+############################### ITERATION 34 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_times8
+		Score: 0.595745
+	Parent_1:
+		arrayRAMarrayEXPAND,array_index=constunroll_timeall
+		Score: 0.361702
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 0 to 4
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+############################### ITERATION 34 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayRAMarrayEXPAND,array_index=constunroll_timeall
+		Score: 0.361702
+	Crossover ocurred at: 0
+	Mutated @ index: 0 from 0 to 1
+	Mutated @ index: 1 from 0 to 3
+	Mutated @ index: 2 from 1 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1870,4,528,990,299,28,3088,1437,5,4,4.50,25,0,2.598ns,-,-,-,-,16,-,-
+	Added :1870,4,528,990,299,28,3088,1437,5,4,4.50,25,0,2.598ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_times2unroll_times2
+		Score: 0.340426
+############################### ITERATION 35 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayREGunroll_times2unroll_times2
+		Score: 0.340426
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 1
+	Mutated @ index: 2 from 2 to 4
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times0unroll_times8
+		Score: 0.723404
+############################### ITERATION 35 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayREGunroll_times2unroll_times2
+		Score: 0.340426
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 0 to 1
+	Mutated @ index: 1 from 3 to 0
+	Mutated @ index: 2 from 2 to 0
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,-
+	Added :1538,2,267,990,278,0,2308,1033,3,3,3.00,3,0,1.8173ns,-,-,-,-,16,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayEXPAND,array_index=constunroll_times0
+		Score: 0.340426
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayREGunroll_times2unroll_times2
+		Score: 0.340426
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 3 to 4
+	Mutated @ index: 2 from 2 to 4
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_times8
+		Score: 0.297872
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayREGunroll_times4unroll_times8
+		Score: 0.297872
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 4 to 2
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 0
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times0
+		Score: 1
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times4unroll_times8
+		Score: 0.595745
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayRAMunroll_times4unroll_timeall
+		Score: 0.276596
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 0 to 1
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 1
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_timeall
+		Score: 0.106383
+############################### ITERATION 36 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_timeall
+		Score: 0.106383
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,-
+	Added :2256,8,884,996,342,0,4175,1929,8,8,8.00,34,-,2.96ns,-,-,-,-,12,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times4
+		Score: 0.255319
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_timeall
+		Score: 0.106383
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_times4unroll_times8
+		Score: 0.297872
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		arrayREGunroll_times4unroll_timeall
+		Score: 0.106383
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 1
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 1
+	Mutated @ index: 0 from 1 to 0
+	Mutated @ index: 1 from 2 to 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times0unroll_times8
+		Score: 0.723404
+############################### ITERATION 37 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,-
+	Added :1452,12,470,624,320,0,2947,1286,12,12,12.00,38,-,2.27ns,-,-,-,-,24,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times2
+		Score: 0.510638
+############################### ITERATION 38 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 0
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,-
+	Added :1495,1,775,720,0,0,2172,1092,2,2,2.00,0,0,1.335ns,-,-,-,-,1,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGarrayEXPAND,array_index=constunroll_times8
+		Score: 0.0212766
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 3
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times4
+		Score: 0.255319
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Mutated @ index: 1 from 2 to 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_times0unroll_times8
+		Score: 0.723404
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 0
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Mutated @ index: 0 from 1 to 0
+	Didn't mutate @ index: 1
+	Didn't mutate @ index: 2
+
+
+Starting Synthesis
+	Already synthesised
+	Generated Child:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+############################### ITERATION 39 #################################
+
+	Parent_0:
+		arrayREGunroll_timesallunroll_times8
+		Score: 0.0212766
+	Parent_1:
+		arrayRAMunroll_timesallunroll_times8
+		Score: 0.0638298
+	Crossover ocurred at: 2
+	Didn't mutate @ index: 0
+	Didn't mutate @ index: 1
+	Mutated @ index: 2 from 4 to 3
+
+
+Starting Synthesis
+	Successfully created attrs.h file.
+	Started: C_Pars
+	Called cpars with: bdlpars ../benchmarks/ave16/ave16.c
+	Started: BDL_TRAN
+	Called bdltran with: bdltran -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB > bdltran.output 2> bdltran.errs
+
+	Finished BDL_TRAN
+	RESULTS: 2088,2,823,978,284,0,3520,1702,3,3,3.00,3,0,2.9273ns,-,-,-,-,4,-,-
+	Added :2088,2,823,978,284,0,3520,1702,3,3,3.00,3,0,2.9273ns,-,-,-,-,4,-,- to results directory file
+	Added attribute string to attr, AREA, and Latency map.
+Finished Synthesis
+
+
+	Generated Child:
+		arrayREGunroll_timesallunroll_times4
+		Score: 0.0851064
+Finished last Meta Heuristic
+The program labeled: ave16_meta took -33 seconds.
