@@ -21,7 +21,7 @@ attr1 unroll_times 4
 attr2 unroll_times 0
 attr2 unroll_times all
 attr2 unroll_times 2
-attr3 unroll_times 4
+attr2 unroll_times 4
 
 #attr3 folding 1
 #attr3 folding 2
