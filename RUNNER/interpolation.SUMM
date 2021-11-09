@@ -1,12 +1,16 @@
-option -c1000 -s interpolation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB
-I_BT1173: LOG file is generated. (interpolation.LOG.gz)
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
+         (BIF version : 3.41F)
+         (LICflex version : 1.53 cylmd)
+         make at Thu Mar 22 14:30:59 JST 2018
+ Option  -c1000 -s interpolation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
+
+bdlpars  ../benchmarks/interpolation_filter/interpolation.c
+
 ############## CyberII started (automatic scheduling mode) ##############
 [Clock period]    100,000 (1/10ps) [define]
 [Datapath delay]   90,000 (1/10ps)
 [Clock uncertainty] 10,000 (1/10ps)
-I_BT6773: The BLIB and FLIB files are loaded.
-	/proj/cad/cwb-6.1/packages/asic_45.BLIB
-	/proj/cad/cwb-6.1/packages/asic_45.FLIB
 
 ******* Initial # of operations in the input behavior description *******
  === Operators ===
@@ -22,9 +26,6 @@ I_BT6773: The BLIB and FLIB files are loaded.
  === array / memory ===
   read  :  9
   write :  2
-I_BT4383: Generate memory library file / memory constraint file.
-	interpolation-auto.MLIB
-	interpolation-auto.MCNT
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
@@ -37,11 +38,6 @@ I_BT4383: Generate memory library file / memory constraint file.
  === array / memory ===
   read  : 17
   write :  6
-I_BT4382: Generate functional unit library files / functional unit constraint files.
-	interpolation-auto.FLIB
-	interpolation-auto.FCNT
-	interpolation-amacro-auto.FLIB
-	interpolation-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
 [Performance index max/min/ave] 4 / 4 / 4.00
@@ -67,10 +63,5 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
     Out               :         17
 
 TOTAL AREA 23,883 (FU: 22,096 + REG: 1,032 + MUX: 739 + DEC: 0 + MISC: 16) + pin pair 36,658(net 17,421) + 1FSM of 4state
-
-I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	 2 warning      exist
-	46 information  exist
-	---> SEE interpolation.err FILE for DETAILS
 ##### CyberII Normal finish (automatic scheduling mode) [interpolation] #####
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<sourceInfo version="1.00">
+    <hierInfo>
+        <processes>
+            <process name="interpolation" type="process" file="interpolation.IFF">
+            </process>
+        </processes>
+    </hierInfo>
+    <fileInfo>
+        <sourcefiles>
+            <sourcefile name="../benchmarks/interpolation_filter/interpolation.c" timestamp="20211102125734"/>
+            <sourcefile name="../benchmarks/interpolation_filter/attrs.h" timestamp="20211109075311"/>
+        </sourcefiles>
+    </fileInfo>
+</sourceInfo>

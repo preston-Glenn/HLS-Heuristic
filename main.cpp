@@ -341,6 +341,7 @@ void synthesize(vector<int> indexes){
 		logger.log("\tAlready synthesised");
 		AREA    = attributeMap_AREA[attributeHash];
 		LATENCY = attributeMap_LATENCY[attributeHash];
+		NUMBER_OF_RUNS++;
 	} else {
       cout << "NUMBER of attempted synthesized Runs: " <<  ++NUMBER_OF_RUNS << endl;
 

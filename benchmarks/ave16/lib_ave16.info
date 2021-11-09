@@ -8,7 +8,7 @@
 
 attr1 array RAM
 attr1 array REG
-attr2 array EXPAND,array_index=const
+attr1 array EXPAND,array_index=const
 
 attr2 unroll_times 0
 attr2 unroll_times all

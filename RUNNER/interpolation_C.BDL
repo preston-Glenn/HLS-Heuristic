@@ -1,0 +1,1817 @@
+/*
+* interpolation_C.BDL
+# Design Name        interpolation
+# FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
+# MEM  Limit File    %AUTO%.MLMT
+# Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
+# PORT Limit File    %AUTO%.PLMT
+# PORT relation File %AUTO%.PREL
+# Clock Cycle        100000 (1/10ps).
+# Clock Uncertainty  0-->10000 (1/10ps)
+# Performance index  max/min/ave  4 / 4 / 4.00
+# Data-path info.    
+# Bp-Option  ../benchmarks/interpolation_filter/interpolation.c
+# Option  -c1000 -s interpolation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
+# Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
+*/
+unsigned var(0:1)  odata_en_1/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:25 */;
+unsigned var(0:16)  odata_1/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:26 */;
+unsigned reg(0:16)  RG_SoP1/* Cyber bit_order = down, reset_sig = void */ /* line# ../benchmarks/interpolation_filter/interpolation.c:38 */;
+unsigned reg(0:9)  RG_infactor_read/* Cyber bit_order = down, reset_sig = void */ /* line# ../benchmarks/interpolation_filter/interpolation.c:35 */;
+unsigned reg(0:16)  RG_n_SoP4/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:41,43 */;
+unsigned reg(0:16)  RG_SoP2/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:39 */;
+unsigned reg(0:16)  RG_SoP3/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:40 */;
+unsigned reg(0:1)  FF_n/* Cyber bit_order = down, reset_sig = void, other = DC */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
+in   unsigned port(0:16)  indata/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:21 */;
+in   unsigned port(0:9)  infactor/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:22 */;
+out  unsigned port(0:1)  odata_en/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:25 */;
+out  unsigned port(0:16)  odata/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:26 */;
+
+/* Cyber default_bit_order = down */
+process
+interpolation()
+{
+    unsigned ter(0:16)  M_121/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_120/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_119/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_118/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_117/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_116/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_115/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_114/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_113/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_112/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_111/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_110/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  CT_06/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  JF_02/* Cyber bit_order = down */;
+    unsigned ter(0:2)  M_108_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_107_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_106_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_105_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_103_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_102_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_1011_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_1001_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_991_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_971_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_961_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_951_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_931_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_921_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_911_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  odata_write_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_78_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_74_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_72_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:2)  n3_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  SoP41_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_711_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_681_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_651_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_621_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  SoP31_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_591_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_561_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_531_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_501_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  SoP21_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_471_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_80_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_01_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_441_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_81_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_02_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_411_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_82_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_03_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_381_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_83_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_04_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  CT_05/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  CT_04/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:2)  CT_03/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  CT_02/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:2)  CT_01/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:1)  JF_01/* Cyber bit_order = down */;
+    unsigned ter(0:4)  M_109_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_891_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:4)  n1_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  SoP11_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_351_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_301_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_22_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_05_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_06_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_07_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_08_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:3)  M_051_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_341_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_261_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  M_18_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_09_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_10_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_11_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_12_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  indata_read_t/* Cyber bit_order = down, other = DC */;
+    unsigned ter(0:16)  BF_12/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_11/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_10/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_09/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_08/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_07/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_06/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_05/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_04/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_03/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_02/* Cyber bit_order = down */;
+    unsigned ter(0:16)  BF_01/* Cyber bit_order = down */;
+    unsigned var(0:4)  M_109/* Cyber bit_order = down */;
+    unsigned var(0:2)  M_108/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_1011/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_1001/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_991/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_981/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_971/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_961/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_951/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_941/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_931/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_921/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_911/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_901/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_891/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_881/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_711/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_691/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_681/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_661/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_651/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_631/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_621/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_601/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_591/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_571/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_561/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_541/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_531/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_511/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_501/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_481/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_471/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_451/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_441/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_421/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_411/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_391/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_381/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_361/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_351/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_341/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_301/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_261/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_051/* Cyber bit_order = down */;
+    unsigned var(0:1)  n4/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
+    unsigned var(0:2)  n3/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
+    unsigned var(0:3)  n2/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
+    unsigned var(0:4)  n1/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:43 */;
+    unsigned var(0:16)  SoP41/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:41 */;
+    unsigned var(0:16)  SoP31/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:40 */;
+    unsigned var(0:16)  SoP21/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:39 */;
+    unsigned var(0:16)  SoP11/* Cyber bit_order = down */ /* line# ../benchmarks/interpolation_filter/interpolation.c:38 */;
+    unsigned var(0:16)  M_107/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_106/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_105/* Cyber bit_order = down */;
+    unsigned var(0:9)  M_104/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_103/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_102/* Cyber bit_order = down */;
+    unsigned var(0:35)  M_101/* Cyber bit_order = down */;
+    unsigned var(0:34)  M_100/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_99/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_98/* Cyber bit_order = down */;
+    unsigned var(0:35)  M_97/* Cyber bit_order = down */;
+    unsigned var(0:34)  M_96/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_95/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_94/* Cyber bit_order = down */;
+    unsigned var(0:35)  M_93/* Cyber bit_order = down */;
+    unsigned var(0:34)  M_92/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_91/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_90/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_89/* Cyber bit_order = down */;
+    unsigned var(0:36)  M_88/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_87/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_86/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_85/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_84/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_83/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_82/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_81/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_80/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_79/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_78/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_77/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_76/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_75/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_74/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_73/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_72/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_71/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_70/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_69/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_68/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_67/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_66/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_65/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_64/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_63/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_62/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_61/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_60/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_59/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_58/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_57/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_56/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_55/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_54/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_53/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_52/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_51/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_50/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_49/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_48/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_47/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_46/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_45/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_44/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_43/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_42/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_41/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_40/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_39/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_38/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_37/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_36/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_35/* Cyber bit_order = down */;
+    unsigned var(0:33)  M_34/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_33/* Cyber bit_order = down */;
+    unsigned var(0:2)  M_32/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_31/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_30/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_29/* Cyber bit_order = down */;
+    unsigned var(0:2)  M_28/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_27/* Cyber bit_order = down */;
+    unsigned var(0:17)  M_26/* Cyber bit_order = down */;
+    unsigned var(0:2)  M_25/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_24/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_23/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_22/* Cyber bit_order = down */;
+    unsigned var(0:2)  M_21/* Cyber bit_order = down */;
+    unsigned var(0:1)  M_20/* Cyber bit_order = down */;
+    unsigned var(0:3)  M_19/* Cyber bit_order = down */;
+    unsigned var(0:16)  M_18/* Cyber bit_order = down */;
+    unsigned reg(0:16)  buffer_3[2]/* Cyber bit_order = down, sig2mu = buffer[] */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
+    unsigned reg(0:16)  buffer_2[2]/* Cyber bit_order = down, sig2mu = buffer[] */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
+    unsigned reg(0:16)  buffer_1[2]/* Cyber bit_order = down, sig2mu = buffer[] */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
+    unsigned reg(0:16)  buffer_0[2]/* Cyber bit_order = down, sig2mu = buffer[] */ /* line# ../benchmarks/interpolation_filter/interpolation.c:32 */;
+    unsigned var(0:32)  M_17/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_16/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_15/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_14/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_13/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_12/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_11/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_10/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_09/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_08/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_07/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_06/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_05/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_04/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_03/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_02/* Cyber bit_order = down */;
+    unsigned var(0:32)  M_01/* Cyber bit_order = down */;
+
+    /* Cyber state = reset */
+ST1_00 :
+    goto ST1_01;
+    $
+
+ST1_01 :
+    indata_read_t(0:16) = indata(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:85 */
+    odata(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:81 */
+    odata_en(0:1) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:80 */
+    buffer_1[(unsigned ter(0:1))(1(0:1))](0:16) = buffer_0[(unsigned ter(0:1))(1(0:1))](0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
+    buffer_0[(unsigned ter(0:1))(1(0:1))](0:16) = buffer_3[(unsigned ter(0:1))(0(0:1))](0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
+    buffer_3[(unsigned ter(0:1))(0(0:1))](0:16) = buffer_2[(unsigned ter(0:1))(0(0:1))](0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
+    buffer_2[(unsigned ter(0:1))(0(0:1))](0:16) = buffer_1[(unsigned ter(0:1))(0(0:1))](0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
+    buffer_1[(unsigned ter(0:1))(0(0:1))](0:16) = buffer_0[(unsigned ter(0:1))(0(0:1))](0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:94 */
+    buffer_0[(unsigned ter(0:1))(0(0:1))](0:16) = indata_read_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:95 */
+    goto ST1_02;
+    $
+
+ST1_02 :
+    RG_infactor_read(0:9) = infactor(0:9); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:86 */
+    odata_en(0:1) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:89 */
+    RG_n_SoP4(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
+    RG_SoP1(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:99 */
+    goto ST1_03;
+    $
+
+ST1_03 :
+    RG_SoP1(0:16) = SoP11_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    RG_SoP2(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:105 */
+    RG_SoP3(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:111 */
+    FF_n(0:1) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
+    if (CT_05(0:1)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
+        JF_01(0:1) = 1(0:1);
+        RG_n_SoP4(0:16) = n1_t(1:3);
+    }
+    else {
+        JF_01(0:1) = 0(0:1);
+        RG_n_SoP4(0:16) = (unsigned ter(0:1))(0(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:117 */
+    }
+    switch (CT_04(0:1)) {	/* CAB */ 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    case 0 : 
+        M_301_t(0:16) = (unsigned ter(0:16))(coeff1_0(M_051_t(0:2))/* Cyber exp2fu# = 545 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        break;
+    case 1 : 
+        M_301_t(0:16) = (unsigned ter(0:16))(coeff1_1(M_051_t(0:2))/* Cyber exp2fu# = 546 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        break;
+    }
+    switch (CT_03(0:2)) {	/* CAB */ 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    case 0 : 
+        M_22_t(0:16) = BF_08_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_08_t(0:16) = buffer_0[M_051_t(0:1)](0:16);
+        break;
+    case 1 : 
+        M_22_t(0:16) = BF_07_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_07_t(0:16) = buffer_1[M_051_t(0:1)](0:16);
+        break;
+    case 2 : 
+        M_22_t(0:16) = BF_06_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_06_t(0:16) = buffer_2[M_051_t(0:1)](0:16);
+        break;
+    case 3 : 
+        M_22_t(0:16) = BF_05_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_05_t(0:16) = buffer_3[M_051_t(0:1)](0:16);
+        break;
+    }
+    switch (CT_02(0:1)) {	/* CAB */ 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    case 0 : 
+        M_261_t(0:16) = (unsigned ter(0:16))(coeff1_0(RG_n_SoP4(13:2))/* Cyber exp2fu# = 545 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        break;
+    case 1 : 
+        M_261_t(0:16) = (unsigned ter(0:16))(coeff1_1(RG_n_SoP4(13:2))/* Cyber exp2fu# = 546 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        break;
+    }
+    switch (CT_01(0:2)) {	/* CAB */ 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    case 0 : 
+        M_18_t(0:16) = BF_12_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_12_t(0:16) = buffer_0[RG_n_SoP4(13:1)](0:16);
+        break;
+    case 1 : 
+        M_18_t(0:16) = BF_11_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_11_t(0:16) = buffer_1[RG_n_SoP4(13:1)](0:16);
+        break;
+    case 2 : 
+        M_18_t(0:16) = BF_10_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_10_t(0:16) = buffer_2[RG_n_SoP4(13:1)](0:16);
+        break;
+    case 3 : 
+        M_18_t(0:16) = BF_09_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+        BF_09_t(0:16) = buffer_3[RG_n_SoP4(13:1)](0:16);
+        break;
+    }
+    M_109_t(0:4) = n1_t(0:4); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
+    CT_05(0:1) = (unsigned ter(0:1))(~M_109_t(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
+    CT_04(0:1) = M_051_t(2:1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    CT_03(0:2) = M_051_t(1:2); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    CT_02(0:1) = RG_n_SoP4(15:1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    CT_01(0:2) = RG_n_SoP4(14:2); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    M_341_t(0:16) = (unsigned ter(0:16))(M_18_t(0:16) * M_261_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    M_051_t(0:3) = (unsigned ter(0:3))(RG_n_SoP4(13:3) + 1);
+    M_351_t(0:16) = (unsigned ter(0:16))(M_22_t(0:16) * M_301_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    SoP11_t(0:16) = (unsigned ter(0:16))(M_891_t(0:16) + M_351_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    n1_t(0:4) = (unsigned ter(0:4))(RG_n_SoP4(13:3) + (unsigned ter(0:2))(2(0:2))); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:101 */
+    M_891_t(0:16) = (unsigned ter(0:16))(M_341_t(0:16) + RG_SoP1(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:102 */
+    /* Cyber sfdl_jump = exclusive */
+    if (JF_01(0:1)) {
+        goto ST1_03;
+    }
+    else {
+        goto ST1_04;
+    }
+    $
+
+ST1_04 :
+    RG_n_SoP4(0:16) = SoP41_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    RG_SoP2(0:16) = SoP21_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    RG_SoP3(0:16) = SoP31_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    FF_n(0:1) = n3_t(1:1);
+    if (CT_06(0:1)) { 	/* line# ../benchmarks/interpolation_filter/interpolation.c:107,113,119 */
+        JF_02(0:1) = 0(0:1);
+    }
+    else {
+        M_107_t(0:16) = (unsigned ter(0:16))(M_74_t(0:16) + M_78_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        odata(0:16) = odata_write_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:137 */
+        odata_en(0:1) = (unsigned ter(0:1))(1(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:136 */
+        JF_02(0:1) = 1(0:1);
+        M_72_t(0:16) = (unsigned ter(0:16))(SoP21_t(0:16) * RG_infactor_read(0:9)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_74_t(0:16) = (unsigned ter(0:16))(SoP31_t(0:16) * M_102_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_78_t(0:16) = (unsigned ter(0:16))(SoP41_t(0:16) * M_105_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        odata_write_t(0:16) = (unsigned ter(0:16))(M_106_t(0:16) + M_107_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_102_t(0:16) = (unsigned ter(0:16))(RG_infactor_read(0:9) * RG_infactor_read(0:9)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_103_t(0:16) = (unsigned ter(0:16))(RG_infactor_read(0:9) * RG_infactor_read(0:9)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_105_t(0:16) = (unsigned ter(0:16))(M_103_t(0:16) * infactor(0:9)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+        M_106_t(0:16) = (unsigned ter(0:16))(RG_SoP1(0:16) + M_72_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:124,125,126,127 */
+    }
+    M_108_t(0:2) = n3_t(0:2); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:107,113,119 */
+    CT_06(0:1) = (unsigned ter(0:1))(~M_108_t(0:1)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:107,113,119 */
+    BF_04_t(0:16) = buffer_0[FF_n(0:1)](0:16);
+    M_83_t(0:16) = BF_04_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_110(0:16) = (unsigned ter(0:16))(coeff2_0(FF_n(0:1))/* Cyber exp2fu# = 547 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_381_t(0:16) = (unsigned ter(0:16))(M_83_t(0:16) * M_110(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    BF_03_t(0:16) = buffer_1[FF_n(0:1)](0:16);
+    M_82_t(0:16) = BF_03_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_111(0:16) = (unsigned ter(0:16))(coeff2_1(FF_n(0:1))/* Cyber exp2fu# = 548 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_411_t(0:16) = (unsigned ter(0:16))(M_82_t(0:16) * M_111(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    BF_02_t(0:16) = buffer_2[FF_n(0:1)](0:16);
+    M_81_t(0:16) = BF_02_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_112(0:16) = (unsigned ter(0:16))(coeff2_2(FF_n(0:1))/* Cyber exp2fu# = 549 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_441_t(0:16) = (unsigned ter(0:16))(M_81_t(0:16) * M_112(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    BF_01_t(0:16) = buffer_3[FF_n(0:1)](0:16);
+    M_80_t(0:16) = BF_01_t(0:16); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_113(0:16) = (unsigned ter(0:16))(coeff2_3(FF_n(0:1))/* Cyber exp2fu# = 550 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_471_t(0:16) = (unsigned ter(0:16))(M_80_t(0:16) * M_113(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    SoP21_t(0:16) = (unsigned ter(0:16))(M_991_t(0:16) + M_1011_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_114(0:16) = (unsigned ter(0:16))(coeff3_0(FF_n(0:1))/* Cyber exp2fu# = 551 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_501_t(0:16) = (unsigned ter(0:16))(M_83_t(0:16) * M_114(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_115(0:16) = (unsigned ter(0:16))(coeff3_1(FF_n(0:1))/* Cyber exp2fu# = 552 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_531_t(0:16) = (unsigned ter(0:16))(M_82_t(0:16) * M_115(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_116(0:16) = (unsigned ter(0:16))(coeff3_2(FF_n(0:1))/* Cyber exp2fu# = 553 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_561_t(0:16) = (unsigned ter(0:16))(M_81_t(0:16) * M_116(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_117(0:16) = (unsigned ter(0:16))(coeff3_3(FF_n(0:1))/* Cyber exp2fu# = 554 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_591_t(0:16) = (unsigned ter(0:16))(M_80_t(0:16) * M_117(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    SoP31_t(0:16) = (unsigned ter(0:16))(M_911_t(0:16) + M_931_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_118(0:16) = (unsigned ter(0:16))(coeff4_0(FF_n(0:1))/* Cyber exp2fu# = 555 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_621_t(0:16) = (unsigned ter(0:16))(M_83_t(0:16) * M_118(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_119(0:16) = (unsigned ter(0:16))(coeff4_1(FF_n(0:1))/* Cyber exp2fu# = 556 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_651_t(0:16) = (unsigned ter(0:16))(M_82_t(0:16) * M_119(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_120(0:16) = (unsigned ter(0:16))(coeff4_2(FF_n(0:1))/* Cyber exp2fu# = 557 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_681_t(0:16) = (unsigned ter(0:16))(M_81_t(0:16) * M_120(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_121(0:16) = (unsigned ter(0:16))(coeff4_3(FF_n(0:1))/* Cyber exp2fu# = 558 */); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_711_t(0:16) = (unsigned ter(0:16))(M_80_t(0:16) * M_121(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    SoP41_t(0:16) = (unsigned ter(0:16))(M_951_t(0:16) + M_971_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    n3_t(0:2) = (unsigned ter(0:2))(FF_n(0:1) + 1); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:119 */
+    M_911_t(0:16) = (unsigned ter(0:16))(RG_SoP3(0:16) + M_501_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_921_t(0:16) = (unsigned ter(0:16))(M_531_t(0:16) + M_561_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_931_t(0:16) = (unsigned ter(0:16))(M_921_t(0:16) + M_591_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:114 */
+    M_951_t(0:16) = (unsigned ter(0:16))(RG_n_SoP4(0:16) + M_621_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_961_t(0:16) = (unsigned ter(0:16))(M_651_t(0:16) + M_681_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_971_t(0:16) = (unsigned ter(0:16))(M_961_t(0:16) + M_711_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:120 */
+    M_991_t(0:16) = (unsigned ter(0:16))(RG_SoP2(0:16) + M_381_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_1001_t(0:16) = (unsigned ter(0:16))(M_411_t(0:16) + M_441_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    M_1011_t(0:16) = (unsigned ter(0:16))(M_1001_t(0:16) + M_471_t(0:16)); 	/* line# ../benchmarks/interpolation_filter/interpolation.c:108 */
+    /* Cyber sfdl_jump = exclusive */
+    if (JF_02(0:1)) {
+        goto ST1_01;
+    }
+    else {
+        goto ST1_04;
+    }
+}
+
+/*
+#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
+#@LMT %AUTO%.LMT
+##@CLK  100000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  add3u      1  (u)+              3,4    2300     17
+#  2  add16u    15  (u)+              16,17  5400    101
+#  3  mul12u     2  (u)*              12,24  19600   760
+#  4  mul16u    16  (u)*              16,32  26500  1230
+#  5  incr2u     1  (u)INCR           2,3    1000      3
+#  6  incr3u     1  (u)INCR           3,4    1300      5
+#  7  coeff1_0    2  @coeff1_0         (2),16  750      11
+#  8  coeff1_1    2  @coeff1_1         (2),16  750      11
+#  9  coeff2_0    1  @coeff2_0         (1),16  350       1
+# 10  coeff2_1    1  @coeff2_1         (1),16  350       1
+# 11  coeff2_2    1  @coeff2_2         (1),16  350       1
+# 12  coeff2_3    1  @coeff2_3         (1),16  350       1
+# 13  coeff3_0    1  @coeff3_0         (1),16  350       1
+# 14  coeff3_1    1  @coeff3_1         (1),16  350       1
+# 15  coeff3_2    1  @coeff3_2         (1),16  350       1
+# 16  coeff3_3    1  @coeff3_3         (1),16  350       1
+# 17  coeff4_0    1  @coeff4_0         (1),16  350       1
+# 18  coeff4_1    1  @coeff4_1         (1),16  350       1
+# 19  coeff4_2    1  @coeff4_2         (1),16  350       1
+# 20  coeff4_3    1  @coeff4_3         (1),16  350       1
+#@END
+
+#@MCNT %AUTO%.MCNT
+##@CNT { test }
+#@MCNT {
+#    NAME	buffer[]
+#    LIMIT	1
+#    KIND	R2,W1
+#    BITWIDTH	16
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	0
+#    ARRAY_DIV_NAME	buffer_0
+#}
+#@MCNT {
+#    NAME	buffer[]
+#    LIMIT	1
+#    KIND	R2,W1
+#    BITWIDTH	16
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	1
+#    ARRAY_DIV_NAME	buffer_1
+#}
+#@MCNT {
+#    NAME	buffer[]
+#    LIMIT	1
+#    KIND	R2,W1
+#    BITWIDTH	16
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	2
+#    ARRAY_DIV_NAME	buffer_2
+#}
+#@MCNT {
+#    NAME	buffer[]
+#    LIMIT	1
+#    KIND	R2,W1
+#    BITWIDTH	16
+#    DELAY	0
+#    ARRAY_DIV	4
+#    ARRAY_DIV_INDEX	3
+#    ARRAY_DIV_NAME	buffer_3
+#}
+##@END { test }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  buffer[]    1  R2               16x2     0  buffer_0       	
+#  2  buffer[]    1  R2               16x2     0  buffer_1       	
+#  3  buffer[]    1  R2               16x2     0  buffer_2       	
+#  4  buffer[]    1  R2               16x2     0  buffer_3       	
+#@END
+
+#@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
+##@VERSION{2.00}
+##@LIB{CWBSTDBLIB}
+##@UNIT 1/10ps
+#@BLIB {
+#    NAME	nmux2_1
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	6
+#    PIN_PAIR	6
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux2_2
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	2
+#    DELAY	900
+#    AREA	3
+#    NET	10
+#    PIN_PAIR	12
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux2_4
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	4
+#    DELAY	1100
+#    AREA	9
+#    NET	20
+#    PIN_PAIR	26
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_8
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	8
+#    DELAY	1400
+#    AREA	16
+#    NET	36
+#    PIN_PAIR	50
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_16
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	1600
+#    AREA	32
+#    NET	70
+#    PIN_PAIR	100
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux2_32
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	32
+#    DELAY	1700
+#    AREA	64
+#    NET	140
+#    PIN_PAIR	202
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux2_64
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	64
+#    DELAY	1500
+#    AREA	128
+#    NET	275
+#    PIN_PAIR	401
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux4_1
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_2
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	2
+#    DELAY	1000
+#    AREA	6
+#    NET	18
+#    PIN_PAIR	22
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_4
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	4
+#    DELAY	1200
+#    AREA	17
+#    NET	36
+#    PIN_PAIR	48
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_8
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	8
+#    DELAY	1500
+#    AREA	30
+#    NET	64
+#    PIN_PAIR	92
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_16
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	1700
+#    AREA	61
+#    NET	124
+#    PIN_PAIR	184
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_32
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	32
+#    DELAY	1900
+#    AREA	121
+#    NET	248
+#    PIN_PAIR	372
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux4_64
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	64
+#    DELAY	1600
+#    AREA	242
+#    NET	490
+#    PIN_PAIR	742
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_1
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	1000
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_2
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	2
+#    DELAY	1300
+#    AREA	13
+#    NET	34
+#    PIN_PAIR	42
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_4
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	4
+#    DELAY	1600
+#    AREA	31
+#    NET	66
+#    PIN_PAIR	90
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_8
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	8
+#    DELAY	1700
+#    AREA	59
+#    NET	120
+#    PIN_PAIR	176
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_16
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	2000
+#    AREA	119
+#    NET	232
+#    PIN_PAIR	352
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_32
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	32
+#    DELAY	2200
+#    AREA	233
+#    NET	463
+#    PIN_PAIR	711
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux8_64
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	64
+#    DELAY	1800
+#    AREA	460
+#    NET	906
+#    PIN_PAIR	1410
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_1
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	1500
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux16_2
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	2
+#    DELAY	1700
+#    AREA	33
+#    NET	80
+#    PIN_PAIR	96
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_4
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	4
+#    DELAY	1900
+#    AREA	76
+#    NET	155
+#    PIN_PAIR	203
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_8
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	8
+#    DELAY	2200
+#    AREA	127
+#    NET	248
+#    PIN_PAIR	360
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_16
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	2400
+#    AREA	255
+#    NET	480
+#    PIN_PAIR	720
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_32
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	32
+#    DELAY	2700
+#    AREA	506
+#    NET	967
+#    PIN_PAIR	1463
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_64
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	64
+#    DELAY	2300
+#    AREA	995
+#    NET	1878
+#    PIN_PAIR	2886
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux32_1
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_2
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	2
+#    DELAY	1900
+#    AREA	56
+#    NET	138
+#    PIN_PAIR	170
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_4
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	4
+#    DELAY	2300
+#    AREA	115
+#    NET	248
+#    PIN_PAIR	344
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_8
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	8
+#    DELAY	2400
+#    AREA	251
+#    NET	488
+#    PIN_PAIR	712
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux32_16
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	16
+#    DELAY	2600
+#    AREA	502
+#    NET	944
+#    PIN_PAIR	1424
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux32_32
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	32
+#    DELAY	2900
+#    AREA	982
+#    NET	1877
+#    PIN_PAIR	2869
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux32_64
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	64
+#    DELAY	2700
+#    AREA	1946
+#    NET	3660
+#    PIN_PAIR	5676
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_1
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	56
+#    NET	171
+#    PIN_PAIR	171
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_2
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	2
+#    DELAY	2000
+#    AREA	113
+#    NET	278
+#    PIN_PAIR	342
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_4
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	4
+#    DELAY	2500
+#    AREA	228
+#    NET	494
+#    PIN_PAIR	686
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_8
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	8
+#    DELAY	2500
+#    AREA	504
+#    NET	984
+#    PIN_PAIR	1432
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_16
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	2600
+#    AREA	1008
+#    NET	1904
+#    PIN_PAIR	2864
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux64_32
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	32
+#    DELAY	3100
+#    AREA	1955
+#    NET	3755
+#    PIN_PAIR	5739
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux64_64
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	64
+#    DELAY	2800
+#    AREA	3917
+#    NET	7434
+#    PIN_PAIR	11466
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	reg1
+#    KIND	reg
+#    BITWIDTH	1
+#    AREA	6
+#    NET	5
+#    PIN_PAIR	5
+#}
+#@BLIB {
+#    NAME	reg4
+#    KIND	reg
+#    BITWIDTH	4
+#    AREA	24
+#    NET	14
+#    PIN_PAIR	20
+#}
+#@BLIB {
+#    NAME	reg8
+#    KIND	reg
+#    BITWIDTH	8
+#    AREA	48
+#    NET	26
+#    PIN_PAIR	40
+#}
+#@BLIB {
+#    NAME	dec2
+#    KIND	dec
+#    BITWIDTH	2
+#    DELAY	200
+#    AREA	1
+#    NET	2
+#    PIN_PAIR	3
+#}
+#@BLIB {
+#    NAME	dec4
+#    KIND	dec
+#    BITWIDTH	4
+#    DELAY	900
+#    AREA	5
+#    NET	10
+#    PIN_PAIR	16
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec8
+#    KIND	dec
+#    BITWIDTH	8
+#    DELAY	1300
+#    AREA	14
+#    NET	18
+#    PIN_PAIR	39
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dec16
+#    KIND	dec
+#    BITWIDTH	16
+#    DELAY	1300
+#    AREA	25
+#    NET	37
+#    PIN_PAIR	74
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec32
+#    KIND	dec
+#    BITWIDTH	32
+#    DELAY	1800
+#    AREA	42
+#    NET	58
+#    PIN_PAIR	138
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dec64
+#    KIND	dec
+#    BITWIDTH	64
+#    DELAY	2000
+#    AREA	78
+#    NET	100
+#    PIN_PAIR	258
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dec128
+#    KIND	dec
+#    BITWIDTH	128
+#    DELAY	2500
+#    AREA	149
+#    NET	194
+#    PIN_PAIR	483
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux2_1
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	4
+#    PIN_PAIR	4
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux2_16
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	2000
+#    AREA	32
+#    NET	69
+#    PIN_PAIR	100
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dmux4_1
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	5
+#    NET	11
+#    PIN_PAIR	15
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux4_16
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	2500
+#    AREA	64
+#    NET	128
+#    PIN_PAIR	194
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux8_1
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	2800
+#    AREA	11
+#    NET	22
+#    PIN_PAIR	33
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	dmux8_16
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	3400
+#    AREA	127
+#    NET	240
+#    PIN_PAIR	381
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	dmux16_1
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	3000
+#    AREA	23
+#    NET	43
+#    PIN_PAIR	65
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	dmux16_16
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	3800
+#    AREA	275
+#    NET	499
+#    PIN_PAIR	787
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	dmux64_1
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	4300
+#    AREA	87
+#    NET	146
+#    PIN_PAIR	234
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	dmux64_16
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	4800
+#    AREA	1075
+#    NET	1971
+#    PIN_PAIR	3081
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	dmux256_1
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	1
+#    DELAY	5300
+#    AREA	286
+#    NET	519
+#    PIN_PAIR	819
+#    LSTAGE	11
+#}
+#@BLIB {
+#    NAME	dmux256_16
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	16
+#    DELAY	5900
+#    AREA	4243
+#    NET	7774
+#    PIN_PAIR	12168
+#    LSTAGE	16
+#}
+#@BLIB {
+#    NAME	inv
+#    KIND	inv
+#    BITWIDTH	1
+#    DELAY	300
+#    AREA	1
+#    NET	2
+#    PIN_PAIR	2
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and2
+#    KIND	and
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and4
+#    KIND	and
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and8
+#    KIND	and
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	900
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and16
+#    KIND	and
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1300
+#    AREA	7
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and32
+#    KIND	and
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1400
+#    AREA	16
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	and64
+#    KIND	and
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	2000
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	and256
+#    KIND	and
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2700
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	or2
+#    KIND	or
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or4
+#    KIND	or
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	700
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or8
+#    KIND	or
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or16
+#    KIND	or
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1100
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or32
+#    KIND	or
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1500
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	or64
+#    KIND	or
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	28
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	or256
+#    KIND	or
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2000
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xor2
+#    KIND	xor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	7
+#    PIN_PAIR	9
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xor4
+#    KIND	xor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	6
+#    NET	11
+#    PIN_PAIR	13
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xor8
+#    KIND	xor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	2400
+#    AREA	11
+#    NET	15
+#    PIN_PAIR	15
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xor16
+#    KIND	xor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	4800
+#    AREA	32
+#    NET	48
+#    PIN_PAIR	56
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	xor32
+#    KIND	xor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	4500
+#    AREA	49
+#    NET	63
+#    PIN_PAIR	63
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	xor64
+#    KIND	xor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	5400
+#    AREA	100
+#    NET	127
+#    PIN_PAIR	127
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	xor256
+#    KIND	xor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	7200
+#    AREA	406
+#    NET	511
+#    PIN_PAIR	511
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	nand2
+#    KIND	nand
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	400
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand4
+#    KIND	nand
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	600
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand8
+#    KIND	nand
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	1100
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand16
+#    KIND	nand
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1700
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand32
+#    KIND	nand
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nand64
+#    KIND	nand
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	27
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nand256
+#    KIND	nand
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	3000
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nor2
+#    KIND	nor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	500
+#    AREA	1
+#    NET	3
+#    PIN_PAIR	3
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor4
+#    KIND	nor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1000
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	5
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor8
+#    KIND	nor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	1400
+#    AREA	3
+#    NET	11
+#    PIN_PAIR	11
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor16
+#    KIND	nor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	6
+#    NET	21
+#    PIN_PAIR	21
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor32
+#    KIND	nor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	1800
+#    AREA	14
+#    NET	43
+#    PIN_PAIR	43
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nor64
+#    KIND	nor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	2300
+#    AREA	27
+#    NET	85
+#    PIN_PAIR	85
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nor256
+#    KIND	nor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	2900
+#    AREA	113
+#    NET	341
+#    PIN_PAIR	341
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xnor2
+#    KIND	xnor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	800
+#    AREA	3
+#    NET	7
+#    PIN_PAIR	9
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor4
+#    KIND	xnor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	1600
+#    AREA	4
+#    NET	7
+#    PIN_PAIR	7
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor8
+#    KIND	xnor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	2600
+#    AREA	11
+#    NET	15
+#    PIN_PAIR	15
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xnor16
+#    KIND	xnor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	4200
+#    AREA	42
+#    NET	58
+#    PIN_PAIR	75
+#    LSTAGE	13
+#}
+#@BLIB {
+#    NAME	xnor32
+#    KIND	xnor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	4500
+#    AREA	49
+#    NET	63
+#    PIN_PAIR	63
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	xnor64
+#    KIND	xnor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	5400
+#    AREA	100
+#    NET	127
+#    PIN_PAIR	127
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	xnor256
+#    KIND	xnor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	7200
+#    AREA	406
+#    NET	511
+#    PIN_PAIR	511
+#    LSTAGE	8
+#}
+#@BLIB {
+#    NAME	consttable2_8
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	8
+#    DELAY	200
+#    AREA	1
+#    NET	4
+#    PIN_PAIR	9
+#}
+#@BLIB {
+#    NAME	consttable2_32
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	32
+#    DELAY	600
+#    AREA	1
+#    NET	5
+#    PIN_PAIR	34
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable16_8
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	8
+#    DELAY	3000
+#    AREA	50
+#    NET	53
+#    PIN_PAIR	122
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	consttable16_32
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	32
+#    DELAY	3400
+#    AREA	120
+#    NET	130
+#    PIN_PAIR	317
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	consttable64_8
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	8
+#    DELAY	4900
+#    AREA	146
+#    NET	162
+#    PIN_PAIR	387
+#    LSTAGE	9
+#}
+#@BLIB {
+#    NAME	consttable64_32
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	32
+#    DELAY	5000
+#    AREA	392
+#    NET	434
+#    PIN_PAIR	1020
+#    LSTAGE	13
+#}
+#@BLIB {
+#    NAME	consttable256_8
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	8
+#    DELAY	6100
+#    AREA	476
+#    NET	482
+#    PIN_PAIR	1203
+#    LSTAGE	14
+#}
+#@BLIB {
+#    NAME	consttable256_32
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	32
+#    DELAY	5800
+#    AREA	1350
+#    NET	1466
+#    PIN_PAIR	3523
+#    LSTAGE	12
+#}
+##@END{CWBSTDBLIB}
+#@END
+*/

@@ -1,0 +1,107 @@
+#@VERSION{3.00}
+#@CNT{interpolation}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@FCNT{
+	NAME	add3u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	add16u
+	LIMIT	15  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	mul12u
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	mul16u
+	LIMIT	16  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	incr2u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	incr3u
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff1_0
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff1_1
+	LIMIT	2  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff2_3
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff3_3
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_0
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_1
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_2
+	LIMIT	1  AUTO
+#	COMMENT
+}
+@FCNT{
+	NAME	coeff4_3
+	LIMIT	1  AUTO
+#	COMMENT
+}
+#@HASH{05cb05f05d04faa00c1e4f9ba649463f}
+#@END{interpolation}
