@@ -8,7 +8,7 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  3 / 3 / 3.00
+# Performance index  max/min/ave  5 / 4 / 4.50
 # Data-path info.    
 # Bp-Option  ../benchmarks/ave16/ave16.c
 # Option  -c1000 -s ave16.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
@@ -19,8 +19,9 @@ unsigned reg(0:8)  data_01[4]/* Cyber sig2mu = data[], array = REG */ /* line# .
 unsigned reg(0:8)  data_11[4]/* Cyber sig2mu = data[], array = REG */ /* line# ../benchmarks/ave16/ave16.c:23 */;
 unsigned reg(0:8)  data_21[4]/* Cyber sig2mu = data[], array = REG */ /* line# ../benchmarks/ave16/ave16.c:23 */;
 unsigned reg(0:8)  data_31[4]/* Cyber sig2mu = data[], array = REG */ /* line# ../benchmarks/ave16/ave16.c:23 */;
+unsigned reg(0:4)  RG_i/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
+unsigned reg(0:1)  RG_01/* Cyber reset_sig = void, other = DC */;
 signed   reg(0:32)  RG_sum/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
-unsigned reg(0:2)  RG_i/* Cyber reset_sig = void, other = DC */ /* line# ../benchmarks/ave16/ave16.c:29 */;
 in   unsigned port(0:8)  in0 /* line# ../benchmarks/ave16/ave16.c:21 */;
 out  unsigned port(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
 
@@ -28,31 +29,45 @@ out  unsigned port(0:8)  out0 /* line# ../benchmarks/ave16/ave16.c:22 */;
 process
 ave16()
 {
-    unsigned ter(0:9)  M_34/* Cyber other = DC */;
-    unsigned ter(0:9)  M_33/* Cyber other = DC */;
-    unsigned ter(0:1)  CT_01/* Cyber other = DC */;
-    unsigned ter(0:1)  JF_01;
-    unsigned ter(0:3)  M_32_t/* Cyber other = DC */;
-    unsigned ter(0:9)  M_311_t/* Cyber other = DC */;
-    signed   ter(0:32)  M_28_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_271_t/* Cyber other = DC */;
-    signed   ter(0:32)  M_26_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_251_t/* Cyber other = DC */;
+    unsigned ter(0:9)  M_39/* Cyber other = DC */;
+    unsigned ter(0:1)  CT_04/* Cyber other = DC */;
+    unsigned ter(0:1)  JF_02;
+    unsigned ter(0:3)  M_36_t/* Cyber other = DC */;
+    unsigned ter(0:9)  M_351_t/* Cyber other = DC */;
+    signed   ter(0:32)  M_32_t/* Cyber other = DC */;
+    unsigned ter(0:8)  M_311_t/* Cyber other = DC */;
+    signed   ter(0:32)  M_30_t/* Cyber other = DC */;
+    unsigned ter(0:8)  M_291_t/* Cyber other = DC */;
     signed   ter(0:8)  out0_v1_t/* Cyber other = DC */;
-    signed   ter(0:8)  M_121_t/* Cyber other = DC */;
-    unsigned ter(0:3)  i11_t/* Cyber other = DC */;
+    signed   ter(0:8)  M_201_t/* Cyber other = DC */;
+    unsigned ter(0:3)  i2_t/* Cyber other = DC */;
     signed   ter(0:32)  sum_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_01_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_02_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_03_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_04_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_201_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_181_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_161_t/* Cyber other = DC */;
-    unsigned ter(0:8)  M_141_t/* Cyber other = DC */;
+    unsigned ter(0:10)  M_271_t/* Cyber other = DC */;
+    unsigned ter(0:8)  M_211_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_05_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_06_t/* Cyber other = DC */;
     unsigned ter(0:8)  BF_07_t/* Cyber other = DC */;
+    unsigned ter(0:2)  CT_03/* Cyber other = DC */;
+    unsigned ter(0:2)  CT_02/* Cyber other = DC */;
+    unsigned ter(0:1)  JF_01;
+    unsigned ter(0:1)  CT_01/* Cyber other = DC */;
+    unsigned ter(0:1)  M_38_t/* Cyber other = DC */;
+    signed   ter(0:5)  M_37_t/* Cyber other = DC */;
+    signed   ter(0:5)  i4_t/* Cyber other = DC */;
+    unsigned ter(0:8)  M_091_t/* Cyber other = DC */;
+    unsigned ter(0:8)  BF_08_t/* Cyber other = DC */;
+    unsigned ter(0:8)  BF_09_t/* Cyber other = DC */;
+    unsigned ter(0:8)  BF_10_t/* Cyber other = DC */;
+    unsigned ter(0:8)  BF_11_t/* Cyber other = DC */;
+    unsigned ter(0:4)  M_10_t/* Cyber other = DC */;
+    unsigned ter(0:8)  BF_11;
+    unsigned ter(0:8)  BF_10;
+    unsigned ter(0:8)  BF_09;
+    unsigned ter(0:8)  BF_08;
     unsigned ter(0:8)  BF_07;
     unsigned ter(0:8)  BF_06;
     unsigned ter(0:8)  BF_05;
@@ -60,22 +75,31 @@ ave16()
     unsigned ter(0:8)  BF_03;
     unsigned ter(0:8)  BF_02;
     unsigned ter(0:8)  BF_01;
-    unsigned var(0:3)  M_32;
-    unsigned var(0:9)  M_311;
-    unsigned var(0:8)  M_301;
+    unsigned var(0:1)  M_38;
+    signed   var(0:5)  M_37;
+    unsigned var(0:3)  M_36;
+    unsigned var(0:9)  M_351;
+    unsigned var(0:8)  M_341;
+    unsigned var(0:8)  M_331;
+    unsigned var(0:8)  M_311;
     unsigned var(0:8)  M_291;
-    unsigned var(0:8)  M_271;
-    unsigned var(0:8)  M_251;
-    unsigned var(0:9)  M_231;
-    unsigned var(0:9)  M_221;
-    unsigned var(0:8)  M_201;
-    unsigned var(0:8)  M_181;
-    unsigned var(0:8)  M_161;
-    unsigned var(0:8)  M_141;
-    signed   var(0:8)  M_121;
-    unsigned var(0:2)  i12 /* line# ../benchmarks/ave16/ave16.c:29 */;
-    unsigned var(0:3)  i11 /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned var(0:10)  M_271;
+    unsigned var(0:8)  M_261;
+    unsigned var(0:9)  M_251;
+    unsigned var(0:8)  M_241;
+    unsigned var(0:8)  M_231;
+    unsigned var(0:8)  M_211;
+    signed   var(0:8)  M_201;
+    unsigned var(0:8)  M_091;
+    signed   var(0:5)  i4 /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned var(0:2)  i3 /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned var(0:3)  i2 /* line# ../benchmarks/ave16/ave16.c:29 */;
+    unsigned var(0:4)  i1 /* line# ../benchmarks/ave16/ave16.c:29 */;
     signed   var(0:8)  out0_v1 /* line# ../benchmarks/ave16/ave16.c:29 */;
+    signed   var(0:32)  M_35;
+    signed   var(0:32)  M_34;
+    signed   var(0:32)  M_33;
+    signed   var(0:32)  M_32;
     signed   var(0:32)  M_31;
     signed   var(0:32)  M_30;
     signed   var(0:32)  M_29;
@@ -94,16 +118,15 @@ ave16()
     signed   var(0:32)  M_16;
     signed   var(0:32)  M_15;
     signed   var(0:32)  M_14;
-    signed   var(0:6)  M_13;
-    signed   var(0:32)  M_12;
-    signed   var(0:32)  M_11;
-    signed   var(0:32)  M_10;
+    signed   var(0:32)  M_13;
+    unsigned var(0:2)  M_12;
+    unsigned var(0:2)  M_11;
+    unsigned var(0:4)  M_10;
     signed   var(0:32)  M_09;
-    signed   var(0:32)  M_08;
-    signed   var(0:32)  M_07;
-    signed   var(0:32)  M_06;
+    unsigned var(0:2)  M_08;
+    unsigned var(0:2)  M_07;
+    unsigned var(0:4)  M_06;
     signed   var(0:32)  M_05;
-    unsigned var(0:3)  i1 /* line# ../benchmarks/ave16/ave16.c:29 */;
     signed   var(0:32)  M_04;
     signed   var(0:32)  M_03;
     signed   var(0:32)  M_02;
@@ -131,67 +154,111 @@ ST1_00 :
     $
 
 ST1_01 :
-    M_201_t(0:8) = (signed ter(0:32))(in0(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:35 */
-    data_31[(unsigned ter(0:2))(3(0:2))](0:8) = data_21[(unsigned ter(0:2))(3(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21[(unsigned ter(0:2))(3(0:2))](0:8) = data_11[(unsigned ter(0:2))(3(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11[(unsigned ter(0:2))(3(0:2))](0:8) = data_01[(unsigned ter(0:2))(3(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_01[(unsigned ter(0:2))(3(0:2))](0:8) = data_31[(unsigned ter(0:2))(2(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_31[(unsigned ter(0:2))(2(0:2))](0:8) = data_21[(unsigned ter(0:2))(2(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21[(unsigned ter(0:2))(2(0:2))](0:8) = data_11[(unsigned ter(0:2))(2(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11[(unsigned ter(0:2))(2(0:2))](0:8) = data_01[(unsigned ter(0:2))(2(0:2))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_01[(unsigned ter(0:2))(2(0:2))](0:8) = data_31[(unsigned ter(0:1))(1(0:1))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_31[(unsigned ter(0:1))(1(0:1))](0:8) = data_21[(unsigned ter(0:1))(1(0:1))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21[(unsigned ter(0:1))(1(0:1))](0:8) = data_11[(unsigned ter(0:1))(1(0:1))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11[(unsigned ter(0:1))(1(0:1))](0:8) = data_01[(unsigned ter(0:1))(1(0:1))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_01[(unsigned ter(0:1))(1(0:1))](0:8) = data_31[(unsigned ter(0:1))(0(0:1))](0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_31[(unsigned ter(0:1))(0(0:1))](0:8) = M_141_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_21[(unsigned ter(0:1))(0(0:1))](0:8) = M_161_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_11[(unsigned ter(0:1))(0(0:1))](0:8) = M_181_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    data_01[(unsigned ter(0:1))(0(0:1))](0:8) = M_201_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35 */
-    RG_i(0:2) = (unsigned ter(0:1))(1(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    M_33(0:9) = (unsigned ter(0:9))(M_161_t(0:8) + M_141_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
-    M_34(0:9) = (unsigned ter(0:9))(M_201_t(0:8) + M_181_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
-    RG_sum(0:32) = (unsigned ter(0:10))(M_34(0:9) + M_33(0:9)); 	/* line# ../benchmarks/ave16/ave16.c:36,40 */
-    BF_07_t(0:8) = data_21[(unsigned ter(0:1))(0(0:1))](0:8);
-    BF_06_t(0:8) = data_11[(unsigned ter(0:1))(0(0:1))](0:8);
-    BF_05_t(0:8) = data_01[(unsigned ter(0:1))(0(0:1))](0:8);
-    M_141_t(0:8) = BF_07_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    M_161_t(0:8) = BF_06_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
-    M_181_t(0:8) = BF_05_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    RG_i(0:4) = (unsigned ter(0:4))(15(0:4)); 	/* line# ../benchmarks/ave16/ave16.c:32 */
     goto ST1_02;
     $
 
 ST1_02 :
-    RG_sum(0:32) = sum_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    RG_i(0:2) = i11_t(1:2);
-    if (CT_01(0:1)) { 	/* line# ../benchmarks/ave16/ave16.c:39 */
-        JF_01(0:1) = 0(0:1);
+    RG_i(0:4) = (signed ter(0:4))(i4_t(1:4));
+    if (CT_01(0:1)) { 	/* line# ../benchmarks/ave16/ave16.c:32 */
+        JF_01(0:1) = 1(0:1);
     }
     else {
-        out0_v1_t(0:8) = (signed ter(0:8))(M_121_t(0:8) + (signed ter(0:2))((sum_t(0:1) & (unsigned ter(0:1))(|>sum_t(28:4))))); 	/* line# ../benchmarks/ave16/ave16.c:42 */
-        out0(0:8) = (unsigned ter(0:8))(out0_v1_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:43 */
-        JF_01(0:1) = 1(0:1);
-        M_121_t(0:8) = (signed ter(0:8))(sum_t(20:8)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
+        JF_01(0:1) = 0(0:1);
     }
-    M_32_t(0:3) = i11_t(0:3); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    CT_01(0:1) = (unsigned ter(0:1))(~M_32_t(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    BF_04_t(0:8) = data_01[RG_i(0:2)](0:8);
-    BF_03_t(0:8) = data_11[RG_i(0:2)](0:8);
-    BF_02_t(0:8) = data_21[RG_i(0:2)](0:8);
-    BF_01_t(0:8) = data_31[RG_i(0:2)](0:8);
-    sum_t(0:32) = (signed ter(0:32))(M_28_t(0:32) + (signed ter(0:10))(M_311_t(0:9))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    i11_t(0:3) = (unsigned ter(0:3))(RG_i(0:2) + 1); 	/* line# ../benchmarks/ave16/ave16.c:39 */
-    M_251_t(0:8) = BF_04_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    M_26_t(0:32) = (signed ter(0:32))(RG_sum(0:32) + (signed ter(0:9))(M_251_t(0:8))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    M_271_t(0:8) = BF_01_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    M_28_t(0:32) = (signed ter(0:32))(M_26_t(0:32) + (signed ter(0:9))(M_271_t(0:8))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
-    M_311_t(0:9) = (unsigned ter(0:9))(BF_03_t(0:8) + BF_02_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    switch (CT_03(0:2)) {	/* CAB */ 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    case 0 : 
+        data_01[RG_i(0:2)](0:8) = M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        break;
+    case 1 : 
+        data_11[RG_i(0:2)](0:8) = M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        break;
+    case 2 : 
+        data_21[RG_i(0:2)](0:8) = M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        break;
+    case 3 : 
+        data_31[RG_i(0:2)](0:8) = M_091_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        break;
+    }
+    switch (CT_02(0:2)) {	/* CAB */ 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    case 0 : 
+        M_091_t(0:8) = BF_11_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        BF_11_t(0:8) = data_01[M_10_t(0:2)](0:8);
+        break;
+    case 1 : 
+        M_091_t(0:8) = BF_10_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        BF_10_t(0:8) = data_11[M_10_t(0:2)](0:8);
+        break;
+    case 2 : 
+        M_091_t(0:8) = BF_09_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        BF_09_t(0:8) = data_21[M_10_t(0:2)](0:8);
+        break;
+    case 3 : 
+        M_091_t(0:8) = BF_08_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+        BF_08_t(0:8) = data_31[M_10_t(0:2)](0:8);
+        break;
+    }
+    CT_01(0:1) = (unsigned ter(0:1))((unsigned ter(0:1))(~&>M_37_t(0:1)) & (unsigned ter(0:1))(|>M_37_t(1:4))); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    CT_03(0:2) = RG_i(2:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    CT_02(0:2) = M_10_t(2:2); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    RG_01(0:1) = M_38_t(0:1);
+    M_10_t(0:4) = (unsigned ter(0:4))((signed ter(0:4))(RG_i(0:4)) - 1); 	/* line# ../benchmarks/ave16/ave16.c:33 */
+    i4_t(0:5) = (signed ter(0:5))(RG_i(0:4) - 1); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    M_37_t(0:5) = i4_t(0:5); 	/* line# ../benchmarks/ave16/ave16.c:32 */
+    M_38_t(0:1) = CT_01(0:1); 	/* line# ../benchmarks/ave16/ave16.c:32 */
     /* Cyber sfdl_jump = exclusive */
     if (JF_01(0:1)) {
+        goto ST1_02;
+    }
+    else {
+        goto ST1_03;
+    }
+    $
+
+ST1_03 :
+    M_39(0:9) = (unsigned ter(0:9))(BF_07_t(0:8) + BF_06_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_271_t(0:10) = (unsigned ter(0:10))(M_39(0:9) + BF_05_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    data_01[(unsigned ter(0:1))(0(0:1))](0:8) = M_211_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:35 */
+    RG_i(0:4) = (unsigned ter(0:1))(1(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    RG_sum(0:32) = (unsigned ter(0:10))(M_211_t(0:8) + M_271_t(0:10)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    BF_07_t(0:8) = data_11[(unsigned ter(0:1))(0(0:1))](0:8);
+    BF_06_t(0:8) = data_21[(unsigned ter(0:1))(0(0:1))](0:8);
+    BF_05_t(0:8) = data_31[(unsigned ter(0:1))(0(0:1))](0:8);
+    M_211_t(0:8) = (signed ter(0:32))(in0(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:35 */
+    goto ST1_04;
+    $
+
+ST1_04 :
+    RG_i(0:4) = i2_t(1:2);
+    RG_sum(0:32) = sum_t(0:32); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    if (CT_04(0:1)) { 	/* line# ../benchmarks/ave16/ave16.c:39 */
+        JF_02(0:1) = 0(0:1);
+    }
+    else {
+        out0_v1_t(0:8) = (signed ter(0:8))(M_201_t(0:8) + (signed ter(0:2))((sum_t(0:1) & (unsigned ter(0:1))(|>sum_t(28:4))))); 	/* line# ../benchmarks/ave16/ave16.c:42 */
+        out0(0:8) = (unsigned ter(0:8))(out0_v1_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:43 */
+        JF_02(0:1) = 1(0:1);
+        M_201_t(0:8) = (signed ter(0:8))(sum_t(20:8)); 	/* line# ../benchmarks/ave16/ave16.c:42 */
+    }
+    M_36_t(0:3) = i2_t(0:3); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    CT_04(0:1) = (unsigned ter(0:1))(~M_36_t(0:1)); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    BF_04_t(0:8) = data_01[RG_i(2:2)](0:8);
+    BF_03_t(0:8) = data_11[RG_i(2:2)](0:8);
+    BF_02_t(0:8) = data_21[RG_i(2:2)](0:8);
+    BF_01_t(0:8) = data_31[RG_i(2:2)](0:8);
+    sum_t(0:32) = (signed ter(0:32))(M_32_t(0:32) + (signed ter(0:10))(M_351_t(0:9))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    i2_t(0:3) = (unsigned ter(0:3))(RG_i(2:2) + 1); 	/* line# ../benchmarks/ave16/ave16.c:39 */
+    M_291_t(0:8) = BF_04_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_30_t(0:32) = (signed ter(0:32))(RG_sum(0:32) + (signed ter(0:9))(M_291_t(0:8))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_311_t(0:8) = BF_01_t(0:8); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_32_t(0:32) = (signed ter(0:32))(M_30_t(0:32) + (signed ter(0:9))(M_311_t(0:8))); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    M_351_t(0:9) = (unsigned ter(0:9))(BF_03_t(0:8) + BF_02_t(0:8)); 	/* line# ../benchmarks/ave16/ave16.c:40 */
+    /* Cyber sfdl_jump = exclusive */
+    if (JF_02(0:1)) {
         goto ST1_01;
     }
     else {
-        goto ST1_02;
+        goto ST1_04;
     }
 }
 
@@ -201,11 +268,13 @@ ST1_02 :
 ##@CLK  100000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  add8u      2  (u)+              8,9    3000     47
+#  1  add8u      1  (u)+              8,9    3000     47
 #  2  add8s      1  (s)+              8,9    3000     49
-#  3  add12u     1  (u)+              12,13  3900     74
+#  3  add12u     2  (u)+              12,13  3900     74
 #  4  add32s     3  (s)+              32,33  10600   208
 #  5  incr2u     1  (u)INCR           2,3    1000      3
+#  6  decr4u     1  (u)DECR           4,5    1600      9
+#  7  decr4s     1  (s)DECR           4,5    1500      9
 #@END
 
 #@MCNT %AUTO%.MCNT
@@ -255,10 +324,10 @@ ST1_02 :
 #@MLMT %AUTO%.MLMT
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
-#  1  data[]     1  R1               32x4     0  data_0         	
-#  2  data[]     1  R1               32x4     0  data_1         	
-#  3  data[]     1  R1               32x4     0  data_2         	
-#  4  data[]     1  R1               32x4     0  data_3         	
+#  1  data[]     1  R1,W1            32x4     0  data_0         	
+#  2  data[]     1  R1,W1            32x4     0  data_1         	
+#  3  data[]     1  R1,W1            32x4     0  data_2         	
+#  4  data[]     1  R1,W1            32x4     0  data_3         	
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB

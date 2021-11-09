@@ -28,16 +28,18 @@ I_BT4383: Generate memory library file / memory constraint file.
 
 ********* After optimizing & expanding the behavior description *********
  === Operators ===
-  +  :  8  (8bit:4, 9bit:1, 32bit:3)
-  &  :  1  (1bit:1)
-  |> :  1  (4bit:1)
+  +  :  8  (8bit:3, 9bit:1, 10bit:1, 32bit:3)
+  &  :  2  (1bit:2)
+  |> :  2  (4bit:2)
   ~|>:  1  (1bit:1)
+  ~&>:  1  (1bit:1)
   INCR:  1  (2bit:1)
-  Data transfer : 76
+  DECR:  2  (4bit:2)
+  Data transfer : 80
 
  === array / memory ===
-  read  : 19
-  write : 32
+  read  : 11
+  write : 21
 I_BT4382: Generate functional unit library files / functional unit constraint files.
 	ave16-auto.FLIB
 	ave16-auto.FCNT
@@ -45,32 +47,33 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	ave16-amacro-auto.FCNT
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 3 / 3 / 3.00
+[Performance index max/min/ave] 5 / 4 / 4.50
 
   Module Name         : ave16
   Basic Library Name  : CWBSTDBLIB
 
-  Total Area          :      2,088
-    Sequential        :        978
-    Combinational     :      1,110
+  Total Area          :      2,255
+    Sequential        :        996
+    Combinational     :      1,259
 
-  Latency Index       :          4
-  Total States        :          2
+  Latency Index       :         20
+  Total States        :          4
 
   Clock Period        :       10ns
-  Critical Path Delay :   2.9273ns
+  Critical Path Delay :   3.2473ns
 
-  Net                 :      1,702
-  Pin Pair            :      3,520
+  Net                 :      1,916
+  Pin Pair            :      3,958
 
   Port                :         18
     In                :         10
     Out               :          8
 
-TOTAL AREA 2,088 (FU: 823 + REG: 978 + MUX: 284 + DEC: 0 + MISC: 3) + pin pair 3,520(net 1,702) + 1FSM of 2state
+TOTAL AREA 2,255 (FU: 854 + REG: 996 + MUX: 343 + DEC: 20 + MISC: 42) + pin pair 3,958(net 1,916) + 1FSM of 4state
 
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	22 information  exist
+	 1 warning      exist
+	21 information  exist
 	---> SEE ave16.err FILE for DETAILS
 ##### CyberII Normal finish (automatic scheduling mode) [ave16] #####
 
