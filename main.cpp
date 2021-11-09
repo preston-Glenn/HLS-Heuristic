@@ -75,11 +75,7 @@ int main(int argc, char** argv){
   
 	// Wrap everything in a try block.  Do this every time,
 	// because exceptions will be thrown for problems.
-	logger.setFileName("log.txt");
-	logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
 
-	
-	logger.log("Seed:" + int_to_string(SEED));
 
 
 	try {
@@ -134,6 +130,12 @@ int main(int argc, char** argv){
 
 
 		LABEL = resultLabelArg.getValue();
+
+		logger.setFileName(LABEL+"_log.txt");
+		logger.log("\n\n\n\n\nNEW EXECUTION:::::::::::");
+
+	
+		logger.log("Seed:" + int_to_string(SEED));
 
 		// Store values
 		SEED = seedArg.getValue();
@@ -255,7 +257,6 @@ void bruteForce (vector<int> list, int count = 1) {
 		for(int k = 0; k < list.size(); k++){
 			extendedList.push_back(list.at(k));
 		}	
-		cout << "Entered: " << count << endl;
 
 		extendedList.push_back(i-1);
 

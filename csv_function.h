@@ -66,7 +66,7 @@ string getResultsFromCSV(vector<int> list){
     string results = "";
     getline(file,results);
     getline(file,results);
-    cout << "Results: " << results <<  endl;
+    if(VERBOSE) cout << "Results: " << results <<  endl;
     logger.log("\tRESULTS: "+results);
 
     try{
