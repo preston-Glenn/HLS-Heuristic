@@ -10,6 +10,9 @@ I_BT4607: for loop is unrolled
 	65(../benchmarks/sobel/sobel.c):      for(X=0;X< 3;X++){
 I_BT4607: for loop is unrolled
 	[Source Lines]
+	64(../benchmarks/sobel/sobel.c):    for(Y=2;Y>0;Y--){
+I_BT4607: for loop is unrolled
+	[Source Lines]
 	84(../benchmarks/sobel/sobel.c):      for(colOffset = -1; colOffset <=1; colOffset++){
 I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
 	[Source Lines]
@@ -26,7 +29,7 @@ I_BT4466: The sequence of the operation in unrolled loop is optimized, and numbe
 I_BT4466: The sequence of the operation in unrolled loop is optimized, and number of stages of operation is reduced.
 	[Source Lines]
 	86(../benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
-I_BT4441: Memory array 'Gy' is expanded at 2-th dimension from right.
+I_BT4442: Array signal Gy is expanded at dimension #2 from right.
 	[Source Lines]
 	57(../benchmarks/sobel/sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
 I_BT4442: Array signal Gx is expanded at dimension #2 from right.
@@ -35,21 +38,15 @@ I_BT4442: Array signal Gx is expanded at dimension #2 from right.
 I_BT4442: Array signal line_buffer is expanded at dimension #2 from right.
 	[Source Lines]
 	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'line_buffer_0_a'.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT5514: 4 address decoders (R3,W1) to access to array signal 'line_buffer_1_a'.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT5514: 5 address decoders (R4,W1) to access to array signal 'line_buffer_2_a'.
-	[Source Lines]
-	30(../benchmarks/sobel/sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
-I_BT8371: Height of operation tree has been reduced.
-	[Source Lines]
-	85(../benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
+I_BT4679: Array line_buffer_0_a was expanded.
+I_BT4679: Array line_buffer_1_a was expanded.
+I_BT4679: Array line_buffer_2_a was expanded.
 I_BT8371: Height of operation tree has been reduced.
 	[Source Lines]
 	86(../benchmarks/sobel/sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+I_BT8371: Height of operation tree has been reduced.
+	[Source Lines]
+	85(../benchmarks/sobel/sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
 I_BT4393: No memory required. Empty memory library file (sobel-auto.MLIB) generated.
  [Action] Change type of array to 'mem' if required.
           <OR> Specify appropriate "-a*" or "-ap*" options.
@@ -72,6 +69,6 @@ I_BT4382: Generate functional unit library files / functional unit constraint fi
 	sobel-amacro-auto.FCNT
 I_BT4392: No arithmetic macro functional unit required.
 I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
-	29 information  exist
+	30 information  exist
 	 1 tips         exist
 	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS

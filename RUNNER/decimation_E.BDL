@@ -2,66 +2,154 @@
 * decimation_E.BDL
 # Design Name        decimation
 # FU Library File    /proj/cad/cwb-6.1/packages/asic_45.FLIB
-# MEM  Limit File    ?????.MLMT
+# MEM  Limit File    %AUTO%.MLMT
 # Basic Library File /proj/cad/cwb-6.1/packages/asic_45.BLIB
 # PORT Limit File    %AUTO%.PLMT
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        100000 (1/10ps).
 # Clock Uncertainty  0-->10000 (1/10ps)
-# Performance index  max/min/ave  0 / 0 / 0.00
-# Data-path info.    REG: 0(area),0(FFs), MUX: 0(area),0(fanins)
-# CSV info.          0,1,0,0,0,0,20,1,0,0,0.00,0,0,0ns,-,-,-,-,1,-,-
-# Bp-Option  ../benchmarks/decimation_filter/decimation.c
+# Performance index  max/min/ave  2 / 2 / 2.00
+# Data-path info.    REG: 12(area),2(FFs), MUX: 1(area),2(fanins)
+# CSV info.          14,2,1,12,1,0,34,12,2,2,2.00,0,0,0.09ns,-,-,-,-,3,-,-
+# Bp-Option  ../../../../Documents/benchmarks/decimation_filter/decimation.c
 # Option  -c1000 -s decimation.IFF -lfl /proj/cad/cwb-6.1/packages/asic_45.FLIB -lb /proj/cad/cwb-6.1/packages/asic_45.BLIB 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
 */
 
-in   unsigned ter(0..0)  load_coeff /* line# ../benchmarks/decimation_filter/decimation.c:33 */;
-in   unsigned ter(18..0)  indata /* line# ../benchmarks/decimation_filter/decimation.c:34 */;
-in   unsigned ter(16..0)  incoef1_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:36 */;
-in   unsigned ter(16..0)  incoef1_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:36 */;
-in   unsigned ter(16..0)  incoef1_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:36 */;
-in   unsigned ter(16..0)  incoef1_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:36 */;
-in   unsigned ter(16..0)  incoef2_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:37 */;
-in   unsigned ter(16..0)  incoef2_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:37 */;
-in   unsigned ter(16..0)  incoef2_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:37 */;
-in   unsigned ter(16..0)  incoef2_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:37 */;
-in   unsigned ter(16..0)  incoef3_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:38 */;
-in   unsigned ter(16..0)  incoef3_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:38 */;
-in   unsigned ter(16..0)  incoef3_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:38 */;
-in   unsigned ter(16..0)  incoef3_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:38 */;
-in   unsigned ter(16..0)  incoef4_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef4_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef4_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef4_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef4_a04/* Cyber ary_idx = 4 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef4_a05/* Cyber ary_idx = 5 */ /* line# ../benchmarks/decimation_filter/decimation.c:39 */;
-in   unsigned ter(16..0)  incoef5_a00/* Cyber ary_idx = 0 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a01/* Cyber ary_idx = 1 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a02/* Cyber ary_idx = 2 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a03/* Cyber ary_idx = 3 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a04/* Cyber ary_idx = 4 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a05/* Cyber ary_idx = 5 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a06/* Cyber ary_idx = 6 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a07/* Cyber ary_idx = 7 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a08/* Cyber ary_idx = 8 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a09/* Cyber ary_idx = 9 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a10/* Cyber ary_idx = 10 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-in   unsigned ter(16..0)  incoef5_a11/* Cyber ary_idx = 11 */ /* line# ../benchmarks/decimation_filter/decimation.c:40 */;
-out  unsigned ter(18..0)  odata/* Cyber reset_sig = void */ /* line# ../benchmarks/decimation_filter/decimation.c:43 */;
+in   unsigned ter(0..0)  load_coeff /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:33 */;
+in   unsigned ter(18..0)  indata /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:34 */;
+in   unsigned ter(16..0)  incoef1_a00/* Cyber ary_idx = 0 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:36 */;
+in   unsigned ter(16..0)  incoef1_a01/* Cyber ary_idx = 1 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:36 */;
+in   unsigned ter(16..0)  incoef1_a02/* Cyber ary_idx = 2 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:36 */;
+in   unsigned ter(16..0)  incoef1_a03/* Cyber ary_idx = 3 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:36 */;
+in   unsigned ter(16..0)  incoef2_a00/* Cyber ary_idx = 0 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:37 */;
+in   unsigned ter(16..0)  incoef2_a01/* Cyber ary_idx = 1 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:37 */;
+in   unsigned ter(16..0)  incoef2_a02/* Cyber ary_idx = 2 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:37 */;
+in   unsigned ter(16..0)  incoef2_a03/* Cyber ary_idx = 3 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:37 */;
+in   unsigned ter(16..0)  incoef3_a00/* Cyber ary_idx = 0 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:38 */;
+in   unsigned ter(16..0)  incoef3_a01/* Cyber ary_idx = 1 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:38 */;
+in   unsigned ter(16..0)  incoef3_a02/* Cyber ary_idx = 2 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:38 */;
+in   unsigned ter(16..0)  incoef3_a03/* Cyber ary_idx = 3 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:38 */;
+in   unsigned ter(16..0)  incoef4_a00/* Cyber ary_idx = 0 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef4_a01/* Cyber ary_idx = 1 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef4_a02/* Cyber ary_idx = 2 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef4_a03/* Cyber ary_idx = 3 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef4_a04/* Cyber ary_idx = 4 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef4_a05/* Cyber ary_idx = 5 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:39 */;
+in   unsigned ter(16..0)  incoef5_a00/* Cyber ary_idx = 0 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a01/* Cyber ary_idx = 1 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a02/* Cyber ary_idx = 2 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a03/* Cyber ary_idx = 3 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a04/* Cyber ary_idx = 4 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a05/* Cyber ary_idx = 5 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a06/* Cyber ary_idx = 6 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a07/* Cyber ary_idx = 7 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a08/* Cyber ary_idx = 8 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a09/* Cyber ary_idx = 9 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a10/* Cyber ary_idx = 10 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+in   unsigned ter(16..0)  incoef5_a11/* Cyber ary_idx = 11 */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:40 */;
+out  unsigned ter(18..0)  odata/* Cyber reset_sig = void */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:43 */;
+clock         CLOCK/* Cyber clock_edge = pos */;
+reset         RESET/* Cyber reset_mode = async, reset_active = high */;
     
+unsigned const ter(0..0)  ST1_01 = 0;
+unsigned const ter(0..0)  ST1_02 = 1;
 
 /* Cyber default_bit_order = down */
 process
 decimation()
 {
+    unsigned reg(0..0)  B01_streg/* Cyber FSM = reg */;
+    unsigned ter(0..0)  ST1_02d/* Cyber FSM = dec */;
+    unsigned ter(0..0)  ST1_01d/* Cyber FSM = dec */;
+    unsigned ter(0..0)  incr2u1i1/* Cyber other = DC */;
+    unsigned ter(1..0)  incr2u1ot;
+    unsigned reg(0..0)  FF_x/* Cyber reset_sig = void, other = DC */ /* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:86 */;
 
 ST1_01 :
-    odata(18..0) ::= 0(18..0); 	/* line# ../benchmarks/decimation_filter/decimation.c:43 */
+    incr2u1ot(1..0) ::= incr2u@1(incr2u1i1(0..0)); 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:153 */
+    incr2u1i1(0..0) ::= FF_x(0..0); 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:153 */
+    FF_x(0..0) ::= nmux {
+        when (ST1_01d(0..0)) :  0(0..0); 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:153 */
+        when (ST1_02d(0..0)) :  incr2u1ot(0..0); 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:153 */
+    };
+    ST1_01d(0..0) ::= (unsigned ter(0:1))(~B01_streg(0..0));
+    ST1_02d(0..0) ::= B01_streg(0..0);
+    B01_streg(0..0) ::= nmux {
+        when (ST1_01d(0..0)) :  ST1_02(0..0);
+        when (ST1_02d(0..0)) : 
+            nmux { 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:153 */
+                when (!incr2u1ot(1..1)) :  ST1_02(0..0);
+                default :  ST1_01(0..0);
+            };
+        default :  ST1_01(0..0);
+    };
+    odata(18..0) ::= 0(18..0); 	/* line# ../../../../Documents/benchmarks/decimation_filter/decimation.c:43 */
     goto ST1_01;
 }
 
 /*
+#@FLIB /proj/cad/cwb-6.1/packages/asic_45.FLIB
+#@LMT %AUTO%.LMT
+##@CLK  100000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  incr2u     1  (u)INCR           1,2    1000      3
+#@END
+
+#@MCNT %AUTO%.MCNT
+##@CNT { test }
+#@MCNT {
+#    NAME	incoef1_var[]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	17
+#    DELAY	0
+#    ARRAY_DIV	2
+#    ARRAY_DIV_INDEX	0
+#    ARRAY_DIV_NAME	incoef1_var_0
+#}
+#@MCNT {
+#    NAME	incoef1_var[]
+#    LIMIT	1
+#    KIND	R1,W1
+#    BITWIDTH	17
+#    DELAY	0
+#    ARRAY_DIV	2
+#    ARRAY_DIV_INDEX	1
+#    ARRAY_DIV_NAME	incoef1_var_1
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R6,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	2
+#    ARRAY_DIV_INDEX	0
+#    ARRAY_DIV_NAME	bufferline_1_0
+#}
+#@MCNT {
+#    NAME	bufferline_1[]
+#    LIMIT	1
+#    KIND	R6,W1
+#    BITWIDTH	19
+#    DELAY	0
+#    ARRAY_DIV	2
+#    ARRAY_DIV_INDEX	1
+#    ARRAY_DIV_NAME	bufferline_1_1
+#}
+##@END { test }
+
+#@MLMT %AUTO%.MLMT
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND      BITW[xWORD]  DELAY  ARRAY_DIV_NAME
+#  1  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_0  	
+#  2  incoef1_var[]    1  R1,W1            17x2     0  incoef1_var_1  	
+#  3  bufferline_1[]    1  R6,W1            19x4     0  bufferline_1_0 	
+#  4  bufferline_1[]    1  R6,W1            19x4     0  bufferline_1_1 	
+#@END
+
 #@BLIB /proj/cad/cwb-6.1/packages/asic_45.BLIB
 ##@VERSION{2.00}
 ##@LIB{CWBSTDBLIB}

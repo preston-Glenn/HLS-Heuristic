@@ -4,18 +4,13 @@
 #@CLK 100000
 #@UNIT 1/10ps
 @FCNT{
-	NAME	add8u
+	NAME	addsub8u
 	LIMIT	4  AUTO
 #	COMMENT
 }
 @FCNT{
-	NAME	decr2u
-	LIMIT	2  AUTO
-#	COMMENT
-}
-@FCNT{
 	NAME	addsub12s
-	LIMIT	3  AUTO
+	LIMIT	5  AUTO
 #	COMMENT
 }
 @FCNT{
@@ -23,5 +18,5 @@
 	LIMIT	4  AUTO
 #	COMMENT
 }
-#@HASH{ceb6991eed5851d8a73480463dd94c27}
+#@HASH{9e454db3fc2acc4be2a192597f0a811a}
 #@END{sobel}
