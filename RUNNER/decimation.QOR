@@ -1,0 +1,282 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : decimation
+  Basic Library Name  : CWBSTDBLIB
+
+  Total Area          :          0
+    Sequential        :          0
+    Combinational     :          0
+
+  Latency Index       :          1
+  Total States        :          1
+
+  Clock Period        :       10ns
+  Critical Path Delay :        0ns
+
+  Net                 :          1
+  Pin Pair            :         20
+
+  Port                :        549
+    In                :        530
+    Out               :         19
+
+========
+; Area ;
+========
+
+  Total :
+    Total           :          0
+      Sequential    : 
+        REG         :          0 ( 0%)
+      Combinational :          0 ( 0%)
+        FU          :          0 ( 0%)
+        MUX         :          0 ( 0%)
+        DEC         :          0 ( 0%)
+        MISC        :          0 ( 0%)
+      Memory        :          -
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name                Area    Reg  Delay  Pipeline  Count
+                                         (ns)    Stage
+    ----------------------------------------------------------
+    None
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+       None
+    -------------------------------------------------
+    Total                                           0
+
+===============
+; Multiplexer ;
+===============
+
+    None
+
+===========
+; Decoder ;
+===========
+
+    None
+
+==========
+; Memory ;
+==========
+
+    None
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 1
+        Latency Index : 1
+        State No.     : 1
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../benchmarks/decimation_filter/decimation.c:47
+
+=======
+; FSM ;
+=======
+
+  Total States      :          1
+  #FSM              :          0
+  States/FSM        :          -
+  FSM Decoder Delay :          -
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       10ns
+  Critical Path Delay :        0ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           0.00      0%
+      MUX          0.00      0%
+      DEC          0.00      0%
+      MISC         0.00      0%
+      MEM          0.00      0%
+      -------------------------
+      Total        0.00
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      0                    / CNST [                    ]      -    0.00     0
+      odata                / i1   [                    ]      -    0.00     0
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :        1
+  Total Pin Pair Count :       20
+  Const Fanout         :       19
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+     ----------------------------
+       Total                    0
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+        None
+    -----------------------------------
+       Total                          0
+
+  Fanout for Consts:
+      Value    Fanout
+          0        19
+          1         0
+    ------------------
+      Total        19
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+          None
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+          None
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      load_coeff(0..0)                                0        0 ( 1bit)
+      indata(18..0)                                   0        0 (19bit)
+      incoef1_a00(16..0)                              0        0 (17bit)
+      incoef1_a01(16..0)                              0        0 (17bit)
+      incoef1_a02(16..0)                              0        0 (17bit)
+      incoef1_a03(16..0)                              0        0 (17bit)
+      incoef2_a00(16..0)                              0        0 (17bit)
+      incoef2_a01(16..0)                              0        0 (17bit)
+      incoef2_a02(16..0)                              0        0 (17bit)
+      incoef2_a03(16..0)                              0        0 (17bit)
+      incoef3_a00(16..0)                              0        0 (17bit)
+      incoef3_a01(16..0)                              0        0 (17bit)
+      incoef3_a02(16..0)                              0        0 (17bit)
+      incoef3_a03(16..0)                              0        0 (17bit)
+      incoef4_a00(16..0)                              0        0 (17bit)
+      incoef4_a01(16..0)                              0        0 (17bit)
+      incoef4_a02(16..0)                              0        0 (17bit)
+      incoef4_a03(16..0)                              0        0 (17bit)
+      incoef4_a04(16..0)                              0        0 (17bit)
+      incoef4_a05(16..0)                              0        0 (17bit)
+      incoef5_a00(16..0)                              0        0 (17bit)
+      incoef5_a01(16..0)                              0        0 (17bit)
+      incoef5_a02(16..0)                              0        0 (17bit)
+      incoef5_a03(16..0)                              0        0 (17bit)
+      incoef5_a04(16..0)                              0        0 (17bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      load_coeff(0..0)                                0        0 ( 1bit)
+      indata(18..0)                                   0        0 (19bit)
+      incoef1_a00(16..0)                              0        0 (17bit)
+      incoef1_a01(16..0)                              0        0 (17bit)
+      incoef1_a02(16..0)                              0        0 (17bit)
+      incoef1_a03(16..0)                              0        0 (17bit)
+      incoef2_a00(16..0)                              0        0 (17bit)
+      incoef2_a01(16..0)                              0        0 (17bit)
+      incoef2_a02(16..0)                              0        0 (17bit)
+      incoef2_a03(16..0)                              0        0 (17bit)
+      incoef3_a00(16..0)                              0        0 (17bit)
+      incoef3_a01(16..0)                              0        0 (17bit)
+      incoef3_a02(16..0)                              0        0 (17bit)
+      incoef3_a03(16..0)                              0        0 (17bit)
+      incoef4_a00(16..0)                              0        0 (17bit)
+      incoef4_a01(16..0)                              0        0 (17bit)
+      incoef4_a02(16..0)                              0        0 (17bit)
+      incoef4_a03(16..0)                              0        0 (17bit)
+      incoef4_a04(16..0)                              0        0 (17bit)
+      incoef4_a05(16..0)                              0        0 (17bit)
+      incoef5_a00(16..0)                              0        0 (17bit)
+      incoef5_a01(16..0)                              0        0 (17bit)
+      incoef5_a02(16..0)                              0        0 (17bit)
+      incoef5_a03(16..0)                              0        0 (17bit)
+      incoef5_a04(16..0)                              0        0 (17bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+      load_coeff        in      1
+      indata            in     19
+      odata             out    19
+      incoef1_a00       in     17
+      incoef1_a01       in     17
+      incoef1_a02       in     17
+      incoef1_a03       in     17
+      incoef2_a00       in     17
+      incoef2_a01       in     17
+      incoef2_a02       in     17
+      incoef2_a03       in     17
+      incoef3_a00       in     17
+      incoef3_a01       in     17
+      incoef3_a02       in     17
+      incoef3_a03       in     17
+      incoef4_a00       in     17
+      incoef4_a01       in     17
+      incoef4_a02       in     17
+      incoef4_a03       in     17
+      incoef4_a04       in     17
+      incoef4_a05       in     17
+      incoef5_a00       in     17
+      incoef5_a01       in     17
+      incoef5_a02       in     17
+      incoef5_a03       in     17
+      incoef5_a04       in     17
+      incoef5_a05       in     17
+      incoef5_a06       in     17
+      incoef5_a07       in     17
+      incoef5_a08       in     17
+      incoef5_a09       in     17
+      incoef5_a10       in     17
+      incoef5_a11       in     17
+

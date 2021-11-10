@@ -1,0 +1,61 @@
+#@VERSION{3.00}
+#@CNT{decimation}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@PROCESS{
+	NAME	decimation
+#	KIND
+#	LIMIT
+#	BITWIDTH
+#	DELAY
+	AREA	0
+	AREA_REG	0
+	AREA_COMB	0
+	AREA_FU	0
+	AREA_MUX	0
+	AREA_DEC	0
+	AREA_MISC	0
+	AREA_MEM	0
+	NET	1
+	PIN_PAIR	20
+#	SPECULATION
+#	COMMENT
+	DEFMOD {
+		in    unsigned ter(0..0) load_coeff       /* glo, load_coeff */;
+		in    unsigned ter(18..0) indata           /* glo, indata */;
+		in    unsigned ter(16..0) incoef1_a00      /* glo, incoef1[0] */;
+		in    unsigned ter(16..0) incoef1_a01      /* glo, incoef1[1] */;
+		in    unsigned ter(16..0) incoef1_a02      /* glo, incoef1[2] */;
+		in    unsigned ter(16..0) incoef1_a03      /* glo, incoef1[3] */;
+		in    unsigned ter(16..0) incoef2_a00      /* glo, incoef2[0] */;
+		in    unsigned ter(16..0) incoef2_a01      /* glo, incoef2[1] */;
+		in    unsigned ter(16..0) incoef2_a02      /* glo, incoef2[2] */;
+		in    unsigned ter(16..0) incoef2_a03      /* glo, incoef2[3] */;
+		in    unsigned ter(16..0) incoef3_a00      /* glo, incoef3[0] */;
+		in    unsigned ter(16..0) incoef3_a01      /* glo, incoef3[1] */;
+		in    unsigned ter(16..0) incoef3_a02      /* glo, incoef3[2] */;
+		in    unsigned ter(16..0) incoef3_a03      /* glo, incoef3[3] */;
+		in    unsigned ter(16..0) incoef4_a00      /* glo, incoef4[0] */;
+		in    unsigned ter(16..0) incoef4_a01      /* glo, incoef4[1] */;
+		in    unsigned ter(16..0) incoef4_a02      /* glo, incoef4[2] */;
+		in    unsigned ter(16..0) incoef4_a03      /* glo, incoef4[3] */;
+		in    unsigned ter(16..0) incoef4_a04      /* glo, incoef4[4] */;
+		in    unsigned ter(16..0) incoef4_a05      /* glo, incoef4[5] */;
+		in    unsigned ter(16..0) incoef5_a00      /* glo, incoef5[0] */;
+		in    unsigned ter(16..0) incoef5_a01      /* glo, incoef5[1] */;
+		in    unsigned ter(16..0) incoef5_a02      /* glo, incoef5[2] */;
+		in    unsigned ter(16..0) incoef5_a03      /* glo, incoef5[3] */;
+		in    unsigned ter(16..0) incoef5_a04      /* glo, incoef5[4] */;
+		in    unsigned ter(16..0) incoef5_a05      /* glo, incoef5[5] */;
+		in    unsigned ter(16..0) incoef5_a06      /* glo, incoef5[6] */;
+		in    unsigned ter(16..0) incoef5_a07      /* glo, incoef5[7] */;
+		in    unsigned ter(16..0) incoef5_a08      /* glo, incoef5[8] */;
+		in    unsigned ter(16..0) incoef5_a09      /* glo, incoef5[9] */;
+		in    unsigned ter(16..0) incoef5_a10      /* glo, incoef5[10] */;
+		in    unsigned ter(16..0) incoef5_a11      /* glo, incoef5[11] */;
+		out   unsigned ter(18..0) odata            /* glo, odata, always = 0 */;
+	}
+}
+#@HASH{d0e14447e0c4d47ed23714151c0779cb}
+#@END{decimation}
