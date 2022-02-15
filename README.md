@@ -10,7 +10,7 @@ This project uses the well known meta-heuristic Genetic Algorithm to evaluate th
 
 ## Requirements
 
-
+The TCLAP library is necessary to compile the program.
 
 ## How to Run
 
